@@ -1,0 +1,69 @@
+\hypertarget{class_ring_buffer}{\section{Ring\+Buffer Class Reference}
+\label{class_ring_buffer}\index{Ring\+Buffer@{Ring\+Buffer}}
+}
+Inheritance diagram for Ring\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ring_buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ring_buffer_a528b342b802f6841b66e6c8760335414}{{\bfseries Ring\+Buffer} (const size\+\_\+t size)}\label{class_ring_buffer_a528b342b802f6841b66e6c8760335414}
+
+\item 
+\hypertarget{class_ring_buffer_a8a2eeb957af8cb1cde9c711ed9149542}{{\bfseries Ring\+Buffer} (\hyperlink{class_ring_buffer}{Ring\+Buffer} \&buffer)}\label{class_ring_buffer_a8a2eeb957af8cb1cde9c711ed9149542}
+
+\item 
+\hypertarget{class_ring_buffer_a7ccdd87d908ba42ebab9d07ac2c4a62c}{\hyperlink{class_ring_buffer}{Ring\+Buffer} \& {\bfseries operator=} (\hyperlink{class_ring_buffer}{Ring\+Buffer} \&buffer)}\label{class_ring_buffer_a7ccdd87d908ba42ebab9d07ac2c4a62c}
+
+\item 
+\hypertarget{class_ring_buffer_a3e1f9185cf9cf52f381e1029278ddf6d}{bool {\bfseries Write} (const \hyperlink{class_sample}{Sample} \&elem)}\label{class_ring_buffer_a3e1f9185cf9cf52f381e1029278ddf6d}
+
+\item 
+\hypertarget{class_ring_buffer_adab76bf1e1797713ade17ad9c89cf4d3}{bool {\bfseries Read} (\hyperlink{class_sample}{Sample} \&elem)}\label{class_ring_buffer_adab76bf1e1797713ade17ad9c89cf4d3}
+
+\item 
+\hypertarget{class_ring_buffer_a1f3ac2b839b2a0834e6ca9071d9d4a37}{size\+\_\+t const \& {\bfseries Count} () const }\label{class_ring_buffer_a1f3ac2b839b2a0834e6ca9071d9d4a37}
+
+\item 
+\hypertarget{class_ring_buffer_a0b911fba6a54a4a76cd9de8e9b954971}{bool {\bfseries Full} () const }\label{class_ring_buffer_a0b911fba6a54a4a76cd9de8e9b954971}
+
+\item 
+\hypertarget{class_ring_buffer_a748d33eb5ca08cdb63c967be6bd33a8e}{bool {\bfseries Empty} () const }\label{class_ring_buffer_a748d33eb5ca08cdb63c967be6bd33a8e}
+
+\item 
+\hypertarget{class_ring_buffer_a66d87ffb1eb3ea864cb2ecc6dd09e507}{void {\bfseries Flush} ()}\label{class_ring_buffer_a66d87ffb1eb3ea864cb2ecc6dd09e507}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ring_buffer_a4c8bf5ff8699e136113bf796a93f176e}{size\+\_\+t {\bfseries next} (size\+\_\+t current)}\label{class_ring_buffer_a4c8bf5ff8699e136113bf796a93f176e}
+
+\item 
+\hypertarget{class_ring_buffer_a5ee1159455f22c896e3c68490195653a}{size\+\_\+t {\bfseries make\+\_\+pow\+\_\+2} (size\+\_\+t number)}\label{class_ring_buffer_a5ee1159455f22c896e3c68490195653a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ring_buffer_a5596c66d11415b18079900dade27ca16}{std\+::atomic$<$ size\+\_\+t $>$ {\bfseries \+\_\+write}}\label{class_ring_buffer_a5596c66d11415b18079900dade27ca16}
+
+\item 
+\hypertarget{class_ring_buffer_a967bf4fffb3b2972f73f285700c65da3}{std\+::atomic$<$ size\+\_\+t $>$ {\bfseries \+\_\+read}}\label{class_ring_buffer_a967bf4fffb3b2972f73f285700c65da3}
+
+\item 
+\hypertarget{class_ring_buffer_a838f9941e8f86efcc828601c8643dae5}{size\+\_\+t {\bfseries \+\_\+count}}\label{class_ring_buffer_a838f9941e8f86efcc828601c8643dae5}
+
+\item 
+\hypertarget{class_ring_buffer_a757ddc38be1a1aa05fb0f466e2c57d92}{size\+\_\+t {\bfseries M\+A\+S\+K}}\label{class_ring_buffer_a757ddc38be1a1aa05fb0f466e2c57d92}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/Ring\+Buffer.\+h\item 
+src/Ring\+Buffer.\+cpp\end{DoxyCompactItemize}

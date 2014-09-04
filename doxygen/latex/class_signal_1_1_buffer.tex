@@ -1,0 +1,205 @@
+\hypertarget{class_signal_1_1_buffer}{\section{Signal\+:\+:Buffer Class Reference}
+\label{class_signal_1_1_buffer}\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+}
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_signal_1_1_buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_buffer_ab558e80dac4ef396b9c9310fd914936f}{Buffer} ()
+\item 
+\hyperlink{class_signal_1_1_buffer_a002c329b3f2b4eaa388b27cc0796f68f}{Buffer} (size\+\_\+t size)
+\item 
+\hyperlink{class_signal_1_1_buffer_a89a0e919b2aa5f46f2c44137443128fc}{Buffer} (\hyperlink{class_signal_1_1_buffer}{Buffer} const \&other)
+\item 
+\hyperlink{class_signal_1_1_buffer}{Buffer} \& \hyperlink{class_signal_1_1_buffer_a9f9f08e2cdf35d15164997455303a2d9}{operator=} (\hyperlink{class_signal_1_1_buffer}{Buffer} const \&other)
+\item 
+virtual \hyperlink{class_signal_1_1_buffer_aa0a51349fdc5b8d41183e7971e8e799b}{$\sim$\+Buffer} ()
+\item 
+\hyperlink{class_signal_1_1_sample}{Signal\+::\+Sample} \& \hyperlink{class_signal_1_1_buffer_a0b4ced776c42720b214f6054fa21547a}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t const \&index)
+\item 
+size\+\_\+t const \& \hyperlink{class_signal_1_1_buffer_ad0350078d641ed5cb15a9401d9d20ffe}{Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_sample}{Signal\+::\+Sample} $\ast$ \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\+\_\+buffer}
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Buffer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_buffer_ab558e80dac4ef396b9c9310fd914936f}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Buffer\+::\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_buffer_ab558e80dac4ef396b9c9310fd914936f}
+
+
+Definition at line 13 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+13 :\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}(0),\hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}(\textcolor{keyword}{nullptr})\{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_a002c329b3f2b4eaa388b27cc0796f68f}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Buffer\+::\+Buffer (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_buffer_a002c329b3f2b4eaa388b27cc0796f68f}
+
+
+Definition at line 14 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+14 :\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}(size),\hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}(\textcolor{keyword}{new} \hyperlink{class_signal_1_1_sample}{Signal::Sample}[size])\{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_a89a0e919b2aa5f46f2c44137443128fc}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Buffer\+::\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf Buffer} const \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_buffer_a89a0e919b2aa5f46f2c44137443128fc}
+
+
+Definition at line 15 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+15                                         \{
+16     \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer} = \textcolor{keyword}{new} \hyperlink{class_signal_1_1_sample}{Signal::Sample}[\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}];
+17     \hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size} = other.\_size;
+18     *\textcolor{keyword}{this} = other;
+19 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_aa0a51349fdc5b8d41183e7971e8e799b}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!````~Buffer@{$\sim$\+Buffer}}
+\index{````~Buffer@{$\sim$\+Buffer}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{$\sim$\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Buffer\+::$\sim$\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_buffer_aa0a51349fdc5b8d41183e7971e8e799b}
+
+
+Definition at line 33 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+33                      \{
+34     \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}!=\textcolor{keyword}{nullptr}) \{
+35         \textcolor{keyword}{delete} [] \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer};
+36     \}
+37 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_buffer_a9f9f08e2cdf35d15164997455303a2d9}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Buffer} \& Signal\+::\+Buffer\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Buffer} const \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_buffer_a9f9f08e2cdf35d15164997455303a2d9}
+
+
+Definition at line 20 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+20                                                         \{
+21     \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}!=other.\_size) \{
+22         \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}!=\textcolor{keyword}{nullptr}) \{
+23             \textcolor{keyword}{delete} [] \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer};
+24         \}
+25         \hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size} = other.\_size;
+26         \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer} = \textcolor{keyword}{new} \hyperlink{class_signal_1_1_sample}{Signal::Sample}[\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}];
+27     \}
+28     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}; ++i) \{
+29         \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}[i] = other.\hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[i];
+30     \}
+31     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+32 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_a0b4ced776c42720b214f6054fa21547a}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} \& Signal\+::\+Buffer\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t const \&}]{index}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_buffer_a0b4ced776c42720b214f6054fa21547a}
+
+
+Definition at line 38 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+38                                                          \{
+39 \textcolor{preprocessor}{#ifdef DEBUG}
+40     assert(index<\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size});
+41 \textcolor{preprocessor}{#endif}
+42     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}[index];
+43 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_ad0350078d641ed5cb15a9401d9d20ffe}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!Size@{Size}}
+\index{Size@{Size}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t const \& Signal\+::\+Buffer\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_buffer_ad0350078d641ed5cb15a9401d9d20ffe}
+
+
+Definition at line 29 of file Buffer.\+h.
+
+
+\begin{DoxyCode}
+29                                           \{
+30         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size};
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!\+\_\+buffer@{\+\_\+buffer}}
+\index{\+\_\+buffer@{\+\_\+buffer}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample}$\ast$ Signal\+::\+Buffer\+::\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}
+
+
+Definition at line 26 of file Buffer.\+h.
+
+\hypertarget{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\index{Signal\+::\+Buffer@{Signal\+::\+Buffer}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!Signal\+::\+Buffer@{Signal\+::\+Buffer}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Buffer\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}
+
+
+Definition at line 27 of file Buffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_buffer_8h}{Buffer.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_buffer_8cpp}{Buffer.\+cpp}\end{DoxyCompactItemize}

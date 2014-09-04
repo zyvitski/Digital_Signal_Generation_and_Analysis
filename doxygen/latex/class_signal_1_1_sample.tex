@@ -1,0 +1,788 @@
+\hypertarget{class_signal_1_1_sample}{\section{Signal\+:\+:Sample Class Reference}
+\label{class_signal_1_1_sample}\index{Signal\+::\+Sample@{Signal\+::\+Sample}}
+}
+
+
+{\ttfamily \#include $<$Sample.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_sample_aff6a97034407b253ebb14d4b3a7e5477}{Sample} ()
+\item 
+\hyperlink{class_signal_1_1_sample_a6ecb688115872185693109a628734dc4}{Sample} (float value)
+\item 
+\hyperlink{class_signal_1_1_sample_a21732177867266f0780fb062428456b2}{Sample} (float c0, float c1)
+\item 
+\hyperlink{class_signal_1_1_sample_acc0acea8ae798078059f04e988a2640e}{Sample} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_ac8baed24392811f0752bf6fab175d55a}{operator=} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample_a4968d6186f36193272bbeaf25e3da7ab}{$\sim$\+Sample} ()
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_sample_a3c8f635193c0b7b69612cb189766dfa3}{Size} () const 
+\item 
+float \& \hyperlink{class_signal_1_1_sample_a3eaf5563822c3bccefc478a8a436020a}{operator\mbox{[}$\,$\mbox{]}} (const size\+\_\+t \&index)
+\item 
+float const \& \hyperlink{class_signal_1_1_sample_afe8d5109121196a75539c172aa38e09a}{operator\mbox{[}$\,$\mbox{]}} (const size\+\_\+t \&index) const 
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_a0b01f12ec802e075f6917f8490ac6813}{operator=} (float const \&value)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_ab70d9c9ef2561b03e0161fb72ede452c}{operator+=} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_a7d9e82509a4d9df0106c3f683a556c83}{operator+=} (const float \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_aa242d4770f720623d6a7f7455d1230f2}{operator-\/=} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_a5700d16aeba7eaacc851dd33954bc097}{operator-\/=} (const float \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_ab5c0df96056ee1a97de1c0cd8e4537e4}{operator$\ast$=} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_a48ef3a75fadf8bc9a1d881d3e56629c3}{operator$\ast$=} (const float \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_aa25e485265561cc1b72540db13e7de60}{operator/=} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_a40646177e45aa55e547b0109e1f4103c}{operator/=} (const float \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_ae59af6172226531fd5b7fb4dec32b04c}{operator++} ()
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a685283f98cd72d2b0b281eaca0eb18fc}{operator++} (int)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \& \hyperlink{class_signal_1_1_sample_a4357ffac71ce9bb92ea771483a82e157}{operator-\/-\/} ()
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_aa2572994e3ad3c7edff5336a7937a7e1}{operator-\/-\/} (int)
+\item 
+bool \hyperlink{class_signal_1_1_sample_a9a3b4c31bff60e6861e833a1f9c46df7}{operator==} (\hyperlink{class_signal_1_1_sample}{Sample} \&samp)
+\item 
+bool \hyperlink{class_signal_1_1_sample_a1c06d852edfeade895c5f4935357cf73}{operator!=} (\hyperlink{class_signal_1_1_sample}{Sample} \&samp)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\+\_\+buffer} \mbox{[}\hyperlink{_sample_8h_a29e42927003b0aa647ee45965f4ccb07}{C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+O\+U\+N\+T}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a2fd9547bca678d483b7678ff2d19c7bf}{operator+} (\hyperlink{class_signal_1_1_sample}{Sample} const \&s1, \hyperlink{class_signal_1_1_sample}{Sample} const \&s2)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a001ec49a9676fe37d9dfbb6f0b27127d}{operator+} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp, float val)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a9a5ae50b9096d1c778d6a676b562e11a}{operator+} (float val, \hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a4539e34cec889979677229c5ddf6eaf1}{operator-\/} (\hyperlink{class_signal_1_1_sample}{Sample} const \&s1, \hyperlink{class_signal_1_1_sample}{Sample} const \&s2)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a30c04ca57e9f947cdd68041231676acc}{operator-\/} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp, float val)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a27b97bc41eae03efe5f4157bdc3e42b2}{operator-\/} (float val, \hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_ae6e21a0672b773c8ae0537410c48a385}{operator$\ast$} (\hyperlink{class_signal_1_1_sample}{Sample} const \&s1, \hyperlink{class_signal_1_1_sample}{Sample} const \&s2)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a6c56eccda9469f7283e67c6e89b05239}{operator$\ast$} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp, float val)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_afacc0c2623435bca02ee4049ed2db550}{operator$\ast$} (float val, \hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a26dc248966f0cb3c5d1c52f7aa6643d4}{operator/} (\hyperlink{class_signal_1_1_sample}{Sample} const \&s1, \hyperlink{class_signal_1_1_sample}{Sample} const \&s2)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a135d15a9237414aabce1df8f3a5ae77f}{operator/} (\hyperlink{class_signal_1_1_sample}{Sample} const \&samp, float val)
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_sample_a6178925f7213e13df7f4106cc0e22330}{operator/} (float val, \hyperlink{class_signal_1_1_sample}{Sample} const \&samp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file Sample.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_sample_aff6a97034407b253ebb14d4b3a7e5477}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!Sample@{Sample}}
+\index{Sample@{Sample}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{Sample}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sample\+::\+Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_aff6a97034407b253ebb14d4b3a7e5477}
+
+
+Definition at line 11 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+11                     \{
+12     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]=0;
+13     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]=0;
+14 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a6ecb688115872185693109a628734dc4}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!Sample@{Sample}}
+\index{Sample@{Sample}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{Sample}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sample\+::\+Sample (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a6ecb688115872185693109a628734dc4}
+
+
+Definition at line 15 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+15                                \{
+16     *\textcolor{keyword}{this} = value;
+17 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a21732177867266f0780fb062428456b2}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!Sample@{Sample}}
+\index{Sample@{Sample}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{Sample}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sample\+::\+Sample (
+\begin{DoxyParamCaption}
+\item[{float}]{c0, }
+\item[{float}]{c1}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a21732177867266f0780fb062428456b2}
+
+
+Definition at line 18 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+18                                      \{
+19     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]=c0;
+20     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]=c1;
+21 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_acc0acea8ae798078059f04e988a2640e}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!Sample@{Sample}}
+\index{Sample@{Sample}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{Sample}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sample\+::\+Sample (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_acc0acea8ae798078059f04e988a2640e}
+
+
+Definition at line 22 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+22                                             \{
+23     *\textcolor{keyword}{this} = samp;
+24 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a4968d6186f36193272bbeaf25e3da7ab}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!````~Sample@{$\sim$\+Sample}}
+\index{````~Sample@{$\sim$\+Sample}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{$\sim$\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sample\+::$\sim$\+Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a4968d6186f36193272bbeaf25e3da7ab}
+
+
+Definition at line 30 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+30                      \{
+31     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]=0;
+32     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]=0;
+33 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_sample_a1c06d852edfeade895c5f4935357cf73}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Sample\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} \&}]{samp}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a1c06d852edfeade895c5f4935357cf73}
+
+
+Definition at line 109 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+109                                                 \{
+110     \textcolor{keywordflow}{if} (!(*\textcolor{keyword}{this}==samp)) \{
+111         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+112     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+113 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_ab5c0df96056ee1a97de1c0cd8e4537e4}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_ab5c0df96056ee1a97de1c0cd8e4537e4}
+
+
+Definition at line 101 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+101                                                         \{
+102         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]*=samp.\_buffer[0];
+103         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]*=samp.\_buffer[1];
+104         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+105     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a48ef3a75fadf8bc9a1d881d3e56629c3}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_a48ef3a75fadf8bc9a1d881d3e56629c3}
+
+
+Definition at line 106 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+106                                                        \{
+107         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]*=samp;
+108         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]*=samp;
+109         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+110     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_ae59af6172226531fd5b7fb4dec32b04c}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator++@{operator++}}
+\index{operator++@{operator++}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} \& Signal\+::\+Sample\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_ae59af6172226531fd5b7fb4dec32b04c}
+
+
+Definition at line 84 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+84                                       \{
+85     ++(*this)[0];
+86     ++(*this)[1];
+87     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+88 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a685283f98cd72d2b0b281eaca0eb18fc}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator++@{operator++}}
+\index{operator++@{operator++}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} Signal\+::\+Sample\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a685283f98cd72d2b0b281eaca0eb18fc}
+
+
+Definition at line 89 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+89                                         \{
+90     \hyperlink{class_signal_1_1_sample_aff6a97034407b253ebb14d4b3a7e5477}{Sample} s = *\textcolor{keyword}{this};
+91     ++(*this);
+92     \textcolor{keywordflow}{return} s;
+93 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_ab70d9c9ef2561b03e0161fb72ede452c}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_ab70d9c9ef2561b03e0161fb72ede452c}
+
+
+Definition at line 81 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+81                                                         \{
+82         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]+=samp.\_buffer[0];
+83         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]+=samp.\_buffer[1];
+84         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+85     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a7d9e82509a4d9df0106c3f683a556c83}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_a7d9e82509a4d9df0106c3f683a556c83}
+
+
+Definition at line 86 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+86                                                        \{
+87         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]+=samp;
+88         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]+=samp;
+89         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+90     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a4357ffac71ce9bb92ea771483a82e157}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} \& Signal\+::\+Sample\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a4357ffac71ce9bb92ea771483a82e157}
+
+
+Definition at line 94 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+94                                       \{
+95     --(*this)[0];
+96     --(*this)[1];
+97     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+98 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_aa2572994e3ad3c7edff5336a7937a7e1}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} Signal\+::\+Sample\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_aa2572994e3ad3c7edff5336a7937a7e1}
+
+
+Definition at line 99 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+99                                         \{
+100     \hyperlink{class_signal_1_1_sample_aff6a97034407b253ebb14d4b3a7e5477}{Sample} s = *\textcolor{keyword}{this};
+101     --(*this);
+102     \textcolor{keywordflow}{return} s;
+103 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_aa242d4770f720623d6a7f7455d1230f2}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_aa242d4770f720623d6a7f7455d1230f2}
+
+
+Definition at line 91 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+91                                                         \{
+92         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]-=samp.\_buffer[0];
+93         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]-=samp.\_buffer[1];
+94         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+95     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a5700d16aeba7eaacc851dd33954bc097}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_a5700d16aeba7eaacc851dd33954bc097}
+
+
+Definition at line 96 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+96                                                        \{
+97         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]-=samp;
+98         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]-=samp;
+99         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+100     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_aa25e485265561cc1b72540db13e7de60}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_aa25e485265561cc1b72540db13e7de60}
+
+
+Definition at line 111 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+111                                                         \{
+112         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]/=samp.\_buffer[0];
+113         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]/=samp.\_buffer[1];
+114         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+115     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a40646177e45aa55e547b0109e1f4103c}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} \& Signal\+::\+Sample\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_a40646177e45aa55e547b0109e1f4103c}
+
+
+Definition at line 116 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+116                                                        \{
+117         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]/=samp;
+118         \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]/=samp;
+119         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+120     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_ac8baed24392811f0752bf6fab175d55a}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator=@{operator=}}
+\index{operator=@{operator=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} \& Signal\+::\+Sample\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_ac8baed24392811f0752bf6fab175d55a}
+
+
+Definition at line 25 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+25                                                              \{
+26     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]=samp.\_buffer[0];
+27     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]=samp.\_buffer[1];
+28     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+29 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a0b01f12ec802e075f6917f8490ac6813}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator=@{operator=}}
+\index{operator=@{operator=}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} \& Signal\+::\+Sample\+::operator= (
+\begin{DoxyParamCaption}
+\item[{float const \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a0b01f12ec802e075f6917f8490ac6813}
+
+
+Definition at line 39 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+39                                                        \{
+40     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]=value;
+41     \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]=value;
+42     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+43 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a9a3b4c31bff60e6861e833a1f9c46df7}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator==@{operator==}}
+\index{operator==@{operator==}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Sample\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} \&}]{samp}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sample_a9a3b4c31bff60e6861e833a1f9c46df7}
+
+
+Definition at line 104 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+104                                                \{
+105     \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[0]==samp[0] && \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[1]==samp[1]) \{
+106         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+107     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+108 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a3eaf5563822c3bccefc478a8a436020a}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float \& Signal\+::\+Sample\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_a3eaf5563822c3bccefc478a8a436020a}
+
+
+Definition at line 69 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+69                                                 \{
+70 \textcolor{preprocessor}{#ifdef DEBUG}
+71         assert(index<\hyperlink{_sample_8h_a29e42927003b0aa647ee45965f4ccb07}{CHANNEL\_COUNT});
+72 \textcolor{preprocessor}{#endif}
+73         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[index];
+74     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_afe8d5109121196a75539c172aa38e09a}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float const \& Signal\+::\+Sample\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t \&}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_sample_afe8d5109121196a75539c172aa38e09a}
+
+
+Definition at line 75 of file Sample.\+h.
+
+
+\begin{DoxyCode}
+75                                                            \{
+76 \textcolor{preprocessor}{#ifdef DEBUG}
+77         assert(index<\hyperlink{_sample_8h_a29e42927003b0aa647ee45965f4ccb07}{CHANNEL\_COUNT});
+78 \textcolor{preprocessor}{#endif}
+79         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\_buffer}[index];
+80     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a3c8f635193c0b7b69612cb189766dfa3}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!Size@{Size}}
+\index{Size@{Size}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Sample\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_signal_1_1_sample_a3c8f635193c0b7b69612cb189766dfa3}
+
+
+Definition at line 34 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+34                               \{
+35     \textcolor{keywordflow}{return} \hyperlink{_sample_8h_a29e42927003b0aa647ee45965f4ccb07}{CHANNEL\_COUNT};
+36 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_signal_1_1_sample_ae6e21a0672b773c8ae0537410c48a385}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{s1, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_ae6e21a0672b773c8ae0537410c48a385}
+
+
+Definition at line 65 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+65                                                                       \{
+66     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(s1[0]*s2[0],s1[1]*s2[1]);
+67 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a6c56eccda9469f7283e67c6e89b05239}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a6c56eccda9469f7283e67c6e89b05239}
+
+
+Definition at line 68 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+68                                                            \{
+69     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]*val,samp[1]*val);
+70 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_afacc0c2623435bca02ee4049ed2db550}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{val, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_afacc0c2623435bca02ee4049ed2db550}
+
+
+Definition at line 71 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+71                                                               \{
+72     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]*val,samp[1]*val);
+73 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a2fd9547bca678d483b7678ff2d19c7bf}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator+@{operator+}}
+\index{operator+@{operator+}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{s1, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a2fd9547bca678d483b7678ff2d19c7bf}
+
+
+Definition at line 46 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+46                                                                       \{
+47     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(s1[0]+s2[0],s1[1]+s2[1]);
+48 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a001ec49a9676fe37d9dfbb6f0b27127d}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator+@{operator+}}
+\index{operator+@{operator+}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a001ec49a9676fe37d9dfbb6f0b27127d}
+
+
+Definition at line 49 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+49                                                            \{
+50     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]+val,samp[1]+val);
+51 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a9a5ae50b9096d1c778d6a676b562e11a}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator+@{operator+}}
+\index{operator+@{operator+}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator+ (
+\begin{DoxyParamCaption}
+\item[{float}]{val, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a9a5ae50b9096d1c778d6a676b562e11a}
+
+
+Definition at line 52 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+52                                                               \{
+53     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]+val,samp[1]+val);
+54 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a4539e34cec889979677229c5ddf6eaf1}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{s1, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a4539e34cec889979677229c5ddf6eaf1}
+
+
+Definition at line 56 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+56                                                                       \{
+57     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(s1[0]-s2[0],s1[1]-s2[1]);
+58 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a30c04ca57e9f947cdd68041231676acc}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a30c04ca57e9f947cdd68041231676acc}
+
+
+Definition at line 59 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+59                                                            \{
+60     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]-val,samp[1]-val);
+61 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a27b97bc41eae03efe5f4157bdc3e42b2}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{float}]{val, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a27b97bc41eae03efe5f4157bdc3e42b2}
+
+
+Definition at line 62 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+62                                                               \{
+63     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]-val,samp[1]-val);
+64 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a26dc248966f0cb3c5d1c52f7aa6643d4}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator/@{operator/}}
+\index{operator/@{operator/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{s1, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a26dc248966f0cb3c5d1c52f7aa6643d4}
+
+
+Definition at line 74 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+74                                                                         \{
+75     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(s1[0]/s2[0],s1[1]/s2[1]);
+76 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a135d15a9237414aabce1df8f3a5ae77f}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator/@{operator/}}
+\index{operator/@{operator/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a135d15a9237414aabce1df8f3a5ae77f}
+
+
+Definition at line 77 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+77                                                            \{
+78     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(samp[0]/val,samp[1]/val);
+79 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_a6178925f7213e13df7f4106cc0e22330}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!operator/@{operator/}}
+\index{operator/@{operator/}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} operator/ (
+\begin{DoxyParamCaption}
+\item[{float}]{val, }
+\item[{{\bf Signal\+::\+Sample} const \&}]{samp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_signal_1_1_sample_a6178925f7213e13df7f4106cc0e22330}
+
+
+Definition at line 80 of file Sample.\+cpp.
+
+
+\begin{DoxyCode}
+80                                                               \{
+81     \textcolor{keywordflow}{return}  \hyperlink{class_signal_1_1_sample}{Signal::Sample}(val/samp[0],val/samp[1]);
+82 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}{\index{Signal\+::\+Sample@{Signal\+::\+Sample}!\+\_\+buffer@{\+\_\+buffer}}
+\index{\+\_\+buffer@{\+\_\+buffer}!Signal\+::\+Sample@{Signal\+::\+Sample}}
+\subsubsection[{\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}float Signal\+::\+Sample\+::\+\_\+buffer\mbox{[}{\bf C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+O\+U\+N\+T}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_sample_ad609d308b1c36b007bd8210d316c070b}
+
+
+Definition at line 66 of file Sample.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_sample_8h}{Sample.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_sample_8cpp}{Sample.\+cpp}\end{DoxyCompactItemize}

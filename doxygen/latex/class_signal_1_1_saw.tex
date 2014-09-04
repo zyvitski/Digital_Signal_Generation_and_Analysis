@@ -1,0 +1,258 @@
+\hypertarget{class_signal_1_1_saw}{\section{Signal\+:\+:Saw Class Reference}
+\label{class_signal_1_1_saw}\index{Signal\+::\+Saw@{Signal\+::\+Saw}}
+}
+
+
+{\ttfamily \#include $<$Saw.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:Saw\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_signal_1_1_saw}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_saw_a4bce6f687d2bd26aa3c2fb209de4c9f9}{Saw} ()
+\item 
+\hyperlink{class_signal_1_1_saw_a6d772ec845a8c98a4111a7bf1ddabb10}{Saw} (double const \&frequency, double const \&phase\+\_\+offset)
+\item 
+virtual \hyperlink{class_signal_1_1_saw_a1663e993e22dd1f66033c4de1c1007e9}{$\sim$\+Saw} ()
+\item 
+virtual bool \hyperlink{class_signal_1_1_saw_a6fb3216b94fea4daa83b27f5de194fa0}{Perform} (\hyperlink{class_signal_1_1_sample}{Sample} \&signal)
+\item 
+virtual bool \hyperlink{class_signal_1_1_saw_a0d0d374c9b5a3f73f48e9fb1c444b0ca}{Perform} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&signal)
+\item 
+virtual double const \& \hyperlink{class_signal_1_1_saw_af91fd0d15b380c02e309705eaad46efd}{Frequency} (double const \&value)
+\item 
+virtual double const \& \hyperlink{class_signal_1_1_saw_acf3fd0346394d9fd2690bb5fee9550f6}{Frequency} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\+\_\+h}
+\item 
+double \hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\+\_\+a}
+\item 
+double \hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}
+\item 
+double \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}
+\item 
+double \hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{i\+P\+I}
+\item 
+unsigned short \hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Saw.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_saw_a4bce6f687d2bd26aa3c2fb209de4c9f9}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Saw@{Saw}}
+\index{Saw@{Saw}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{Saw}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Saw\+::\+Saw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_saw_a4bce6f687d2bd26aa3c2fb209de4c9f9}
+
+
+Definition at line 10 of file Saw.\+cpp.
+
+
+\begin{DoxyCode}
+10 :\hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{ClassicGenerator}(),\hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\_a}(5.0/3.0),\hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h}(\hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\_maxHarms}(
+      \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI}(1.0/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}(0),\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}(0)\{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_saw_a6d772ec845a8c98a4111a7bf1ddabb10}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Saw@{Saw}}
+\index{Saw@{Saw}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{Saw}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Saw\+::\+Saw (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{frequency, }
+\item[{double const \&}]{phase\+\_\+offset}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_saw_a6d772ec845a8c98a4111a7bf1ddabb10}
+
+
+Definition at line 11 of file Saw.\+cpp.
+
+
+\begin{DoxyCode}
+11                                                                 :
+      \hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{ClassicGenerator}(frequency,phase\_offset),\hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\_a}(5.0/3.0),\hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h}(
+      \hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\_maxHarms}(\hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI}(1.0/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}(0),\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}(0)\{
+12     \hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}=0;
+13     \hyperlink{class_signal_1_1_classic_generator_a1214faf589eccb01631700723900bbf9}{\_storage}=0;
+14 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_saw_a1663e993e22dd1f66033c4de1c1007e9}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!````~Saw@{$\sim$\+Saw}}
+\index{````~Saw@{$\sim$\+Saw}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{$\sim$\+Saw}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Saw\+::$\sim$\+Saw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_saw_a1663e993e22dd1f66033c4de1c1007e9}
+
+
+Definition at line 15 of file Saw.\+cpp.
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_saw_af91fd0d15b380c02e309705eaad46efd}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Saw\+::\+Frequency (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_saw_af91fd0d15b380c02e309705eaad46efd}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_signal_generator_af83b532bf3ddc3637c2fd7a1dfd095cb}{Signal\+::\+Signal\+Generator}.
+
+
+
+Definition at line 16 of file Saw.\+cpp.
+
+
+\begin{DoxyCode}
+16                                                      \{
+17     \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz} = value;
+18     \hyperlink{class_signal_1_1_signal_generator_a7f107461333bce68c5dad412db96a8c2}{\_frequency} = \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz}/\hyperlink{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}();
+19     \hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h} = \hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\_maxHarms}(\hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz});
+20     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
+21 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_saw_acf3fd0346394d9fd2690bb5fee9550f6}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Saw\+::\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_saw_acf3fd0346394d9fd2690bb5fee9550f6}
+
+
+Definition at line 22 of file Saw.\+cpp.
+
+
+\begin{DoxyCode}
+22                                   \{
+23     \textcolor{keywordflow}{return} this->\hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
+24 \}\end{DoxyCode}
+\hypertarget{class_signal_1_1_saw_a6fb3216b94fea4daa83b27f5de194fa0}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Saw\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_signal_1_1_saw_a6fb3216b94fea4daa83b27f5de194fa0}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_classic_generator_a4a62f329b9cd64d92b07f53c4d593356}{Signal\+::\+Classic\+Generator}.
+
+
+
+Definition at line 36 of file Saw.\+h.
+
+
+\begin{DoxyCode}
+36                                           \{
+37         \hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}=\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}();
+38         \hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}+=\hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+39         signal=0;
+40         \textcolor{keywordflow}{for} (\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}=1; \hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}<\hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h}+1; ++\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}) \{
+41             \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor} += \_harmonicTable.Saw(\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i})* sine(\hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}*(\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}));
+42         \}
+43         \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}*= \hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\_a}*\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI};
+44         signal=\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor};
+45         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+46     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_saw_a0d0d374c9b5a3f73f48e9fb1c444b0ca}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Saw\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_signal_1_1_saw_a0d0d374c9b5a3f73f48e9fb1c444b0ca}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_classic_generator_a308c13baa66020d44c2227bd58db4b4f}{Signal\+::\+Classic\+Generator}.
+
+
+
+Definition at line 47 of file Saw.\+h.
+
+
+\begin{DoxyCode}
+47                                               \{
+48         signal.Flush();
+49         \textcolor{keywordflow}{while} (!signal.Full()) \{
+50             \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_saw_a6fb3216b94fea4daa83b27f5de194fa0}{Perform}(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample})) \{
+51                 \textcolor{keywordflow}{if}(signal.Write(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}))\{
+52                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+53             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+54         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+55     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!\+\_\+a@{\+\_\+a}}
+\index{\+\_\+a@{\+\_\+a}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{\+\_\+a}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::\+\_\+a\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a190de681addc384749845750897859e5}
+
+
+Definition at line 29 of file Saw.\+h.
+
+\hypertarget{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!\+\_\+h@{\+\_\+h}}
+\index{\+\_\+h@{\+\_\+h}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+Saw\+::\+\_\+h\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}
+
+
+Definition at line 28 of file Saw.\+h.
+
+\hypertarget{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!i@{i}}
+\index{i@{i}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Signal\+::\+Saw\+::i\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}
+
+
+Definition at line 33 of file Saw.\+h.
+
+\hypertarget{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!i\+P\+I@{i\+P\+I}}
+\index{i\+P\+I@{i\+P\+I}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{i\+P\+I}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::i\+P\+I\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}
+
+
+Definition at line 32 of file Saw.\+h.
+
+\hypertarget{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!stor@{stor}}
+\index{stor@{stor}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{stor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::stor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}
+
+
+Definition at line 31 of file Saw.\+h.
+
+\hypertarget{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!tmp@{tmp}}
+\index{tmp@{tmp}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{tmp}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::tmp\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}
+
+
+Definition at line 30 of file Saw.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_saw_8h}{Saw.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_saw_8cpp}{Saw.\+cpp}\end{DoxyCompactItemize}

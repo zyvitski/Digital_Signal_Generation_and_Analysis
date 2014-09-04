@@ -1,0 +1,69 @@
+\hypertarget{class_queue}{\section{Queue$<$ element $>$ Class Template Reference}
+\label{class_queue}\index{Queue$<$ element $>$@{Queue$<$ element $>$}}
+}
+Inheritance diagram for Queue$<$ element $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_queue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a256e88956da8b5ddc7f6d90d727f538c}{{\bfseries Queue} (unsigned long size)}\label{class_queue_a256e88956da8b5ddc7f6d90d727f538c}
+
+\item 
+\hypertarget{class_queue_ac8171f81b3093b504e1104377b59dd32}{{\bfseries Queue} (\hyperlink{class_queue}{Queue}$<$ element $>$ const \&other)}\label{class_queue_ac8171f81b3093b504e1104377b59dd32}
+
+\item 
+\hypertarget{class_queue_abb78a25b02ff057bd3b26d26b204d416}{\hyperlink{class_queue}{Queue}$<$ element $>$ \& {\bfseries operator=} (\hyperlink{class_queue}{Queue}$<$ element $>$ const \&other)}\label{class_queue_abb78a25b02ff057bd3b26d26b204d416}
+
+\item 
+\hypertarget{class_queue_a3e0762c8eb05b6827c11479b3a9336e8}{bool {\bfseries Write} (element const \&value)}\label{class_queue_a3e0762c8eb05b6827c11479b3a9336e8}
+
+\item 
+\hypertarget{class_queue_acab1a9e80352e68015c766fe3f248dde}{bool {\bfseries Read} (element \&place)}\label{class_queue_acab1a9e80352e68015c766fe3f248dde}
+
+\item 
+\hypertarget{class_queue_a567a1d3ef0fe69ac7c69f8e8e6ff1f2f}{unsigned long const \& {\bfseries Count} () const }\label{class_queue_a567a1d3ef0fe69ac7c69f8e8e6ff1f2f}
+
+\item 
+\hypertarget{class_queue_a62c3248fdf4323d379257cbd3ca6d287}{bool {\bfseries Full} () const }\label{class_queue_a62c3248fdf4323d379257cbd3ca6d287}
+
+\item 
+\hypertarget{class_queue_ab6515d56835268bae34a771200d98b56}{bool {\bfseries Empty} () const }\label{class_queue_ab6515d56835268bae34a771200d98b56}
+
+\item 
+\hypertarget{class_queue_a33ed714d4bf650e42fe963c4981d925e}{void {\bfseries Flush} ()}\label{class_queue_a33ed714d4bf650e42fe963c4981d925e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a206f46f31c9a4cb521a511eca2457472}{unsigned long {\bfseries next} (unsigned long value)}\label{class_queue_a206f46f31c9a4cb521a511eca2457472}
+
+\item 
+\hypertarget{class_queue_aadcb41bd20db15ae8b24dd3d5b8beb25}{unsigned long {\bfseries make\+\_\+pow\+\_\+2} (unsigned long value)}\label{class_queue_aadcb41bd20db15ae8b24dd3d5b8beb25}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a3e0f32f37c7b00323a20ae208cf27b8b}{std\+::atomic$<$ unsigned long $>$ {\bfseries \+\_\+write}}\label{class_queue_a3e0f32f37c7b00323a20ae208cf27b8b}
+
+\item 
+\hypertarget{class_queue_a39f0f79c589cf77f8f5a6b19fbd69a6f}{std\+::atomic$<$ unsigned long $>$ {\bfseries \+\_\+read}}\label{class_queue_a39f0f79c589cf77f8f5a6b19fbd69a6f}
+
+\item 
+\hypertarget{class_queue_ab0ec54e36274844ba9b82467122c456e}{unsigned long {\bfseries \+\_\+count}}\label{class_queue_ab0ec54e36274844ba9b82467122c456e}
+
+\item 
+\hypertarget{class_queue_a872b60c3f965d749c74585e80c1db75b}{unsigned long {\bfseries \+\_\+\+M\+A\+S\+K}}\label{class_queue_a872b60c3f965d749c74585e80c1db75b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/Queue.\+h\end{DoxyCompactItemize}

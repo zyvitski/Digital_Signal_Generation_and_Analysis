@@ -1,0 +1,91 @@
+\hypertarget{namespace_signal}{\section{Signal Namespace Reference}
+\label{namespace_signal}\index{Signal@{Signal}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_signal_1_1_b_l_i_t}{B\+L\+I\+T}
+\item 
+class \hyperlink{class_signal_1_1_b_l_i_t_saw}{B\+L\+I\+T\+Saw}
+\item 
+class \hyperlink{class_signal_1_1_buffer}{Buffer}
+\item 
+class \hyperlink{class_signal_1_1_classic_generator}{Classic\+Generator}
+\item 
+class \hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer}
+\item 
+class \hyperlink{class_signal_1_1_sample}{Sample}
+\item 
+class \hyperlink{class_signal_1_1_sample_rate}{Sample\+Rate}
+\item 
+class \hyperlink{class_signal_1_1_saw}{Saw}
+\item 
+class \hyperlink{class_signal_1_1_signal_generator}{Signal\+Generator}
+\item 
+class \hyperlink{class_signal_1_1_signal_process}{Signal\+Process}
+\item 
+class \hyperlink{class_signal_1_1_sine}{Sine}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double const \& \hyperlink{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\+\_\+\+Rate} ()
+\item 
+double const \hyperlink{namespace_signal_ae7e8bbfcac6571aaaf18d7f96f3fefc3}{Sample\+\_\+\+Rate\+\_\+\+Inverse} ()
+\item 
+void \hyperlink{namespace_signal_a2f163a7bbf1b0fc76ceba8b0916a7890}{Set\+\_\+\+Sample\+\_\+\+Rate} (double const \&rate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}{\index{Signal@{Signal}!Sample\+\_\+\+Rate@{Sample\+\_\+\+Rate}}
+\index{Sample\+\_\+\+Rate@{Sample\+\_\+\+Rate}!Signal@{Signal}}
+\subsubsection[{Sample\+\_\+\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}double const\& Signal\+::\+Sample\+\_\+\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}
+
+
+Definition at line 29 of file Sample\+\_\+\+Rate.\+h.
+
+
+\begin{DoxyCode}
+29                                       \{
+30         \textcolor{keywordflow}{return} \hyperlink{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}{SampleRate::Sample\_Rate}();
+31     \}
+\end{DoxyCode}
+\hypertarget{namespace_signal_ae7e8bbfcac6571aaaf18d7f96f3fefc3}{\index{Signal@{Signal}!Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}}
+\index{Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}!Signal@{Signal}}
+\subsubsection[{Sample\+\_\+\+Rate\+\_\+\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}double const Signal\+::\+Sample\+\_\+\+Rate\+\_\+\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_signal_ae7e8bbfcac6571aaaf18d7f96f3fefc3}
+
+
+Definition at line 32 of file Sample\+\_\+\+Rate.\+h.
+
+
+\begin{DoxyCode}
+32                                              \{
+33         \textcolor{keywordflow}{return} \hyperlink{namespace_signal_ae7e8bbfcac6571aaaf18d7f96f3fefc3}{SampleRate::Sample\_Rate\_Inverse}();
+34     \}
+\end{DoxyCode}
+\hypertarget{namespace_signal_a2f163a7bbf1b0fc76ceba8b0916a7890}{\index{Signal@{Signal}!Set\+\_\+\+Sample\+\_\+\+Rate@{Set\+\_\+\+Sample\+\_\+\+Rate}}
+\index{Set\+\_\+\+Sample\+\_\+\+Rate@{Set\+\_\+\+Sample\+\_\+\+Rate}!Signal@{Signal}}
+\subsubsection[{Set\+\_\+\+Sample\+\_\+\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+Set\+\_\+\+Sample\+\_\+\+Rate (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_signal_a2f163a7bbf1b0fc76ceba8b0916a7890}
+
+
+Definition at line 35 of file Sample\+\_\+\+Rate.\+h.
+
+
+\begin{DoxyCode}
+35                                                    \{
+36         SampleRate::Set(rate);
+37     \}
+\end{DoxyCode}

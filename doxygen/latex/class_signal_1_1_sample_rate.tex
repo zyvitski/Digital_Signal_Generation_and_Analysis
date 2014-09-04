@@ -1,0 +1,108 @@
+\hypertarget{class_signal_1_1_sample_rate}{\section{Signal\+:\+:Sample\+Rate Class Reference}
+\label{class_signal_1_1_sample_rate}\index{Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}}
+}
+
+
+{\ttfamily \#include $<$Sample\+\_\+\+Rate.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_signal_1_1_sample_rate_a4ccc472f12332b06a70cb10818cce76e}{Set} (double const \&value)
+\item 
+static double const \& \hyperlink{class_signal_1_1_sample_rate_a317c7690ee6b64adf45eeeaa29cef83d}{Sample\+\_\+\+Rate} ()
+\item 
+static double const \& \hyperlink{class_signal_1_1_sample_rate_a0ece63ab817d91a1390df4147672768f}{Sample\+\_\+\+Rate\+\_\+\+Inverse} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{class_signal_1_1_sample_rate_a47170c125b6d2436c2818237362c0df2}{sample\+\_\+rate}
+\item 
+static double \hyperlink{class_signal_1_1_sample_rate_a970e812aa9bcfe7a7f04a98df0b659bc}{sample\+\_\+rate\+\_\+inverse}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Sample\+\_\+\+Rate.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_sample_rate_a317c7690ee6b64adf45eeeaa29cef83d}{\index{Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}!Sample\+\_\+\+Rate@{Sample\+\_\+\+Rate}}
+\index{Sample\+\_\+\+Rate@{Sample\+\_\+\+Rate}!Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}}
+\subsubsection[{Sample\+\_\+\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Sample\+Rate\+::\+Sample\+\_\+\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_signal_1_1_sample_rate_a317c7690ee6b64adf45eeeaa29cef83d}
+
+
+Definition at line 18 of file Sample\+\_\+\+Rate.\+cpp.
+
+
+\begin{DoxyCode}
+18                                            \{
+19     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_sample_rate_a47170c125b6d2436c2818237362c0df2}{sample\_rate};
+20 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_rate_a0ece63ab817d91a1390df4147672768f}{\index{Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}!Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}}
+\index{Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}!Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}}
+\subsubsection[{Sample\+\_\+\+Rate\+\_\+\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Sample\+Rate\+::\+Sample\+\_\+\+Rate\+\_\+\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_signal_1_1_sample_rate_a0ece63ab817d91a1390df4147672768f}
+
+
+Definition at line 21 of file Sample\+\_\+\+Rate.\+cpp.
+
+
+\begin{DoxyCode}
+21                                                    \{
+22     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_sample_rate_a970e812aa9bcfe7a7f04a98df0b659bc}{sample\_rate\_inverse};
+23 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sample_rate_a4ccc472f12332b06a70cb10818cce76e}{\index{Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}!Set@{Set}}
+\index{Set@{Set}!Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+Sample\+Rate\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_signal_1_1_sample_rate_a4ccc472f12332b06a70cb10818cce76e}
+
+
+Definition at line 14 of file Sample\+\_\+\+Rate.\+cpp.
+
+
+\begin{DoxyCode}
+14                                              \{
+15     \hyperlink{class_signal_1_1_sample_rate_a47170c125b6d2436c2818237362c0df2}{sample\_rate} = value;
+16     \hyperlink{class_signal_1_1_sample_rate_a970e812aa9bcfe7a7f04a98df0b659bc}{sample\_rate\_inverse} = 1.0f/value;
+17 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_sample_rate_a47170c125b6d2436c2818237362c0df2}{\index{Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}!sample\+\_\+rate@{sample\+\_\+rate}}
+\index{sample\+\_\+rate@{sample\+\_\+rate}!Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}}
+\subsubsection[{sample\+\_\+rate}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Sample\+Rate\+::sample\+\_\+rate\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_signal_1_1_sample_rate_a47170c125b6d2436c2818237362c0df2}
+
+
+Definition at line 23 of file Sample\+\_\+\+Rate.\+h.
+
+\hypertarget{class_signal_1_1_sample_rate_a970e812aa9bcfe7a7f04a98df0b659bc}{\index{Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}!sample\+\_\+rate\+\_\+inverse@{sample\+\_\+rate\+\_\+inverse}}
+\index{sample\+\_\+rate\+\_\+inverse@{sample\+\_\+rate\+\_\+inverse}!Signal\+::\+Sample\+Rate@{Signal\+::\+Sample\+Rate}}
+\subsubsection[{sample\+\_\+rate\+\_\+inverse}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Sample\+Rate\+::sample\+\_\+rate\+\_\+inverse\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_signal_1_1_sample_rate_a970e812aa9bcfe7a7f04a98df0b659bc}
+
+
+Definition at line 24 of file Sample\+\_\+\+Rate.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_sample___rate_8h}{Sample\+\_\+\+Rate.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_sample___rate_8cpp}{Sample\+\_\+\+Rate.\+cpp}\end{DoxyCompactItemize}

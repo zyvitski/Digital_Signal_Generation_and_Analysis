@@ -1,0 +1,180 @@
+\hypertarget{pa__mac__core_8h}{\section{portaudio/19.20111121/include/pa\+\_\+mac\+\_\+core.h File Reference}
+\label{pa__mac__core_8h}\index{portaudio/19.\+20111121/include/pa\+\_\+mac\+\_\+core.\+h@{portaudio/19.\+20111121/include/pa\+\_\+mac\+\_\+core.\+h}}
+}
+
+
+Core\+Audio-\/specific Port\+Audio A\+P\+I extension header file.  
+
+
+{\ttfamily \#include \char`\"{}portaudio.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Audio\+Unit/\+Audio\+Unit.\+h$>$}\\*
+{\ttfamily \#include $<$Audio\+Toolbox/\+Audio\+Toolbox.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_pa_mac_core_stream_info}{Pa\+Mac\+Core\+Stream\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{pa__mac__core_8h_a0a803427bdba498922276075677d0ebe}{pa\+Mac\+Core\+Change\+Device\+Parameters}~(0x01)
+\item 
+\#define \hyperlink{pa__mac__core_8h_a481969bad982aec7ba2b8503557533c7}{pa\+Mac\+Core\+Fail\+If\+Conversion\+Required}~(0x02)
+\item 
+\#define \hyperlink{pa__mac__core_8h_a65d6a0307a5b231ef673a52e72e0d680}{pa\+Mac\+Core\+Conversion\+Quality\+Min}~(0x0100)
+\item 
+\hypertarget{pa__mac__core_8h_a9143937b271beb0b171a1eaec6c415cd}{\#define {\bfseries pa\+Mac\+Core\+Conversion\+Quality\+Medium}~(0x0200)}\label{pa__mac__core_8h_a9143937b271beb0b171a1eaec6c415cd}
+
+\item 
+\hypertarget{pa__mac__core_8h_a5693eb74b0a2c2f3121f18f09c2dc632}{\#define {\bfseries pa\+Mac\+Core\+Conversion\+Quality\+Low}~(0x0300)}\label{pa__mac__core_8h_a5693eb74b0a2c2f3121f18f09c2dc632}
+
+\item 
+\hypertarget{pa__mac__core_8h_a64146a265a9bb8426884caa1db31d004}{\#define {\bfseries pa\+Mac\+Core\+Conversion\+Quality\+High}~(0x0400)}\label{pa__mac__core_8h_a64146a265a9bb8426884caa1db31d004}
+
+\item 
+\hypertarget{pa__mac__core_8h_a0a00067c7f90d4802b855728cefd6002}{\#define {\bfseries pa\+Mac\+Core\+Conversion\+Quality\+Max}~(0x0000)}\label{pa__mac__core_8h_a0a00067c7f90d4802b855728cefd6002}
+
+\item 
+\#define \hyperlink{pa__mac__core_8h_a223d2f56bd0a5964e4122c80b23e6f62}{pa\+Mac\+Core\+Play\+Nice}~(0x00)
+\item 
+\#define \hyperlink{pa__mac__core_8h_abec61ce0294900be890928cd0907bcf6}{pa\+Mac\+Core\+Pro}~(0x01)
+\item 
+\#define \hyperlink{pa__mac__core_8h_ac589bfdf9e35134552737b4b97253729}{pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice}~(0x0100)
+\item 
+\#define \hyperlink{pa__mac__core_8h_ad37d299e9a15db20d3ef04ed12ffbddd}{pa\+Mac\+Core\+Minimize\+C\+P\+U}~(0x0101)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{pa__mac__core_8h_a7fa54d8ad032394157bdb67c9b13087d}{Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info} (\hyperlink{struct_pa_mac_core_stream_info}{Pa\+Mac\+Core\+Stream\+Info} $\ast$data, unsigned long flags)
+\item 
+void \hyperlink{pa__mac__core_8h_abc811b4cd7b56e5e5d4b4613a49d9356}{Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map} (\hyperlink{struct_pa_mac_core_stream_info}{Pa\+Mac\+Core\+Stream\+Info} $\ast$data, const S\+Int32 $\ast$const channel\+Map, unsigned long channel\+Map\+Size)
+\item 
+Audio\+Device\+I\+D \hyperlink{pa__mac__core_8h_ad1631115a64682f8e14fadd0a75c027f}{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device} (\hyperlink{portaudio_8h_a19874734f89958fccf86785490d53b4c}{Pa\+Stream} $\ast$s)
+\item 
+Audio\+Device\+I\+D \hyperlink{pa__mac__core_8h_a25379f181725095041d159e3bdc8cd8c}{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device} (\hyperlink{portaudio_8h_a19874734f89958fccf86785490d53b4c}{Pa\+Stream} $\ast$s)
+\item 
+const char $\ast$ \hyperlink{pa__mac__core_8h_aa8d59756f200f1e97f651c14c961f2d6}{Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name} (int device, int channel\+Index, bool input)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Core\+Audio-\/specific Port\+Audio A\+P\+I extension header file. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{pa__mac__core_8h_a0a803427bdba498922276075677d0ebe}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Change\+Device\+Parameters@{pa\+Mac\+Core\+Change\+Device\+Parameters}}
+\index{pa\+Mac\+Core\+Change\+Device\+Parameters@{pa\+Mac\+Core\+Change\+Device\+Parameters}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Change\+Device\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Change\+Device\+Parameters~(0x01)}}\label{pa__mac__core_8h_a0a803427bdba498922276075677d0ebe}
+Flags The following flags alter the behaviour of P\+A on the mac platform. they can be O\+Red together. These should work both for opening and checking a device. Allows Port\+Audio to change things like the device's frame size, which allows for much lower latency, but might disrupt the device if other programs are using it, even when you are just Querying the device. \hypertarget{pa__mac__core_8h_a65d6a0307a5b231ef673a52e72e0d680}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Conversion\+Quality\+Min@{pa\+Mac\+Core\+Conversion\+Quality\+Min}}
+\index{pa\+Mac\+Core\+Conversion\+Quality\+Min@{pa\+Mac\+Core\+Conversion\+Quality\+Min}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Conversion\+Quality\+Min}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Conversion\+Quality\+Min~(0x0100)}}\label{pa__mac__core_8h_a65d6a0307a5b231ef673a52e72e0d680}
+These flags set the S\+R conversion quality, if required. The wierd ordering allows Maximum Quality to be the default. \hypertarget{pa__mac__core_8h_a481969bad982aec7ba2b8503557533c7}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Fail\+If\+Conversion\+Required@{pa\+Mac\+Core\+Fail\+If\+Conversion\+Required}}
+\index{pa\+Mac\+Core\+Fail\+If\+Conversion\+Required@{pa\+Mac\+Core\+Fail\+If\+Conversion\+Required}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Fail\+If\+Conversion\+Required}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Fail\+If\+Conversion\+Required~(0x02)}}\label{pa__mac__core_8h_a481969bad982aec7ba2b8503557533c7}
+In combination with the above flag, causes the stream opening to fail, unless the exact sample rates are supported by the device. \hypertarget{pa__mac__core_8h_ad37d299e9a15db20d3ef04ed12ffbddd}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Minimize\+C\+P\+U@{pa\+Mac\+Core\+Minimize\+C\+P\+U}}
+\index{pa\+Mac\+Core\+Minimize\+C\+P\+U@{pa\+Mac\+Core\+Minimize\+C\+P\+U}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Minimize\+C\+P\+U}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Minimize\+C\+P\+U~(0x0101)}}\label{pa__mac__core_8h_ad37d299e9a15db20d3ef04ed12ffbddd}
+This is a setting to minimize C\+P\+U usage, even if that means interrupting the device. \hypertarget{pa__mac__core_8h_ac589bfdf9e35134552737b4b97253729}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice@{pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice}}
+\index{pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice@{pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Minimize\+C\+P\+U\+But\+Play\+Nice~(0x0100)}}\label{pa__mac__core_8h_ac589bfdf9e35134552737b4b97253729}
+This is a setting to minimize C\+P\+U usage and still play nice. \hypertarget{pa__mac__core_8h_a223d2f56bd0a5964e4122c80b23e6f62}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Play\+Nice@{pa\+Mac\+Core\+Play\+Nice}}
+\index{pa\+Mac\+Core\+Play\+Nice@{pa\+Mac\+Core\+Play\+Nice}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Play\+Nice}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Play\+Nice~(0x00)}}\label{pa__mac__core_8h_a223d2f56bd0a5964e4122c80b23e6f62}
+Here are some \char`\"{}preset\char`\"{} combinations of flags (above) to get to some common configurations. T\+H\+I\+S I\+S O\+V\+E\+R\+K\+I\+L\+L, but if more flags are added it won't be.\+This is the default setting\+: do as much sample rate conversion as possible and as little mucking with the device as possible. \hypertarget{pa__mac__core_8h_abec61ce0294900be890928cd0907bcf6}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!pa\+Mac\+Core\+Pro@{pa\+Mac\+Core\+Pro}}
+\index{pa\+Mac\+Core\+Pro@{pa\+Mac\+Core\+Pro}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{pa\+Mac\+Core\+Pro}]{\setlength{\rightskip}{0pt plus 5cm}\#define pa\+Mac\+Core\+Pro~(0x01)}}\label{pa__mac__core_8h_abec61ce0294900be890928cd0907bcf6}
+This setting is tuned for pro audio apps. It allows S\+R conversion on input and output, but it tries to set the appropriate S\+R on the device. 
+
+\subsection{Function Documentation}
+\hypertarget{pa__mac__core_8h_aa8d59756f200f1e97f651c14c961f2d6}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name@{Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name}}
+\index{Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name@{Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Pa\+Mac\+Core\+\_\+\+Get\+Channel\+Name (
+\begin{DoxyParamCaption}
+\item[{int}]{device, }
+\item[{int}]{channel\+Index, }
+\item[{bool}]{input}
+\end{DoxyParamCaption}
+)}}\label{pa__mac__core_8h_aa8d59756f200f1e97f651c14c961f2d6}
+Returns a statically allocated string with the device's name for the given channel. N\+U\+L\+L will be returned on failure.
+
+This function's implemenation is not complete!
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The Port\+Audio device index. \\
+\hline
+{\em channel} & The channel number who's name is requested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a statically allocated string with the name of the device. Because this string is statically allocated, it must be coppied if it is to be saved and used by the user after another call to this function. 
+\end{DoxyReturn}
+\hypertarget{pa__mac__core_8h_ad1631115a64682f8e14fadd0a75c027f}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device@{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device}}
+\index{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device@{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Device\+I\+D Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Input\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Pa\+Stream} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{pa__mac__core_8h_ad1631115a64682f8e14fadd0a75c027f}
+Retrieve the Audio\+Device\+I\+D of the input device assigned to an open stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The stream to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid Audio\+Device\+I\+D, or N\+U\+L\+L if an error occurred. 
+\end{DoxyReturn}
+\hypertarget{pa__mac__core_8h_a25379f181725095041d159e3bdc8cd8c}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device@{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device}}
+\index{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device@{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Device\+I\+D Pa\+Mac\+Core\+\_\+\+Get\+Stream\+Output\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Pa\+Stream} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{pa__mac__core_8h_a25379f181725095041d159e3bdc8cd8c}
+Retrieve the Audio\+Device\+I\+D of the output device assigned to an open stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The stream to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid Audio\+Device\+I\+D, or N\+U\+L\+L if an error occurred. 
+\end{DoxyReturn}
+\hypertarget{pa__mac__core_8h_abc811b4cd7b56e5e5d4b4613a49d9356}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map@{Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map}}
+\index{Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map@{Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void Pa\+Mac\+Core\+\_\+\+Setup\+Channel\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Pa\+Mac\+Core\+Stream\+Info} $\ast$}]{data, }
+\item[{const S\+Int32 $\ast$const}]{channel\+Map, }
+\item[{unsigned long}]{channel\+Map\+Size}
+\end{DoxyParamCaption}
+)}}\label{pa__mac__core_8h_abc811b4cd7b56e5e5d4b4613a49d9356}
+call this after pa\+\_\+\+Setup\+Mac\+Core\+Stream\+Info to use channel mapping as described in notes.\+txt. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The stream info structure to assign a channel mapping to \\
+\hline
+{\em channel\+Map} & The channel map array, as described in notes.\+txt. This array pointer will be used directly (ie the underlying data will not be copied), so the caller should not free the array until after the stream has been opened. \\
+\hline
+{\em channel\+Map\+Size} & The size of the channel map array. \\
+\hline
+\end{DoxyParams}
+\hypertarget{pa__mac__core_8h_a7fa54d8ad032394157bdb67c9b13087d}{\index{pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}!Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info@{Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info}}
+\index{Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info@{Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info}!pa\+\_\+mac\+\_\+core.\+h@{pa\+\_\+mac\+\_\+core.\+h}}
+\subsubsection[{Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void Pa\+Mac\+Core\+\_\+\+Setup\+Stream\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Pa\+Mac\+Core\+Stream\+Info} $\ast$}]{data, }
+\item[{unsigned long}]{flags}
+\end{DoxyParamCaption}
+)}}\label{pa__mac__core_8h_a7fa54d8ad032394157bdb67c9b13087d}
+Functions Use this function to initialize a pa\+Mac\+Core\+Stream\+Info struct using the requested flags. Note that channel mapping is turned off after a call to this function. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The datastructure to initialize \\
+\hline
+{\em flags} & The flags to initialize the datastructure with. \\
+\hline
+\end{DoxyParams}

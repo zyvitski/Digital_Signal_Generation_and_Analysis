@@ -1,0 +1,57 @@
+\hypertarget{struct_pa_host_api_info}{\section{Pa\+Host\+Api\+Info Struct Reference}
+\label{struct_pa_host_api_info}\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+}
+
+
+{\ttfamily \#include $<$portaudio.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_pa_host_api_info_a1f3a8c465488e7af8024237256d80c14}{struct\+Version}
+\item 
+\hyperlink{portaudio_8h_a8eaebe3d39c5ea45598da8f86dc2e5ae}{Pa\+Host\+Api\+Type\+Id} \hyperlink{struct_pa_host_api_info_a5424bfcdf9f73b17cddc89e827a45d3f}{type}
+\item 
+const char $\ast$ \hyperlink{struct_pa_host_api_info_a78afe5d557543c82cd9773229e25a8ec}{name}
+\item 
+int \hyperlink{struct_pa_host_api_info_a44e3adfaba0117a6780e2493468c96b1}{device\+Count}
+\item 
+\hyperlink{portaudio_8h_ad79317e65bde63d76c4b8e711ac5a361}{Pa\+Device\+Index} \hyperlink{struct_pa_host_api_info_a85a62057c3479d3efaa477d8562cf21d}{default\+Input\+Device}
+\item 
+\hyperlink{portaudio_8h_ad79317e65bde63d76c4b8e711ac5a361}{Pa\+Device\+Index} \hyperlink{struct_pa_host_api_info_a62632690b5f7906d3c9bfdab91e7f4b2}{default\+Output\+Device}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A structure containing information about a particular host A\+P\+I. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_pa_host_api_info_a85a62057c3479d3efaa477d8562cf21d}{\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}!default\+Input\+Device@{default\+Input\+Device}}
+\index{default\+Input\+Device@{default\+Input\+Device}!Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+\subsubsection[{default\+Input\+Device}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pa\+Device\+Index} Pa\+Host\+Api\+Info\+::default\+Input\+Device}}\label{struct_pa_host_api_info_a85a62057c3479d3efaa477d8562cf21d}
+The default input device for this host A\+P\+I. The value will be a device index ranging from 0 to (\hyperlink{portaudio_8h_acfe4d3c5ec1a343f459981bfa2057f8d}{Pa\+\_\+\+Get\+Device\+Count()}-\/1), or pa\+No\+Device if no default input device is available. \hypertarget{struct_pa_host_api_info_a62632690b5f7906d3c9bfdab91e7f4b2}{\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}!default\+Output\+Device@{default\+Output\+Device}}
+\index{default\+Output\+Device@{default\+Output\+Device}!Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+\subsubsection[{default\+Output\+Device}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pa\+Device\+Index} Pa\+Host\+Api\+Info\+::default\+Output\+Device}}\label{struct_pa_host_api_info_a62632690b5f7906d3c9bfdab91e7f4b2}
+The default output device for this host A\+P\+I. The value will be a device index ranging from 0 to (\hyperlink{portaudio_8h_acfe4d3c5ec1a343f459981bfa2057f8d}{Pa\+\_\+\+Get\+Device\+Count()}-\/1), or pa\+No\+Device if no default output device is available. \hypertarget{struct_pa_host_api_info_a44e3adfaba0117a6780e2493468c96b1}{\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}!device\+Count@{device\+Count}}
+\index{device\+Count@{device\+Count}!Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+\subsubsection[{device\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int Pa\+Host\+Api\+Info\+::device\+Count}}\label{struct_pa_host_api_info_a44e3adfaba0117a6780e2493468c96b1}
+The number of devices belonging to this host A\+P\+I. This field may be used in conjunction with \hyperlink{portaudio_8h_a54f306b5e5258323c95a27c5722258cd}{Pa\+\_\+\+Host\+Api\+Device\+Index\+To\+Device\+Index()} to enumerate all devices for this host A\+P\+I. \begin{DoxySeeAlso}{See also}
+\hyperlink{portaudio_8h_a54f306b5e5258323c95a27c5722258cd}{Pa\+\_\+\+Host\+Api\+Device\+Index\+To\+Device\+Index} 
+\end{DoxySeeAlso}
+\hypertarget{struct_pa_host_api_info_a78afe5d557543c82cd9773229e25a8ec}{\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}!name@{name}}
+\index{name@{name}!Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Pa\+Host\+Api\+Info\+::name}}\label{struct_pa_host_api_info_a78afe5d557543c82cd9773229e25a8ec}
+A textual description of the host A\+P\+I for display on user interfaces. \hypertarget{struct_pa_host_api_info_a1f3a8c465488e7af8024237256d80c14}{\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}!struct\+Version@{struct\+Version}}
+\index{struct\+Version@{struct\+Version}!Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+\subsubsection[{struct\+Version}]{\setlength{\rightskip}{0pt plus 5cm}int Pa\+Host\+Api\+Info\+::struct\+Version}}\label{struct_pa_host_api_info_a1f3a8c465488e7af8024237256d80c14}
+this is struct version 1 \hypertarget{struct_pa_host_api_info_a5424bfcdf9f73b17cddc89e827a45d3f}{\index{Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}!type@{type}}
+\index{type@{type}!Pa\+Host\+Api\+Info@{Pa\+Host\+Api\+Info}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pa\+Host\+Api\+Type\+Id} Pa\+Host\+Api\+Info\+::type}}\label{struct_pa_host_api_info_a5424bfcdf9f73b17cddc89e827a45d3f}
+The well known unique identifier of this host A\+P\+I \begin{DoxySeeAlso}{See also}
+\hyperlink{portaudio_8h_ae247ec252e84112170079ece319fc42c}{Pa\+Host\+Api\+Type\+Id} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+portaudio/19.\+20111121/include/\hyperlink{portaudio_8h}{portaudio.\+h}\end{DoxyCompactItemize}

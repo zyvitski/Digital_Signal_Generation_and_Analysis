@@ -1,0 +1,344 @@
+\hypertarget{class_signal_1_1_ring_buffer}{\section{Signal\+:\+:Ring\+Buffer Class Reference}
+\label{class_signal_1_1_ring_buffer}\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+}
+
+
+{\ttfamily \#include $<$Ring\+Buffer.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:Ring\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_signal_1_1_ring_buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_ring_buffer_a66b2a49fc1ea8d4e2d529362452a9e5e}{Ring\+Buffer} ()
+\item 
+\hyperlink{class_signal_1_1_ring_buffer_aab0efff6a85c76ce9063b6a7dcc1fe97}{Ring\+Buffer} (const size\+\_\+t size)
+\item 
+\hyperlink{class_signal_1_1_ring_buffer_a9823e69bede828ca41cdf0b8372224f7}{Ring\+Buffer} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&buffer)
+\item 
+\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \& \hyperlink{class_signal_1_1_ring_buffer_a2bc19d3eb407be62e36ac327bffe4b2f}{operator=} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&buffer)
+\item 
+virtual \hyperlink{class_signal_1_1_ring_buffer_aff2a78175f358585ddf207f470062d3e}{$\sim$\+Ring\+Buffer} ()
+\item 
+bool \hyperlink{class_signal_1_1_ring_buffer_aa291195b777aa50aa7a61ab1f4954bce}{Write} (const \hyperlink{class_signal_1_1_sample}{Signal\+::\+Sample} \&elem)
+\item 
+bool \hyperlink{class_signal_1_1_ring_buffer_a9a5c8429c0e422e3d4763adb78b0a87c}{Read} (\hyperlink{class_signal_1_1_sample}{Signal\+::\+Sample} \&elem)
+\item 
+size\+\_\+t const \& \hyperlink{class_signal_1_1_ring_buffer_acf6e81f09bb9f10a79ced6da84e78e20}{Count} () const 
+\item 
+bool \hyperlink{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}{Full} () const 
+\item 
+bool \hyperlink{class_signal_1_1_ring_buffer_a73416d725604567d4b496f9821bc0c04}{Empty} () const 
+\item 
+void \hyperlink{class_signal_1_1_ring_buffer_aa9d2938e5c11c5d3c058db9b7e310406}{Flush} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_ring_buffer_a14a5990d51a45d131ee8aebd90bb87b9}{next} (size\+\_\+t current)
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_ring_buffer_ae81c9b6959e18edabd54a073b936db0c}{make\+\_\+pow\+\_\+2} (size\+\_\+t number)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::atomic$<$ size\+\_\+t $>$ \hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\+\_\+write}
+\item 
+std\+::atomic$<$ size\+\_\+t $>$ \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\+\_\+read}
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\+\_\+count}
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{M\+A\+S\+K}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file Ring\+Buffer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_ring_buffer_a66b2a49fc1ea8d4e2d529362452a9e5e}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Ring\+Buffer@{Ring\+Buffer}}
+\index{Ring\+Buffer@{Ring\+Buffer}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Ring\+Buffer\+::\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_ring_buffer_a66b2a49fc1ea8d4e2d529362452a9e5e}
+
+
+Definition at line 14 of file Ring\+Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+14 :\hyperlink{class_signal_1_1_buffer_ab558e80dac4ef396b9c9310fd914936f}{Buffer}(0),\hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}(0),\hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}(0),\hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count}(0),\hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{MASK}(0)\{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_aab0efff6a85c76ce9063b6a7dcc1fe97}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Ring\+Buffer@{Ring\+Buffer}}
+\index{Ring\+Buffer@{Ring\+Buffer}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Ring\+Buffer\+::\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_ring_buffer_aab0efff6a85c76ce9063b6a7dcc1fe97}
+
+
+Definition at line 16 of file Ring\+Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+16                                              :\hyperlink{class_signal_1_1_buffer_ab558e80dac4ef396b9c9310fd914936f}{Buffer}(\hyperlink{class_signal_1_1_ring_buffer_ae81c9b6959e18edabd54a073b936db0c}{make\_pow\_2}(size)),
+      \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}(0),\hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}(0),\hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count}(0)\{
+17     \hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{MASK} = this->\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size}-1;
+18 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_a9823e69bede828ca41cdf0b8372224f7}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Ring\+Buffer@{Ring\+Buffer}}
+\index{Ring\+Buffer@{Ring\+Buffer}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Ring\+Buffer\+::\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_ring_buffer_a9823e69bede828ca41cdf0b8372224f7}
+
+
+Definition at line 20 of file Ring\+Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+20                                               :\hyperlink{class_signal_1_1_buffer_ab558e80dac4ef396b9c9310fd914936f}{Buffer}(buffer)\{
+21     \hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}.store(buffer.\_write.load(std::memory\_order\_acquire));
+22     \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}.store(buffer.\_read.load(std::memory\_order\_acquire));
+23     \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count} = buffer.\_count;
+24     \hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{MASK} = buffer.\_size-1;
+25 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_aff2a78175f358585ddf207f470062d3e}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!````~Ring\+Buffer@{$\sim$\+Ring\+Buffer}}
+\index{````~Ring\+Buffer@{$\sim$\+Ring\+Buffer}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{$\sim$\+Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Ring\+Buffer\+::$\sim$\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_ring_buffer_aff2a78175f358585ddf207f470062d3e}
+
+
+Definition at line 35 of file Ring\+Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+35 \{\hyperlink{class_signal_1_1_ring_buffer_aa9d2938e5c11c5d3c058db9b7e310406}{Flush}();\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_ring_buffer_acf6e81f09bb9f10a79ced6da84e78e20}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Count@{Count}}
+\index{Count@{Count}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t const \& Signal\+::\+Ring\+Buffer\+::\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_ring_buffer_acf6e81f09bb9f10a79ced6da84e78e20}
+
+
+Definition at line 77 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+77                                                \{
+78         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count};
+79     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_a73416d725604567d4b496f9821bc0c04}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Empty@{Empty}}
+\index{Empty@{Empty}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Ring\+Buffer\+::\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_ring_buffer_a73416d725604567d4b496f9821bc0c04}
+
+
+Definition at line 51 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+51                                       \{
+52         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count}==0;
+53     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_aa9d2938e5c11c5d3c058db9b7e310406}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Flush@{Flush}}
+\index{Flush@{Flush}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Flush}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+Ring\+Buffer\+::\+Flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_ring_buffer_aa9d2938e5c11c5d3c058db9b7e310406}
+
+
+Definition at line 54 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+54                                  \{
+55         \hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}.store(0,std::memory\_order\_relaxed);
+56         \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}.store(0,std::memory\_order\_relaxed);
+57         \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count}=0;
+58     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Full@{Full}}
+\index{Full@{Full}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Full}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Ring\+Buffer\+::\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}
+
+
+Definition at line 48 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+48                                      \{
+49         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count}==this->\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size};
+50     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_ae81c9b6959e18edabd54a073b936db0c}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!make\+\_\+pow\+\_\+2@{make\+\_\+pow\+\_\+2}}
+\index{make\+\_\+pow\+\_\+2@{make\+\_\+pow\+\_\+2}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{make\+\_\+pow\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Ring\+Buffer\+::make\+\_\+pow\+\_\+2 (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_ae81c9b6959e18edabd54a073b936db0c}
+
+
+Definition at line 83 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+83                                                      \{
+84         \textcolor{keywordflow}{return} pow(2, ceil(log(number)/log(2)));
+85     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_a14a5990d51a45d131ee8aebd90bb87b9}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!next@{next}}
+\index{next@{next}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Ring\+Buffer\+::next (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{current}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_a14a5990d51a45d131ee8aebd90bb87b9}
+
+
+Definition at line 82 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+82 \{\textcolor{keywordflow}{return} (current+1) & \hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{MASK};\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_a2bc19d3eb407be62e36ac327bffe4b2f}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Ring\+Buffer} \& Signal\+::\+Ring\+Buffer\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_ring_buffer_a2bc19d3eb407be62e36ac327bffe4b2f}
+
+
+Definition at line 27 of file Ring\+Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                                \{
+28     \hyperlink{class_signal_1_1_buffer_a9f9f08e2cdf35d15164997455303a2d9}{Buffer::operator=}(buffer);
+29     \hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}.store(buffer.\_write.load(std::memory\_order\_acquire));
+30     \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}.store(buffer.\_read.load(std::memory\_order\_acquire));
+31     \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count} = buffer.\_count;
+32     \hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{MASK} = buffer.\_size-1;
+33     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+34 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_a9a5c8429c0e422e3d4763adb78b0a87c}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Read@{Read}}
+\index{Read@{Read}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Ring\+Buffer\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\+::\+Sample} \&}]{elem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_ring_buffer_a9a5c8429c0e422e3d4763adb78b0a87c}
+
+
+Definition at line 68 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+68                                                   \{
+69         \textcolor{keywordflow}{if} (!\hyperlink{class_signal_1_1_ring_buffer_a73416d725604567d4b496f9821bc0c04}{Empty}()) \{
+70             \textcolor{keywordtype}{size\_t} read = \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}.load(std::memory\_order\_acquire);
+71             \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\_read}.store(\hyperlink{class_signal_1_1_ring_buffer_a14a5990d51a45d131ee8aebd90bb87b9}{next}(read),std::memory\_order\_release);
+72             elem = this->\hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}[read];
+73             --\hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count};
+74             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+75         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+76     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_ring_buffer_aa291195b777aa50aa7a61ab1f4954bce}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Write@{Write}}
+\index{Write@{Write}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Ring\+Buffer\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{const {\bf Signal\+::\+Sample} \&}]{elem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_signal_1_1_ring_buffer_aa291195b777aa50aa7a61ab1f4954bce}
+
+
+Definition at line 59 of file Ring\+Buffer.\+h.
+
+
+\begin{DoxyCode}
+59                                                          \{
+60         \textcolor{keywordflow}{if} (!\hyperlink{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}{Full}()) \{
+61             \textcolor{keywordtype}{size\_t} write = \hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}.load(std::memory\_order\_acquire);
+62             \hyperlink{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\_write}.store(\hyperlink{class_signal_1_1_ring_buffer_a14a5990d51a45d131ee8aebd90bb87b9}{next}(write),std::memory\_order\_release);
+63             this->\hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}[write] = elem;
+64             ++\hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\_count};
+65             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+66         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+67     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+count@{\+\_\+count}}
+\index{\+\_\+count@{\+\_\+count}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Ring\+Buffer\+::\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}
+
+
+Definition at line 28 of file Ring\+Buffer.\+h.
+
+\hypertarget{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+read@{\+\_\+read}}
+\index{\+\_\+read@{\+\_\+read}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<$size\+\_\+t$>$ Signal\+::\+Ring\+Buffer\+::\+\_\+read\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_a4bdf5d626567f423b480398aef2e8bb0}
+
+
+Definition at line 27 of file Ring\+Buffer.\+h.
+
+\hypertarget{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+write@{\+\_\+write}}
+\index{\+\_\+write@{\+\_\+write}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<$size\+\_\+t$>$ Signal\+::\+Ring\+Buffer\+::\+\_\+write\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}
+
+
+Definition at line 26 of file Ring\+Buffer.\+h.
+
+\hypertarget{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!M\+A\+S\+K@{M\+A\+S\+K}}
+\index{M\+A\+S\+K@{M\+A\+S\+K}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Ring\+Buffer\+::\+M\+A\+S\+K\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}
+
+
+Definition at line 29 of file Ring\+Buffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_ring_buffer_8h}{Ring\+Buffer.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_ring_buffer_8cpp}{Ring\+Buffer.\+cpp}\end{DoxyCompactItemize}

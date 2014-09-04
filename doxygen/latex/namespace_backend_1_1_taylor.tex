@@ -1,0 +1,113 @@
+\hypertarget{namespace_backend_1_1_taylor}{\section{Backend\+:\+:Taylor Namespace Reference}
+\label{namespace_backend_1_1_taylor}\index{Backend\+::\+Taylor@{Backend\+::\+Taylor}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{namespace_backend_1_1_taylor_afda165e6dde636dd0f7b32031a71c7df}{Sine} (double const \&x)
+\item 
+int \hyperlink{namespace_backend_1_1_taylor_ad91c841872a9fede491d52daf4e1ba20}{factorial} (int const \&i)
+\item 
+double \hyperlink{namespace_backend_1_1_taylor_ac651e336cd6506f80ccdee6f06de7827}{term} (double const \&x, double const \&n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_backend_1_1_taylor_ad91c841872a9fede491d52daf4e1ba20}{\index{Backend\+::\+Taylor@{Backend\+::\+Taylor}!factorial@{factorial}}
+\index{factorial@{factorial}!Backend\+::\+Taylor@{Backend\+::\+Taylor}}
+\subsubsection[{factorial}]{\setlength{\rightskip}{0pt plus 5cm}int Backend\+::\+Taylor\+::factorial (
+\begin{DoxyParamCaption}
+\item[{int const \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_backend_1_1_taylor_ad91c841872a9fede491d52daf4e1ba20}
+
+
+Definition at line 24 of file Taylor.\+h.
+
+
+\begin{DoxyCode}
+24                                           \{
+25             \textcolor{keywordtype}{int} val=i;
+26             \textcolor{keywordtype}{int} cnt=i;
+27             \textcolor{keywordflow}{while} (cnt>1) \{
+28                 --cnt;
+29                 val*=cnt;
+30             \}
+31             \textcolor{keywordflow}{return} val;
+32         \}
+\end{DoxyCode}
+\hypertarget{namespace_backend_1_1_taylor_afda165e6dde636dd0f7b32031a71c7df}{\index{Backend\+::\+Taylor@{Backend\+::\+Taylor}!Sine@{Sine}}
+\index{Sine@{Sine}!Backend\+::\+Taylor@{Backend\+::\+Taylor}}
+\subsubsection[{Sine}]{\setlength{\rightskip}{0pt plus 5cm}double Backend\+::\+Taylor\+::\+Sine (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{namespace_backend_1_1_taylor_afda165e6dde636dd0f7b32031a71c7df}
+
+
+Definition at line 19 of file Taylor.\+cpp.
+
+
+\begin{DoxyCode}
+19                                          \{
+20     \textcolor{keywordtype}{double} phs = fabs(x);\textcolor{comment}{//range checking}
+21     phs = fmod(phs,\hyperlink{_p_i_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});\textcolor{comment}{//range checking}
+22     \textcolor{keywordtype}{double} val=phs;\textcolor{comment}{//term 1}
+23     
+24     \textcolor{comment}{//instead of using a pow() function we are calculatig the running power by using the multiply
+       acculmulate function.}
+25     \textcolor{comment}{//it may look ugly but it should be faster}
+26     phs*=x;
+27     phs*=x;
+28     val-=(phs * (1.0/6.0));
+29     phs*=x;
+30     phs*=x;
+31     val+=(phs *(1.0/120.0));
+32     phs*=x;
+33     phs*=x;
+34     val-=(phs *(1.0/5040.0));
+35     phs*=x;
+36     phs*=x;
+37     val+=(phs *(1.0/362880.0));
+38     phs*=x;
+39     phs*=x;
+40     val-=(phs*(1.0/39916800.0));
+41     phs*=x;
+42     phs*=x;
+43     val+=(phs*(1.0/6227020800.0));
+44     phs*=x;
+45     phs*=x;
+46     val-=(phs*(1.0/1307674368000.0));
+47     phs*=x;
+48     phs*=x;
+49     val+=(phs*(1.0/355687428096000.0));
+50     phs*=x;
+51     phs*=x;
+52     val-=(phs*(1.0/121645100408832000.0));
+53     phs*=x;
+54     phs*=x;
+55     val+=(phs*(1.0/51090942171709440000.0));
+56     \textcolor{comment}{//the hope is that the compiler is smart enough to evaluate 1.0/... at compile time be cause it will
+       always be the same}
+57     
+58     \textcolor{keywordflow}{return} val;
+59 \}
+\end{DoxyCode}
+\hypertarget{namespace_backend_1_1_taylor_ac651e336cd6506f80ccdee6f06de7827}{\index{Backend\+::\+Taylor@{Backend\+::\+Taylor}!term@{term}}
+\index{term@{term}!Backend\+::\+Taylor@{Backend\+::\+Taylor}}
+\subsubsection[{term}]{\setlength{\rightskip}{0pt plus 5cm}double Backend\+::\+Taylor\+::term (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{x, }
+\item[{double const \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_backend_1_1_taylor_ac651e336cd6506f80ccdee6f06de7827}
+
+
+Definition at line 33 of file Taylor.\+h.
+
+
+\begin{DoxyCode}
+33                                                            \{
+34             \textcolor{keywordflow}{return} (pow(x, n)/(\textcolor{keywordtype}{double})\hyperlink{namespace_backend_1_1_taylor_ad91c841872a9fede491d52daf4e1ba20}{Taylor::factorial}(n));
+35         \}
+\end{DoxyCode}

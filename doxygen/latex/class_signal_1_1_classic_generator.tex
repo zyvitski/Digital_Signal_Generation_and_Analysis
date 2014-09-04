@@ -1,0 +1,265 @@
+\hypertarget{class_signal_1_1_classic_generator}{\section{Signal\+:\+:Classic\+Generator Class Reference}
+\label{class_signal_1_1_classic_generator}\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+}
+
+
+{\ttfamily \#include $<$Classic\+Generator.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:Classic\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_signal_1_1_classic_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{Classic\+Generator} ()
+\item 
+\hyperlink{class_signal_1_1_classic_generator_aa8e7631c9a4a72d42bbe560c02ed7358}{Classic\+Generator} (double const \&frequency, double const \&phase\+\_\+offset)
+\item 
+virtual \hyperlink{class_signal_1_1_classic_generator_a6659174adf402df341e3c0f94564fd37}{$\sim$\+Classic\+Generator} ()
+\item 
+virtual bool \hyperlink{class_signal_1_1_classic_generator_a4a62f329b9cd64d92b07f53c4d593356}{Perform} (\hyperlink{class_signal_1_1_sample}{Sample} \&signal)
+\item 
+virtual bool \hyperlink{class_signal_1_1_classic_generator_a308c13baa66020d44c2227bd58db4b4f}{Perform} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&signal)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\+\_\+max\+Harms} (double \+\_\+frq)
+\item 
+double \hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\+\_\+pstep} ()
+\item 
+double \hyperlink{class_signal_1_1_classic_generator_a6571276f584ff0be3862243d0f103a92}{\+\_\+pstep\+\_\+rad} ()
+\item 
+void \hyperlink{class_signal_1_1_classic_generator_a6454565b655bff7b8335735c2fabb4af}{\+\_\+psync} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\+\_\+sample}
+\item 
+\hyperlink{class_signal_1_1_sample}{Sample} \hyperlink{class_signal_1_1_classic_generator_a1214faf589eccb01631700723900bbf9}{\+\_\+storage}
+\item 
+double \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\+\_\+phasor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file Classic\+Generator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!Classic\+Generator@{Classic\+Generator}}
+\index{Classic\+Generator@{Classic\+Generator}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{Classic\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Classic\+Generator\+::\+Classic\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}
+
+
+Definition at line 11 of file Classic\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+11                                         :\hyperlink{class_signal_1_1_signal_generator_a8c67c754d86e0363445d7fd271855e1a}{SignalGenerator}(),
+      \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor}(0)\{
+12     
+13 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_aa8e7631c9a4a72d42bbe560c02ed7358}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!Classic\+Generator@{Classic\+Generator}}
+\index{Classic\+Generator@{Classic\+Generator}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{Classic\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Classic\+Generator\+::\+Classic\+Generator (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{frequency, }
+\item[{double const \&}]{phase\+\_\+offset}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_classic_generator_aa8e7631c9a4a72d42bbe560c02ed7358}
+
+
+Definition at line 14 of file Classic\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+14 :\hyperlink{class_signal_1_1_signal_generator_a8c67c754d86e0363445d7fd271855e1a}{SignalGenerator}(frequency,phase\_offset),\hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor}(0)\{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_a6659174adf402df341e3c0f94564fd37}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!````~Classic\+Generator@{$\sim$\+Classic\+Generator}}
+\index{````~Classic\+Generator@{$\sim$\+Classic\+Generator}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{$\sim$\+Classic\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Classic\+Generator\+::$\sim$\+Classic\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_classic_generator_a6659174adf402df341e3c0f94564fd37}
+
+
+Definition at line 15 of file Classic\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+max\+Harms@{\+\_\+max\+Harms}}
+\index{\+\_\+max\+Harms@{\+\_\+max\+Harms}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+max\+Harms}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+Classic\+Generator\+::\+\_\+max\+Harms (
+\begin{DoxyParamCaption}
+\item[{double}]{\+\_\+frq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}
+
+
+Definition at line 70 of file Classic\+Generator.\+h.
+
+
+\begin{DoxyCode}
+70                                                                \{
+71         \textcolor{comment}{//double softLim = 0.45;}
+72         \textcolor{comment}{//double hardLim = 0.5;}
+73         \textcolor{keywordtype}{double} \_s = \hyperlink{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
+74         \_s/=\_frq;
+75         \textcolor{keywordflow}{return} trunc(\_s);
+76     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+pstep@{\+\_\+pstep}}
+\index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+pstep}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Classic\+Generator\+::\+\_\+pstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}
+
+
+Definition at line 57 of file Classic\+Generator.\+h.
+
+
+\begin{DoxyCode}
+57                                           \{
+58         \textcolor{keywordtype}{double} value = \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor};
+59         \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor}+=\hyperlink{class_signal_1_1_signal_generator_a7f107461333bce68c5dad412db96a8c2}{\_frequency};
+60         \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor} = \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor}-(\textcolor{keywordtype}{unsigned} long)\hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor};\textcolor{comment}{//cheaper %1}
+61         \textcolor{keywordflow}{return} value;
+62     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_a6571276f584ff0be3862243d0f103a92}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}}
+\index{\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+pstep\+\_\+rad}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Classic\+Generator\+::\+\_\+pstep\+\_\+rad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_a6571276f584ff0be3862243d0f103a92}
+
+
+Definition at line 63 of file Classic\+Generator.\+h.
+
+
+\begin{DoxyCode}
+63                                               \{
+64         \textcolor{keywordflow}{return} \hyperlink{_p_i_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}();
+65     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_a6454565b655bff7b8335735c2fabb4af}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+psync@{\+\_\+psync}}
+\index{\+\_\+psync@{\+\_\+psync}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+psync}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+Classic\+Generator\+::\+\_\+psync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_a6454565b655bff7b8335735c2fabb4af}
+
+
+Definition at line 66 of file Classic\+Generator.\+h.
+
+
+\begin{DoxyCode}
+66                                         \{
+67         \hyperlink{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\_phasor} = 0;
+68     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_a4a62f329b9cd64d92b07f53c4d593356}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Classic\+Generator\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_signal_1_1_classic_generator_a4a62f329b9cd64d92b07f53c4d593356}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_signal_generator_a2cd9061c5ae40a392a9476551b4379f3}{Signal\+::\+Signal\+Generator}.
+
+
+
+Reimplemented in \hyperlink{class_signal_1_1_saw_a6fb3216b94fea4daa83b27f5de194fa0}{Signal\+::\+Saw}, and \hyperlink{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{Signal\+::\+Sine}.
+
+
+
+Definition at line 48 of file Classic\+Generator.\+h.
+
+
+\begin{DoxyCode}
+48                                                        \{
+49         signal = 0;
+50         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+51     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_classic_generator_a308c13baa66020d44c2227bd58db4b4f}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Classic\+Generator\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_signal_1_1_classic_generator_a308c13baa66020d44c2227bd58db4b4f}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_signal_generator_a126d52dd9b6b14d33efc624e2c89284e}{Signal\+::\+Signal\+Generator}.
+
+
+
+Reimplemented in \hyperlink{class_signal_1_1_saw_a0d0d374c9b5a3f73f48e9fb1c444b0ca}{Signal\+::\+Saw}, and \hyperlink{class_signal_1_1_sine_ac0a6c6e24f830446ea75de3a392f7e06}{Signal\+::\+Sine}.
+
+
+
+Definition at line 52 of file Classic\+Generator.\+h.
+
+
+\begin{DoxyCode}
+52                                                            \{
+53         signal.Flush();
+54         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+55     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+phasor@{\+\_\+phasor}}
+\index{\+\_\+phasor@{\+\_\+phasor}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Classic\+Generator\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_ade9b66bc49d2d2f40a1390fc6374b8b2}
+
+
+Definition at line 41 of file Classic\+Generator.\+h.
+
+\hypertarget{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+sample@{\+\_\+sample}}
+\index{\+\_\+sample@{\+\_\+sample}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Classic\+Generator\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}
+
+
+Definition at line 34 of file Classic\+Generator.\+h.
+
+\hypertarget{class_signal_1_1_classic_generator_a1214faf589eccb01631700723900bbf9}{\index{Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}!\+\_\+storage@{\+\_\+storage}}
+\index{\+\_\+storage@{\+\_\+storage}!Signal\+::\+Classic\+Generator@{Signal\+::\+Classic\+Generator}}
+\subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Classic\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_classic_generator_a1214faf589eccb01631700723900bbf9}
+
+
+Definition at line 35 of file Classic\+Generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_classic_generator_8h}{Classic\+Generator.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_classic_generator_8cpp}{Classic\+Generator.\+cpp}\end{DoxyCompactItemize}

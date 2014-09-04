@@ -1,0 +1,145 @@
+\hypertarget{class_signal_1_1_sine}{\section{Signal\+:\+:Sine Class Reference}
+\label{class_signal_1_1_sine}\index{Signal\+::\+Sine@{Signal\+::\+Sine}}
+}
+
+
+{\ttfamily \#include $<$Sine.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:Sine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_signal_1_1_sine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_sine_aa808d1e080ee1c18324eedc020ee0514}{Sine} ()
+\item 
+\hyperlink{class_signal_1_1_sine_a0dbdf5da8c6baeea56a70f3eb9c3a6fd}{Sine} (double const \&frequency, double const \&phase\+\_\+offset)
+\item 
+virtual \hyperlink{class_signal_1_1_sine_a0d6a85ad0ddea987aba1955f98be89df}{$\sim$\+Sine} ()
+\item 
+virtual bool \hyperlink{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{Perform} (\hyperlink{class_signal_1_1_sample}{Sample} \&signal)
+\item 
+virtual bool \hyperlink{class_signal_1_1_sine_ac0a6c6e24f830446ea75de3a392f7e06}{Perform} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&signal)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Sine.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_sine_aa808d1e080ee1c18324eedc020ee0514}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!Sine@{Sine}}
+\index{Sine@{Sine}!Signal\+::\+Sine@{Signal\+::\+Sine}}
+\subsubsection[{Sine}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sine\+::\+Sine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sine_aa808d1e080ee1c18324eedc020ee0514}
+
+
+Definition at line 12 of file Sine.\+cpp.
+
+
+\begin{DoxyCode}
+12 :\hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{ClassicGenerator}()\{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sine_a0dbdf5da8c6baeea56a70f3eb9c3a6fd}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!Sine@{Sine}}
+\index{Sine@{Sine}!Signal\+::\+Sine@{Signal\+::\+Sine}}
+\subsubsection[{Sine}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sine\+::\+Sine (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{frequency, }
+\item[{double const \&}]{phase\+\_\+offset}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_sine_a0dbdf5da8c6baeea56a70f3eb9c3a6fd}
+
+
+Definition at line 13 of file Sine.\+cpp.
+
+
+\begin{DoxyCode}
+13                                                                   :
+      \hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{ClassicGenerator}(frequency,phase\_offset)\{
+14     \hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}=0;
+15     \hyperlink{class_signal_1_1_classic_generator_a1214faf589eccb01631700723900bbf9}{\_storage}=0;
+16 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sine_a0d6a85ad0ddea987aba1955f98be89df}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!````~Sine@{$\sim$\+Sine}}
+\index{````~Sine@{$\sim$\+Sine}!Signal\+::\+Sine@{Signal\+::\+Sine}}
+\subsubsection[{$\sim$\+Sine}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Sine\+::$\sim$\+Sine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_sine_a0d6a85ad0ddea987aba1955f98be89df}
+
+
+Definition at line 17 of file Sine.\+cpp.
+
+
+\begin{DoxyCode}
+17 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Sine@{Signal\+::\+Sine}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Sine\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_classic_generator_a4a62f329b9cd64d92b07f53c4d593356}{Signal\+::\+Classic\+Generator}.
+
+
+
+Definition at line 25 of file Sine.\+h.
+
+
+\begin{DoxyCode}
+25                                            \{
+26         signal = sine((\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}() + \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset}));
+27         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+28     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_sine_ac0a6c6e24f830446ea75de3a392f7e06}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Sine@{Signal\+::\+Sine}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Sine\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_signal_1_1_sine_ac0a6c6e24f830446ea75de3a392f7e06}
+
+
+Reimplemented from \hyperlink{class_signal_1_1_classic_generator_a308c13baa66020d44c2227bd58db4b4f}{Signal\+::\+Classic\+Generator}.
+
+
+
+Definition at line 29 of file Sine.\+h.
+
+
+\begin{DoxyCode}
+29                                                \{
+30         signal.Flush();
+31         \textcolor{keywordflow}{while} (!signal.Full()) \{
+32             \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{Perform}(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample})) \{
+33                 \textcolor{keywordflow}{if}(signal.Write(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}))\{
+34                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+35             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+36         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+37     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_sine_8h}{Sine.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_sine_8cpp}{Sine.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{class_signal_1_1_signal_process}{\section{Signal\+:\+:Signal\+Process Class Reference}
+\label{class_signal_1_1_signal_process}\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
+}
+
+
+{\ttfamily \#include $<$Signal\+Process.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:Signal\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_signal_1_1_signal_process}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_signal_1_1_signal_process_ae64465136ef75a23053d5fc178de37f1}{Signal\+Process} ()
+\item 
+virtual \hyperlink{class_signal_1_1_signal_process_a0c02bada1a551dd15aa76d9651338a6b}{$\sim$\+Signal\+Process} ()
+\item 
+virtual bool \hyperlink{class_signal_1_1_signal_process_a7986df989ac8afca3674ae8eace3cfdb}{Perform} (\hyperlink{class_signal_1_1_sample}{Sample} \&signal)=0
+\item 
+virtual bool \hyperlink{class_signal_1_1_signal_process_a9584dc515d2167f4439ed3d014bbb3f7}{Perform} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&signal)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Signal\+Process.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_signal_1_1_signal_process_ae64465136ef75a23053d5fc178de37f1}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!Signal\+Process@{Signal\+Process}}
+\index{Signal\+Process@{Signal\+Process}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
+\subsubsection[{Signal\+Process}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Signal\+Process\+::\+Signal\+Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_signal_1_1_signal_process_ae64465136ef75a23053d5fc178de37f1}
+
+
+Definition at line 11 of file Signal\+Process.\+cpp.
+
+
+\begin{DoxyCode}
+11 \{\}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_signal_process_a0c02bada1a551dd15aa76d9651338a6b}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!````~Signal\+Process@{$\sim$\+Signal\+Process}}
+\index{````~Signal\+Process@{$\sim$\+Signal\+Process}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
+\subsubsection[{$\sim$\+Signal\+Process}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Signal\+Process\+::$\sim$\+Signal\+Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_signal_1_1_signal_process_a0c02bada1a551dd15aa76d9651338a6b}
+
+
+Definition at line 12 of file Signal\+Process.\+cpp.
+
+
+\begin{DoxyCode}
+12 \{\}\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_signal_1_1_signal_process_a7986df989ac8afca3674ae8eace3cfdb}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Signal\+::\+Signal\+Process\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}}\label{class_signal_1_1_signal_process_a7986df989ac8afca3674ae8eace3cfdb}
+
+
+Implemented in \hyperlink{class_signal_1_1_classic_generator_a4a62f329b9cd64d92b07f53c4d593356}{Signal\+::\+Classic\+Generator}, \hyperlink{class_signal_1_1_b_l_i_t_abf70cd38b2b848800b34de8baaf366b3}{Signal\+::\+B\+L\+I\+T}, \hyperlink{class_signal_1_1_signal_generator_a2cd9061c5ae40a392a9476551b4379f3}{Signal\+::\+Signal\+Generator}, \hyperlink{class_signal_1_1_saw_a6fb3216b94fea4daa83b27f5de194fa0}{Signal\+::\+Saw}, and \hyperlink{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{Signal\+::\+Sine}.
+
+\hypertarget{class_signal_1_1_signal_process_a9584dc515d2167f4439ed3d014bbb3f7}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!Perform@{Perform}}
+\index{Perform@{Perform}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Signal\+::\+Signal\+Process\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}}\label{class_signal_1_1_signal_process_a9584dc515d2167f4439ed3d014bbb3f7}
+
+
+Implemented in \hyperlink{class_signal_1_1_classic_generator_a308c13baa66020d44c2227bd58db4b4f}{Signal\+::\+Classic\+Generator}, \hyperlink{class_signal_1_1_b_l_i_t_a3b18e1f25f0900de4cf709cfc849b4c7}{Signal\+::\+B\+L\+I\+T}, \hyperlink{class_signal_1_1_signal_generator_a126d52dd9b6b14d33efc624e2c89284e}{Signal\+::\+Signal\+Generator}, \hyperlink{class_signal_1_1_saw_a0d0d374c9b5a3f73f48e9fb1c444b0ca}{Signal\+::\+Saw}, and \hyperlink{class_signal_1_1_sine_ac0a6c6e24f830446ea75de3a392f7e06}{Signal\+::\+Sine}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{_signal_process_8h}{Signal\+Process.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{_signal_process_8cpp}{Signal\+Process.\+cpp}\end{DoxyCompactItemize}

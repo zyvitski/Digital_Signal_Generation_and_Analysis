@@ -1,0 +1,50 @@
+\hypertarget{struct_pa_stream_info}{\section{Pa\+Stream\+Info Struct Reference}
+\label{struct_pa_stream_info}\index{Pa\+Stream\+Info@{Pa\+Stream\+Info}}
+}
+
+
+{\ttfamily \#include $<$portaudio.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_pa_stream_info_a5e053a3f0f6232a5d1ec0dee0f9a943b}{struct\+Version}
+\item 
+\hyperlink{portaudio_8h_af17a7e6d0471a23071acf8dbd7bbe4bd}{Pa\+Time} \hyperlink{struct_pa_stream_info_a1f5339e0fef75cea66d9153235698399}{input\+Latency}
+\item 
+\hyperlink{portaudio_8h_af17a7e6d0471a23071acf8dbd7bbe4bd}{Pa\+Time} \hyperlink{struct_pa_stream_info_a372a81f39d90a85ae62225e9f57a7840}{output\+Latency}
+\item 
+double \hyperlink{struct_pa_stream_info_a9200fdee790d9155bc35d03be51ee2dd}{sample\+Rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A structure containing unchanging information about an open stream. \begin{DoxySeeAlso}{See also}
+\hyperlink{portaudio_8h_a3d9c4cbda4e9f381b76f287c3de8a758}{Pa\+\_\+\+Get\+Stream\+Info} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_pa_stream_info_a1f5339e0fef75cea66d9153235698399}{\index{Pa\+Stream\+Info@{Pa\+Stream\+Info}!input\+Latency@{input\+Latency}}
+\index{input\+Latency@{input\+Latency}!Pa\+Stream\+Info@{Pa\+Stream\+Info}}
+\subsubsection[{input\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pa\+Time} Pa\+Stream\+Info\+::input\+Latency}}\label{struct_pa_stream_info_a1f5339e0fef75cea66d9153235698399}
+The input latency of the stream in seconds. This value provides the most accurate estimate of input latency available to the implementation. It may differ significantly from the suggested\+Latency value passed to \hyperlink{portaudio_8h_a443ad16338191af364e3be988014cbbe}{Pa\+\_\+\+Open\+Stream()}. The value of this field will be zero (0.) for output-\/only streams. \begin{DoxySeeAlso}{See also}
+\hyperlink{portaudio_8h_af17a7e6d0471a23071acf8dbd7bbe4bd}{Pa\+Time} 
+\end{DoxySeeAlso}
+\hypertarget{struct_pa_stream_info_a372a81f39d90a85ae62225e9f57a7840}{\index{Pa\+Stream\+Info@{Pa\+Stream\+Info}!output\+Latency@{output\+Latency}}
+\index{output\+Latency@{output\+Latency}!Pa\+Stream\+Info@{Pa\+Stream\+Info}}
+\subsubsection[{output\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pa\+Time} Pa\+Stream\+Info\+::output\+Latency}}\label{struct_pa_stream_info_a372a81f39d90a85ae62225e9f57a7840}
+The output latency of the stream in seconds. This value provides the most accurate estimate of output latency available to the implementation. It may differ significantly from the suggested\+Latency value passed to \hyperlink{portaudio_8h_a443ad16338191af364e3be988014cbbe}{Pa\+\_\+\+Open\+Stream()}. The value of this field will be zero (0.) for input-\/only streams. \begin{DoxySeeAlso}{See also}
+\hyperlink{portaudio_8h_af17a7e6d0471a23071acf8dbd7bbe4bd}{Pa\+Time} 
+\end{DoxySeeAlso}
+\hypertarget{struct_pa_stream_info_a9200fdee790d9155bc35d03be51ee2dd}{\index{Pa\+Stream\+Info@{Pa\+Stream\+Info}!sample\+Rate@{sample\+Rate}}
+\index{sample\+Rate@{sample\+Rate}!Pa\+Stream\+Info@{Pa\+Stream\+Info}}
+\subsubsection[{sample\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}double Pa\+Stream\+Info\+::sample\+Rate}}\label{struct_pa_stream_info_a9200fdee790d9155bc35d03be51ee2dd}
+The sample rate of the stream in Hertz (samples per second). In cases where the hardware sample rate is inaccurate and Port\+Audio is aware of it, the value of this field may be different from the sample\+Rate parameter passed to \hyperlink{portaudio_8h_a443ad16338191af364e3be988014cbbe}{Pa\+\_\+\+Open\+Stream()}. If information about the actual hardware sample rate is not available, this field will have the same value as the sample\+Rate parameter passed to \hyperlink{portaudio_8h_a443ad16338191af364e3be988014cbbe}{Pa\+\_\+\+Open\+Stream()}. \hypertarget{struct_pa_stream_info_a5e053a3f0f6232a5d1ec0dee0f9a943b}{\index{Pa\+Stream\+Info@{Pa\+Stream\+Info}!struct\+Version@{struct\+Version}}
+\index{struct\+Version@{struct\+Version}!Pa\+Stream\+Info@{Pa\+Stream\+Info}}
+\subsubsection[{struct\+Version}]{\setlength{\rightskip}{0pt plus 5cm}int Pa\+Stream\+Info\+::struct\+Version}}\label{struct_pa_stream_info_a5e053a3f0f6232a5d1ec0dee0f9a943b}
+this is struct version 1 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+portaudio/19.\+20111121/include/\hyperlink{portaudio_8h}{portaudio.\+h}\end{DoxyCompactItemize}
