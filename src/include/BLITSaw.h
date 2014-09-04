@@ -29,7 +29,7 @@ namespace Signal {
     };
     
     inline bool BLITSaw::Perform(Sample& signal){
-        
+#warning unimplimented BLITSaw Perform
         return true;
     }
     inline bool BLITSaw::Perform(RingBuffer& signal){

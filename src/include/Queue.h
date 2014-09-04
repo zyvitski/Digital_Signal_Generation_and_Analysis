@@ -9,7 +9,11 @@
 #ifndef Waveform_Queue_h
 #define Waveform_Queue_h
 
+#if DEBUG
 #include <assert.h>
+#endif
+
+
 #include <atomic>
 #include <math.h>
 #ifdef DEBUG
@@ -52,7 +56,9 @@ namespace Backend {
             _size=0;
         }
         element& operator[](unsigned long const& index){
+#ifdef DEBUG
             assert(index<_size);
+#endif
             return _array[index];
         }
         unsigned long const& Size()const{

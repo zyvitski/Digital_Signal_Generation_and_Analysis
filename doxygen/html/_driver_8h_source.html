@@ -26,7 +26,7 @@
    <div id="projectname">Digital Signal Generation and Analysis
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">A Collection of C++ Code for Generation Digital Audio Signals</div>
+   <div id="projectbrief">A Collection of C++ Code for Generating Digital Audio Signals</div>
   </td>
  </tr>
  </tbody>
@@ -102,37 +102,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __Waveform__Driver__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __Waveform__Driver__</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;portaudio.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ring_buffer_8h.html">RingBuffer.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sample_8h.html">Sample.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sample___rate_8h.html">Sample_Rate.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_signal_process_8h.html">SignalProcess.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a70105fa3a575041357534257c1bd91a7">DriverInit</a>(<span class="keywordtype">void</span> * data);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a0e985fca408fe471f534ee98a2bd5733">DriverExit</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a>( <span class="keyword">const</span> <span class="keywordtype">void</span> *input,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;             <span class="keywordtype">void</span> *output,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> frameCount,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keyword">const</span> PaStreamCallbackTimeInfo* timeInfo,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             PaStreamCallbackFlags statusFlags,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             <span class="keywordtype">void</span> *userData );</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;portaudio.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ring_buffer_8h.html">RingBuffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sample_8h.html">Sample.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sample___rate_8h.html">Sample_Rate.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_signal_process_8h.html">SignalProcess.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a70105fa3a575041357534257c1bd91a7">DriverInit</a>(<span class="keywordtype">void</span> * data);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a0e985fca408fe471f534ee98a2bd5733">DriverExit</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a>( <span class="keyword">const</span> <span class="keywordtype">void</span> *input,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             <span class="keywordtype">void</span> *output,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> frameCount,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             <span class="keyword">const</span> PaStreamCallbackTimeInfo* timeInfo,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             PaStreamCallbackFlags statusFlags,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             <span class="keywordtype">void</span> *userData );</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Waveform__Driver__) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Waveform__Driver__) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="_driver_8h_html_a70105fa3a575041357534257c1bd91a7"><div class="ttname"><a href="_driver_8h.html#a70105fa3a575041357534257c1bd91a7">DriverInit</a></div><div class="ttdeci">int DriverInit(void *data)</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00018">Driver.cpp:18</a></div></div>
 <div class="ttc" id="_ring_buffer_8h_html"><div class="ttname"><a href="_ring_buffer_8h.html">RingBuffer.h</a></div></div>
 <div class="ttc" id="_sample___rate_8h_html"><div class="ttname"><a href="_sample___rate_8h.html">Sample_Rate.h</a></div></div>
 <div class="ttc" id="_signal_process_8h_html"><div class="ttname"><a href="_signal_process_8h.html">SignalProcess.h</a></div></div>
-<div class="ttc" id="_driver_8h_html_a110986770da2cd49dcf3789f8cc09c28"><div class="ttname"><a href="_driver_8h.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a></div><div class="ttdeci">int Callback(const void *input, void *output, unsigned long frameCount, const PaStreamCallbackTimeInfo *timeInfo, PaStreamCallbackFlags statusFlags, void *userData)</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00056">Driver.cpp:56</a></div></div>
-<div class="ttc" id="_driver_8h_html_a0e985fca408fe471f534ee98a2bd5733"><div class="ttname"><a href="_driver_8h.html#a0e985fca408fe471f534ee98a2bd5733">DriverExit</a></div><div class="ttdeci">int DriverExit()</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00038">Driver.cpp:38</a></div></div>
+<div class="ttc" id="_driver_8h_html_a110986770da2cd49dcf3789f8cc09c28"><div class="ttname"><a href="_driver_8h.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a></div><div class="ttdeci">int Callback(const void *input, void *output, unsigned long frameCount, const PaStreamCallbackTimeInfo *timeInfo, PaStreamCallbackFlags statusFlags, void *userData)</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00068">Driver.cpp:68</a></div></div>
+<div class="ttc" id="_driver_8h_html_a0e985fca408fe471f534ee98a2bd5733"><div class="ttname"><a href="_driver_8h.html#a0e985fca408fe471f534ee98a2bd5733">DriverExit</a></div><div class="ttdeci">int DriverExit()</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00044">Driver.cpp:44</a></div></div>
 <div class="ttc" id="_sample_8h_html"><div class="ttname"><a href="_sample_8h.html">Sample.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 3 2014 19:22:02 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 3 2014 20:09:20 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

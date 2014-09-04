@@ -9,8 +9,9 @@
 #ifndef __Waveform__Driver__
 #define __Waveform__Driver__
 
-
+#ifdef DEBUG
 #include <iostream>
+#endif
 #include <portaudio.h>
 #include "RingBuffer.h"
 #include "Sample.h"

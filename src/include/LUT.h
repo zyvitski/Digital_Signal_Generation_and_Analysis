@@ -9,8 +9,10 @@
 #ifndef Waveform_LUT_h
 #define Waveform_LUT_h
 
+#ifdef DEBUG
 #include <assert.h>
-#include <math.h>
+#endif
+
 namespace Backend{
     template <typename element,unsigned long size>
     class LUT {

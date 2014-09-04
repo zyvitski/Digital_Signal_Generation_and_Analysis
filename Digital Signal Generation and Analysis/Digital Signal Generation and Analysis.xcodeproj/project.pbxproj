@@ -209,10 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				1F591D5019B7E55600FEEF4C /* Backend.h */,
-				1F591D5119B7E55600FEEF4C /* BLIT.h */,
-				1F591D5219B7E55600FEEF4C /* BLITSaw.h */,
+				1F591D7B19B7F2D500FEEF4C /* Generators */,
 				1F591D5319B7E55600FEEF4C /* Buffer.h */,
-				1F591D5419B7E55600FEEF4C /* ClassicGenerator.h */,
+				1F591D7A19B7F2BD00FEEF4C /* Base */,
 				1F591D5519B7E55600FEEF4C /* Driver.h */,
 				1F591D5619B7E55600FEEF4C /* HarmonicTable.h */,
 				1F591D5719B7E55600FEEF4C /* LUT.h */,
@@ -222,11 +221,7 @@
 				1F591D5B19B7E55600FEEF4C /* RingBuffer.h */,
 				1F591D5C19B7E55600FEEF4C /* Sample_Rate.h */,
 				1F591D5D19B7E55600FEEF4C /* Sample.h */,
-				1F591D5E19B7E55600FEEF4C /* Saw.h */,
 				1F591D5F19B7E55600FEEF4C /* Signal.h */,
-				1F591D6019B7E55600FEEF4C /* SignalGenerator.h */,
-				1F591D6119B7E55600FEEF4C /* SignalProcess.h */,
-				1F591D6219B7E55600FEEF4C /* Sine.h */,
 				1F591D6319B7E55600FEEF4C /* SineLUT.h */,
 				1F591D6419B7E55600FEEF4C /* Taylor.h */,
 			);
@@ -252,6 +247,27 @@
 				1F591D3919B7DFF600FEEF4C /* Taylor.cpp */,
 			);
 			name = SOURCE;
+			sourceTree = "<group>";
+		};
+		1F591D7A19B7F2BD00FEEF4C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1F591D5419B7E55600FEEF4C /* ClassicGenerator.h */,
+				1F591D6019B7E55600FEEF4C /* SignalGenerator.h */,
+				1F591D6119B7E55600FEEF4C /* SignalProcess.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		1F591D7B19B7F2D500FEEF4C /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				1F591D5119B7E55600FEEF4C /* BLIT.h */,
+				1F591D5219B7E55600FEEF4C /* BLITSaw.h */,
+				1F591D5E19B7E55600FEEF4C /* Saw.h */,
+				1F591D6219B7E55600FEEF4C /* Sine.h */,
+			);
+			name = Generators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

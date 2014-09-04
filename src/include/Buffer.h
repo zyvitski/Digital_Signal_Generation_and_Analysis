@@ -9,7 +9,9 @@
 #ifndef __Processing__Buffer__
 #define __Processing__Buffer__
 
+#ifdef DEBUG
 #include <assert.h>
+#endif
 #include <stddef.h>
 #include "Sample.h"
 namespace Signal{

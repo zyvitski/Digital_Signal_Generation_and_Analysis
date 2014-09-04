@@ -11,11 +11,13 @@
 
 #define CHANNEL_COUNT 2
 
-#include <assert.h>
 
 #ifdef DEBUG
 #include <iostream>
+#include <assert.h>
 #endif
+
+#include <stddef.h>
 
 namespace Signal {
     

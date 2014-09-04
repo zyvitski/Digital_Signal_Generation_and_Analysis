@@ -10,7 +10,11 @@
 #define Waveform_HarmonicTable_h
 
 #include "LUT.h"
+
+#ifdef DEBUG
 #include <assert.h>
+#endif
+
 namespace Backend{
 class HarmonicTable {
 public:

@@ -62,7 +62,7 @@ unsigned long \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1
 
 
 
-Definition at line 68 of file Queue.\+h.
+Definition at line 74 of file Queue.\+h.
 
 
 
@@ -76,11 +76,11 @@ Definition at line 68 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_ac32a0171ecb144e4da8585575160c30c}
 
 
-Definition at line 70 of file Queue.\+h.
+Definition at line 76 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-70 :array<element>(0),\hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}(0),\hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}(0),\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}(0),\hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK}(0)\{\}
+76 :array<element>(0),\hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}(0),\hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}(0),\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}(0),\hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK}(0)\{\}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_ac136488c632785b750fd9fedb5a0986f}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Queue@{Queue}}
 \index{Queue@{Queue}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -91,14 +91,14 @@ Definition at line 70 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_ac136488c632785b750fd9fedb5a0986f}
 
 
-Definition at line 71 of file Queue.\+h.
+Definition at line 77 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-71                                  :array<element>(\hyperlink{class_backend_1_1_queue_a357667a720d3cf0e1867e79e2911ca13}{make\_pow\_2}(size)),
+77                                  :array<element>(\hyperlink{class_backend_1_1_queue_a357667a720d3cf0e1867e79e2911ca13}{make\_pow\_2}(size)),
       \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}(0),\hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}(0),\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}(0)\{
-72             \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK} = this->\hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}-1;
-73         \}
+78             \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK} = this->\hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}-1;
+79         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_ae7c5f30894c29d332991a15b89aaedba}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Queue@{Queue}}
 \index{Queue@{Queue}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -109,16 +109,16 @@ Definition at line 71 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_ae7c5f30894c29d332991a15b89aaedba}
 
 
-Definition at line 74 of file Queue.\+h.
+Definition at line 80 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-74                                           :array<element>(other)\{
-75             \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(other.\_write.load(std::memory\_order\_acquire));
-76             \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(other.\_read.load(std::memory\_order\_acquire));
-77             \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count} = other.\_count;
-78             \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK} = other.\_size-1;
-79         \}
+80                                           :array<element>(other)\{
+81             \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(other.\_write.load(std::memory\_order\_acquire));
+82             \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(other.\_read.load(std::memory\_order\_acquire));
+83             \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count} = other.\_count;
+84             \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK} = other.\_size-1;
+85         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a9c323720d0c6d433be2a6f5b479e9d47}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!````~Queue@{$\sim$\+Queue}}
 \index{````~Queue@{$\sim$\+Queue}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -129,13 +129,13 @@ Definition at line 74 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_backend_1_1_queue_a9c323720d0c6d433be2a6f5b479e9d47}
 
 
-Definition at line 88 of file Queue.\+h.
+Definition at line 94 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-88                         \{
-89             \hyperlink{class_backend_1_1_queue_a701ab0dc2289929467d9e1cc5771f80c}{Flush}();
-90         \}
+94                         \{
+95             \hyperlink{class_backend_1_1_queue_a701ab0dc2289929467d9e1cc5771f80c}{Flush}();
+96         \}
 \end{DoxyCode}
 
 
@@ -149,13 +149,13 @@ Definition at line 88 of file Queue.\+h.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_abb378e040ec42c42b78b10bcb60a933b}
 
 
-Definition at line 109 of file Queue.\+h.
+Definition at line 115 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-109                                          \{
-110             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count};
-111         \}
+115                                          \{
+116             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count};
+117         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_af9f6bfd2928b6a8e0557042da977b9d5}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Empty@{Empty}}
 \index{Empty@{Empty}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -166,13 +166,13 @@ Definition at line 109 of file Queue.\+h.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_af9f6bfd2928b6a8e0557042da977b9d5}
 
 
-Definition at line 116 of file Queue.\+h.
+Definition at line 122 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-116                          \{
-117             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}==0;
-118         \}
+122                          \{
+123             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}==0;
+124         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a701ab0dc2289929467d9e1cc5771f80c}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Flush@{Flush}}
 \index{Flush@{Flush}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -183,15 +183,15 @@ Definition at line 116 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_a701ab0dc2289929467d9e1cc5771f80c}
 
 
-Definition at line 119 of file Queue.\+h.
+Definition at line 125 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-119                     \{
-120             \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(0,std::memory\_order\_relaxed);
-121             \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(0,std::memory\_order\_relaxed);
-122             \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}=0;
-123         \}
+125                     \{
+126             \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(0,std::memory\_order\_relaxed);
+127             \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(0,std::memory\_order\_relaxed);
+128             \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}=0;
+129         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_acb0a8bd00d4708253e5d25465191dca1}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Full@{Full}}
 \index{Full@{Full}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -202,14 +202,14 @@ Definition at line 119 of file Queue.\+h.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_acb0a8bd00d4708253e5d25465191dca1}
 
 
-Definition at line 112 of file Queue.\+h.
+Definition at line 118 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-112                         \{
-113             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}==this->\hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size};
-114             
-115         \}
+118                         \{
+119             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count}==this->\hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size};
+120             
+121         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a357667a720d3cf0e1867e79e2911ca13}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!make\+\_\+pow\+\_\+2@{make\+\_\+pow\+\_\+2}}
 \index{make\+\_\+pow\+\_\+2@{make\+\_\+pow\+\_\+2}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -220,13 +220,13 @@ Definition at line 112 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_backend_1_1_queue_a357667a720d3cf0e1867e79e2911ca13}
 
 
-Definition at line 138 of file Queue.\+h.
+Definition at line 144 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-138                                                             \{
-139             \textcolor{keywordflow}{return} pow(2, ceil(log(value)/log(2)));
-140         \}
+144                                                             \{
+145             \textcolor{keywordflow}{return} pow(2, ceil(log(value)/log(2)));
+146         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a91b2f12926d36b547343a91790fe76bb}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!next@{next}}
 \index{next@{next}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -237,13 +237,13 @@ Definition at line 138 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_backend_1_1_queue_a91b2f12926d36b547343a91790fe76bb}
 
 
-Definition at line 135 of file Queue.\+h.
+Definition at line 141 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-135                                                       \{
-136             \textcolor{keywordflow}{return} (value+1) & \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK};
-137         \}
+141                                                       \{
+142             \textcolor{keywordflow}{return} (value+1) & \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK};
+143         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a37a138f7a66cbafaab64e10dd9f740e9}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!operator=@{operator=}}
 \index{operator=@{operator=}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -254,18 +254,18 @@ Definition at line 135 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_a37a138f7a66cbafaab64e10dd9f740e9}
 
 
-Definition at line 80 of file Queue.\+h.
+Definition at line 86 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-80                                                               \{
-81             \hyperlink{class_backend_1_1array_abab978602a61af66f73e4951e5779554}{array<element>::operator=}(other);
-82             \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(other.\_write.load(std::memory\_order\_acquire));
-83             \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(other.\_read.load(std::memory\_order\_acquire));
-84             \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count} = other.\_count;
-85             \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK} = other.\_size-1;
-86             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
-87         \}
+86                                                               \{
+87             \hyperlink{class_backend_1_1array_abab978602a61af66f73e4951e5779554}{array<element>::operator=}(other);
+88             \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(other.\_write.load(std::memory\_order\_acquire));
+89             \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(other.\_read.load(std::memory\_order\_acquire));
+90             \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count} = other.\_count;
+91             \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\_MASK} = other.\_size-1;
+92             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+93         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a10d3583a888cebe4d53863f83249cc13}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Read@{Read}}
 \index{Read@{Read}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -276,19 +276,19 @@ Definition at line 80 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_a10d3583a888cebe4d53863f83249cc13}
 
 
-Definition at line 100 of file Queue.\+h.
+Definition at line 106 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-100                                  \{
-101             \textcolor{keywordflow}{if} (!\hyperlink{class_backend_1_1_queue_af9f6bfd2928b6a8e0557042da977b9d5}{Empty}()) \{
-102                 \textcolor{keywordtype}{size\_t} read = \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.load(std::memory\_order\_acquire);
-103                 \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(\hyperlink{class_backend_1_1_queue_a91b2f12926d36b547343a91790fe76bb}{next}(read),std::memory\_order\_release);
-104                 place = this->\hyperlink{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[read];
-105                 --\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count};
-106                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-107             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-108         \}
+106                                  \{
+107             \textcolor{keywordflow}{if} (!\hyperlink{class_backend_1_1_queue_af9f6bfd2928b6a8e0557042da977b9d5}{Empty}()) \{
+108                 \textcolor{keywordtype}{size\_t} read = \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.load(std::memory\_order\_acquire);
+109                 \hyperlink{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\_read}.store(\hyperlink{class_backend_1_1_queue_a91b2f12926d36b547343a91790fe76bb}{next}(read),std::memory\_order\_release);
+110                 place = this->\hyperlink{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[read];
+111                 --\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count};
+112                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+113             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+114         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_aed4ea61ff04a1b2faad6c3f967372bd5}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Write@{Write}}
 \index{Write@{Write}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -299,19 +299,19 @@ Definition at line 100 of file Queue.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_backend_1_1_queue_aed4ea61ff04a1b2faad6c3f967372bd5}
 
 
-Definition at line 91 of file Queue.\+h.
+Definition at line 97 of file Queue.\+h.
 
 
 \begin{DoxyCode}
-91                                         \{
-92             \textcolor{keywordflow}{if} (!\hyperlink{class_backend_1_1_queue_acb0a8bd00d4708253e5d25465191dca1}{Full}()) \{
-93                 \textcolor{keywordtype}{size\_t} write = \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.load(std::memory\_order\_acquire);
-94                 \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(\hyperlink{class_backend_1_1_queue_a91b2f12926d36b547343a91790fe76bb}{next}(write),std::memory\_order\_release);
-95                 this->\hyperlink{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[write] = value;
-96                 ++\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count};
-97                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-98             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-99         \}
+97                                         \{
+98             \textcolor{keywordflow}{if} (!\hyperlink{class_backend_1_1_queue_acb0a8bd00d4708253e5d25465191dca1}{Full}()) \{
+99                 \textcolor{keywordtype}{size\_t} write = \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.load(std::memory\_order\_acquire);
+100                 \hyperlink{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\_write}.store(\hyperlink{class_backend_1_1_queue_a91b2f12926d36b547343a91790fe76bb}{next}(write),std::memory\_order\_release);
+101                 this->\hyperlink{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[write] = value;
+102                 ++\hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\_count};
+103                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+104             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+105         \}
 \end{DoxyCode}
 
 
@@ -321,28 +321,28 @@ Definition at line 91 of file Queue.\+h.
 \subsubsection[{\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long {\bf Backend\+::\+Queue}$<$ element $>$\+::\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}
 
 
-Definition at line 133 of file Queue.\+h.
+Definition at line 139 of file Queue.\+h.
 
 \hypertarget{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+\+M\+A\+S\+K@{\+\_\+\+M\+A\+S\+K}}
 \index{\+\_\+\+M\+A\+S\+K@{\+\_\+\+M\+A\+S\+K}!Backend\+::\+Queue@{Backend\+::\+Queue}}
 \subsubsection[{\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long {\bf Backend\+::\+Queue}$<$ element $>$\+::\+\_\+\+M\+A\+S\+K\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}
 
 
-Definition at line 134 of file Queue.\+h.
+Definition at line 140 of file Queue.\+h.
 
 \hypertarget{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+read@{\+\_\+read}}
 \index{\+\_\+read@{\+\_\+read}!Backend\+::\+Queue@{Backend\+::\+Queue}}
 \subsubsection[{\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ std\+::atomic$<$unsigned long$>$ {\bf Backend\+::\+Queue}$<$ element $>$\+::\+\_\+read\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_backend_1_1_queue_a508eb8c4fedb73fc4abbf26353bdfd82}
 
 
-Definition at line 132 of file Queue.\+h.
+Definition at line 138 of file Queue.\+h.
 
 \hypertarget{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+write@{\+\_\+write}}
 \index{\+\_\+write@{\+\_\+write}!Backend\+::\+Queue@{Backend\+::\+Queue}}
 \subsubsection[{\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ std\+::atomic$<$unsigned long$>$ {\bf Backend\+::\+Queue}$<$ element $>$\+::\+\_\+write\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}
 
 
-Definition at line 131 of file Queue.\+h.
+Definition at line 137 of file Queue.\+h.
 
 
 

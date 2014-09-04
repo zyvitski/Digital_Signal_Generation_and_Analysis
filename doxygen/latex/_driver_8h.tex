@@ -1,7 +1,6 @@
 \hypertarget{_driver_8h}{\section{/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\+Driver.h File Reference}
 \label{_driver_8h}\index{/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\+Driver.\+h@{/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\+Driver.\+h}}
 }
-{\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include $<$portaudio.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}Ring\+Buffer.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Sample.\+h\char`\"{}}\\*
@@ -33,35 +32,35 @@ int \hyperlink{_driver_8h_a110986770da2cd49dcf3789f8cc09c28}{Callback} (const vo
 )}}\label{_driver_8h_a110986770da2cd49dcf3789f8cc09c28}
 
 
-Definition at line 56 of file Driver.\+cpp.
+Definition at line 68 of file Driver.\+cpp.
 
 
 \begin{DoxyCode}
-61                              \{
-62     \textcolor{keywordtype}{float}* \_in = (\textcolor{keywordtype}{float}*)input;
-63     \textcolor{keywordtype}{float}* \_out = (\textcolor{keywordtype}{float}*)output;
-64     \hyperlink{class_signal_1_1_sample}{Signal::Sample} \_sample;
-65     \textcolor{keywordtype}{int} count=0;
-66     \hyperlink{class_signal_1_1_signal_process}{Signal::SignalProcess}* \_osc = (\hyperlink{class_signal_1_1_signal_process}{Signal::SignalProcess}*)
+73                              \{
+74     \textcolor{keywordtype}{float}* \_in = (\textcolor{keywordtype}{float}*)input;
+75     \textcolor{keywordtype}{float}* \_out = (\textcolor{keywordtype}{float}*)output;
+76     \hyperlink{class_signal_1_1_sample}{Signal::Sample} \_sample;
+77     \textcolor{keywordtype}{int} count=0;
+78     \hyperlink{class_signal_1_1_signal_process}{Signal::SignalProcess}* \_osc = (\hyperlink{class_signal_1_1_signal_process}{Signal::SignalProcess}*)
       userData;
-67     \textcolor{keywordflow}{if} (\_in!=\textcolor{keyword}{nullptr}) \{
-68         \textcolor{keywordflow}{while} (!\hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}{Full}()) \{
-69             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\_sample.\hyperlink{class_signal_1_1_sample_a3c8f635193c0b7b69612cb189766dfa3}{Size}(); ++i) \{
-70                 \_sample[i]=\_in[count++];
-71             \}
-72             \hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{class_signal_1_1_ring_buffer_aa291195b777aa50aa7a61ab1f4954bce}{Write}(\_sample);
-73         \}
-74     \}
-75     \_osc->\hyperlink{class_signal_1_1_signal_process_a7986df989ac8afca3674ae8eace3cfdb}{Perform}(\hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer});
-76     \textcolor{keywordflow}{if} (\_out!=\textcolor{keyword}{nullptr}) \{
-77         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<frameCount; ++i) \{
-78             \hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{class_signal_1_1_ring_buffer_a9a5c8429c0e422e3d4763adb78b0a87c}{Read}(\_sample);
-79             *\_out++=\_sample[0];
-80             *\_out++=\_sample[1];
-81         \}
-82     \}
-83     \textcolor{keywordflow}{return} 0;
-84 \}\end{DoxyCode}
+79     \textcolor{keywordflow}{if} (\_in!=\textcolor{keyword}{nullptr}) \{
+80         \textcolor{keywordflow}{while} (!\hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}{Full}()) \{
+81             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\_sample.\hyperlink{class_signal_1_1_sample_a3c8f635193c0b7b69612cb189766dfa3}{Size}(); ++i) \{
+82                 \_sample[i]=\_in[count++];
+83             \}
+84             \hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{class_signal_1_1_ring_buffer_aa291195b777aa50aa7a61ab1f4954bce}{Write}(\_sample);
+85         \}
+86     \}
+87     \_osc->\hyperlink{class_signal_1_1_signal_process_a7986df989ac8afca3674ae8eace3cfdb}{Perform}(\hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer});
+88     \textcolor{keywordflow}{if} (\_out!=\textcolor{keyword}{nullptr}) \{
+89         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<frameCount; ++i) \{
+90             \hyperlink{_driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{class_signal_1_1_ring_buffer_a9a5c8429c0e422e3d4763adb78b0a87c}{Read}(\_sample);
+91             *\_out++=\_sample[0];
+92             *\_out++=\_sample[1];
+93         \}
+94     \}
+95     \textcolor{keywordflow}{return} 0;
+96 \}\end{DoxyCode}
 \hypertarget{_driver_8h_a0e985fca408fe471f534ee98a2bd5733}{\index{Driver.\+h@{Driver.\+h}!Driver\+Exit@{Driver\+Exit}}
 \index{Driver\+Exit@{Driver\+Exit}!Driver.\+h@{Driver.\+h}}
 \subsubsection[{Driver\+Exit}]{\setlength{\rightskip}{0pt plus 5cm}int Driver\+Exit (
@@ -71,27 +70,33 @@ Definition at line 56 of file Driver.\+cpp.
 )}}\label{_driver_8h_a0e985fca408fe471f534ee98a2bd5733}
 
 
-Definition at line 38 of file Driver.\+cpp.
+Definition at line 44 of file Driver.\+cpp.
 
 
 \begin{DoxyCode}
-38                 \{
-39     PaError err=0;
-40     err = Pa\_StopStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
-41     \textcolor{keywordflow}{if} (err!=paNoError) \{
-42         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
-43         \textcolor{keywordflow}{return} 1;
-44     \}
-45     err = Pa\_CloseStream( \hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream} );
-46     \textcolor{keywordflow}{if}( err != paNoError )\{
-47         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
-48     \}
-49     err = Pa\_Terminate();
-50     \textcolor{keywordflow}{if}( err != paNoError )\{
-51         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+44                 \{
+45     PaError err=0;
+46     err = Pa\_StopStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
+47     \textcolor{keywordflow}{if} (err!=paNoError) \{
+48 \textcolor{preprocessor}{#ifdef DEBUG}
+49         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+50 \textcolor{preprocessor}{#endif}
+51         \textcolor{keywordflow}{return} 1;
 52     \}
-53     \textcolor{keywordflow}{return} 0;
-54 \}
+53     err = Pa\_CloseStream( \hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream} );
+54     \textcolor{keywordflow}{if}( err != paNoError )\{
+55 \textcolor{preprocessor}{#ifdef DEBUG}
+56         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+57 \textcolor{preprocessor}{#endif}
+58     \}
+59     err = Pa\_Terminate();
+60     \textcolor{keywordflow}{if}( err != paNoError )\{
+61 \textcolor{preprocessor}{#ifdef DEBUG}
+62         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+63 \textcolor{preprocessor}{#endif}
+64     \}
+65     \textcolor{keywordflow}{return} 0;
+66 \}
 \end{DoxyCode}
 \hypertarget{_driver_8h_a70105fa3a575041357534257c1bd91a7}{\index{Driver.\+h@{Driver.\+h}!Driver\+Init@{Driver\+Init}}
 \index{Driver\+Init@{Driver\+Init}!Driver.\+h@{Driver.\+h}}
@@ -111,20 +116,26 @@ Definition at line 18 of file Driver.\+cpp.
 20     
 21     err=Pa\_Initialize();
 22     \textcolor{keywordflow}{if} (err!=paNoError) \{
-23         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
-24         \textcolor{keywordflow}{return} 1;
-25     \}
-26     err = Pa\_OpenDefaultStream(&\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}, 0, 2, paFloat32,
+23 \textcolor{preprocessor}{#ifdef DEBUG}
+24         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+25 \textcolor{preprocessor}{#endif}
+26         \textcolor{keywordflow}{return} 1;
+27     \}
+28     err = Pa\_OpenDefaultStream(&\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}, 0, 2, paFloat32,
       \hyperlink{namespace_signal_ae7b1f222afc010e0f33f306f978fcde9}{Signal::Sample\_Rate}(), \hyperlink{_driver_8cpp_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\_SIZE}, \hyperlink{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback}, data);
-27     \textcolor{keywordflow}{if} (err!=paNoError) \{
-28         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
-29         \textcolor{keywordflow}{return} 1;
-30     \}
-31     err = Pa\_StartStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
-32     \textcolor{keywordflow}{if} (err!=paNoError) \{
-33         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
-34         \textcolor{keywordflow}{return} 1;
-35     \}
-36     \textcolor{keywordflow}{return} 0;
-37 \}
+29     \textcolor{keywordflow}{if} (err!=paNoError) \{
+30 \textcolor{preprocessor}{#ifdef DEBUG}
+31         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+32 \textcolor{preprocessor}{#endif}
+33         \textcolor{keywordflow}{return} 1;
+34     \}
+35     err = Pa\_StartStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
+36     \textcolor{keywordflow}{if} (err!=paNoError) \{
+37 \textcolor{preprocessor}{#ifdef DEBUG}
+38         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+39 \textcolor{preprocessor}{#endif}
+40         \textcolor{keywordflow}{return} 1;
+41     \}
+42     \textcolor{keywordflow}{return} 0;
+43 \}
 \end{DoxyCode}

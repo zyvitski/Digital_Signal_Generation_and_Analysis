@@ -20,17 +20,23 @@ int DriverInit(void * data){
     
     err=Pa_Initialize();
     if (err!=paNoError) {
+#ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
+#endif
         return 1;
     }
     err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32,Signal::Sample_Rate(), BUFFER_SIZE, Callback, data);
     if (err!=paNoError) {
+#ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
+#endif
         return 1;
     }
     err = Pa_StartStream(stream);
     if (err!=paNoError) {
+#ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
+#endif
         return 1;
     }
     return 0;
@@ -39,16 +45,22 @@ int DriverExit(){
     PaError err=0;
     err = Pa_StopStream(stream);
     if (err!=paNoError) {
+#ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
+#endif
         return 1;
     }
     err = Pa_CloseStream( stream );
     if( err != paNoError ){
+#ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
+#endif
     }
     err = Pa_Terminate();
     if( err != paNoError ){
+#ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
+#endif
     }
     return 0;
 }
