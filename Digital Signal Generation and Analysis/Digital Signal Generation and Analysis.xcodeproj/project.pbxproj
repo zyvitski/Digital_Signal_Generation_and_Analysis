@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F591CED19B7DEF300FEEF4C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591CEC19B7DEF300FEEF4C /* main.cpp */; };
-		1F591CEF19B7DEF300FEEF4C /* DEBUG.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F591CEE19B7DEF300FEEF4C /* DEBUG.1 */; };
+		1F52D1D919B80B6E00380A4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F52D1D819B80B6E00380A4D /* main.cpp */; };
 		1F591CFA19B7DEFC00FEEF4C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591CF919B7DEFC00FEEF4C /* main.cpp */; };
-		1F591CFC19B7DEFC00FEEF4C /* RELEASE.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F591CFB19B7DEFC00FEEF4C /* RELEASE.1 */; };
 		1F591D3A19B7DFF600FEEF4C /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2C19B7DFF600FEEF4C /* BLIT.cpp */; };
 		1F591D3B19B7DFF600FEEF4C /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2D19B7DFF600FEEF4C /* BLITSaw.cpp */; };
 		1F591D3C19B7DFF600FEEF4C /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2E19B7DFF600FEEF4C /* Buffer.cpp */; };
@@ -81,7 +79,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				1F591CEF19B7DEF300FEEF4C /* DEBUG.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -91,20 +88,17 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				1F591CFC19B7DEFC00FEEF4C /* RELEASE.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F52D1D819B80B6E00380A4D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F591CE119B7DEE000FEEF4C /* libDSG.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDSG.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F591CEA19B7DEF300FEEF4C /* DEBUG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DEBUG; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F591CEC19B7DEF300FEEF4C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		1F591CEE19B7DEF300FEEF4C /* DEBUG.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DEBUG.1; sourceTree = "<group>"; };
 		1F591CF719B7DEFC00FEEF4C /* RELEASE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RELEASE; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F591CF919B7DEFC00FEEF4C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		1F591CFB19B7DEFC00FEEF4C /* RELEASE.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RELEASE.1; sourceTree = "<group>"; };
 		1F591D2C19B7DFF600FEEF4C /* BLIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLIT.cpp; path = ../src/BLIT.cpp; sourceTree = "<group>"; };
 		1F591D2D19B7DFF600FEEF4C /* BLITSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLITSaw.cpp; path = ../src/BLITSaw.cpp; sourceTree = "<group>"; };
 		1F591D2E19B7DFF600FEEF4C /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Buffer.cpp; path = ../src/Buffer.cpp; sourceTree = "<group>"; };
@@ -202,8 +196,7 @@
 		1F591CEB19B7DEF300FEEF4C /* DEBUG */ = {
 			isa = PBXGroup;
 			children = (
-				1F591CEC19B7DEF300FEEF4C /* main.cpp */,
-				1F591CEE19B7DEF300FEEF4C /* DEBUG.1 */,
+				1F52D1D819B80B6E00380A4D /* main.cpp */,
 			);
 			path = DEBUG;
 			sourceTree = "<group>";
@@ -212,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				1F591CF919B7DEFC00FEEF4C /* main.cpp */,
-				1F591CFB19B7DEFC00FEEF4C /* RELEASE.1 */,
 			);
 			path = RELEASE;
 			sourceTree = "<group>";
@@ -466,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F591CED19B7DEF300FEEF4C /* main.cpp in Sources */,
+				1F52D1D919B80B6E00380A4D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +490,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(inherited)";
+				INSTALL_PATH = "~/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/build";
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -505,6 +499,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(inherited)";
+				INSTALL_PATH = "~/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/build";
+				SYMROOT = build;
 			};
 			name = Release;
 		};

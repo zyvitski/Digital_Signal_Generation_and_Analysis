@@ -1,17 +1,14 @@
 //
 //  main.cpp
-//  RELEASE
+//  Digital Signal Generation and Analysis
 //
 //  Created by Alexander Zywicki on 9/3/14.
 //
 //
+
 #include "Signal.h"
 #include "Backend.h"
 
-int main(int argc, const char * argv[])
-{
-
-
+int main(){
     return 0;
 }
-
