@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue',['Queue',['../class_backend_1_1_queue.html',1,'Backend']]]
+  ['minblep',['minBLEP',['../class_signal_1_1min_b_l_e_p.html',1,'Signal']]]
 ];

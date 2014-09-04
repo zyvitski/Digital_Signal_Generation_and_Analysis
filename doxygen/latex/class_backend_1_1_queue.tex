@@ -11,6 +11,13 @@ Inheritance diagram for Backend\+:\+:Queue$<$ element $>$\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_backend_1_1_queue}
 \end{center}
 \end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef element $\ast$ \hyperlink{class_backend_1_1array_a6d8785dc8b979153ef122f4e3bad1408}{pointer}
+\item 
+typedef element \& \hyperlink{class_backend_1_1array_aa98075b8d7a4e63ea919ee9d1d4df4a9}{reference}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,6 +42,10 @@ bool \hyperlink{class_backend_1_1_queue_acb0a8bd00d4708253e5d25465191dca1}{Full}
 bool \hyperlink{class_backend_1_1_queue_af9f6bfd2928b6a8e0557042da977b9d5}{Empty} () const 
 \item 
 void \hyperlink{class_backend_1_1_queue_a701ab0dc2289929467d9e1cc5771f80c}{Flush} ()
+\item 
+element \& \hyperlink{class_backend_1_1array_a906073a0b37d9abef728f2c188e73a5a}{operator\mbox{[}$\,$\mbox{]}} (unsigned long const \&index)
+\item 
+unsigned long const \& \hyperlink{class_backend_1_1array_a7b74d2da9eacbeea96b1661962a03970}{Size} () const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -53,8 +64,11 @@ std\+::atomic$<$ unsigned long $>$ \hyperlink{class_backend_1_1_queue_a508eb8c4f
 unsigned long \hyperlink{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\+\_\+count}
 \item 
 unsigned long \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1b4}{\+\_\+\+M\+A\+S\+K}
+\item 
+element $\ast$ \hyperlink{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\+\_\+array}
+\item 
+unsigned long \hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\+\_\+size}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -63,6 +77,23 @@ unsigned long \hyperlink{class_backend_1_1_queue_ab665bcab528d6bad6c4faab1ae0fc1
 
 
 Definition at line 74 of file Queue.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_backend_1_1array_a6d8785dc8b979153ef122f4e3bad1408}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!pointer@{pointer}}
+\index{pointer@{pointer}!Backend\+::\+Queue@{Backend\+::\+Queue}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ typedef element$\ast$ {\bf Backend\+::array}$<$ element $>$\+::{\bf pointer}\hspace{0.3cm}{\ttfamily [inherited]}}}\label{class_backend_1_1array_a6d8785dc8b979153ef122f4e3bad1408}
+
+
+Definition at line 29 of file Queue.\+h.
+
+\hypertarget{class_backend_1_1array_aa98075b8d7a4e63ea919ee9d1d4df4a9}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!reference@{reference}}
+\index{reference@{reference}!Backend\+::\+Queue@{Backend\+::\+Queue}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ typedef element\& {\bf Backend\+::array}$<$ element $>$\+::{\bf reference}\hspace{0.3cm}{\ttfamily [inherited]}}}\label{class_backend_1_1array_aa98075b8d7a4e63ea919ee9d1d4df4a9}
+
+
+Definition at line 30 of file Queue.\+h.
 
 
 
@@ -267,6 +298,26 @@ Definition at line 86 of file Queue.\+h.
 92             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
 93         \}
 \end{DoxyCode}
+\hypertarget{class_backend_1_1array_a906073a0b37d9abef728f2c188e73a5a}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Backend\+::\+Queue@{Backend\+::\+Queue}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ element\& {\bf Backend\+::array}$<$ element $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{class_backend_1_1array_a906073a0b37d9abef728f2c188e73a5a}
+
+
+Definition at line 58 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+58                                                        \{
+59 \textcolor{preprocessor}{#ifdef DEBUG}
+60             assert(index<\hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size});
+61 \textcolor{preprocessor}{#endif}
+62             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[index];
+63         \}
+\end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_a10d3583a888cebe4d53863f83249cc13}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Read@{Read}}
 \index{Read@{Read}!Backend\+::\+Queue@{Backend\+::\+Queue}}
 \subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ bool {\bf Backend\+::\+Queue}$<$ element $>$\+::Read (
@@ -289,6 +340,23 @@ Definition at line 106 of file Queue.\+h.
 112                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 113             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
 114         \}
+\end{DoxyCode}
+\hypertarget{class_backend_1_1array_a7b74d2da9eacbeea96b1661962a03970}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Size@{Size}}
+\index{Size@{Size}!Backend\+::\+Queue@{Backend\+::\+Queue}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long const\& {\bf Backend\+::array}$<$ element $>$\+::Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{class_backend_1_1array_a7b74d2da9eacbeea96b1661962a03970}
+
+
+Definition at line 64 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+64                                         \{
+65             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size};
+66         \}
 \end{DoxyCode}
 \hypertarget{class_backend_1_1_queue_aed4ea61ff04a1b2faad6c3f967372bd5}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!Write@{Write}}
 \index{Write@{Write}!Backend\+::\+Queue@{Backend\+::\+Queue}}
@@ -316,6 +384,13 @@ Definition at line 97 of file Queue.\+h.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+array@{\+\_\+array}}
+\index{\+\_\+array@{\+\_\+array}!Backend\+::\+Queue@{Backend\+::\+Queue}}
+\subsubsection[{\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ element$\ast$ {\bf Backend\+::array}$<$ element $>$\+::\+\_\+array\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_backend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}
+
+
+Definition at line 68 of file Queue.\+h.
+
 \hypertarget{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+count@{\+\_\+count}}
 \index{\+\_\+count@{\+\_\+count}!Backend\+::\+Queue@{Backend\+::\+Queue}}
 \subsubsection[{\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long {\bf Backend\+::\+Queue}$<$ element $>$\+::\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_backend_1_1_queue_ab49d17e24dc0f8a2e5e44c182c240249}
@@ -336,6 +411,13 @@ Definition at line 140 of file Queue.\+h.
 
 
 Definition at line 138 of file Queue.\+h.
+
+\hypertarget{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!Backend\+::\+Queue@{Backend\+::\+Queue}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long {\bf Backend\+::array}$<$ element $>$\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_backend_1_1array_ae51d64e87b42931946111c28b98e8a18}
+
+
+Definition at line 69 of file Queue.\+h.
 
 \hypertarget{class_backend_1_1_queue_ab3d5c4738092cf356b36c56f6ab61554}{\index{Backend\+::\+Queue@{Backend\+::\+Queue}!\+\_\+write@{\+\_\+write}}
 \index{\+\_\+write@{\+\_\+write}!Backend\+::\+Queue@{Backend\+::\+Queue}}

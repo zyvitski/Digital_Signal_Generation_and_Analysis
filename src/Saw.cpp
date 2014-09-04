@@ -7,8 +7,8 @@
 //
 
 #include "Saw.h"
-Signal::Saw::Saw():ClassicGenerator(),_a(5.0/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),tmp(0),stor(0){}
-Signal::Saw::Saw(double const& frequency,double const& phase_offset):ClassicGenerator(frequency,phase_offset),_a(5.0/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),tmp(0),stor(0){
+Signal::Saw::Saw():ClassicGenerator(),_a(5.0/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),phs(0),stor(0){}
+Signal::Saw::Saw(double const& frequency,double const& phase_offset):ClassicGenerator(frequency,phase_offset),_a(5.0/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),phs(0),stor(0){
     _sample=0;
     _storage=0;
 }

@@ -25,6 +25,12 @@ virtual double const \& \hyperlink{class_signal_1_1_b_l_i_t_a911a6d5d3e218613b47
 virtual bool \hyperlink{class_signal_1_1_b_l_i_t_abf70cd38b2b848800b34de8baaf366b3}{Perform} (\hyperlink{class_signal_1_1_sample}{Sample} \&signal)
 \item 
 virtual bool \hyperlink{class_signal_1_1_b_l_i_t_a3b18e1f25f0900de4cf709cfc849b4c7}{Perform} (\hyperlink{class_signal_1_1_ring_buffer}{Ring\+Buffer} \&signal)
+\item 
+virtual double const \& \hyperlink{class_signal_1_1_signal_generator_a96af42ee68f94e9b04d034fd68b73ecd}{Frequency} () const 
+\item 
+virtual double const \& \hyperlink{class_signal_1_1_signal_generator_ac2538ec946f001e394d2416fda698d1c}{Phase\+Offset} () const 
+\item 
+virtual double const \& \hyperlink{class_signal_1_1_signal_generator_ac6a103ff72beaa338f6d18c812522d78}{Phase\+Offset} (double const \&value)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -53,6 +59,12 @@ float \hyperlink{class_signal_1_1_b_l_i_t_ab43c19874ddb53d92ba7e3374ce94b33}{phs
 float \hyperlink{class_signal_1_1_b_l_i_t_aad33fcad866b50f9596d7b54eef4f27a}{tmp}
 \item 
 float \hyperlink{class_signal_1_1_b_l_i_t_a0219d8bf4a3c9ba979824ae269363885}{\+\_\+denominator}
+\item 
+double \hyperlink{class_signal_1_1_signal_generator_a7f107461333bce68c5dad412db96a8c2}{\+\_\+frequency}
+\item 
+double \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\+\_\+f\+Hertz}
+\item 
+double \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\+\_\+phase\+\_\+offset}
 \end{DoxyCompactItemize}
 
 
@@ -195,6 +207,23 @@ Definition at line 19 of file B\+L\+I\+T.\+cpp.
 22     \textcolor{keywordflow}{return} this->\hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
 23 \}
 \end{DoxyCode}
+\hypertarget{class_signal_1_1_signal_generator_a96af42ee68f94e9b04d034fd68b73ecd}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_a96af42ee68f94e9b04d034fd68b73ecd}
+
+
+Definition at line 16 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+16                                                    \{
+17     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
+18 \}
+\end{DoxyCode}
 \hypertarget{class_signal_1_1_b_l_i_t_abf70cd38b2b848800b34de8baaf366b3}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
 \subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+B\+L\+I\+T\+::\+Perform (
@@ -252,6 +281,41 @@ Definition at line 65 of file B\+L\+I\+T.\+h.
 72         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
 73     \}
 \end{DoxyCode}
+\hypertarget{class_signal_1_1_signal_generator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!Phase\+Offset@{Phase\+Offset}}
+\index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
+\subsubsection[{Phase\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Phase\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_ac2538ec946f001e394d2416fda698d1c}
+
+
+Definition at line 24 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+24                                                      \{
+25     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+26 \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_signal_generator_ac6a103ff72beaa338f6d18c812522d78}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!Phase\+Offset@{Phase\+Offset}}
+\index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
+\subsubsection[{Phase\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Phase\+Offset (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_ac6a103ff72beaa338f6d18c812522d78}
+
+
+Definition at line 27 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                                    \{
+28     \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset} = value;
+29     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+30 \}
+\end{DoxyCode}
 \hypertarget{class_signal_1_1_b_l_i_t_a420e1540ee223244fe1af28b7527d41c}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!update\+Harms@{update\+Harms}}
 \index{update\+Harms@{update\+Harms}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
 \subsubsection[{update\+Harms}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+B\+L\+I\+T\+::update\+Harms (
@@ -288,12 +352,33 @@ Definition at line 24 of file B\+L\+I\+T.\+cpp.
 
 Definition at line 48 of file B\+L\+I\+T.\+h.
 
+\hypertarget{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!\+\_\+f\+Hertz@{\+\_\+f\+Hertz}}
+\index{\+\_\+f\+Hertz@{\+\_\+f\+Hertz}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
+\subsubsection[{\+\_\+f\+Hertz}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+f\+Hertz\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}
+
+
+Definition at line 34 of file Signal\+Generator.\+h.
+
+\hypertarget{class_signal_1_1_signal_generator_a7f107461333bce68c5dad412db96a8c2}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!\+\_\+frequency@{\+\_\+frequency}}
+\index{\+\_\+frequency@{\+\_\+frequency}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
+\subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_a7f107461333bce68c5dad412db96a8c2}
+
+
+Definition at line 33 of file Signal\+Generator.\+h.
+
 \hypertarget{class_signal_1_1_b_l_i_t_a9ec3a46bd37f7d76a8924dd7dd3622bd}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!\+\_\+n\+Harms@{\+\_\+n\+Harms}}
 \index{\+\_\+n\+Harms@{\+\_\+n\+Harms}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
 \subsubsection[{\+\_\+n\+Harms}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+B\+L\+I\+T\+::\+\_\+n\+Harms\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_b_l_i_t_a9ec3a46bd37f7d76a8924dd7dd3622bd}
 
 
 Definition at line 32 of file B\+L\+I\+T.\+h.
+
+\hypertarget{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}}
+\index{\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}
+\subsubsection[{\+\_\+phase\+\_\+offset}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+phase\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}
+
+
+Definition at line 35 of file Signal\+Generator.\+h.
 
 \hypertarget{class_signal_1_1_b_l_i_t_ae5ca010acf48cd0df232462cfaf95a3a}{\index{Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}!\+\_\+phasor@{\+\_\+phasor}}
 \index{\+\_\+phasor@{\+\_\+phasor}!Signal\+::\+B\+L\+I\+T@{Signal\+::\+B\+L\+I\+T}}

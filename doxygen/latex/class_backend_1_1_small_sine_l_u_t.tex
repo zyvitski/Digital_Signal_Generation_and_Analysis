@@ -19,6 +19,10 @@ Inheritance diagram for Backend\+:\+:Small\+Sine\+L\+U\+T$<$ element, size $>$\+
 virtual \hyperlink{class_backend_1_1_small_sine_l_u_t_a75767a2ebad8a8c4d8a4a54b7c61bb0e}{$\sim$\+Small\+Sine\+L\+U\+T} ()
 \item 
 virtual element \hyperlink{class_backend_1_1_small_sine_l_u_t_a2b6fdef4f825da7555ca4002f1dd94af}{operator()} (double const \&x)
+\item 
+element const \& \hyperlink{class_backend_1_1_l_u_t_a9a7c75f36c72778098a091db3269c29c}{operator\mbox{[}$\,$\mbox{]}} (unsigned long const \&index)
+\item 
+unsigned long const \& \hyperlink{class_backend_1_1_l_u_t_a3ab84f04569e89cd6046da599c6edbae}{Size} () const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -27,7 +31,13 @@ void \hyperlink{class_backend_1_1_small_sine_l_u_t_a981ef95660709f9a796dc176e4c6
 \item 
 element const \& \hyperlink{class_backend_1_1_small_sine_l_u_t_ab4403a4852d61cef8199a3f2cb313c57}{lookup} (double index)
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+element \hyperlink{class_backend_1_1_l_u_t_ae70f3f0c9aaa9e0b85517d8e2c61d9a5}{\+\_\+table} \mbox{[}size\mbox{]}
+\item 
+const unsigned long \hyperlink{class_backend_1_1_l_u_t_a94d2ce1a7c644ce2d4f8e905790b9b54}{\+\_\+size}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -153,6 +163,60 @@ Definition at line 52 of file Sine\+L\+U\+T.\+h.
 71             \textcolor{keywordflow}{return} 0;
 72         \}
 \end{DoxyCode}
+\hypertarget{class_backend_1_1_l_u_t_a9a7c75f36c72778098a091db3269c29c}{\index{Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ element const\& {\bf Backend\+::\+L\+U\+T}$<$ element, size $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{class_backend_1_1_l_u_t_a9a7c75f36c72778098a091db3269c29c}
+
+
+Definition at line 22 of file L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+22                                                              \{
+23 \textcolor{preprocessor}{#ifdef DEBUG}
+24             assert(index<\hyperlink{class_backend_1_1_l_u_t_a94d2ce1a7c644ce2d4f8e905790b9b54}{\_size});
+25 \textcolor{preprocessor}{#endif}
+26             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_l_u_t_ae70f3f0c9aaa9e0b85517d8e2c61d9a5}{\_table}[index];
+27         \}
+\end{DoxyCode}
+\hypertarget{class_backend_1_1_l_u_t_a3ab84f04569e89cd6046da599c6edbae}{\index{Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}!Size@{Size}}
+\index{Size@{Size}!Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ unsigned long const\& {\bf Backend\+::\+L\+U\+T}$<$ element, size $>$\+::Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{class_backend_1_1_l_u_t_a3ab84f04569e89cd6046da599c6edbae}
+
+
+Definition at line 31 of file L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+31                                         \{
+32             \textcolor{keywordflow}{return} \hyperlink{class_backend_1_1_l_u_t_a94d2ce1a7c644ce2d4f8e905790b9b54}{\_size};
+33         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_backend_1_1_l_u_t_a94d2ce1a7c644ce2d4f8e905790b9b54}{\index{Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ const unsigned long {\bf Backend\+::\+L\+U\+T}$<$ element, size $>$\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_backend_1_1_l_u_t_a94d2ce1a7c644ce2d4f8e905790b9b54}
+
+
+Definition at line 36 of file L\+U\+T.\+h.
+
+\hypertarget{class_backend_1_1_l_u_t_ae70f3f0c9aaa9e0b85517d8e2c61d9a5}{\index{Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}!\+\_\+table@{\+\_\+table}}
+\index{\+\_\+table@{\+\_\+table}!Backend\+::\+Small\+Sine\+L\+U\+T@{Backend\+::\+Small\+Sine\+L\+U\+T}}
+\subsubsection[{\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ element {\bf Backend\+::\+L\+U\+T}$<$ element, size $>$\+::\+\_\+table\mbox{[}size\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_backend_1_1_l_u_t_ae70f3f0c9aaa9e0b85517d8e2c61d9a5}
+
+
+Definition at line 35 of file L\+U\+T.\+h.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

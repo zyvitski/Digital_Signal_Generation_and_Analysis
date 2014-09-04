@@ -13,5 +13,7 @@ var searchData=
   ['signalprocess_2eh',['SignalProcess.h',['../_signal_process_8h.html',1,'']]],
   ['sine_2ecpp',['Sine.cpp',['../_sine_8cpp.html',1,'']]],
   ['sine_2eh',['Sine.h',['../_sine_8h.html',1,'']]],
-  ['sinelut_2eh',['SineLUT.h',['../_sine_l_u_t_8h.html',1,'']]]
+  ['sinelut_2eh',['SineLUT.h',['../_sine_l_u_t_8h.html',1,'']]],
+  ['square_2ecpp',['Square.cpp',['../_square_8cpp.html',1,'']]],
+  ['square_2eh',['Square.h',['../_square_8h.html',1,'']]]
 ];

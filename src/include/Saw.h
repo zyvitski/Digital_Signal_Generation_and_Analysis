@@ -27,18 +27,18 @@ namespace Signal {
     protected:
         unsigned long _h;
         double _a;
-        double tmp;
+        double phs;
         double stor;
         double iPI;
         unsigned short i;
     };
     
     inline bool Saw::Perform(Sample& signal){
-        tmp=_pstep();
-        tmp+=_phase_offset;
+        phs=_pstep();
+        phs+=_phase_offset;
         signal=0;
         for (i=1; i<_h+1; ++i) {
-            stor += _harmonicTable.Saw(i)* sine(tmp*(i));
+            stor += _harmonicTable.Saw(i)* sine(phs*(i));
         }
         stor*= _a*iPI;
         signal=stor;

@@ -49,6 +49,12 @@
 		1F591D7719B7E55600FEEF4C /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D6219B7E55600FEEF4C /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D7819B7E55600FEEF4C /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D6319B7E55600FEEF4C /* SineLUT.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D7919B7E55600FEEF4C /* Taylor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D6419B7E55600FEEF4C /* Taylor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F591D8219B7F75000FEEF4C /* minBLEP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8019B7F75000FEEF4C /* minBLEP.cpp */; };
+		1F591D8519B7F77A00FEEF4C /* minBLEP.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8419B7F77A00FEEF4C /* minBLEP.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F591D8719B7F7E700FEEF4C /* polyBLEP.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8619B7F7E700FEEF4C /* polyBLEP.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F591D8919B7F7FD00FEEF4C /* polyBLEP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */; };
+		1F591D8B19B7F88100FEEF4C /* Square.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8A19B7F88100FEEF4C /* Square.h */; };
+		1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8C19B7F89D00FEEF4C /* Square.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +141,12 @@
 		1F591D6219B7E55600FEEF4C /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sine.h; path = ../src/include/Sine.h; sourceTree = "<group>"; };
 		1F591D6319B7E55600FEEF4C /* SineLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SineLUT.h; path = ../src/include/SineLUT.h; sourceTree = "<group>"; };
 		1F591D6419B7E55600FEEF4C /* Taylor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Taylor.h; path = ../src/include/Taylor.h; sourceTree = "<group>"; };
+		1F591D8019B7F75000FEEF4C /* minBLEP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minBLEP.cpp; path = ../src/minBLEP.cpp; sourceTree = "<group>"; };
+		1F591D8419B7F77A00FEEF4C /* minBLEP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = minBLEP.h; path = ../src/include/minBLEP.h; sourceTree = "<group>"; };
+		1F591D8619B7F7E700FEEF4C /* polyBLEP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = polyBLEP.h; path = ../src/include/polyBLEP.h; sourceTree = "<group>"; };
+		1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polyBLEP.cpp; path = ../src/polyBLEP.cpp; sourceTree = "<group>"; };
+		1F591D8A19B7F88100FEEF4C /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Square.h; path = ../src/include/Square.h; sourceTree = "<group>"; };
+		1F591D8C19B7F89D00FEEF4C /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Square.cpp; path = ../src/Square.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +227,6 @@
 				1F591D5519B7E55600FEEF4C /* Driver.h */,
 				1F591D5619B7E55600FEEF4C /* HarmonicTable.h */,
 				1F591D5719B7E55600FEEF4C /* LUT.h */,
-				1F591D5819B7E55600FEEF4C /* Oscillators.h */,
 				1F591D5919B7E55600FEEF4C /* PI.h */,
 				1F591D5A19B7E55600FEEF4C /* Queue.h */,
 				1F591D5B19B7E55600FEEF4C /* RingBuffer.h */,
@@ -231,6 +242,7 @@
 		1F591D2B19B7DFE400FEEF4C /* SOURCE */ = {
 			isa = PBXGroup;
 			children = (
+				1F591D8019B7F75000FEEF4C /* minBLEP.cpp */,
 				1F591D2C19B7DFF600FEEF4C /* BLIT.cpp */,
 				1F591D2D19B7DFF600FEEF4C /* BLITSaw.cpp */,
 				1F591D2E19B7DFF600FEEF4C /* Buffer.cpp */,
@@ -245,6 +257,8 @@
 				1F591D3719B7DFF600FEEF4C /* SignalProcess.cpp */,
 				1F591D3819B7DFF600FEEF4C /* Sine.cpp */,
 				1F591D3919B7DFF600FEEF4C /* Taylor.cpp */,
+				1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */,
+				1F591D8C19B7F89D00FEEF4C /* Square.cpp */,
 			);
 			name = SOURCE;
 			sourceTree = "<group>";
@@ -262,12 +276,48 @@
 		1F591D7B19B7F2D500FEEF4C /* Generators */ = {
 			isa = PBXGroup;
 			children = (
-				1F591D5119B7E55600FEEF4C /* BLIT.h */,
-				1F591D5219B7E55600FEEF4C /* BLITSaw.h */,
-				1F591D5E19B7E55600FEEF4C /* Saw.h */,
-				1F591D6219B7E55600FEEF4C /* Sine.h */,
+				1F591D5819B7E55600FEEF4C /* Oscillators.h */,
+				1F591D7F19B7F6CC00FEEF4C /* polyBLEP */,
+				1F591D7E19B7F6C500FEEF4C /* minBLEP */,
+				1F591D7D19B7F6BC00FEEF4C /* BLIT */,
+				1F591D7C19B7F6B300FEEF4C /* Harmonic */,
 			);
 			name = Generators;
+			sourceTree = "<group>";
+		};
+		1F591D7C19B7F6B300FEEF4C /* Harmonic */ = {
+			isa = PBXGroup;
+			children = (
+				1F591D5E19B7E55600FEEF4C /* Saw.h */,
+				1F591D6219B7E55600FEEF4C /* Sine.h */,
+				1F591D8A19B7F88100FEEF4C /* Square.h */,
+			);
+			name = Harmonic;
+			sourceTree = "<group>";
+		};
+		1F591D7D19B7F6BC00FEEF4C /* BLIT */ = {
+			isa = PBXGroup;
+			children = (
+				1F591D5119B7E55600FEEF4C /* BLIT.h */,
+				1F591D5219B7E55600FEEF4C /* BLITSaw.h */,
+			);
+			name = BLIT;
+			sourceTree = "<group>";
+		};
+		1F591D7E19B7F6C500FEEF4C /* minBLEP */ = {
+			isa = PBXGroup;
+			children = (
+				1F591D8419B7F77A00FEEF4C /* minBLEP.h */,
+			);
+			name = minBLEP;
+			sourceTree = "<group>";
+		};
+		1F591D7F19B7F6CC00FEEF4C /* polyBLEP */ = {
+			isa = PBXGroup;
+			children = (
+				1F591D8619B7F7E700FEEF4C /* polyBLEP.h */,
+			);
+			name = polyBLEP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,15 +339,18 @@
 				1F591D7019B7E55600FEEF4C /* RingBuffer.h in Headers */,
 				1F591D6519B7E55600FEEF4C /* Backend.h in Headers */,
 				1F591D6919B7E55600FEEF4C /* ClassicGenerator.h in Headers */,
+				1F591D8519B7F77A00FEEF4C /* minBLEP.h in Headers */,
 				1F591D6D19B7E55600FEEF4C /* Oscillators.h in Headers */,
 				1F591D6719B7E55600FEEF4C /* BLITSaw.h in Headers */,
 				1F591D6619B7E55600FEEF4C /* BLIT.h in Headers */,
 				1F591D7419B7E55600FEEF4C /* Signal.h in Headers */,
 				1F591D7519B7E55600FEEF4C /* SignalGenerator.h in Headers */,
+				1F591D8719B7F7E700FEEF4C /* polyBLEP.h in Headers */,
 				1F591D6F19B7E55600FEEF4C /* Queue.h in Headers */,
 				1F591D7119B7E55600FEEF4C /* Sample_Rate.h in Headers */,
 				1F591D7919B7E55600FEEF4C /* Taylor.h in Headers */,
 				1F591D6B19B7E55600FEEF4C /* HarmonicTable.h in Headers */,
+				1F591D8B19B7F88100FEEF4C /* Square.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,9 +445,12 @@
 				1F591D4219B7DFF600FEEF4C /* Sample.cpp in Sources */,
 				1F591D4419B7DFF600FEEF4C /* SignalGenerator.cpp in Sources */,
 				1F591D3B19B7DFF600FEEF4C /* BLITSaw.cpp in Sources */,
+				1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */,
 				1F591D3F19B7DFF600FEEF4C /* HarmonicTable.cpp in Sources */,
+				1F591D8919B7F7FD00FEEF4C /* polyBLEP.cpp in Sources */,
 				1F591D3C19B7DFF600FEEF4C /* Buffer.cpp in Sources */,
 				1F591D4019B7DFF600FEEF4C /* RingBuffer.cpp in Sources */,
+				1F591D8219B7F75000FEEF4C /* minBLEP.cpp in Sources */,
 				1F591D4719B7DFF600FEEF4C /* Taylor.cpp in Sources */,
 				1F591D4619B7DFF600FEEF4C /* Sine.cpp in Sources */,
 				1F591D4319B7DFF600FEEF4C /* Saw.cpp in Sources */,

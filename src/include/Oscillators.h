@@ -13,4 +13,6 @@
 #include "Saw.h"
 #include "BLIT.h"
 #include "BLITSaw.h"
+#include "minBLEP.h"
+#include "polyBLEP.h"
 #endif

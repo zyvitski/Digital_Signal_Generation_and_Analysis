@@ -14,5 +14,6 @@ var searchData=
   ['_7esignalprocess',['~SignalProcess',['../class_signal_1_1_signal_process.html#a0c02bada1a551dd15aa76d9651338a6b',1,'Signal::SignalProcess']]],
   ['_7esine',['~Sine',['../class_signal_1_1_sine.html#a0d6a85ad0ddea987aba1955f98be89df',1,'Signal::Sine']]],
   ['_7esinelut',['~SineLUT',['../class_backend_1_1_sine_l_u_t.html#aeb5493bee1755391cea3690c31b1665b',1,'Backend::SineLUT']]],
-  ['_7esmallsinelut',['~SmallSineLUT',['../class_backend_1_1_small_sine_l_u_t.html#a75767a2ebad8a8c4d8a4a54b7c61bb0e',1,'Backend::SmallSineLUT::~SmallSineLUT()'],['../class_backend_1_1_small_sine_l_u_t_3_01int32__t_00_01size_01_4.html#a3db4fc45b900c846711e0cbd828dbbf4',1,'Backend::SmallSineLUT&lt; int32_t, size &gt;::~SmallSineLUT()']]]
+  ['_7esmallsinelut',['~SmallSineLUT',['../class_backend_1_1_small_sine_l_u_t.html#a75767a2ebad8a8c4d8a4a54b7c61bb0e',1,'Backend::SmallSineLUT::~SmallSineLUT()'],['../class_backend_1_1_small_sine_l_u_t_3_01int32__t_00_01size_01_4.html#a3db4fc45b900c846711e0cbd828dbbf4',1,'Backend::SmallSineLUT&lt; int32_t, size &gt;::~SmallSineLUT()']]],
+  ['_7esquare',['~Square',['../class_signal_1_1_square.html#a2eda1d209b2c919a3ce4ff40f2f9fed4',1,'Signal::Square']]]
 ];

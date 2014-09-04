@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ringbuffer',['RingBuffer',['../class_signal_1_1_ring_buffer.html',1,'Signal']]]
+  ['polyblep',['polyBLEP',['../class_signal_1_1poly_b_l_e_p.html',1,'Signal']]]
 ];

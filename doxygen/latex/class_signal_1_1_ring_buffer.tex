@@ -35,6 +35,10 @@ bool \hyperlink{class_signal_1_1_ring_buffer_ac8124016cfc0c833a3565c87d5f6f1e5}{
 bool \hyperlink{class_signal_1_1_ring_buffer_a73416d725604567d4b496f9821bc0c04}{Empty} () const 
 \item 
 void \hyperlink{class_signal_1_1_ring_buffer_aa9d2938e5c11c5d3c058db9b7e310406}{Flush} ()
+\item 
+\hyperlink{class_signal_1_1_sample}{Signal\+::\+Sample} \& \hyperlink{class_signal_1_1_buffer_a0b4ced776c42720b214f6054fa21547a}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t const \&index)
+\item 
+size\+\_\+t const \& \hyperlink{class_signal_1_1_buffer_ad0350078d641ed5cb15a9401d9d20ffe}{Size} () const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -53,6 +57,10 @@ std\+::atomic$<$ size\+\_\+t $>$ \hyperlink{class_signal_1_1_ring_buffer_a4bdf5d
 size\+\_\+t \hyperlink{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\+\_\+count}
 \item 
 size\+\_\+t \hyperlink{class_signal_1_1_ring_buffer_a6f0dc159e6d625b8352988c6a0577ffe}{M\+A\+S\+K}
+\item 
+\hyperlink{class_signal_1_1_sample}{Signal\+::\+Sample} $\ast$ \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\+\_\+buffer}
+\item 
+size\+\_\+t \hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\+\_\+size}
 \end{DoxyCompactItemize}
 
 
@@ -259,6 +267,26 @@ Definition at line 27 of file Ring\+Buffer.\+cpp.
 33     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
 34 \}
 \end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_a0b4ced776c42720b214f6054fa21547a}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample} \& Signal\+::\+Buffer\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}}\label{class_signal_1_1_buffer_a0b4ced776c42720b214f6054fa21547a}
+
+
+Definition at line 38 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}
+38                                                          \{
+39 \textcolor{preprocessor}{#ifdef DEBUG}
+40     assert(index<\hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size});
+41 \textcolor{preprocessor}{#endif}
+42     \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\_buffer}[index];
+43 \}
+\end{DoxyCode}
 \hypertarget{class_signal_1_1_ring_buffer_a9a5c8429c0e422e3d4763adb78b0a87c}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Read@{Read}}
 \index{Read@{Read}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
 \subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}bool Signal\+::\+Ring\+Buffer\+::\+Read (
@@ -281,6 +309,23 @@ Definition at line 68 of file Ring\+Buffer.\+h.
 74             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 75         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
 76     \}
+\end{DoxyCode}
+\hypertarget{class_signal_1_1_buffer_ad0350078d641ed5cb15a9401d9d20ffe}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Size@{Size}}
+\index{Size@{Size}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t const \& Signal\+::\+Buffer\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_buffer_ad0350078d641ed5cb15a9401d9d20ffe}
+
+
+Definition at line 31 of file Buffer.\+h.
+
+
+\begin{DoxyCode}
+31                                           \{
+32         \textcolor{keywordflow}{return} \hyperlink{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\_size};
+33     \}
 \end{DoxyCode}
 \hypertarget{class_signal_1_1_ring_buffer_aa291195b777aa50aa7a61ab1f4954bce}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!Write@{Write}}
 \index{Write@{Write}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
@@ -308,6 +353,13 @@ Definition at line 59 of file Ring\+Buffer.\+h.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+buffer@{\+\_\+buffer}}
+\index{\+\_\+buffer@{\+\_\+buffer}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\+::\+Sample}$\ast$ Signal\+::\+Buffer\+::\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_buffer_ae88831d6fdf8fd7591d5dd7f79531d5f}
+
+
+Definition at line 28 of file Buffer.\+h.
+
 \hypertarget{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+count@{\+\_\+count}}
 \index{\+\_\+count@{\+\_\+count}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
 \subsubsection[{\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Ring\+Buffer\+::\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_ring_buffer_ab41dbb1bd8c572099349f92055ed9185}
@@ -321,6 +373,13 @@ Definition at line 28 of file Ring\+Buffer.\+h.
 
 
 Definition at line 27 of file Ring\+Buffer.\+h.
+
+\hypertarget{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Signal\+::\+Buffer\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_buffer_ab4c8969e972323306ee51538ad70577b}
+
+
+Definition at line 29 of file Buffer.\+h.
 
 \hypertarget{class_signal_1_1_ring_buffer_a121cbb3679c61132fad237c671d08bef}{\index{Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}!\+\_\+write@{\+\_\+write}}
 \index{\+\_\+write@{\+\_\+write}!Signal\+::\+Ring\+Buffer@{Signal\+::\+Ring\+Buffer}}

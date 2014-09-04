@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['_5fa',['_a',['../class_signal_1_1_saw.html#a190de681addc384749845750897859e5',1,'Signal::Saw']]],
+  ['_5fa',['_a',['../class_signal_1_1_saw.html#a190de681addc384749845750897859e5',1,'Signal::Saw::_a()'],['../class_signal_1_1_square.html#ab94294f2f961b181cf45723c5d89106a',1,'Signal::Square::_a()']]],
   ['_5farray',['_array',['../class_backend_1_1array.html#ac588c1e30c2c4748bc9a5bb12b9320af',1,'Backend::array']]],
   ['_5fbuffer',['_buffer',['../class_signal_1_1_buffer.html#ae88831d6fdf8fd7591d5dd7f79531d5f',1,'Signal::Buffer::_buffer()'],['../class_signal_1_1_sample.html#ad609d308b1c36b007bd8210d316c070b',1,'Signal::Sample::_buffer()'],['../_driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b',1,'_buffer():&#160;Driver.cpp']]],
   ['_5fcount',['_count',['../class_backend_1_1_queue.html#ab49d17e24dc0f8a2e5e44c182c240249',1,'Backend::Queue::_count()'],['../class_signal_1_1_ring_buffer.html#ab41dbb1bd8c572099349f92055ed9185',1,'Signal::RingBuffer::_count()']]],
   ['_5fdenominator',['_denominator',['../class_signal_1_1_b_l_i_t.html#a0219d8bf4a3c9ba979824ae269363885',1,'Signal::BLIT']]],
   ['_5ffhertz',['_fHertz',['../class_signal_1_1_signal_generator.html#a85a4702347352bab1c71e0a8df8437d6',1,'Signal::SignalGenerator']]],
   ['_5ffrequency',['_frequency',['../class_signal_1_1_signal_generator.html#a7f107461333bce68c5dad412db96a8c2',1,'Signal::SignalGenerator']]],
-  ['_5fh',['_h',['../class_signal_1_1_saw.html#a359bfaaab07a3c830da6b81baf045330',1,'Signal::Saw']]],
+  ['_5fh',['_h',['../class_signal_1_1_saw.html#a359bfaaab07a3c830da6b81baf045330',1,'Signal::Saw::_h()'],['../class_signal_1_1_square.html#a841e8057c59c3dd07ba672420a7fac4a',1,'Signal::Square::_h()']]],
   ['_5fmask',['_MASK',['../class_backend_1_1_queue.html#ab665bcab528d6bad6c4faab1ae0fc1b4',1,'Backend::Queue']]],
   ['_5fmaxharms',['_maxHarms',['../class_signal_1_1_classic_generator.html#a7457e912d428de4e3fc27ec7fc49890e',1,'Signal::ClassicGenerator']]],
   ['_5fnharms',['_nHarms',['../class_signal_1_1_b_l_i_t.html#a9ec3a46bd37f7d76a8924dd7dd3622bd',1,'Signal::BLIT']]],
