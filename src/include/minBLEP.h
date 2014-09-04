@@ -12,11 +12,12 @@
 #include "SignalGenerator.h"
 
 namespace Signal {
-    
-    class minBLEP:public SignalGenerator{
-    public:
+    namespace BLEP{
+        class minBLEP:public SignalGenerator{
+        public:
 #warning Unimplimented minBLEP
-    };
+        };
+    }
 }
 
 #endif /* defined(__Digital_Signal_Generation_and_Analysis__minBLEP__) */

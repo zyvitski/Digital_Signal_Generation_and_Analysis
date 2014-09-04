@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,21 +105,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_signal_generator_8h.html">SignalGenerator.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_signal.html">Signal</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_signal_1_1poly_b_l_e_p.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_signal_1_1poly_b_l_e_p.html">polyBLEP</a>:<span class="keyword">public</span> <a class="code" href="class_signal_1_1_signal_generator.html">SignalGenerator</a>{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#warning Unimplimented polyBLEP</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">namespace </span>BLEP{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_signal_1_1_b_l_e_p_1_1poly_b_l_e_p.html">   16</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_signal_1_1_b_l_e_p_1_1poly_b_l_e_p.html">polyBLEP</a>:<span class="keyword">public</span> <a class="code" href="class_signal_1_1_signal_generator.html">SignalGenerator</a>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#warning Unimplimented polyBLEP</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_signal_1_1_signal_generator_html"><div class="ttname"><a href="class_signal_1_1_signal_generator.html">Signal::SignalGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="_signal_generator_8h_source.html#l00019">SignalGenerator.h:19</a></div></div>
+<div class="ttc" id="class_signal_1_1_b_l_e_p_1_1poly_b_l_e_p_html"><div class="ttname"><a href="class_signal_1_1_b_l_e_p_1_1poly_b_l_e_p.html">Signal::BLEP::polyBLEP</a></div><div class="ttdef"><b>Definition:</b> <a href="poly_b_l_e_p_8h_source.html#l00016">polyBLEP.h:16</a></div></div>
 <div class="ttc" id="_signal_generator_8h_html"><div class="ttname"><a href="_signal_generator_8h.html">SignalGenerator.h</a></div></div>
-<div class="ttc" id="class_signal_1_1poly_b_l_e_p_html"><div class="ttname"><a href="class_signal_1_1poly_b_l_e_p.html">Signal::polyBLEP</a></div><div class="ttdef"><b>Definition:</b> <a href="poly_b_l_e_p_8h_source.html#l00015">polyBLEP.h:15</a></div></div>
 <div class="ttc" id="namespace_signal_html"><div class="ttname"><a href="namespace_signal.html">Signal</a></div><div class="ttdef"><b>Definition:</b> <a href="_b_l_i_t_8h_source.html#l00017">BLIT.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 3 2014 20:35:47 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 3 2014 21:18:52 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -28,21 +28,21 @@ Definition at line 14 of file main.\+cpp.
 \begin{DoxyCode}
 15 \{
 16     
-17     \textcolor{keywordtype}{double} stp = \hyperlink{_p_i_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}/1000.0;
+17     \textcolor{keywordtype}{double} stp = \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}/1000.0;
 18     \textcolor{keywordtype}{double} phs=0;
 19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<1000; ++i) \{
-20         std::cout<<\hyperlink{namespace_backend_1_1_taylor_afda165e6dde636dd0f7b32031a71c7df}{Taylor::Sine}(phs)<<std::endl;
+20         std::cout<<\hyperlink{namespaceBackend_1_1Taylor_afda165e6dde636dd0f7b32031a71c7df}{Taylor::Sine}(phs)<<std::endl;
 21         phs+=stp;
 22     \}
 23     
 24     \textcolor{keywordflow}{return} 0;
-25     \hyperlink{namespace_signal_a2f163a7bbf1b0fc76ceba8b0916a7890}{Set\_Sample\_Rate}(44100);
+25     \hyperlink{namespaceSignal_a2f163a7bbf1b0fc76ceba8b0916a7890}{Set\_Sample\_Rate}(44100);
 26     
 27     Saw \_s(30,0.0);
 28     
-29     \hyperlink{_driver_8cpp_a70105fa3a575041357534257c1bd91a7}{DriverInit}(&\_s);
+29     \hyperlink{Driver_8cpp_a70105fa3a575041357534257c1bd91a7}{DriverInit}(&\_s);
 30     Pa\_Sleep(10000);
-31     \hyperlink{_driver_8cpp_a0e985fca408fe471f534ee98a2bd5733}{DriverExit}();
+31     \hyperlink{Driver_8cpp_a0e985fca408fe471f534ee98a2bd5733}{DriverExit}();
 32     
 33     
 34     \textcolor{keywordflow}{return} 0;

@@ -63,7 +63,7 @@ double \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b
 \subsection{Detailed Description}
 
 
-Definition at line 16 of file Sine.\+h.
+Definition at line 32 of file Sine.\+h.
 
 
 
@@ -222,7 +222,7 @@ Definition at line 16 of file Signal\+Generator.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{class_signal_1_1_signal_generator_af83b532bf3ddc3637c2fd7a1dfd095cb}
 
 
-Reimplemented in \hyperlink{class_signal_1_1_b_l_i_t_a911a6d5d3e218613b4740d4321f7207e}{Signal\+::\+B\+L\+I\+T}, \hyperlink{class_signal_1_1_saw_af91fd0d15b380c02e309705eaad46efd}{Signal\+::\+Saw}, and \hyperlink{class_signal_1_1_square_a19f966d5b1800f5487cdd164747b21c0}{Signal\+::\+Square}.
+Reimplemented in \hyperlink{class_signal_1_1_b_l_i_t_1_1_b_l_i_t_a59110620478308054d4c932c613e5cc6}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{class_signal_1_1_saw_af91fd0d15b380c02e309705eaad46efd}{Signal\+::\+Saw}, and \hyperlink{class_signal_1_1_square_a19f966d5b1800f5487cdd164747b21c0}{Signal\+::\+Square}.
 
 
 
@@ -249,14 +249,23 @@ Reimplemented from \hyperlink{class_signal_1_1_classic_generator_a4a62f329b9cd64
 
 
 
-Definition at line 25 of file Sine.\+h.
+Definition at line 41 of file Sine.\+h.
 
 
 \begin{DoxyCode}
-25                                            \{
-26         signal = sine((\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}() + \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset}));
-27         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-28     \}
+41                                            \{
+42         \textcolor{comment}{//uses LUT}
+43 \textcolor{preprocessor}{#if SINE\_IMPL == SINE\_USE\_LUT}
+44         signal = sine((\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}() + \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset}));
+45 \textcolor{preprocessor}{#elif SINE\_IMPL==SINE\_USE\_TAYLOR}
+46         signal = \hyperlink{namespace_backend_1_1_taylor_afda165e6dde636dd0f7b32031a71c7df}{Backend::Taylor::Sine}((\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}()+
+      \hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset})*\hyperlink{_p_i_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
+47 \textcolor{preprocessor}{#else}
+48         signal = sin((\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}()+\hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset})*\hyperlink{_p_i_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
+49 \textcolor{preprocessor}{#endif}
+50 
+51         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+52     \}
 \end{DoxyCode}
 \hypertarget{class_signal_1_1_sine_ac0a6c6e24f830446ea75de3a392f7e06}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+Sine@{Signal\+::\+Sine}}
@@ -271,19 +280,19 @@ Reimplemented from \hyperlink{class_signal_1_1_classic_generator_a308c13baa66020
 
 
 
-Definition at line 29 of file Sine.\+h.
+Definition at line 53 of file Sine.\+h.
 
 
 \begin{DoxyCode}
-29                                                \{
-30         signal.Flush();
-31         \textcolor{keywordflow}{while} (!signal.Full()) \{
-32             \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{Perform}(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample})) \{
-33                 \textcolor{keywordflow}{if}(signal.Write(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}))\{
-34                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-35             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-36         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-37     \}
+53                                                \{
+54         signal.Flush();
+55         \textcolor{keywordflow}{while} (!signal.Full()) \{
+56             \textcolor{keywordflow}{if} (\hyperlink{class_signal_1_1_sine_a8f7c74c35cfd87b490d84a7a75c35691}{Perform}(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample})) \{
+57                 \textcolor{keywordflow}{if}(signal.Write(\hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}))\{
+58                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+59             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+60         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+61     \}
 \end{DoxyCode}
 \hypertarget{class_signal_1_1_signal_generator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+Sine@{Signal\+::\+Sine}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+Sine@{Signal\+::\+Sine}}

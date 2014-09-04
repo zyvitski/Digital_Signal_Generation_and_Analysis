@@ -12,10 +12,12 @@
 #include "SignalGenerator.h"
 
 namespace Signal {
-    class polyBLEP:public SignalGenerator{
-    public:
+    namespace BLEP{
+        class polyBLEP:public SignalGenerator{
+        public:
 #warning Unimplimented polyBLEP
-    };
+        };
+    }
 }
 
 #endif

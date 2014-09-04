@@ -11,6 +11,7 @@
 
 #include "Sine.h"
 #include "Saw.h"
+#include "Square.h"
 #include "BLIT.h"
 #include "BLITSaw.h"
 #include "minBLEP.h"

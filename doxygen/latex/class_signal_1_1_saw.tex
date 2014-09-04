@@ -52,7 +52,7 @@ unsigned long \hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}
 \item 
 double \hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\+\_\+a}
 \item 
-double \hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}
+double \hyperlink{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{phs}
 \item 
 double \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}
 \item 
@@ -96,7 +96,7 @@ Definition at line 10 of file Saw.\+cpp.
 
 \begin{DoxyCode}
 10 :\hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{ClassicGenerator}(),\hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\_a}(5.0/3.0),\hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h}(\hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\_maxHarms}(
-      \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI}(1.0/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}(0),\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}(0)\{\}
+      \hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI}(1.0/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{phs}(0),\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}(0)\{\}
 \end{DoxyCode}
 \hypertarget{class_signal_1_1_saw_a6d772ec845a8c98a4111a7bf1ddabb10}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!Saw@{Saw}}
 \index{Saw@{Saw}!Signal\+::\+Saw@{Signal\+::\+Saw}}
@@ -114,7 +114,7 @@ Definition at line 11 of file Saw.\+cpp.
 \begin{DoxyCode}
 11                                                                 :
       \hyperlink{class_signal_1_1_classic_generator_a7e4478904de77156deccb1515f6985cb}{ClassicGenerator}(frequency,phase\_offset),\hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\_a}(5.0/3.0),\hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h}(
-      \hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\_maxHarms}(\hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI}(1.0/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}(0),\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}(0)\{
+      \hyperlink{class_signal_1_1_classic_generator_a7457e912d428de4e3fc27ec7fc49890e}{\_maxHarms}(\hyperlink{class_signal_1_1_signal_generator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI}(1.0/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{phs}(0),\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}(0)\{
 12     \hyperlink{class_signal_1_1_classic_generator_a40313d0d806d6e44af7d41b3ef3a0822}{\_sample}=0;
 13     \hyperlink{class_signal_1_1_classic_generator_a1214faf589eccb01631700723900bbf9}{\_storage}=0;
 14 \}
@@ -287,11 +287,11 @@ Definition at line 36 of file Saw.\+h.
 
 \begin{DoxyCode}
 36                                           \{
-37         \hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}=\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}();
-38         \hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}+=\hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+37         \hyperlink{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{phs}=\hyperlink{class_signal_1_1_classic_generator_a255330ce8049b6e6d101b8d356cebe3d}{\_pstep}();
+38         \hyperlink{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{phs}+=\hyperlink{class_signal_1_1_signal_generator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
 39         signal=0;
 40         \textcolor{keywordflow}{for} (\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}=1; \hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}<\hyperlink{class_signal_1_1_saw_a359bfaaab07a3c830da6b81baf045330}{\_h}+1; ++\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}) \{
-41             \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor} += \_harmonicTable.Saw(\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i})* sine(\hyperlink{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{tmp}*(\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}));
+41             \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor} += \_harmonicTable.Saw(\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i})* sine(\hyperlink{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{phs}*(\hyperlink{class_signal_1_1_saw_a50612c8009e428dccb3e4b3b798bdf3d}{i}));
 42         \}
 43         \hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor}*= \hyperlink{class_signal_1_1_saw_a190de681addc384749845750897859e5}{\_a}*\hyperlink{class_signal_1_1_saw_a75052e172f2d3c7ffc8daae2988f7305}{iPI};
 44         signal=\hyperlink{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{stor};
@@ -433,19 +433,19 @@ Definition at line 33 of file Saw.\+h.
 
 Definition at line 32 of file Saw.\+h.
 
+\hypertarget{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!phs@{phs}}
+\index{phs@{phs}!Signal\+::\+Saw@{Signal\+::\+Saw}}
+\subsubsection[{phs}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::phs\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a96d64ea69f7930c8d7640ecd6944dc84}
+
+
+Definition at line 30 of file Saw.\+h.
+
 \hypertarget{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!stor@{stor}}
 \index{stor@{stor}!Signal\+::\+Saw@{Signal\+::\+Saw}}
 \subsubsection[{stor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::stor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_a7c038cabed8c0b51136f16794c9142fd}
 
 
 Definition at line 31 of file Saw.\+h.
-
-\hypertarget{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}{\index{Signal\+::\+Saw@{Signal\+::\+Saw}!tmp@{tmp}}
-\index{tmp@{tmp}!Signal\+::\+Saw@{Signal\+::\+Saw}}
-\subsubsection[{tmp}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Saw\+::tmp\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_signal_1_1_saw_ad22f84065bf0bb32f437bc76709277f5}
-
-
-Definition at line 30 of file Saw.\+h.
 
 
 

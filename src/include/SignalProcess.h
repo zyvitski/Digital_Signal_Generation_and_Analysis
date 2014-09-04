@@ -9,10 +9,18 @@
 #ifndef __Waveform__SignalProcess__
 #define __Waveform__SignalProcess__
 
+/*!\file SignalProcess.h
+ *
+ */
+
 #include "Backend.h"
 
 namespace Signal {
+    
     class SignalProcess {
+        /*! \class SignalProcess
+         *  \brief An Abstract Base Class defining the basics API needed for audio generation
+         */
     public:
         SignalProcess();
         virtual ~SignalProcess();

@@ -1,0 +1,231 @@
+\hypertarget{classBackend_1_1array}{\section{Backend\+:\+:array$<$ element $>$ Class Template Reference}
+\label{classBackend_1_1array}\index{Backend\+::array$<$ element $>$@{Backend\+::array$<$ element $>$}}
+}
+
+
+{\ttfamily \#include $<$Queue.\+h$>$}
+
+Inheritance diagram for Backend\+:\+:array$<$ element $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBackend_1_1array}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef element $\ast$ \hyperlink{classBackend_1_1array_a6d8785dc8b979153ef122f4e3bad1408}{pointer}
+\item 
+typedef element \& \hyperlink{classBackend_1_1array_aa98075b8d7a4e63ea919ee9d1d4df4a9}{reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBackend_1_1array_a66b527d78881f22d8b8508492f255122}{array} ()
+\item 
+\hyperlink{classBackend_1_1array_aea145bb4183732b07f1ea2c5ef74406e}{array} (unsigned long size)
+\item 
+\hyperlink{classBackend_1_1array_ac15cb5df923a27aae58573b2a798a564}{array} (\hyperlink{classBackend_1_1array}{array}$<$ element $>$ const \&other)
+\item 
+\hyperlink{classBackend_1_1array}{array}$<$ element $>$ \& \hyperlink{classBackend_1_1array_abab978602a61af66f73e4951e5779554}{operator=} (\hyperlink{classBackend_1_1array}{array}$<$ element $>$ const \&other)
+\item 
+virtual \hyperlink{classBackend_1_1array_af036a9cb5baeb7acdda453ffc25e8b5f}{$\sim$array} ()
+\item 
+element \& \hyperlink{classBackend_1_1array_a906073a0b37d9abef728f2c188e73a5a}{operator\mbox{[}$\,$\mbox{]}} (unsigned long const \&index)
+\item 
+unsigned long const \& \hyperlink{classBackend_1_1array_a7b74d2da9eacbeea96b1661962a03970}{Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+element $\ast$ \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\+\_\+array}
+\item 
+unsigned long \hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class element$>$class Backend\+::array$<$ element $>$}
+
+
+
+Definition at line 27 of file Queue.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classBackend_1_1array_a6d8785dc8b979153ef122f4e3bad1408}{\index{Backend\+::array@{Backend\+::array}!pointer@{pointer}}
+\index{pointer@{pointer}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ typedef element$\ast$ {\bf Backend\+::array}$<$ element $>$\+::{\bf pointer}}}\label{classBackend_1_1array_a6d8785dc8b979153ef122f4e3bad1408}
+
+
+Definition at line 29 of file Queue.\+h.
+
+\hypertarget{classBackend_1_1array_aa98075b8d7a4e63ea919ee9d1d4df4a9}{\index{Backend\+::array@{Backend\+::array}!reference@{reference}}
+\index{reference@{reference}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ typedef element\& {\bf Backend\+::array}$<$ element $>$\+::{\bf reference}}}\label{classBackend_1_1array_aa98075b8d7a4e63ea919ee9d1d4df4a9}
+
+
+Definition at line 30 of file Queue.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBackend_1_1array_a66b527d78881f22d8b8508492f255122}{\index{Backend\+::array@{Backend\+::array}!array@{array}}
+\index{array@{array}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ {\bf Backend\+::array}$<$ element $>$\+::{\bf array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBackend_1_1array_a66b527d78881f22d8b8508492f255122}
+
+
+Definition at line 32 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+32 :\hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}(0),\hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}(\textcolor{keyword}{nullptr})\{\}
+\end{DoxyCode}
+\hypertarget{classBackend_1_1array_aea145bb4183732b07f1ea2c5ef74406e}{\index{Backend\+::array@{Backend\+::array}!array@{array}}
+\index{array@{array}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ {\bf Backend\+::array}$<$ element $>$\+::{\bf array} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBackend_1_1array_aea145bb4183732b07f1ea2c5ef74406e}
+
+
+Definition at line 33 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+33 :\hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}(size),\hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}(\textcolor{keyword}{new} element[size])\{\}
+\end{DoxyCode}
+\hypertarget{classBackend_1_1array_ac15cb5df923a27aae58573b2a798a564}{\index{Backend\+::array@{Backend\+::array}!array@{array}}
+\index{array@{array}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ {\bf Backend\+::array}$<$ element $>$\+::{\bf array} (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ element $>$ const \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBackend_1_1array_ac15cb5df923a27aae58573b2a798a564}
+
+
+Definition at line 34 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+34                                           \{
+35             \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array} = \textcolor{keyword}{new} element[other.Size()];
+36             \hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size} = other.Size();
+37             *\textcolor{keyword}{this} = other;
+38         \}
+\end{DoxyCode}
+\hypertarget{classBackend_1_1array_af036a9cb5baeb7acdda453ffc25e8b5f}{\index{Backend\+::array@{Backend\+::array}!````~array@{$\sim$array}}
+\index{````~array@{$\sim$array}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{$\sim$array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ virtual {\bf Backend\+::array}$<$ element $>$\+::$\sim${\bf array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classBackend_1_1array_af036a9cb5baeb7acdda453ffc25e8b5f}
+
+
+Definition at line 52 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+52                         \{
+53             \textcolor{keywordflow}{if} (\hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}!=\textcolor{keyword}{nullptr}) \{
+54                 \textcolor{keyword}{delete} [] \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array};
+55             \}
+56             \hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}=0;
+57         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBackend_1_1array_abab978602a61af66f73e4951e5779554}{\index{Backend\+::array@{Backend\+::array}!operator=@{operator=}}
+\index{operator=@{operator=}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ {\bf array}$<$element$>$\& {\bf Backend\+::array}$<$ element $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ element $>$ const \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBackend_1_1array_abab978602a61af66f73e4951e5779554}
+
+
+Definition at line 39 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+39                                                               \{
+40             \textcolor{keywordflow}{if} (\hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}!=other.\_size) \{
+41                 \textcolor{keywordflow}{if} (\hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}!=\textcolor{keyword}{nullptr}) \{
+42                     \textcolor{keyword}{delete} [] \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array};
+43                 \}
+44                 \hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size} = other.\_size;
+45                 \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array} = \textcolor{keyword}{new} element[\hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}];
+46             \}
+47             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size}; ++i) \{
+48                 \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[i] = other.\_array[i];
+49             \}
+50             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+51         \}
+\end{DoxyCode}
+\hypertarget{classBackend_1_1array_a906073a0b37d9abef728f2c188e73a5a}{\index{Backend\+::array@{Backend\+::array}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ element\& {\bf Backend\+::array}$<$ element $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBackend_1_1array_a906073a0b37d9abef728f2c188e73a5a}
+
+
+Definition at line 58 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+58                                                        \{
+59 \textcolor{preprocessor}{#ifdef DEBUG}
+60             assert(index<\hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size});
+61 \textcolor{preprocessor}{#endif}
+62             \textcolor{keywordflow}{return} \hyperlink{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\_array}[index];
+63         \}
+\end{DoxyCode}
+\hypertarget{classBackend_1_1array_a7b74d2da9eacbeea96b1661962a03970}{\index{Backend\+::array@{Backend\+::array}!Size@{Size}}
+\index{Size@{Size}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long const\& {\bf Backend\+::array}$<$ element $>$\+::Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBackend_1_1array_a7b74d2da9eacbeea96b1661962a03970}
+
+
+Definition at line 64 of file Queue.\+h.
+
+
+\begin{DoxyCode}
+64                                         \{
+65             \textcolor{keywordflow}{return} \hyperlink{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\_size};
+66         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}{\index{Backend\+::array@{Backend\+::array}!\+\_\+array@{\+\_\+array}}
+\index{\+\_\+array@{\+\_\+array}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ element$\ast$ {\bf Backend\+::array}$<$ element $>$\+::\+\_\+array\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBackend_1_1array_ac588c1e30c2c4748bc9a5bb12b9320af}
+
+
+Definition at line 68 of file Queue.\+h.
+
+\hypertarget{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}{\index{Backend\+::array@{Backend\+::array}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!Backend\+::array@{Backend\+::array}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class element$>$ unsigned long {\bf Backend\+::array}$<$ element $>$\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBackend_1_1array_ae51d64e87b42931946111c28b98e8a18}
+
+
+Definition at line 69 of file Queue.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{Queue_8h}{Queue.\+h}\end{DoxyCompactItemize}

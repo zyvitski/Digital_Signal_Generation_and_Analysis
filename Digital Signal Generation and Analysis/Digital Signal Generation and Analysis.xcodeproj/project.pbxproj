@@ -53,7 +53,7 @@
 		1F591D8519B7F77A00FEEF4C /* minBLEP.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8419B7F77A00FEEF4C /* minBLEP.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D8719B7F7E700FEEF4C /* polyBLEP.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8619B7F7E700FEEF4C /* polyBLEP.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D8919B7F7FD00FEEF4C /* polyBLEP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */; };
-		1F591D8B19B7F88100FEEF4C /* Square.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8A19B7F88100FEEF4C /* Square.h */; };
+		1F591D8B19B7F88100FEEF4C /* Square.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8A19B7F88100FEEF4C /* Square.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8C19B7F89D00FEEF4C /* Square.cpp */; };
 /* End PBXBuildFile section */
 

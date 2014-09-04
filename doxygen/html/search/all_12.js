@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updateharms',['updateHarms',['../class_signal_1_1_b_l_i_t.html#a420e1540ee223244fe1af28b7527d41c',1,'Signal::BLIT::updateHarms()'],['../class_signal_1_1_b_l_i_t_saw.html#ac2dd5e8cbd1797fe62aa0947e1fd1b9f',1,'Signal::BLITSaw::updateHarms()']]]
+  ['updateharms',['updateHarms',['../classSignal_1_1BLIT_1_1BLIT.html#abec1466e0fe67fcdd52127ab34b7a3a4',1,'Signal::BLIT::BLIT::updateHarms()'],['../classSignal_1_1BLIT_1_1BLITSaw.html#a9c8ad70fca571cc707eaa99649d74afc',1,'Signal::BLIT::BLITSaw::updateHarms()']]]
 ];

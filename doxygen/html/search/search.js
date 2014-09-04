@@ -15,7 +15,8 @@ var indexSectionsWithContent =
   5: "_impst",
   6: "pr",
   7: "o",
-  8: "bcpt"
+  8: "bcpst",
+  9: "t"
 };
 
 var indexSectionNames =
@@ -28,7 +29,8 @@ var indexSectionNames =
   5: "variables",
   6: "typedefs",
   7: "related",
-  8: "defines"
+  8: "defines",
+  9: "pages"
 };
 
 function convertToId(search)

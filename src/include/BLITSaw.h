@@ -12,35 +12,35 @@
 #include "BLIT.h"
 
 namespace Signal {
-    
-    
-    
-    class BLITSaw:public BLIT {
-        BLITSaw();
-        BLITSaw(double const& frequency,double const& phase_offset);
-        virtual ~BLITSaw();
-        virtual double const& Frequency(double const& value);//get and set frequency in hz
-        virtual inline bool Perform(Sample& signal);
-        virtual inline bool Perform(RingBuffer& signal);
-    protected:
-        virtual void updateHarms();
+    namespace BLIT{
         
         
-    };
-    
-    inline bool BLITSaw::Perform(Sample& signal){
+        class BLITSaw:public BLIT::BLIT {
+            BLITSaw();
+            BLITSaw(double const& frequency,double const& phase_offset);
+            virtual ~BLITSaw();
+            virtual double const& Frequency(double const& value);//get and set frequency in hz
+            virtual inline bool Perform(Sample& signal);
+            virtual inline bool Perform(RingBuffer& signal);
+        protected:
+            virtual void updateHarms();
+            
+            
+        };
+        
+        inline bool BLITSaw::Perform(Sample& signal){
 #warning unimplimented BLITSaw Perform
-        return true;
-    }
-    inline bool BLITSaw::Perform(RingBuffer& signal){
-        signal.Flush();
-        while (!signal.Full()) {
-            if (Perform(_sample)) {
-                if(signal.Write(_sample)){
+            return true;
+        }
+        inline bool BLITSaw::Perform(RingBuffer& signal){
+            signal.Flush();
+            while (!signal.Full()) {
+                if (Perform(_sample)) {
+                    if(signal.Write(_sample)){
+                    }else return false;
                 }else return false;
-            }else return false;
-        }return true;
+            }return true;
+        }
     }
 }
-
 #endif /* defined(__Waveform__BLITSaw__) */

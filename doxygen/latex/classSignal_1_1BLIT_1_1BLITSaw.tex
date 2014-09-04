@@ -1,0 +1,261 @@
+\hypertarget{classSignal_1_1BLIT_1_1BLITSaw}{\section{Signal\+:\+:B\+L\+I\+T\+:\+:B\+L\+I\+T\+Saw Class Reference}
+\label{classSignal_1_1BLIT_1_1BLITSaw}\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+}
+
+
+{\ttfamily \#include $<$B\+L\+I\+T\+Saw.\+h$>$}
+
+Inheritance diagram for Signal\+:\+:B\+L\+I\+T\+:\+:B\+L\+I\+T\+Saw\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classSignal_1_1BLIT_1_1BLITSaw}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double const \& \hyperlink{classSignal_1_1SignalGenerator_a96af42ee68f94e9b04d034fd68b73ecd}{Frequency} () const 
+\item 
+virtual double const \& \hyperlink{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}{Phase\+Offset} () const 
+\item 
+virtual double const \& \hyperlink{classSignal_1_1SignalGenerator_ac6a103ff72beaa338f6d18c812522d78}{Phase\+Offset} (double const \&value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classSignal_1_1BLIT_1_1BLITSaw_a9c8ad70fca571cc707eaa99649d74afc}{update\+Harms} ()
+\item 
+double \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae552ae6350f291dd14198f88fbda0359}{\+\_\+pstep} ()
+\item 
+double \hyperlink{classSignal_1_1BLIT_1_1BLIT_a09820c226748516af14ff25043f1c51a}{\+\_\+pstep\+\_\+rad} ()
+\item 
+void \hyperlink{classSignal_1_1BLIT_1_1BLIT_ad0ede061ea6ca1db803d16ac8c968875}{\+\_\+psync} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSignal_1_1Sample}{Sample} \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae3db6ee922897295fdf93a3b3c3dfadd}{\+\_\+sample}
+\item 
+unsigned long \hyperlink{classSignal_1_1BLIT_1_1BLIT_a0bfbf4e7515a42fab7df748b8497f648}{\+\_\+n\+Harms}
+\item 
+unsigned long \hyperlink{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}{m\+\_\+}
+\item 
+double \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\+\_\+phasor}
+\item 
+float \hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs}
+\item 
+float \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp}
+\item 
+float \hyperlink{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\+\_\+denominator}
+\item 
+double \hyperlink{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}{\+\_\+frequency}
+\item 
+double \hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\+\_\+f\+Hertz}
+\item 
+double \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\+\_\+phase\+\_\+offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file B\+L\+I\+T\+Saw.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_ae552ae6350f291dd14198f88fbda0359}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+pstep@{\+\_\+pstep}}
+\index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+pstep}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+pstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_ae552ae6350f291dd14198f88fbda0359}
+
+
+Definition at line 75 of file B\+L\+I\+T.\+h.
+
+
+\begin{DoxyCode}
+75                                   \{
+76             \textcolor{keywordtype}{double} value = \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\_phasor};
+77             \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\_phasor}+=\hyperlink{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}{\_frequency};
+78             \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\_phasor} = \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\_phasor}-(\textcolor{keywordtype}{unsigned} long)\hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\_phasor};\textcolor{comment}{//cheaper %1}
+79             \textcolor{keywordflow}{return} value;
+80         \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_a09820c226748516af14ff25043f1c51a}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}}
+\index{\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+pstep\+\_\+rad}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+pstep\+\_\+rad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_a09820c226748516af14ff25043f1c51a}
+
+
+Definition at line 81 of file B\+L\+I\+T.\+h.
+
+
+\begin{DoxyCode}
+81                                       \{
+82             \textcolor{keywordflow}{return} \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae552ae6350f291dd14198f88fbda0359}{\_pstep}();
+83         \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_ad0ede061ea6ca1db803d16ac8c968875}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+psync@{\+\_\+psync}}
+\index{\+\_\+psync@{\+\_\+psync}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+psync}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+psync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_ad0ede061ea6ca1db803d16ac8c968875}
+
+
+Definition at line 84 of file B\+L\+I\+T.\+h.
+
+
+\begin{DoxyCode}
+84                                 \{
+85             \hyperlink{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\_phasor} = 0;
+86         \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1SignalGenerator_a96af42ee68f94e9b04d034fd68b73ecd}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a96af42ee68f94e9b04d034fd68b73ecd}
+
+
+Definition at line 16 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+16                                                    \{
+17     \textcolor{keywordflow}{return} \hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
+18 \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!Phase\+Offset@{Phase\+Offset}}
+\index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{Phase\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Phase\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}
+
+
+Definition at line 24 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+24                                                      \{
+25     \textcolor{keywordflow}{return} \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+26 \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1SignalGenerator_ac6a103ff72beaa338f6d18c812522d78}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!Phase\+Offset@{Phase\+Offset}}
+\index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{Phase\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Phase\+Offset (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_ac6a103ff72beaa338f6d18c812522d78}
+
+
+Definition at line 27 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                                    \{
+28     \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset} = value;
+29     \textcolor{keywordflow}{return} \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+30 \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1BLIT_1_1BLITSaw_a9c8ad70fca571cc707eaa99649d74afc}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!update\+Harms@{update\+Harms}}
+\index{update\+Harms@{update\+Harms}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{update\+Harms}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw\+::update\+Harms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classSignal_1_1BLIT_1_1BLITSaw_a9c8ad70fca571cc707eaa99649d74afc}
+
+
+Reimplemented from \hyperlink{classSignal_1_1BLIT_1_1BLIT_abec1466e0fe67fcdd52127ab34b7a3a4}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+denominator@{\+\_\+denominator}}
+\index{\+\_\+denominator@{\+\_\+denominator}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+denominator}]{\setlength{\rightskip}{0pt plus 5cm}float Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+denominator\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}
+
+
+Definition at line 48 of file B\+L\+I\+T.\+h.
+
+\hypertarget{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+f\+Hertz@{\+\_\+f\+Hertz}}
+\index{\+\_\+f\+Hertz@{\+\_\+f\+Hertz}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+f\+Hertz}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+f\+Hertz\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}
+
+
+Definition at line 34 of file Signal\+Generator.\+h.
+
+\hypertarget{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+frequency@{\+\_\+frequency}}
+\index{\+\_\+frequency@{\+\_\+frequency}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}
+
+
+Definition at line 33 of file Signal\+Generator.\+h.
+
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_a0bfbf4e7515a42fab7df748b8497f648}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+n\+Harms@{\+\_\+n\+Harms}}
+\index{\+\_\+n\+Harms@{\+\_\+n\+Harms}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+n\+Harms}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+n\+Harms\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_a0bfbf4e7515a42fab7df748b8497f648}
+
+
+Definition at line 32 of file B\+L\+I\+T.\+h.
+
+\hypertarget{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}}
+\index{\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+phase\+\_\+offset}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+phase\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}
+
+
+Definition at line 35 of file Signal\+Generator.\+h.
+
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+phasor@{\+\_\+phasor}}
+\index{\+\_\+phasor@{\+\_\+phasor}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_ae1ed1e1125cef25e6a0dfb8de3c296da}
+
+
+Definition at line 40 of file B\+L\+I\+T.\+h.
+
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_ae3db6ee922897295fdf93a3b3c3dfadd}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!\+\_\+sample@{\+\_\+sample}}
+\index{\+\_\+sample@{\+\_\+sample}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_ae3db6ee922897295fdf93a3b3c3dfadd}
+
+
+Definition at line 31 of file B\+L\+I\+T.\+h.
+
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!m\+\_\+@{m\+\_\+}}
+\index{m\+\_\+@{m\+\_\+}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{m\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::m\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}
+
+
+Definition at line 33 of file B\+L\+I\+T.\+h.
+
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!phs@{phs}}
+\index{phs@{phs}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{phs}]{\setlength{\rightskip}{0pt plus 5cm}float Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::phs\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}
+
+
+Definition at line 46 of file B\+L\+I\+T.\+h.
+
+\hypertarget{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{\index{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}!tmp@{tmp}}
+\index{tmp@{tmp}!Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw@{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+Saw}}
+\subsubsection[{tmp}]{\setlength{\rightskip}{0pt plus 5cm}float Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T\+::tmp\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}
+
+
+Definition at line 47 of file B\+L\+I\+T.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{BLITSaw_8h}{B\+L\+I\+T\+Saw.\+h}\end{DoxyCompactItemize}
