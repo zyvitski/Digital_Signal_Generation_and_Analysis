@@ -16,7 +16,8 @@ dependencies: \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/HarmonicTable.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/Taylor.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/SignalGenerator.h \
-  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/ClassicGenerator.h \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/FourierGenerator.h \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/TrivialGenerator.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/Oscillators.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/Sine.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/Saw.h \
@@ -24,4 +25,6 @@ dependencies: \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/BLIT.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/BLITSaw.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/minBLEP.h \
-  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/polyBLEP.h
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/polyBLEP.h \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/TrivialSaw.h \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/TrivialSquare.h

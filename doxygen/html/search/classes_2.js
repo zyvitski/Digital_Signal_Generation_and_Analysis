@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['classicgenerator',['ClassicGenerator',['../classSignal_1_1ClassicGenerator.html',1,'Signal']]]
+  ['fouriergenerator',['FourierGenerator',['../classSignal_1_1Fourier_1_1FourierGenerator.html',1,'Signal::Fourier']]]
 ];

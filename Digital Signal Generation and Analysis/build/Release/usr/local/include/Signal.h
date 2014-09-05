@@ -16,7 +16,8 @@
 
 #include "SignalProcess.h"
 #include "SignalGenerator.h"
-#include "ClassicGenerator.h"
+#include "FourierGenerator.h"
+#include "TrivialGenerator.h"
 #include "Oscillators.h"
 
 

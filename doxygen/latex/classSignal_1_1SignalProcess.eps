@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 83.857442
+%%BoundingBox: 0 0 500 48.076923
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 5.962500 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 10.400000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
 /rows 4 def
-/cols 6 def
+/cols 8 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -178,11 +178,14 @@ boxfont setfont
 (Signal::BLEP::minBLEP) cw
 (Signal::BLEP::polyBLEP) cw
 (Signal::BLIT::BLIT) cw
-(Signal::ClassicGenerator) cw
+(Signal::Fourier::FourierGenerator) cw
+(Signal::Trivial::TrivialGenerator) cw
 (Signal::BLIT::BLITSaw) cw
-(Signal::Saw) cw
-(Signal::Sine) cw
-(Signal::Square) cw
+(Signal::Fourier::Saw) cw
+(Signal::Fourier::Sine) cw
+(Signal::Fourier::Square) cw
+(Signal::Trivial::TrivialSaw) cw
+(Signal::Trivial::TrivialSquare) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -194,27 +197,30 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (Signal::SignalProcess) 1.500000 3.000000 box
- (Signal::SignalGenerator) 1.500000 2.000000 box
+ (Signal::SignalProcess) 2.000000 3.000000 box
+ (Signal::SignalGenerator) 2.000000 2.000000 box
  (Signal::BLEP::minBLEP) 0.000000 1.000000 box
  (Signal::BLEP::polyBLEP) 1.000000 1.000000 box
  (Signal::BLIT::BLIT) 2.000000 1.000000 box
- (Signal::ClassicGenerator) 4.000000 1.000000 box
+ (Signal::Fourier::FourierGenerator) 4.000000 1.000000 box
+ (Signal::Trivial::TrivialGenerator) 6.500000 1.000000 box
  (Signal::BLIT::BLITSaw) 2.000000 0.000000 box
- (Signal::Saw) 3.000000 0.000000 box
- (Signal::Sine) 4.000000 0.000000 box
- (Signal::Square) 5.000000 0.000000 box
+ (Signal::Fourier::Saw) 3.000000 0.000000 box
+ (Signal::Fourier::Sine) 4.000000 0.000000 box
+ (Signal::Fourier::Square) 5.000000 0.000000 box
+ (Signal::Trivial::TrivialSaw) 6.000000 0.000000 box
+ (Signal::Trivial::TrivialSquare) 7.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 1.500000 2.250000 out
+1 2.000000 2.250000 out
 solid
-0 1.500000 2.750000 in
+0 2.000000 2.750000 in
 solid
-1 1.500000 1.250000 out
+1 2.000000 1.250000 out
 solid
-0.000000 4.000000 2.000000 conn
+0.000000 6.500000 2.000000 conn
 solid
 0 0.000000 1.750000 in
 solid
@@ -230,6 +236,12 @@ solid
 solid
 3.000000 5.000000 1.000000 conn
 solid
+0 6.500000 1.750000 in
+solid
+1 6.500000 0.250000 out
+solid
+6.000000 7.000000 1.000000 conn
+solid
 0 2.000000 0.750000 in
 solid
 0 3.000000 0.750000 in
@@ -237,3 +249,7 @@ solid
 0 4.000000 0.750000 in
 solid
 0 5.000000 0.750000 in
+solid
+0 6.000000 0.750000 in
+solid
+0 7.000000 0.750000 in

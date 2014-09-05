@@ -7,13 +7,15 @@
  \hyperlink{namespaceSignal_1_1BLEP}{B\+L\+E\+P}
 \item 
  \hyperlink{namespaceSignal_1_1BLIT}{B\+L\+I\+T}
+\item 
+ \hyperlink{namespaceSignal_1_1Fourier}{Fourier}
+\item 
+ \hyperlink{namespaceSignal_1_1Trivial}{Trivial}
 \end{DoxyCompactItemize}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classSignal_1_1Buffer}{Buffer}
-\item 
-class \hyperlink{classSignal_1_1ClassicGenerator}{Classic\+Generator}
 \item 
 class \hyperlink{classSignal_1_1RingBuffer}{Ring\+Buffer}
 \item 
@@ -21,15 +23,9 @@ class \hyperlink{classSignal_1_1Sample}{Sample}
 \item 
 class \hyperlink{classSignal_1_1SampleRate}{Sample\+Rate}
 \item 
-class \hyperlink{classSignal_1_1Saw}{Saw}
-\item 
 class \hyperlink{classSignal_1_1SignalGenerator}{Signal\+Generator}
 \item 
 class \hyperlink{classSignal_1_1SignalProcess}{Signal\+Process}
-\item 
-class \hyperlink{classSignal_1_1Sine}{Sine}
-\item 
-class \hyperlink{classSignal_1_1Square}{Square}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -39,13 +35,6 @@ double const \& \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sa
 double const \hyperlink{namespaceSignal_ae7e8bbfcac6571aaaf18d7f96f3fefc3}{Sample\+\_\+\+Rate\+\_\+\+Inverse} ()
 \item 
 void \hyperlink{namespaceSignal_a2f163a7bbf1b0fc76ceba8b0916a7890}{Set\+\_\+\+Sample\+\_\+\+Rate} (double const \&rate)
-\end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-static \hyperlink{classBackend_1_1SineLUT}{Backend\+::\+Sine\+L\+U\+T}$<$ float, 32768 $>$ \hyperlink{namespaceSignal_a1ae06d442767e736f514051fcc61d254}{sine}
-\item 
-static \hyperlink{classBackend_1_1HarmonicTable}{Backend\+::\+Harmonic\+Table} \hyperlink{namespaceSignal_a12e49d2f464a156790c2bdab6db4d28f}{\+\_\+harmonic\+Table}
 \end{DoxyCompactItemize}
 
 
@@ -101,20 +90,3 @@ Definition at line 35 of file Sample\+\_\+\+Rate.\+h.
 36         SampleRate::Set(rate);
 37     \}
 \end{DoxyCode}
-
-
-\subsection{Variable Documentation}
-\hypertarget{namespaceSignal_a12e49d2f464a156790c2bdab6db4d28f}{\index{Signal@{Signal}!\+\_\+harmonic\+Table@{\+\_\+harmonic\+Table}}
-\index{\+\_\+harmonic\+Table@{\+\_\+harmonic\+Table}!Signal@{Signal}}
-\subsubsection[{\+\_\+harmonic\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Backend\+::\+Harmonic\+Table} Signal\+::\+\_\+harmonic\+Table\hspace{0.3cm}{\ttfamily [static]}}}\label{namespaceSignal_a12e49d2f464a156790c2bdab6db4d28f}
-
-
-Definition at line 23 of file Classic\+Generator.\+h.
-
-\hypertarget{namespaceSignal_a1ae06d442767e736f514051fcc61d254}{\index{Signal@{Signal}!sine@{sine}}
-\index{sine@{sine}!Signal@{Signal}}
-\subsubsection[{sine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Backend\+::\+Sine\+L\+U\+T}$<$float, 32768$>$ Signal\+::sine\hspace{0.3cm}{\ttfamily [static]}}}\label{namespaceSignal_a1ae06d442767e736f514051fcc61d254}
-
-
-Definition at line 22 of file Classic\+Generator.\+h.
-

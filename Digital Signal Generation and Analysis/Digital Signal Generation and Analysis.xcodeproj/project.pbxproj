@@ -12,7 +12,7 @@
 		1F591D3A19B7DFF600FEEF4C /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2C19B7DFF600FEEF4C /* BLIT.cpp */; };
 		1F591D3B19B7DFF600FEEF4C /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2D19B7DFF600FEEF4C /* BLITSaw.cpp */; };
 		1F591D3C19B7DFF600FEEF4C /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2E19B7DFF600FEEF4C /* Buffer.cpp */; };
-		1F591D3D19B7DFF600FEEF4C /* ClassicGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2F19B7DFF600FEEF4C /* ClassicGenerator.cpp */; };
+		1F591D3D19B7DFF600FEEF4C /* FourierGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D2F19B7DFF600FEEF4C /* FourierGenerator.cpp */; };
 		1F591D3E19B7DFF600FEEF4C /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D3019B7DFF600FEEF4C /* Driver.cpp */; };
 		1F591D3F19B7DFF600FEEF4C /* HarmonicTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D3119B7DFF600FEEF4C /* HarmonicTable.cpp */; };
 		1F591D4019B7DFF600FEEF4C /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D3219B7DFF600FEEF4C /* RingBuffer.cpp */; };
@@ -30,7 +30,7 @@
 		1F591D6619B7E55600FEEF4C /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5119B7E55600FEEF4C /* BLIT.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D6719B7E55600FEEF4C /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5219B7E55600FEEF4C /* BLITSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D6819B7E55600FEEF4C /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5319B7E55600FEEF4C /* Buffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F591D6919B7E55600FEEF4C /* ClassicGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5419B7E55600FEEF4C /* ClassicGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F591D6919B7E55600FEEF4C /* FourierGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5419B7E55600FEEF4C /* FourierGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D6A19B7E55600FEEF4C /* Driver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5519B7E55600FEEF4C /* Driver.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D6B19B7E55600FEEF4C /* HarmonicTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5619B7E55600FEEF4C /* HarmonicTable.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D6C19B7E55600FEEF4C /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D5719B7E55600FEEF4C /* LUT.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -53,6 +53,12 @@
 		1F591D8919B7F7FD00FEEF4C /* polyBLEP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */; };
 		1F591D8B19B7F88100FEEF4C /* Square.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8A19B7F88100FEEF4C /* Square.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8C19B7F89D00FEEF4C /* Square.cpp */; };
+		1FDA1DE419B89CDF00151AA2 /* TrivialGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA1DE319B89CDF00151AA2 /* TrivialGenerator.cpp */; };
+		1FDA1DE619B89CFF00151AA2 /* TrivialGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDA1DE519B89CFF00151AA2 /* TrivialGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FDA1DE919B8A1F900151AA2 /* TrivialSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDA1DE819B8A1F900151AA2 /* TrivialSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FDA1DEB19B8A20D00151AA2 /* TrivialSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDA1DEA19B8A20D00151AA2 /* TrivialSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FDA1DED19B8A22100151AA2 /* TrivialSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA1DEC19B8A22100151AA2 /* TrivialSaw.cpp */; };
+		1FDA1DEF19B8A23F00151AA2 /* TrivialSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA1DEE19B8A23F00151AA2 /* TrivialSquare.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +108,7 @@
 		1F591D2C19B7DFF600FEEF4C /* BLIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLIT.cpp; path = ../src/BLIT.cpp; sourceTree = "<group>"; };
 		1F591D2D19B7DFF600FEEF4C /* BLITSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLITSaw.cpp; path = ../src/BLITSaw.cpp; sourceTree = "<group>"; };
 		1F591D2E19B7DFF600FEEF4C /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Buffer.cpp; path = ../src/Buffer.cpp; sourceTree = "<group>"; };
-		1F591D2F19B7DFF600FEEF4C /* ClassicGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ClassicGenerator.cpp; path = ../src/ClassicGenerator.cpp; sourceTree = "<group>"; };
+		1F591D2F19B7DFF600FEEF4C /* FourierGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FourierGenerator.cpp; path = ../src/FourierGenerator.cpp; sourceTree = "<group>"; };
 		1F591D3019B7DFF600FEEF4C /* Driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Driver.cpp; path = ../src/Driver.cpp; sourceTree = "<group>"; };
 		1F591D3119B7DFF600FEEF4C /* HarmonicTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HarmonicTable.cpp; path = ../src/HarmonicTable.cpp; sourceTree = "<group>"; };
 		1F591D3219B7DFF600FEEF4C /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RingBuffer.cpp; path = ../src/RingBuffer.cpp; sourceTree = "<group>"; };
@@ -118,7 +124,7 @@
 		1F591D5119B7E55600FEEF4C /* BLIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLIT.h; path = ../src/include/BLIT.h; sourceTree = "<group>"; };
 		1F591D5219B7E55600FEEF4C /* BLITSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLITSaw.h; path = ../src/include/BLITSaw.h; sourceTree = "<group>"; };
 		1F591D5319B7E55600FEEF4C /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = ../src/include/Buffer.h; sourceTree = "<group>"; };
-		1F591D5419B7E55600FEEF4C /* ClassicGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassicGenerator.h; path = ../src/include/ClassicGenerator.h; sourceTree = "<group>"; };
+		1F591D5419B7E55600FEEF4C /* FourierGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourierGenerator.h; path = ../src/include/FourierGenerator.h; sourceTree = "<group>"; };
 		1F591D5519B7E55600FEEF4C /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Driver.h; path = ../src/include/Driver.h; sourceTree = "<group>"; };
 		1F591D5619B7E55600FEEF4C /* HarmonicTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HarmonicTable.h; path = ../src/include/HarmonicTable.h; sourceTree = "<group>"; };
 		1F591D5719B7E55600FEEF4C /* LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUT.h; path = ../src/include/LUT.h; sourceTree = "<group>"; };
@@ -141,6 +147,12 @@
 		1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polyBLEP.cpp; path = ../src/polyBLEP.cpp; sourceTree = "<group>"; };
 		1F591D8A19B7F88100FEEF4C /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Square.h; path = ../src/include/Square.h; sourceTree = "<group>"; };
 		1F591D8C19B7F89D00FEEF4C /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Square.cpp; path = ../src/Square.cpp; sourceTree = "<group>"; };
+		1FDA1DE319B89CDF00151AA2 /* TrivialGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrivialGenerator.cpp; path = ../src/TrivialGenerator.cpp; sourceTree = "<group>"; };
+		1FDA1DE519B89CFF00151AA2 /* TrivialGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrivialGenerator.h; path = ../src/include/TrivialGenerator.h; sourceTree = "<group>"; };
+		1FDA1DE819B8A1F900151AA2 /* TrivialSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrivialSaw.h; path = ../src/include/TrivialSaw.h; sourceTree = "<group>"; };
+		1FDA1DEA19B8A20D00151AA2 /* TrivialSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrivialSquare.h; path = ../src/include/TrivialSquare.h; sourceTree = "<group>"; };
+		1FDA1DEC19B8A22100151AA2 /* TrivialSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrivialSaw.cpp; path = ../src/TrivialSaw.cpp; sourceTree = "<group>"; };
+		1FDA1DEE19B8A23F00151AA2 /* TrivialSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrivialSquare.cpp; path = ../src/TrivialSquare.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +250,7 @@
 				1F591D2C19B7DFF600FEEF4C /* BLIT.cpp */,
 				1F591D2D19B7DFF600FEEF4C /* BLITSaw.cpp */,
 				1F591D2E19B7DFF600FEEF4C /* Buffer.cpp */,
-				1F591D2F19B7DFF600FEEF4C /* ClassicGenerator.cpp */,
+				1F591D2F19B7DFF600FEEF4C /* FourierGenerator.cpp */,
 				1F591D3019B7DFF600FEEF4C /* Driver.cpp */,
 				1F591D3119B7DFF600FEEF4C /* HarmonicTable.cpp */,
 				1F591D3219B7DFF600FEEF4C /* RingBuffer.cpp */,
@@ -251,6 +263,9 @@
 				1F591D3919B7DFF600FEEF4C /* Taylor.cpp */,
 				1F591D8819B7F7FD00FEEF4C /* polyBLEP.cpp */,
 				1F591D8C19B7F89D00FEEF4C /* Square.cpp */,
+				1FDA1DE319B89CDF00151AA2 /* TrivialGenerator.cpp */,
+				1FDA1DEC19B8A22100151AA2 /* TrivialSaw.cpp */,
+				1FDA1DEE19B8A23F00151AA2 /* TrivialSquare.cpp */,
 			);
 			name = SOURCE;
 			sourceTree = "<group>";
@@ -258,9 +273,10 @@
 		1F591D7A19B7F2BD00FEEF4C /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				1F591D5419B7E55600FEEF4C /* ClassicGenerator.h */,
+				1F591D5419B7E55600FEEF4C /* FourierGenerator.h */,
 				1F591D6019B7E55600FEEF4C /* SignalGenerator.h */,
 				1F591D6119B7E55600FEEF4C /* SignalProcess.h */,
+				1FDA1DE519B89CFF00151AA2 /* TrivialGenerator.h */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -268,6 +284,7 @@
 		1F591D7B19B7F2D500FEEF4C /* Generators */ = {
 			isa = PBXGroup;
 			children = (
+				1FDA1DE719B8A1C100151AA2 /* Trivial */,
 				1F591D5819B7E55600FEEF4C /* Oscillators.h */,
 				1F591D7F19B7F6CC00FEEF4C /* polyBLEP */,
 				1F591D7E19B7F6C500FEEF4C /* minBLEP */,
@@ -312,6 +329,15 @@
 			name = polyBLEP;
 			sourceTree = "<group>";
 		};
+		1FDA1DE719B8A1C100151AA2 /* Trivial */ = {
+			isa = PBXGroup;
+			children = (
+				1FDA1DE819B8A1F900151AA2 /* TrivialSaw.h */,
+				1FDA1DEA19B8A20D00151AA2 /* TrivialSquare.h */,
+			);
+			name = Trivial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -330,13 +356,16 @@
 				1F591D6819B7E55600FEEF4C /* Buffer.h in Headers */,
 				1F591D7019B7E55600FEEF4C /* RingBuffer.h in Headers */,
 				1F591D6519B7E55600FEEF4C /* Backend.h in Headers */,
-				1F591D6919B7E55600FEEF4C /* ClassicGenerator.h in Headers */,
+				1F591D6919B7E55600FEEF4C /* FourierGenerator.h in Headers */,
+				1FDA1DE919B8A1F900151AA2 /* TrivialSaw.h in Headers */,
 				1F591D8519B7F77A00FEEF4C /* minBLEP.h in Headers */,
 				1F591D6D19B7E55600FEEF4C /* Oscillators.h in Headers */,
 				1F591D6719B7E55600FEEF4C /* BLITSaw.h in Headers */,
 				1F591D6619B7E55600FEEF4C /* BLIT.h in Headers */,
 				1F591D7419B7E55600FEEF4C /* Signal.h in Headers */,
 				1F591D7519B7E55600FEEF4C /* SignalGenerator.h in Headers */,
+				1FDA1DEB19B8A20D00151AA2 /* TrivialSquare.h in Headers */,
+				1FDA1DE619B89CFF00151AA2 /* TrivialGenerator.h in Headers */,
 				1F591D8719B7F7E700FEEF4C /* polyBLEP.h in Headers */,
 				1F591D6F19B7E55600FEEF4C /* Queue.h in Headers */,
 				1F591D7119B7E55600FEEF4C /* Sample_Rate.h in Headers */,
@@ -436,6 +465,7 @@
 			files = (
 				1F591D4219B7DFF600FEEF4C /* Sample.cpp in Sources */,
 				1F591D4419B7DFF600FEEF4C /* SignalGenerator.cpp in Sources */,
+				1FDA1DEF19B8A23F00151AA2 /* TrivialSquare.cpp in Sources */,
 				1F591D3B19B7DFF600FEEF4C /* BLITSaw.cpp in Sources */,
 				1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */,
 				1F591D3F19B7DFF600FEEF4C /* HarmonicTable.cpp in Sources */,
@@ -443,12 +473,14 @@
 				1F591D3C19B7DFF600FEEF4C /* Buffer.cpp in Sources */,
 				1F591D4019B7DFF600FEEF4C /* RingBuffer.cpp in Sources */,
 				1F591D8219B7F75000FEEF4C /* minBLEP.cpp in Sources */,
+				1FDA1DED19B8A22100151AA2 /* TrivialSaw.cpp in Sources */,
 				1F591D4719B7DFF600FEEF4C /* Taylor.cpp in Sources */,
 				1F591D4619B7DFF600FEEF4C /* Sine.cpp in Sources */,
 				1F591D4319B7DFF600FEEF4C /* Saw.cpp in Sources */,
-				1F591D3D19B7DFF600FEEF4C /* ClassicGenerator.cpp in Sources */,
+				1F591D3D19B7DFF600FEEF4C /* FourierGenerator.cpp in Sources */,
 				1F591D4119B7DFF600FEEF4C /* Sample_Rate.cpp in Sources */,
 				1F591D3A19B7DFF600FEEF4C /* BLIT.cpp in Sources */,
+				1FDA1DE419B89CDF00151AA2 /* TrivialGenerator.cpp in Sources */,
 				1F591D3E19B7DFF600FEEF4C /* Driver.cpp in Sources */,
 				1F591D4519B7DFF600FEEF4C /* SignalProcess.cpp in Sources */,
 			);

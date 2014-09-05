@@ -1,6 +1,7 @@
 dependencies: \
-  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/ClassicGenerator.cpp \
-  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/ClassicGenerator.h \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/TrivialSaw.cpp \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/TrivialSaw.h \
+  /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/TrivialGenerator.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/SignalGenerator.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/SignalProcess.h \
   /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/../src/include/Backend.h \

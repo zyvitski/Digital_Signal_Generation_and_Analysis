@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['i',['i',['../classSignal_1_1Saw.html#a50612c8009e428dccb3e4b3b798bdf3d',1,'Signal::Saw::i()'],['../classSignal_1_1Square.html#a3170f60bd41cbd43c861a63e0a5ae31d',1,'Signal::Square::i()']]],
-  ['ipi',['iPI',['../classSignal_1_1Saw.html#a75052e172f2d3c7ffc8daae2988f7305',1,'Signal::Saw::iPI()'],['../classSignal_1_1Square.html#a9c43074c487301290c48ddf736010cdf',1,'Signal::Square::iPI()']]]
+  ['i',['i',['../classSignal_1_1Fourier_1_1Saw.html#a1e575a999b316e51cb3a4f8af962749c',1,'Signal::Fourier::Saw::i()'],['../classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5',1,'Signal::Fourier::Square::i()']]],
+  ['ipi',['iPI',['../classSignal_1_1Fourier_1_1Saw.html#a70dccb676ad58a1b6ef4b053081bec3f',1,'Signal::Fourier::Saw::iPI()'],['../classSignal_1_1Fourier_1_1Square.html#a78d566d8c876456c115c9160ea0eacd2',1,'Signal::Fourier::Square::iPI()']]]
 ];

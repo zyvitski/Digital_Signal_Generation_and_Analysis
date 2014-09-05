@@ -9,12 +9,12 @@
 #include "Sine.h"
 
 
-Signal::Sine::Sine():ClassicGenerator(){}
-Signal::Sine::Sine(double const& frequency,double const& phase_offset):ClassicGenerator(frequency,phase_offset){
+Signal::Fourier::Sine::Sine():FourierGenerator(){}
+Signal::Fourier::Sine::Sine(double const& frequency,double const& phase_offset):FourierGenerator(frequency,phase_offset){
     _sample=0;
     _storage=0;
 }
-Signal::Sine::~Sine(){}
+Signal::Fourier::Sine::~Sine(){}
 
 
 

@@ -16,4 +16,6 @@
 #include "BLITSaw.h"
 #include "minBLEP.h"
 #include "polyBLEP.h"
+#include "TrivialSaw.h"
+#include "TrivialSquare.h"
 #endif
