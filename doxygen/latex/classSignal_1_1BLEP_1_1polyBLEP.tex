@@ -3,6 +3,11 @@
 }
 
 
+See file $\sim$/\+Research/poly\+B\+L\+E\+P.rtf for links to deatils about algorithm.  
+
+
+
+
 {\ttfamily \#include $<$poly\+B\+L\+E\+P.\+h$>$}
 
 Inheritance diagram for Signal\+:\+:B\+L\+E\+P\+:\+:poly\+B\+L\+E\+P\+:\begin{figure}[H]
@@ -26,6 +31,15 @@ virtual double const \& \hyperlink{classSignal_1_1SignalGenerator_ac2538ec946f00
 \item 
 virtual double const \& \hyperlink{classSignal_1_1SignalGenerator_ac6a103ff72beaa338f6d18c812522d78}{Phase\+Offset} (double const \&value)
 \end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\+\_\+pstep} ()
+\item 
+double \hyperlink{classSignal_1_1SignalGenerator_abf2f4ab977c6e84bf85022eab8135304}{\+\_\+pstep\+\_\+rad} ()
+\item 
+void \hyperlink{classSignal_1_1SignalGenerator_a563f57d4dfd8728a6a572f15c1e2532b}{\+\_\+psync} ()
+\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,17 +48,73 @@ double \hyperlink{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8
 double \hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\+\_\+f\+Hertz}
 \item 
 double \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\+\_\+phase\+\_\+offset}
+\item 
+double \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\+\_\+phasor}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+See file $\sim$/\+Research/poly\+B\+L\+E\+P.rtf for links to deatils about algorithm. 
 
-
-Definition at line 16 of file poly\+B\+L\+E\+P.\+h.
+Definition at line 20 of file poly\+B\+L\+E\+P.\+h.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!\+\_\+pstep@{\+\_\+pstep}}
+\index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
+\subsubsection[{\+\_\+pstep}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+pstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}
+
+
+Definition at line 59 of file Signal\+Generator.\+h.
+
+
+\begin{DoxyCode}
+59                                          \{
+60         \textcolor{keywordtype}{double} value = \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor};
+61         \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor}+=\hyperlink{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}{\_frequency};
+62         \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor} = \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor}-(\textcolor{keywordtype}{unsigned} long)\hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor};\textcolor{comment}{//cheaper %1}
+63         \textcolor{keywordflow}{return} value;
+64     \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1SignalGenerator_abf2f4ab977c6e84bf85022eab8135304}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}}
+\index{\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
+\subsubsection[{\+\_\+pstep\+\_\+rad}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+pstep\+\_\+rad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_abf2f4ab977c6e84bf85022eab8135304}
+
+
+Definition at line 65 of file Signal\+Generator.\+h.
+
+
+\begin{DoxyCode}
+65                                              \{
+66         \textcolor{keywordflow}{return} \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}();
+67     \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1SignalGenerator_a563f57d4dfd8728a6a572f15c1e2532b}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!\+\_\+psync@{\+\_\+psync}}
+\index{\+\_\+psync@{\+\_\+psync}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
+\subsubsection[{\+\_\+psync}]{\setlength{\rightskip}{0pt plus 5cm}void Signal\+::\+Signal\+Generator\+::\+\_\+psync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a563f57d4dfd8728a6a572f15c1e2532b}
+
+
+Definition at line 68 of file Signal\+Generator.\+h.
+
+
+\begin{DoxyCode}
+68                                        \{
+69         \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor} = 0;
+70     \}
+\end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a96af42ee68f94e9b04d034fd68b73ecd}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!Frequency@{Frequency}}
 \index{Frequency@{Frequency}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
 \subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Frequency (
@@ -98,18 +168,18 @@ Implements \hyperlink{classSignal_1_1SignalProcess_a7986df989ac8afca3674ae8eace3
 
 
 
-Reimplemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa4895d6c53644}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444e7b66d2cb339c001704071646a}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a98982b34bc6c9ca4c2e91550afa31375}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1Trivial_1_1TrivialGenerator_a2394cf9d0d40f9d25f72aff03e372ad9}{Signal\+::\+Trivial\+::\+Trivial\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_adf69eea95516fc9c7d06fae036d2fa9b}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Signal\+::\+Fourier\+::\+Square}, and \hyperlink{classSignal_1_1Trivial_1_1TrivialSaw_a091e3137a03978cc7dfaecf5b00dad46}{Signal\+::\+Trivial\+::\+Trivial\+Saw}.
+Reimplemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa4895d6c53644}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444e7b66d2cb339c001704071646a}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a98982b34bc6c9ca4c2e91550afa31375}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1Analog_1_1AnalogGenerator_a435d695634a52cff8249dde68be18e8a}{Signal\+::\+Analog\+::\+Analog\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_adf69eea95516fc9c7d06fae036d2fa9b}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Signal\+::\+Fourier\+::\+Square}, \hyperlink{classSignal_1_1Analog_1_1Saw_ac91789b8322a0b39a15bc8dc6506d60b}{Signal\+::\+Analog\+::\+Saw}, and \hyperlink{classSignal_1_1Analog_1_1Square_a4afb9704efebdab680094fad82876357}{Signal\+::\+Analog\+::\+Square}.
 
 
 
-Definition at line 39 of file Signal\+Generator.\+h.
+Definition at line 51 of file Signal\+Generator.\+h.
 
 
 \begin{DoxyCode}
-39                                                       \{
-40         signal = 0;
-41         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-42     \}
+51                                                       \{
+52         signal = 0;
+53         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+54     \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a126d52dd9b6b14d33efc624e2c89284e}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
@@ -124,18 +194,18 @@ Implements \hyperlink{classSignal_1_1SignalProcess_a9584dc515d2167f4439ed3d014bb
 
 
 
-Reimplemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_a5d951e5fbfc77354bddab9dfedea008f}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a3825eb4060269749a37ae29ee847}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a2f0ee604ed0e67557aa9f7e7f50d80ec}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1Trivial_1_1TrivialGenerator_a232aefbb2815eaf25e697ecedeb0f3d9}{Signal\+::\+Trivial\+::\+Trivial\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_acef099db2217902d7157e5b93f658363}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a7aacafda4427b996b56ad6764ea09177}{Signal\+::\+Fourier\+::\+Square}, and \hyperlink{classSignal_1_1Trivial_1_1TrivialSaw_a22b97c8dfdca76664cbb6e634c85085d}{Signal\+::\+Trivial\+::\+Trivial\+Saw}.
+Reimplemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_a5d951e5fbfc77354bddab9dfedea008f}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a3825eb4060269749a37ae29ee847}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a2f0ee604ed0e67557aa9f7e7f50d80ec}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1Analog_1_1AnalogGenerator_a8aa38b6c3f259b62b293f235cf1cc906}{Signal\+::\+Analog\+::\+Analog\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_acef099db2217902d7157e5b93f658363}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a7aacafda4427b996b56ad6764ea09177}{Signal\+::\+Fourier\+::\+Square}, \hyperlink{classSignal_1_1Analog_1_1Saw_aafc49f02333a62a110cb3edb6b1df3a7}{Signal\+::\+Analog\+::\+Saw}, and \hyperlink{classSignal_1_1Analog_1_1Square_a90961bdcef8e53e281088837553d5221}{Signal\+::\+Analog\+::\+Square}.
 
 
 
-Definition at line 43 of file Signal\+Generator.\+h.
+Definition at line 55 of file Signal\+Generator.\+h.
 
 
 \begin{DoxyCode}
-43                                                           \{
-44         signal.Flush();
-45         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-46     \}
+55                                                           \{
+56         signal.Flush();
+57         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+58     \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
@@ -180,21 +250,28 @@ Definition at line 27 of file Signal\+Generator.\+cpp.
 \subsubsection[{\+\_\+f\+Hertz}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+f\+Hertz\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}
 
 
-Definition at line 34 of file Signal\+Generator.\+h.
+Definition at line 35 of file Signal\+Generator.\+h.
 
 \hypertarget{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!\+\_\+frequency@{\+\_\+frequency}}
 \index{\+\_\+frequency@{\+\_\+frequency}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
 \subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}
 
 
-Definition at line 33 of file Signal\+Generator.\+h.
+Definition at line 34 of file Signal\+Generator.\+h.
 
 \hypertarget{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}}
 \index{\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
 \subsubsection[{\+\_\+phase\+\_\+offset}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+phase\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}
 
 
-Definition at line 35 of file Signal\+Generator.\+h.
+Definition at line 36 of file Signal\+Generator.\+h.
+
+\hypertarget{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\index{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}!\+\_\+phasor@{\+\_\+phasor}}
+\index{\+\_\+phasor@{\+\_\+phasor}!Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P@{Signal\+::\+B\+L\+E\+P\+::poly\+B\+L\+E\+P}}
+\subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Signal\+Generator\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}
+
+
+Definition at line 42 of file Signal\+Generator.\+h.
 
 
 

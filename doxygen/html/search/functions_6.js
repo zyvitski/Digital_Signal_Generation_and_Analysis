@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['factorial',['factorial',['../namespaceBackend_1_1Taylor.html#ad91c841872a9fede491d52daf4e1ba20',1,'Backend::Taylor']]],
+  ['factorial',['factorial',['../namespaceBackend_1_1Backend_1_1Taylor.html#a69fa1882d5aa61e158854a2cb890ff6e',1,'Backend::Backend::Taylor::factorial()'],['../namespaceBackend_1_1Taylor.html#ad91c841872a9fede491d52daf4e1ba20',1,'Backend::Taylor::factorial()']]],
   ['fill',['fill',['../classBackend_1_1SmallSineLUT.html#a981ef95660709f9a796dc176e4c66cf3',1,'Backend::SmallSineLUT::fill()'],['../classBackend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4.html#a0fad3b2c0904d1c2a65c850431f1ac3f',1,'Backend::SmallSineLUT&lt; int32_t, size &gt;::fill()']]],
   ['fillsaw',['fillSaw',['../classBackend_1_1HarmonicTable.html#a3b69fe79e5ddd9abfc13fc9a16de80c8',1,'Backend::HarmonicTable']]],
   ['flush',['Flush',['../classBackend_1_1Queue.html#a701ab0dc2289929467d9e1cc5771f80c',1,'Backend::Queue::Flush()'],['../classSignal_1_1RingBuffer.html#aa9d2938e5c11c5d3c058db9b7e310406',1,'Signal::RingBuffer::Flush()']]],

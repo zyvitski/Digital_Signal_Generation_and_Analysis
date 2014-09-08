@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pi',['PI',['../PI_8h.html#a598a3330b3c21701223ee0ca14316eca',1,'PI.h']]]
+  ['channel_5fcount',['CHANNEL_COUNT',['../Sample_8h.html#a29e42927003b0aa647ee45965f4ccb07',1,'Sample.h']]]
 ];

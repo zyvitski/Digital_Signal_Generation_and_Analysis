@@ -113,6 +113,16 @@ Inheritance diagram for Signal::Trivial::TrivialSquare:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4b5265f3667bc9471a5b24ee4bf04c51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a4b5265f3667bc9471a5b24ee4bf04c51">TrivialSquare</a> ()</td></tr>
+<tr class="separator:a4b5265f3667bc9471a5b24ee4bf04c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285797094f835304fd5c7a0ba744925d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a285797094f835304fd5c7a0ba744925d">TrivialSquare</a> (double const &amp;frequency, double const &amp;phase_offset)</td></tr>
+<tr class="separator:a285797094f835304fd5c7a0ba744925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909c1e7e3085b897b0546dbc05a4591c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a909c1e7e3085b897b0546dbc05a4591c">~TrivialSquare</a> ()</td></tr>
+<tr class="separator:a909c1e7e3085b897b0546dbc05a4591c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96464d74ed0a059537a51219bea86e28"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a96464d74ed0a059537a51219bea86e28">Perform</a> (<a class="el" href="classSignal_1_1Sample.html">Sample</a> &amp;signal)</td></tr>
+<tr class="separator:a96464d74ed0a059537a51219bea86e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91046f5e58d3e6a8aa4dac5023658ef"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1Trivial_1_1TrivialSquare.html#af91046f5e58d3e6a8aa4dac5023658ef">Perform</a> (<a class="el" href="classSignal_1_1RingBuffer.html">RingBuffer</a> &amp;signal)</td></tr>
+<tr class="separator:af91046f5e58d3e6a8aa4dac5023658ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96af42ee68f94e9b04d034fd68b73ecd"><td class="memItemLeft" align="right" valign="top">virtual double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#a96af42ee68f94e9b04d034fd68b73ecd">Frequency</a> () const </td></tr>
 <tr class="separator:a96af42ee68f94e9b04d034fd68b73ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af83b532bf3ddc3637c2fd7a1dfd095cb"><td class="memItemLeft" align="right" valign="top">virtual double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#af83b532bf3ddc3637c2fd7a1dfd095cb">Frequency</a> (double const &amp;value)</td></tr>
@@ -140,7 +150,92 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00015">15</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4b5265f3667bc9471a5b24ee4bf04c51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Signal::Trivial::TrivialSquare::TrivialSquare </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TrivialSquare_8cpp_source.html#l00011">11</a> of file <a class="el" href="TrivialSquare_8cpp_source.html">TrivialSquare.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                         :<a class="code" href="classSignal_1_1Trivial_1_1TrivialGenerator.html">Signal::Trivial::TrivialGenerator</a>(),<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a>(0),<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a25004ceafc7c954fdfbe99a8b356badf">_duty</a>(0.5){</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a58215de8771ac7bbe9175f3f8d6fd27e"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">Signal::Trivial::TrivialSquare::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00024">TrivialSquare.h:24</a></div></div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a25004ceafc7c954fdfbe99a8b356badf"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a25004ceafc7c954fdfbe99a8b356badf">Signal::Trivial::TrivialSquare::_duty</a></div><div class="ttdeci">double _duty</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00025">TrivialSquare.h:25</a></div></div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialGenerator_html"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialGenerator.html">Signal::Trivial::TrivialGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="TrivialGenerator_8h_source.html#l00019">TrivialGenerator.h:19</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a285797094f835304fd5c7a0ba744925d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Signal::Trivial::TrivialSquare::TrivialSquare </td>
+          <td>(</td>
+          <td class="paramtype">double const &amp;&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double const &amp;&#160;</td>
+          <td class="paramname"><em>phase_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TrivialSquare_8cpp_source.html#l00014">14</a> of file <a class="el" href="TrivialSquare_8cpp_source.html">TrivialSquare.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                                                           :<a class="code" href="classSignal_1_1Trivial_1_1TrivialGenerator.html">Signal::Trivial::TrivialGenerator</a>(frequency,phase_offset),<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a>(0),<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a25004ceafc7c954fdfbe99a8b356badf">_duty</a>(0.5){</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a58215de8771ac7bbe9175f3f8d6fd27e"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">Signal::Trivial::TrivialSquare::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00024">TrivialSquare.h:24</a></div></div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a25004ceafc7c954fdfbe99a8b356badf"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a25004ceafc7c954fdfbe99a8b356badf">Signal::Trivial::TrivialSquare::_duty</a></div><div class="ttdeci">double _duty</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00025">TrivialSquare.h:25</a></div></div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialGenerator_html"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialGenerator.html">Signal::Trivial::TrivialGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="TrivialGenerator_8h_source.html#l00019">TrivialGenerator.h:19</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a909c1e7e3085b897b0546dbc05a4591c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Signal::Trivial::TrivialSquare::~TrivialSquare </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TrivialSquare_8cpp_source.html#l00017">17</a> of file <a class="el" href="TrivialSquare_8cpp_source.html">TrivialSquare.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                          {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a96af42ee68f94e9b04d034fd68b73ecd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -203,6 +298,87 @@ Protected Attributes</h2></td></tr>
 <div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
 <div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
 <div class="ttc" id="namespaceSignal_html_ae7b1f222afc010e0f33f306f978fcde9"><div class="ttname"><a href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a96464d74ed0a059537a51219bea86e28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Signal::Trivial::TrivialSquare::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSignal_1_1Sample.html">Sample</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a2394cf9d0d40f9d25f72aff03e372ad9">Signal::Trivial::TrivialGenerator</a>.</p>
+
+<p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00029">29</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">double</span> value = <a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a>+=<a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a> = <a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a>-(<span class="keywordtype">unsigned</span> long)<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">_phasor</a>;<span class="comment">//cheaper %1</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            value+=<a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            value = value-(<span class="keywordtype">unsigned</span> long)value;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            signal = value&gt;=<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a25004ceafc7c954fdfbe99a8b356badf">_duty</a> ? -1.0: 1.0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a58215de8771ac7bbe9175f3f8d6fd27e"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a58215de8771ac7bbe9175f3f8d6fd27e">Signal::Trivial::TrivialSquare::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00024">TrivialSquare.h:24</a></div></div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a25004ceafc7c954fdfbe99a8b356badf"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a25004ceafc7c954fdfbe99a8b356badf">Signal::Trivial::TrivialSquare::_duty</a></div><div class="ttdeci">double _duty</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00025">TrivialSquare.h:25</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af91046f5e58d3e6a8aa4dac5023658ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Signal::Trivial::TrivialSquare::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSignal_1_1RingBuffer.html">RingBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a232aefbb2815eaf25e697ecedeb0f3d9">Signal::Trivial::TrivialGenerator</a>.</p>
+
+<p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00039">39</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                            {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            signal.Flush();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">while</span> (!signal.Full()) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classSignal_1_1Trivial_1_1TrivialSquare.html#a96464d74ed0a059537a51219bea86e28">Perform</a>(<a class="code" href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a2e43e1ae605338b92e48974a681866e9">_sample</a>)) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">if</span>(signal.Write(<a class="code" href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a2e43e1ae605338b92e48974a681866e9">_sample</a>)){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }<span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialGenerator_html_a2e43e1ae605338b92e48974a681866e9"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a2e43e1ae605338b92e48974a681866e9">Signal::Trivial::TrivialGenerator::_sample</a></div><div class="ttdeci">Sample _sample</div><div class="ttdef"><b>Definition:</b> <a href="TrivialGenerator_8h_source.html#l00028">TrivialGenerator.h:28</a></div></div>
+<div class="ttc" id="classSignal_1_1Trivial_1_1TrivialSquare_html_a96464d74ed0a059537a51219bea86e28"><div class="ttname"><a href="classSignal_1_1Trivial_1_1TrivialSquare.html#a96464d74ed0a059537a51219bea86e28">Signal::Trivial::TrivialSquare::Perform</a></div><div class="ttdeci">virtual bool Perform(Sample &amp;signal)</div><div class="ttdef"><b>Definition:</b> <a href="TrivialSquare_8h_source.html#l00029">TrivialSquare.h:29</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,7 +461,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00024">24</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
+<p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00025">25</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +549,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00023">23</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
+<p>Definition at line <a class="el" href="TrivialSquare_8h_source.html#l00024">24</a> of file <a class="el" href="TrivialSquare_8h_source.html">TrivialSquare.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +582,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 4 2014 09:03:24 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 6 2014 01:20:49 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

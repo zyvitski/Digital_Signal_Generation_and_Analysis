@@ -17,6 +17,9 @@
 namespace Signal {
     namespace BLIT{
         
+        /*!\brief
+         *See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of concept
+         */
         class BLIT:public SignalGenerator {
         public:
             BLIT();
@@ -51,7 +54,8 @@ namespace Signal {
         
         
         inline bool BLIT::Perform(Sample& signal){
-            phs =Backend::Taylor::Sine(_pstep_rad());
+#warning Needs re write
+            phs =Backend::Taylor::Sine(_pstep()*TWOPI);
             _denominator = phs;
             if (_denominator<=std::numeric_limits<float>::epsilon()) {
                 tmp=1.0;

@@ -100,10 +100,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SignalGenerator_8h.html">SignalGenerator.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classSignal_1_1SignalGenerator.html#a8c67c754d86e0363445d7fd271855e1a">   10</a></span>&#160;<a class="code" href="classSignal_1_1SignalGenerator.html#a8c67c754d86e0363445d7fd271855e1a">Signal::SignalGenerator::SignalGenerator</a>():_frequency(0),_phase_offset(0),_fHertz(0){</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classSignal_1_1SignalGenerator.html#a8c67c754d86e0363445d7fd271855e1a">   10</a></span>&#160;<a class="code" href="classSignal_1_1SignalGenerator.html#a8c67c754d86e0363445d7fd271855e1a">Signal::SignalGenerator::SignalGenerator</a>():_frequency(0),_phase_offset(0),_fHertz(0),_phasor(0){</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classSignal_1_1SignalGenerator.html#a0a09e58b391b2e65af370bbf266b888c">   13</a></span>&#160;<a class="code" href="classSignal_1_1SignalGenerator.html#a8c67c754d86e0363445d7fd271855e1a">Signal::SignalGenerator::SignalGenerator</a>(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; frequency,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; phase_offset):_frequency(frequency/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()),_fHertz(frequency),_phase_offset(phase_offset){}</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classSignal_1_1SignalGenerator.html#a0a09e58b391b2e65af370bbf266b888c">   13</a></span>&#160;<a class="code" href="classSignal_1_1SignalGenerator.html#a8c67c754d86e0363445d7fd271855e1a">Signal::SignalGenerator::SignalGenerator</a>(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; frequency,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; phase_offset):_frequency(frequency/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()),_fHertz(frequency),_phase_offset(phase_offset),_phasor(0){}</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classSignal_1_1SignalGenerator.html#a2c0cb5fa941326bc206f45a07aa872ef">   14</a></span>&#160;<a class="code" href="classSignal_1_1SignalGenerator.html#a2c0cb5fa941326bc206f45a07aa872ef">Signal::SignalGenerator::~SignalGenerator</a>(){}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classSignal_1_1SignalGenerator.html#a96af42ee68f94e9b04d034fd68b73ecd">   16</a></span>&#160;<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; <a class="code" href="classSignal_1_1SignalGenerator.html#a96af42ee68f94e9b04d034fd68b73ecd">Signal::SignalGenerator::Frequency</a>()<span class="keyword">const</span>{</div>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 4 2014 09:03:23 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 17:16:25 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

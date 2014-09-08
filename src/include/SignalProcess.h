@@ -16,11 +16,10 @@
 #include "Backend.h"
 
 namespace Signal {
-    
+    /*! \brief An Abstract Base Class defining the basics API needed for audio generation
+     */
     class SignalProcess {
-        /*! \class SignalProcess
-         *  \brief An Abstract Base Class defining the basics API needed for audio generation
-         */
+        
     public:
         SignalProcess();
         virtual ~SignalProcess();

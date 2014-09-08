@@ -17,6 +17,9 @@
 namespace Signal {
     namespace BLIT{
         
+        /*!\brief
+         *See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of concept
+         */
         class BLIT:public SignalGenerator {
         public:
             BLIT();
@@ -32,16 +35,6 @@ namespace Signal {
             unsigned long _nHarms;
             unsigned long  m_;
             
-            //------------------------------------------------------------------------------------//
-            /*
-             Built in Phasor.
-             Internal use only.
-             */
-            double _phasor;
-            inline double _pstep();//ramp wave from 0.0-1.0 based on frequency and phase offset
-            inline double _pstep_rad();//ramp wave from 0.0 -2pi based on frequency and phase offset
-            inline void _psync();//sets phasor back to 0.0 for use doing hard sync
-            //------------------------------------------------------------------------------------//
             
             float phs;
             float tmp;
@@ -51,7 +44,8 @@ namespace Signal {
         
         
         inline bool BLIT::Perform(Sample& signal){
-            phs =Backend::Taylor::Sine(_pstep_rad());
+#warning Needs re write
+            phs =Backend::Taylor::Sine(_pstep()*TWOPI);
             _denominator = phs;
             if (_denominator<=std::numeric_limits<float>::epsilon()) {
                 tmp=1.0;
@@ -72,18 +66,7 @@ namespace Signal {
             }return true;
         }
         
-        inline double BLIT::_pstep(){
-            double value = _phasor;
-            _phasor+=_frequency;
-            _phasor = _phasor-(unsigned long)_phasor;//cheaper %1
-            return value;
-        }
-        inline double BLIT::_pstep_rad(){
-            return TWOPI * _pstep();
-        }
-        inline void BLIT::_psync(){
-            _phasor = 0;
-        }
+    
     }
 }
 

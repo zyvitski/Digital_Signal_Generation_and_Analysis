@@ -8,10 +8,10 @@
 
 #include "FourierGenerator.h"
 
-Signal::Fourier::FourierGenerator::FourierGenerator():SignalGenerator(),_phasor(0){
+Signal::Fourier::FourierGenerator::FourierGenerator():SignalGenerator(){
     
 }
-Signal::Fourier::FourierGenerator::FourierGenerator(double const& frequency,double const& phase_offset):SignalGenerator(frequency,phase_offset),_phasor(0){}
+Signal::Fourier::FourierGenerator::FourierGenerator(double const& frequency,double const& phase_offset):SignalGenerator(frequency,phase_offset){}
 Signal::Fourier::FourierGenerator::~FourierGenerator(){}
 
 

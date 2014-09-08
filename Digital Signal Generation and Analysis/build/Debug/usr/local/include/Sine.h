@@ -9,14 +9,14 @@
 #ifndef __Waveform__Sine__
 #define __Waveform__Sine__
 
-#include "ClassicGenerator.h"
+#include "FourierGenerator.h"
 
 #define SINE_USE_DEFAULT 0
 #define SINE_USE_LUT 1
 #define SINE_USE_TAYLOR 2
 
 
-#define SINE_IMPL 1
+#define SINE_IMPL SINE_USE_LUT
 /*
  if SINE_IMPL is 1 sine class will use look up table
  elif SINE_IMPLE is 2 use custom taylor series sine
@@ -29,35 +29,40 @@
 #endif
 
 namespace Signal {
-    class Sine: public ClassicGenerator {
-    public:
-        Sine();
-        Sine(double const& frequency,double const& phase_offset);
-        virtual ~Sine();
-        virtual inline bool Perform(Sample& signal);
-        virtual inline bool Perform(RingBuffer& signal);
-    };
-    
-    inline bool Sine::Perform(Sample& signal){
-        //uses LUT
+    namespace Fourier{
+        class Sine: public FourierGenerator {
+        public:
+            Sine();
+            Sine(double const& frequency,double const& phase_offset);
+            virtual ~Sine();
+            virtual inline bool Perform(Sample& signal);
+            virtual inline bool Perform(RingBuffer& signal);
+        };
+        
+        inline bool Sine::Perform(Sample& signal){
+            
 #if SINE_IMPL == SINE_USE_LUT
-        signal = sine((_pstep() + _phase_offset));
+            //use LUT
+            signal = sine((_pstep() + _phase_offset));
 #elif SINE_IMPL==SINE_USE_TAYLOR
-        signal = Backend::Taylor::Sine((_pstep()+_phase_offset)*TWOPI);
+            //use custom taylor series function
+            signal = Backend::Taylor::Sine((_pstep()+_phase_offset)*TWOPI);
 #else
-        signal = sin((_pstep()+_phase_offset)*TWOPI);
+            //use built int math.h sin();
+            signal = sin((_pstep()+_phase_offset)*TWOPI);
 #endif
-
-        return true;
-    }
-    inline bool Sine::Perform(RingBuffer& signal){
-        signal.Flush();
-        while (!signal.Full()) {
-            if (Perform(_sample)) {
-                if(signal.Write(_sample)){
+            
+            return true;
+        }
+        inline bool Sine::Perform(RingBuffer& signal){
+            signal.Flush();
+            while (!signal.Full()) {
+                if (Perform(_sample)) {
+                    if(signal.Write(_sample)){
+                    }else return false;
                 }else return false;
-            }else return false;
-        }return true;
+            }return true;
+        }
     }
 }
 #endif /* defined(__Waveform__Sine__) */

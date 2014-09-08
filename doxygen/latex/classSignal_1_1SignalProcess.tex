@@ -3,6 +3,11 @@
 }
 
 
+An Abstract Base Class defining the basics A\+P\+I needed for audio generation.  
+
+
+
+
 {\ttfamily \#include $<$Signal\+Process.\+h$>$}
 
 Inheritance diagram for Signal\+:\+:Signal\+Process\+:\begin{figure}[H]
@@ -14,9 +19,9 @@ Inheritance diagram for Signal\+:\+:Signal\+Process\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSignal_1_1SignalProcess_a3a9b0cdff55c482000faadfcbf57b821}{Signal\+Process} ()
+\hyperlink{classSignal_1_1SignalProcess_ae64465136ef75a23053d5fc178de37f1}{Signal\+Process} ()
 \item 
-virtual \hyperlink{classSignal_1_1SignalProcess_aa399b06b43866fd6c1a0e9476f7fe476}{$\sim$\+Signal\+Process} ()
+virtual \hyperlink{classSignal_1_1SignalProcess_a0c02bada1a551dd15aa76d9651338a6b}{$\sim$\+Signal\+Process} ()
 \item 
 virtual bool \hyperlink{classSignal_1_1SignalProcess_a7986df989ac8afca3674ae8eace3cfdb}{Perform} (\hyperlink{classSignal_1_1Sample}{Sample} \&signal)=0
 \item 
@@ -25,20 +30,20 @@ virtual bool \hyperlink{classSignal_1_1SignalProcess_a9584dc515d2167f4439ed3d014
 
 
 \subsection{Detailed Description}
+An Abstract Base Class defining the basics A\+P\+I needed for audio generation. 
 
-
-Definition at line 20 of file Signal\+Process.\+h.
+Definition at line 21 of file Signal\+Process.\+h.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classSignal_1_1SignalProcess_a3a9b0cdff55c482000faadfcbf57b821}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!Signal\+Process@{Signal\+Process}}
+\hypertarget{classSignal_1_1SignalProcess_ae64465136ef75a23053d5fc178de37f1}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!Signal\+Process@{Signal\+Process}}
 \index{Signal\+Process@{Signal\+Process}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
-\subsubsection[{Signal\+Process}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+Process\+::\+Signal\+Process (
+\subsubsection[{Signal\+Process}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Signal\+Process\+::\+Signal\+Process (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classSignal_1_1SignalProcess_a3a9b0cdff55c482000faadfcbf57b821}
+)}}\label{classSignal_1_1SignalProcess_ae64465136ef75a23053d5fc178de37f1}
 
 
 Definition at line 11 of file Signal\+Process.\+cpp.
@@ -47,13 +52,13 @@ Definition at line 11 of file Signal\+Process.\+cpp.
 \begin{DoxyCode}
 11 \{\}
 \end{DoxyCode}
-\hypertarget{classSignal_1_1SignalProcess_aa399b06b43866fd6c1a0e9476f7fe476}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!````~Signal\+Process@{$\sim$\+Signal\+Process}}
+\hypertarget{classSignal_1_1SignalProcess_a0c02bada1a551dd15aa76d9651338a6b}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!````~Signal\+Process@{$\sim$\+Signal\+Process}}
 \index{````~Signal\+Process@{$\sim$\+Signal\+Process}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
-\subsubsection[{$\sim$\+Signal\+Process}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+Process\+::$\sim$\+Signal\+Process (
+\subsubsection[{$\sim$\+Signal\+Process}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Signal\+Process\+::$\sim$\+Signal\+Process (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1SignalProcess_aa399b06b43866fd6c1a0e9476f7fe476}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1SignalProcess_a0c02bada1a551dd15aa76d9651338a6b}
 
 
 Definition at line 12 of file Signal\+Process.\+cpp.
@@ -73,7 +78,7 @@ Definition at line 12 of file Signal\+Process.\+cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}}\label{classSignal_1_1SignalProcess_a7986df989ac8afca3674ae8eace3cfdb}
 
 
-Implemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa4895d6c53644}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444e7b66d2cb339c001704071646a}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a98982b34bc6c9ca4c2e91550afa31375}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1SignalGenerator_a2cd9061c5ae40a392a9476551b4379f3}{Signal\+::\+Signal\+Generator}, \hyperlink{classSignal_1_1Trivial_1_1TrivialGenerator_a2394cf9d0d40f9d25f72aff03e372ad9}{Signal\+::\+Trivial\+::\+Trivial\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_adf69eea95516fc9c7d06fae036d2fa9b}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Signal\+::\+Fourier\+::\+Square}, and \hyperlink{classSignal_1_1Trivial_1_1TrivialSaw_a091e3137a03978cc7dfaecf5b00dad46}{Signal\+::\+Trivial\+::\+Trivial\+Saw}.
+Implemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa4895d6c53644}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444e7b66d2cb339c001704071646a}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a98982b34bc6c9ca4c2e91550afa31375}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1SignalGenerator_a2cd9061c5ae40a392a9476551b4379f3}{Signal\+::\+Signal\+Generator}, \hyperlink{classSignal_1_1Analog_1_1AnalogGenerator_a435d695634a52cff8249dde68be18e8a}{Signal\+::\+Analog\+::\+Analog\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_adf69eea95516fc9c7d06fae036d2fa9b}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Signal\+::\+Fourier\+::\+Square}, \hyperlink{classSignal_1_1Analog_1_1Saw_ac91789b8322a0b39a15bc8dc6506d60b}{Signal\+::\+Analog\+::\+Saw}, and \hyperlink{classSignal_1_1Analog_1_1Square_a4afb9704efebdab680094fad82876357}{Signal\+::\+Analog\+::\+Square}.
 
 \hypertarget{classSignal_1_1SignalProcess_a9584dc515d2167f4439ed3d014bbb3f7}{\index{Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+Signal\+Process@{Signal\+::\+Signal\+Process}}
@@ -84,7 +89,7 @@ Implemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa48
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}}\label{classSignal_1_1SignalProcess_a9584dc515d2167f4439ed3d014bbb3f7}
 
 
-Implemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_a5d951e5fbfc77354bddab9dfedea008f}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a3825eb4060269749a37ae29ee847}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a2f0ee604ed0e67557aa9f7e7f50d80ec}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1SignalGenerator_a126d52dd9b6b14d33efc624e2c89284e}{Signal\+::\+Signal\+Generator}, \hyperlink{classSignal_1_1Trivial_1_1TrivialGenerator_a232aefbb2815eaf25e697ecedeb0f3d9}{Signal\+::\+Trivial\+::\+Trivial\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_acef099db2217902d7157e5b93f658363}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a7aacafda4427b996b56ad6764ea09177}{Signal\+::\+Fourier\+::\+Square}, and \hyperlink{classSignal_1_1Trivial_1_1TrivialSaw_a22b97c8dfdca76664cbb6e634c85085d}{Signal\+::\+Trivial\+::\+Trivial\+Saw}.
+Implemented in \hyperlink{classSignal_1_1Fourier_1_1Sine_a5d951e5fbfc77354bddab9dfedea008f}{Signal\+::\+Fourier\+::\+Sine}, \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a3825eb4060269749a37ae29ee847}{Signal\+::\+Fourier\+::\+Fourier\+Generator}, \hyperlink{classSignal_1_1BLIT_1_1BLIT_a2f0ee604ed0e67557aa9f7e7f50d80ec}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1SignalGenerator_a126d52dd9b6b14d33efc624e2c89284e}{Signal\+::\+Signal\+Generator}, \hyperlink{classSignal_1_1Analog_1_1AnalogGenerator_a8aa38b6c3f259b62b293f235cf1cc906}{Signal\+::\+Analog\+::\+Analog\+Generator}, \hyperlink{classSignal_1_1Fourier_1_1Saw_acef099db2217902d7157e5b93f658363}{Signal\+::\+Fourier\+::\+Saw}, \hyperlink{classSignal_1_1Fourier_1_1Square_a7aacafda4427b996b56ad6764ea09177}{Signal\+::\+Fourier\+::\+Square}, \hyperlink{classSignal_1_1Analog_1_1Saw_aafc49f02333a62a110cb3edb6b1df3a7}{Signal\+::\+Analog\+::\+Saw}, and \hyperlink{classSignal_1_1Analog_1_1Square_a90961bdcef8e53e281088837553d5221}{Signal\+::\+Analog\+::\+Square}.
 
 
 

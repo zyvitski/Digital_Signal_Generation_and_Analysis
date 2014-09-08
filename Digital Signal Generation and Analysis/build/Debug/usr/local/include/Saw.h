@@ -9,49 +9,50 @@
 #ifndef __Waveform__Saw__
 #define __Waveform__Saw__
 
-#include "ClassicGenerator.h"
-
+#include "FourierGenerator.h"
 
 namespace Signal {
-    
-    
-    class Saw: public ClassicGenerator {
-    public:
-        Saw();
-        Saw(double const& frequency,double const& phase_offset);
-        virtual ~Saw();
-        virtual inline bool Perform(Sample& signal);
-        virtual inline bool Perform(RingBuffer& signal);
-        virtual double const& Frequency(double const& value);
-        virtual double const& Frequency();
-    protected:
-        unsigned long _h;
-        double _a;
-        double phs;
-        double stor;
-        double iPI;
-        unsigned short i;
-    };
-    
-    inline bool Saw::Perform(Sample& signal){
-        phs=_pstep();
-        phs+=_phase_offset;
-        signal=0;
-        for (i=1; i<_h+1; ++i) {
-            stor += _harmonicTable.Saw(i)* sine(phs*(i));
+    namespace Fourier{
+        
+        class Saw: public FourierGenerator {
+        public:
+            Saw();
+            Saw(double const& frequency,double const& phase_offset);
+            virtual ~Saw();
+            virtual inline bool Perform(Sample& signal);
+            virtual inline bool Perform(RingBuffer& signal);
+            virtual double const& Frequency(double const& value);
+            virtual double const& Frequency();
+        protected:
+            unsigned long _h;
+            double _a;
+            double phs;
+            double stor;
+            double iPI;
+            unsigned short i;
+        };
+        
+        inline bool Saw::Perform(Sample& signal){
+#warning Saw Perform adjustment needed to output normalization
+            phs=_pstep();
+            phs+=_phase_offset;
+            signal=0;
+            for (i=1; i<_h+1; ++i) {
+                stor += _harmonicTable.Saw(i)* sine(phs*(i));
+            }
+            stor*= _a;
+            signal=stor;
+            return true;
         }
-        stor*= _a*iPI;
-        signal=stor;
-        return true;
-    }
-    inline bool Saw::Perform(RingBuffer& signal){
-        signal.Flush();
-        while (!signal.Full()) {
-            if (Perform(_sample)) {
-                if(signal.Write(_sample)){
+        inline bool Saw::Perform(RingBuffer& signal){
+            signal.Flush();
+            while (!signal.Full()) {
+                if (Perform(_sample)) {
+                    if(signal.Write(_sample)){
+                    }else return false;
                 }else return false;
-            }else return false;
-        }return true;
+            }return true;
+        }
     }
 }
 

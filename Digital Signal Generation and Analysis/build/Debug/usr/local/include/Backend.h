@@ -23,6 +23,7 @@
 
 #include "PI.h"
 #include "Taylor.h"
+#include "Sin.h"
 
 #endif
 

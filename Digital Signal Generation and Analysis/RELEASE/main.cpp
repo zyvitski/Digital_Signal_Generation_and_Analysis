@@ -8,7 +8,10 @@
 
 #include "Signal.h"
 #include "Backend.h"
+#include <iostream>
 
 int main(){
+    
+    std::cout<<Backend::Sin(0.75);
     return 0;
 }

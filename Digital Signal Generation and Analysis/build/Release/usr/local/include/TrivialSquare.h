@@ -13,6 +13,7 @@
 namespace Signal {
     namespace Trivial{
         class TrivialSquare:public TrivialGenerator{
+        public:
             TrivialSquare();
             TrivialSquare(double const& frequency,double const& phase_offset);
             virtual ~TrivialSquare();
@@ -32,7 +33,7 @@ namespace Signal {
             value+=_phase_offset;
             value = value-(unsigned long)value;
             
-            signal = value>=_duty ? 1.0: -1.0;
+            signal = value>=_duty ? -1.0: 1.0;
             return true;
         }
         inline bool TrivialSquare::Perform(RingBuffer& signal){

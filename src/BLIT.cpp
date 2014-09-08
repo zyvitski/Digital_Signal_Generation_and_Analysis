@@ -8,16 +8,18 @@
 
 #include "BLIT.h"
 
-Signal::BLIT::BLIT::BLIT():SignalGenerator(){
+Signal::BLIT::BLIT::BLIT():SignalGenerator(),phs(0){
     updateHarms();
 }
 Signal::BLIT::BLIT::BLIT(double const& frequency,double const& phase_offset):SignalGenerator(frequency,phase_offset){
+    _nHarms = (Sample_Rate()*0.5)/_fHertz;
     updateHarms();
 }
 Signal::BLIT::BLIT::~BLIT(){}
 
 double const& Signal::BLIT::BLIT::Frequency(double const& value){
     this->SignalGenerator::Frequency(value);
+    _nHarms = (Sample_Rate()*0.5)/_fHertz;
     updateHarms();
     return this->_fHertz;
 }

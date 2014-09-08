@@ -7,10 +7,10 @@
 //
 
 #include "SignalGenerator.h"
-Signal::SignalGenerator::SignalGenerator():_frequency(0),_phase_offset(0),_fHertz(0){
+Signal::SignalGenerator::SignalGenerator():_frequency(0),_phase_offset(0),_fHertz(0),_phasor(0){
 
 }
-Signal::SignalGenerator::SignalGenerator(double const& frequency,double const& phase_offset):_frequency(frequency/Sample_Rate()),_fHertz(frequency),_phase_offset(phase_offset){}
+Signal::SignalGenerator::SignalGenerator(double const& frequency,double const& phase_offset):_frequency(frequency/Sample_Rate()),_fHertz(frequency),_phase_offset(phase_offset),_phasor(0){}
 Signal::SignalGenerator::~SignalGenerator(){}
 
 double const& Signal::SignalGenerator::Frequency()const{

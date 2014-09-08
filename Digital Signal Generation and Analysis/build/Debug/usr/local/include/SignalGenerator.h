@@ -14,7 +14,8 @@
 
 namespace Signal {
     
-    
+    /*!\brief A Base Class extending the SignalProcess API with functionality for signal generation
+     */
     
     class SignalGenerator: public SignalProcess {
     public:
@@ -33,6 +34,17 @@ namespace Signal {
         double _frequency;//in percent sample rate 0.0 - 1.0
         double _fHertz;//in hertz
         double _phase_offset;//Phase Offset 0-1 cycles
+        //------------------------------------------------------------------------------------//
+        /*
+         Built in Phasor.
+         Internal use only.
+         */
+        double _phasor;
+        inline double _pstep();//ramp wave from 0.0-1.0 based on frequency and phase offset
+        inline double _pstep_rad();//ramp wave from 0.0 -2pi based on frequency and phase offset
+        inline void _psync();//sets phasor back to 0.0 for use doing hard sync
+        //------------------------------------------------------------------------------------//
+
     };
     
     
@@ -44,6 +56,19 @@ namespace Signal {
         signal.Flush();
         return false;
     }
+    inline double SignalGenerator::_pstep(){
+        double value = _phasor;
+        _phasor+=_frequency;
+        _phasor = _phasor-(unsigned long)_phasor;//cheaper %1
+        return value;
+    }
+    inline double SignalGenerator::_pstep_rad(){
+        return TWOPI * _pstep();
+    }
+    inline void SignalGenerator::_psync(){
+        _phasor = 0;
+    }
+
 }
 
 

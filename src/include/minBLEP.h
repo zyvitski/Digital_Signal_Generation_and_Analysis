@@ -13,6 +13,9 @@
 
 namespace Signal {
     namespace BLEP{
+        /*!\brief
+         *See file ~/Research/icmc01-hardsync.pdf for details of algorithm
+         */
         class minBLEP:public SignalGenerator{
         public:
 #warning Unimplimented minBLEP

@@ -33,13 +33,14 @@ namespace Signal {
         };
         
         inline bool Saw::Perform(Sample& signal){
+#warning Saw Perform adjustment needed to output normalization
             phs=_pstep();
             phs+=_phase_offset;
             signal=0;
             for (i=1; i<_h+1; ++i) {
                 stor += _harmonicTable.Saw(i)* sine(phs*(i));
             }
-            stor*= _a*iPI;
+            stor*= _a;
             signal=stor;
             return true;
         }

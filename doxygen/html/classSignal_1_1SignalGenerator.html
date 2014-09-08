@@ -91,12 +91,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classSignal_1_1SignalGenerator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Signal::SignalGenerator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Base Class extending the <a class="el" href="classSignal_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. ">SignalProcess</a> API with functionality for signal generation.  
+ <a href="classSignal_1_1SignalGenerator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -105,18 +109,18 @@ Inheritance diagram for Signal::SignalGenerator:</div>
  <div class="center">
   <img src="classSignal_1_1SignalGenerator.png" usemap="#Signal::SignalGenerator_map" alt=""/>
   <map id="Signal::SignalGenerator_map" name="Signal::SignalGenerator_map">
-<area href="classSignal_1_1SignalProcess.html" alt="Signal::SignalProcess" shape="rect" coords="420,0,620,24"/>
-<area href="classSignal_1_1BLEP_1_1minBLEP.html" alt="Signal::BLEP::minBLEP" shape="rect" coords="0,112,200,136"/>
-<area href="classSignal_1_1BLEP_1_1polyBLEP.html" alt="Signal::BLEP::polyBLEP" shape="rect" coords="210,112,410,136"/>
-<area href="classSignal_1_1BLIT_1_1BLIT.html" alt="Signal::BLIT::BLIT" shape="rect" coords="420,112,620,136"/>
-<area href="classSignal_1_1Fourier_1_1FourierGenerator.html" alt="Signal::Fourier::FourierGenerator" shape="rect" coords="840,112,1040,136"/>
-<area href="classSignal_1_1Trivial_1_1TrivialGenerator.html" alt="Signal::Trivial::TrivialGenerator" shape="rect" coords="1365,112,1565,136"/>
-<area href="classSignal_1_1BLIT_1_1BLITSaw.html" alt="Signal::BLIT::BLITSaw" shape="rect" coords="420,168,620,192"/>
-<area href="classSignal_1_1Fourier_1_1Saw.html" alt="Signal::Fourier::Saw" shape="rect" coords="630,168,830,192"/>
-<area href="classSignal_1_1Fourier_1_1Sine.html" alt="Signal::Fourier::Sine" shape="rect" coords="840,168,1040,192"/>
-<area href="classSignal_1_1Fourier_1_1Square.html" alt="Signal::Fourier::Square" shape="rect" coords="1050,168,1250,192"/>
-<area href="classSignal_1_1Trivial_1_1TrivialSaw.html" alt="Signal::Trivial::TrivialSaw" shape="rect" coords="1260,168,1460,192"/>
-<area href="classSignal_1_1Trivial_1_1TrivialSquare.html" alt="Signal::Trivial::TrivialSquare" shape="rect" coords="1470,168,1670,192"/>
+<area href="classSignal_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. " alt="Signal::SignalProcess" shape="rect" coords="525,0,725,24"/>
+<area href="classSignal_1_1Analog_1_1AnalogGenerator.html" alt="Signal::Analog::AnalogGenerator" shape="rect" coords="105,112,305,136"/>
+<area href="classSignal_1_1BLEP_1_1minBLEP.html" title="See file ~/Research/icmc01-hardsync.pdf for details of algorithm. " alt="Signal::BLEP::minBLEP" shape="rect" coords="315,112,515,136"/>
+<area href="classSignal_1_1BLEP_1_1polyBLEP.html" title="See file ~/Research/polyBLEP.rtf for links to deatils about algorithm. " alt="Signal::BLEP::polyBLEP" shape="rect" coords="525,112,725,136"/>
+<area href="classSignal_1_1BLIT_1_1BLIT.html" title="See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of conce..." alt="Signal::BLIT::BLIT" shape="rect" coords="735,112,935,136"/>
+<area href="classSignal_1_1Fourier_1_1FourierGenerator.html" alt="Signal::Fourier::FourierGenerator" shape="rect" coords="1155,112,1355,136"/>
+<area href="classSignal_1_1Analog_1_1Saw.html" alt="Signal::Analog::Saw" shape="rect" coords="0,168,200,192"/>
+<area href="classSignal_1_1Analog_1_1Square.html" alt="Signal::Analog::Square" shape="rect" coords="210,168,410,192"/>
+<area href="classSignal_1_1BLIT_1_1Saw.html" title="See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of conce..." alt="Signal::BLIT::Saw" shape="rect" coords="735,168,935,192"/>
+<area href="classSignal_1_1Fourier_1_1Saw.html" alt="Signal::Fourier::Saw" shape="rect" coords="945,168,1145,192"/>
+<area href="classSignal_1_1Fourier_1_1Sine.html" alt="Signal::Fourier::Sine" shape="rect" coords="1155,168,1355,192"/>
+<area href="classSignal_1_1Fourier_1_1Square.html" alt="Signal::Fourier::Square" shape="rect" coords="1365,168,1565,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -141,6 +145,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6a103ff72beaa338f6d18c812522d78"><td class="memItemLeft" align="right" valign="top">virtual double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#ac6a103ff72beaa338f6d18c812522d78">PhaseOffset</a> (double const &amp;value)</td></tr>
 <tr class="separator:ac6a103ff72beaa338f6d18c812522d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a43b0eec84ee7df04c947533c0511c2c0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#a43b0eec84ee7df04c947533c0511c2c0">_pstep</a> ()</td></tr>
+<tr class="separator:a43b0eec84ee7df04c947533c0511c2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2f4ab977c6e84bf85022eab8135304"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#abf2f4ab977c6e84bf85022eab8135304">_pstep_rad</a> ()</td></tr>
+<tr class="separator:abf2f4ab977c6e84bf85022eab8135304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563f57d4dfd8728a6a572f15c1e2532b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#a563f57d4dfd8728a6a572f15c1e2532b">_psync</a> ()</td></tr>
+<tr class="separator:a563f57d4dfd8728a6a572f15c1e2532b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a7f107461333bce68c5dad412db96a8c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a></td></tr>
@@ -149,10 +162,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a85a4702347352bab1c71e0a8df8437d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4444d46747c8517171edbbf4b5588f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a></td></tr>
 <tr class="separator:a6b4444d46747c8517171edbbf4b5588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4aa0728ded00777be26a06d883eaeb3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a></td></tr>
+<tr class="separator:af4aa0728ded00777be26a06d883eaeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00019">19</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="textblock"><p>A Base Class extending the <a class="el" href="classSignal_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. ">SignalProcess</a> API with functionality for signal generation. </p>
+
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00020">20</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8c67c754d86e0363445d7fd271855e1a"></a>
 <div class="memitem">
@@ -168,12 +184,13 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00010">10</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                      :<a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a>(0),<a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>(0),<a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>(0){</div>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                      :<a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a>(0),<a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>(0),<a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>(0),<a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a>(0){</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_af4aa0728ded00777be26a06d883eaeb3"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">Signal::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00042">SignalGenerator.h:42</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00036">SignalGenerator.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,11 +219,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00013">13</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;:<a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a>(frequency/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()),<a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>(frequency),<a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>(phase_offset){}</div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;:<a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a>(frequency/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()),<a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>(frequency),<a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>(phase_offset),<a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a>(0){}</div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_af4aa0728ded00777be26a06d883eaeb3"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">Signal::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00042">SignalGenerator.h:42</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
 <div class="ttc" id="namespaceSignal_html_ae7b1f222afc010e0f33f306f978fcde9"><div class="ttname"><a href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00036">SignalGenerator.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,6 +255,98 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a43b0eec84ee7df04c947533c0511c2c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Signal::SignalGenerator::_pstep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00059">59</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                         {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">double</span> value = <a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a>+=<a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a> = <a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a>-(<span class="keywordtype">unsigned</span> long)<a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a>;<span class="comment">//cheaper %1</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_af4aa0728ded00777be26a06d883eaeb3"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">Signal::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00042">SignalGenerator.h:42</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abf2f4ab977c6e84bf85022eab8135304"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Signal::SignalGenerator::_pstep_rad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00065">65</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                             {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PI_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a> * <a class="code" href="classSignal_1_1SignalGenerator.html#a43b0eec84ee7df04c947533c0511c2c0">_pstep</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="ttc" id="PI_8h_html_a4912c64aec0c943b7985db6cb61ff83a"><div class="ttname"><a href="PI_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a></div><div class="ttdeci">#define TWOPI</div><div class="ttdef"><b>Definition:</b> <a href="Sin_8h_source.html#l00014">Sin.h:14</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a43b0eec84ee7df04c947533c0511c2c0"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a43b0eec84ee7df04c947533c0511c2c0">Signal::SignalGenerator::_pstep</a></div><div class="ttdeci">double _pstep()</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00059">SignalGenerator.h:59</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a563f57d4dfd8728a6a572f15c1e2532b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Signal::SignalGenerator::_psync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00068">68</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                       {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">_phasor</a> = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_af4aa0728ded00777be26a06d883eaeb3"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#af4aa0728ded00777be26a06d883eaeb3">Signal::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00042">SignalGenerator.h:42</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a96af42ee68f94e9b04d034fd68b73ecd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +372,7 @@ Protected Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                   {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,8 +406,8 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">_frequency</a> = <a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">_fHertz</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a7f107461333bce68c5dad412db96a8c2"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2">Signal::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a85a4702347352bab1c71e0a8df8437d6"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6">Signal::SignalGenerator::_fHertz</a></div><div class="ttdeci">double _fHertz</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
 <div class="ttc" id="namespaceSignal_html_ae7b1f222afc010e0f33f306f978fcde9"><div class="ttname"><a href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -326,13 +436,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classSignal_1_1SignalProcess.html#a7986df989ac8afca3674ae8eace3cfdb">Signal::SignalProcess</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#aa35c77904f8d7a0de6fa4895d6c53644">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1FourierGenerator.html#a6ec444e7b66d2cb339c001704071646a">Signal::Fourier::FourierGenerator</a>, <a class="el" href="classSignal_1_1BLIT_1_1BLIT.html#a98982b34bc6c9ca4c2e91550afa31375">Signal::BLIT::BLIT</a>, <a class="el" href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a2394cf9d0d40f9d25f72aff03e372ad9">Signal::Trivial::TrivialGenerator</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#adf69eea95516fc9c7d06fae036d2fa9b">Signal::Fourier::Saw</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a29e4b9d03b9df4fb6ed0d7a817ecffda">Signal::Fourier::Square</a>, and <a class="el" href="classSignal_1_1Trivial_1_1TrivialSaw.html#a091e3137a03978cc7dfaecf5b00dad46">Signal::Trivial::TrivialSaw</a>.</p>
+<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#aa35c77904f8d7a0de6fa4895d6c53644">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1FourierGenerator.html#a6ec444e7b66d2cb339c001704071646a">Signal::Fourier::FourierGenerator</a>, <a class="el" href="classSignal_1_1BLIT_1_1BLIT.html#a98982b34bc6c9ca4c2e91550afa31375">Signal::BLIT::BLIT</a>, <a class="el" href="classSignal_1_1Analog_1_1AnalogGenerator.html#a435d695634a52cff8249dde68be18e8a">Signal::Analog::AnalogGenerator</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#adf69eea95516fc9c7d06fae036d2fa9b">Signal::Fourier::Saw</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a29e4b9d03b9df4fb6ed0d7a817ecffda">Signal::Fourier::Square</a>, <a class="el" href="classSignal_1_1Analog_1_1Saw.html#ac91789b8322a0b39a15bc8dc6506d60b">Signal::Analog::Saw</a>, and <a class="el" href="classSignal_1_1Analog_1_1Square.html#a4afb9704efebdab680094fad82876357">Signal::Analog::Square</a>.</p>
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00039">39</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                      {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        signal = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00051">51</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                      {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        signal = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -360,13 +470,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classSignal_1_1SignalProcess.html#a9584dc515d2167f4439ed3d014bbb3f7">Signal::SignalProcess</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#a5d951e5fbfc77354bddab9dfedea008f">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1FourierGenerator.html#acc6a3825eb4060269749a37ae29ee847">Signal::Fourier::FourierGenerator</a>, <a class="el" href="classSignal_1_1BLIT_1_1BLIT.html#a2f0ee604ed0e67557aa9f7e7f50d80ec">Signal::BLIT::BLIT</a>, <a class="el" href="classSignal_1_1Trivial_1_1TrivialGenerator.html#a232aefbb2815eaf25e697ecedeb0f3d9">Signal::Trivial::TrivialGenerator</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#acef099db2217902d7157e5b93f658363">Signal::Fourier::Saw</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a7aacafda4427b996b56ad6764ea09177">Signal::Fourier::Square</a>, and <a class="el" href="classSignal_1_1Trivial_1_1TrivialSaw.html#a22b97c8dfdca76664cbb6e634c85085d">Signal::Trivial::TrivialSaw</a>.</p>
+<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#a5d951e5fbfc77354bddab9dfedea008f">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1FourierGenerator.html#acc6a3825eb4060269749a37ae29ee847">Signal::Fourier::FourierGenerator</a>, <a class="el" href="classSignal_1_1BLIT_1_1BLIT.html#a2f0ee604ed0e67557aa9f7e7f50d80ec">Signal::BLIT::BLIT</a>, <a class="el" href="classSignal_1_1Analog_1_1AnalogGenerator.html#a8aa38b6c3f259b62b293f235cf1cc906">Signal::Analog::AnalogGenerator</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#acef099db2217902d7157e5b93f658363">Signal::Fourier::Saw</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a7aacafda4427b996b56ad6764ea09177">Signal::Fourier::Square</a>, <a class="el" href="classSignal_1_1Analog_1_1Saw.html#aafc49f02333a62a110cb3edb6b1df3a7">Signal::Analog::Saw</a>, and <a class="el" href="classSignal_1_1Analog_1_1Square.html#a90961bdcef8e53e281088837553d5221">Signal::Analog::Square</a>.</p>
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00043">43</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                          {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        signal.Flush();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00055">55</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                          {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        signal.Flush();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -395,7 +505,7 @@ Protected Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                     {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00036">SignalGenerator.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -426,7 +536,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a> = value;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00035">SignalGenerator.h:35</a></div></div>
+<div class="ttc" id="classSignal_1_1SignalGenerator_html_a6b4444d46747c8517171edbbf4b5588f"><div class="ttname"><a href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">Signal::SignalGenerator::_phase_offset</a></div><div class="ttdeci">double _phase_offset</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00036">SignalGenerator.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -449,7 +559,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00034">34</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00035">35</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +581,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00033">33</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00034">34</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +603,29 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00035">35</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00036">36</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4aa0728ded00777be26a06d883eaeb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Signal::SignalGenerator::_phasor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00042">42</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +636,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 4 2014 09:03:24 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 17:16:25 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

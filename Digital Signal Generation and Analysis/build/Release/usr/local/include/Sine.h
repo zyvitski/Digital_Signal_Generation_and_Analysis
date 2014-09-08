@@ -16,7 +16,7 @@
 #define SINE_USE_TAYLOR 2
 
 
-#define SINE_IMPL 1
+#define SINE_IMPL SINE_USE_LUT
 /*
  if SINE_IMPL is 1 sine class will use look up table
  elif SINE_IMPLE is 2 use custom taylor series sine
@@ -40,12 +40,15 @@ namespace Signal {
         };
         
         inline bool Sine::Perform(Sample& signal){
-            //uses LUT
+            
 #if SINE_IMPL == SINE_USE_LUT
+            //use LUT
             signal = sine((_pstep() + _phase_offset));
 #elif SINE_IMPL==SINE_USE_TAYLOR
+            //use custom taylor series function
             signal = Backend::Taylor::Sine((_pstep()+_phase_offset)*TWOPI);
 #else
+            //use built int math.h sin();
             signal = sin((_pstep()+_phase_offset)*TWOPI);
 #endif
             

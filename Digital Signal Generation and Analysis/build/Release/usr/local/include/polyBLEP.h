@@ -13,6 +13,10 @@
 
 namespace Signal {
     namespace BLEP{
+        
+        /*!\brief
+         *See file ~/Research/polyBLEP.rtf for links to deatils about algorithm
+         */
         class polyBLEP:public SignalGenerator{
         public:
 #warning Unimplimented polyBLEP
