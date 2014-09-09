@@ -19,8 +19,12 @@ namespace Signal {
         /*
          Fourier Generator is designed with built in phasor code for use in genorating classic analog style waveforms using fourier synthesis i.e. additive combination of sine waves based on a fourier series
          */
+        
         static Backend::SineLUT<float, 32768> sine;
         static Backend::HarmonicTable _harmonicTable;
+        
+        /*!\brief A Class Extending The SignalGenerator Class with functionality for generating a wave by summing sinusoids
+         */
         class FourierGenerator: public SignalGenerator {
         public:
             FourierGenerator();

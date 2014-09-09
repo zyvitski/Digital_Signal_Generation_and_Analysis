@@ -29,7 +29,9 @@ namespace Backend {
 #include <math.h>
 #endif
     
+    
     inline double Sin(double const& phs){
+        //phs 0-1
 #if sin_impl == sin_native
         return sin(TWOPI * phs);
 #elif sin_impl == sin_tay

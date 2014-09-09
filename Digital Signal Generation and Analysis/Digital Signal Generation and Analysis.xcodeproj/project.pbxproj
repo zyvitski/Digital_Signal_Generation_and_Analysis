@@ -60,6 +60,8 @@
 		1FDA1DEB19B8A20D00151AA2 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDA1DEA19B8A20D00151AA2 /* AnalogSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1FDA1DED19B8A22100151AA2 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA1DEC19B8A22100151AA2 /* AnalogSaw.cpp */; };
 		1FDA1DEF19B8A23F00151AA2 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA1DEE19B8A23F00151AA2 /* AnalogSquare.cpp */; };
+		1FEB8BE619BEAC7000C32628 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB8BE519BEAC7000C32628 /* Triangle.cpp */; };
+		1FEB8BE719BEB1FC00C32628 /* Triangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEB8BE419BEAC1500C32628 /* Triangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		1FDA1DEA19B8A20D00151AA2 /* AnalogSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogSquare.h; path = ../src/include/AnalogSquare.h; sourceTree = "<group>"; };
 		1FDA1DEC19B8A22100151AA2 /* AnalogSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogSaw.cpp; path = ../src/AnalogSaw.cpp; sourceTree = "<group>"; };
 		1FDA1DEE19B8A23F00151AA2 /* AnalogSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogSquare.cpp; path = ../src/AnalogSquare.cpp; sourceTree = "<group>"; };
+		1FEB8BE419BEAC1500C32628 /* Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Triangle.h; path = ../src/include/Triangle.h; sourceTree = "<group>"; };
+		1FEB8BE519BEAC7000C32628 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Triangle.cpp; path = ../src/Triangle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,7 @@
 				1FDA1DE319B89CDF00151AA2 /* AnalogGenerator.cpp */,
 				1FDA1DEC19B8A22100151AA2 /* AnalogSaw.cpp */,
 				1FDA1DEE19B8A23F00151AA2 /* AnalogSquare.cpp */,
+				1FEB8BE519BEAC7000C32628 /* Triangle.cpp */,
 			);
 			name = SOURCE;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				1F591D5E19B7E55600FEEF4C /* Saw.h */,
 				1F591D6219B7E55600FEEF4C /* Sine.h */,
 				1F591D8A19B7F88100FEEF4C /* Square.h */,
+				1FEB8BE419BEAC1500C32628 /* Triangle.h */,
 			);
 			name = Harmonic;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				1F6EEE7119BAE245008215D2 /* Sin.h in Headers */,
 				1F591D7319B7E55600FEEF4C /* Saw.h in Headers */,
 				1F591D7619B7E55600FEEF4C /* SignalProcess.h in Headers */,
+				1FEB8BE719BEB1FC00C32628 /* Triangle.h in Headers */,
 				1F591D6A19B7E55600FEEF4C /* Driver.h in Headers */,
 				1F591D6819B7E55600FEEF4C /* Buffer.h in Headers */,
 				1F591D7019B7E55600FEEF4C /* RingBuffer.h in Headers */,
@@ -477,6 +484,7 @@
 				1F591D3C19B7DFF600FEEF4C /* Buffer.cpp in Sources */,
 				1F591D4019B7DFF600FEEF4C /* RingBuffer.cpp in Sources */,
 				1F591D8219B7F75000FEEF4C /* minBLEP.cpp in Sources */,
+				1FEB8BE619BEAC7000C32628 /* Triangle.cpp in Sources */,
 				1FDA1DED19B8A22100151AA2 /* AnalogSaw.cpp in Sources */,
 				1F591D4719B7DFF600FEEF4C /* Taylor.cpp in Sources */,
 				1F591D4619B7DFF600FEEF4C /* Sine.cpp in Sources */,

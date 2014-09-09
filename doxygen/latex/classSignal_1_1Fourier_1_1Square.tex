@@ -3,6 +3,11 @@
 }
 
 
+\hyperlink{namespaceSignal_1_1Fourier}{Fourier} Series Based \hyperlink{classSignal_1_1Fourier_1_1Square}{Square} Wave.  
+
+
+
+
 {\ttfamily \#include $<$Square.\+h$>$}
 
 Inheritance diagram for Signal\+:\+:Fourier\+:\+:Square\+:\begin{figure}[H]
@@ -18,15 +23,15 @@ Inheritance diagram for Signal\+:\+:Fourier\+:\+:Square\+:\begin{figure}[H]
 \item 
 \hyperlink{classSignal_1_1Fourier_1_1Square_abe628eb3587a4eca934e8d449ef5ca3c}{Square} (double const \&frequency, double const \&phase\+\_\+offset)
 \item 
-virtual \hyperlink{classSignal_1_1Fourier_1_1Square_afc362449de1722698c8579e1f3300035}{$\sim$\+Square} ()
+virtual \hyperlink{classSignal_1_1Fourier_1_1Square_a2ad01bbdbb3ef7a252c2570f2574334e}{$\sim$\+Square} ()
 \item 
 virtual bool \hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Perform} (\hyperlink{classSignal_1_1Sample}{Sample} \&signal)
 \item 
 virtual bool \hyperlink{classSignal_1_1Fourier_1_1Square_a7aacafda4427b996b56ad6764ea09177}{Perform} (\hyperlink{classSignal_1_1RingBuffer}{Ring\+Buffer} \&signal)
 \item 
-virtual double const \& \hyperlink{classSignal_1_1Fourier_1_1Square_a99040022c5d7c9f88e52cdeeed3e797a}{Frequency} (double const \&value)
+virtual double const \& \hyperlink{classSignal_1_1Fourier_1_1Square_a6d8ab67bf0dc5159772669396b1f6aa4}{Frequency} (double const \&value)
 \item 
-virtual double const \& \hyperlink{classSignal_1_1Fourier_1_1Square_a99816b8b028c217530551dc28e4702be}{Frequency} ()
+virtual double const \& \hyperlink{classSignal_1_1Fourier_1_1Square_adaad7d319e022fd12cdc9f0996502f04}{Frequency} ()
 \item 
 virtual double const \& \hyperlink{classSignal_1_1SignalGenerator_a96af42ee68f94e9b04d034fd68b73ecd}{Frequency} () const 
 \item 
@@ -52,11 +57,9 @@ unsigned long \hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c7
 \item 
 double \hyperlink{classSignal_1_1Fourier_1_1Square_a1de35055cfcab4d4bae2d72273c34f3f}{\+\_\+a}
 \item 
-double \hyperlink{classSignal_1_1Fourier_1_1Square_a4fd9ac83ead8150ace9aadffb7c9e47f}{tmp}
+double \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}
 \item 
 double \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor}
-\item 
-double \hyperlink{classSignal_1_1Fourier_1_1Square_a78d566d8c876456c115c9160ea0eacd2}{i\+P\+I}
 \item 
 unsigned short \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}
 \item 
@@ -75,9 +78,9 @@ double \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eae
 
 
 \subsection{Detailed Description}
+\hyperlink{namespaceSignal_1_1Fourier}{Fourier} Series Based \hyperlink{classSignal_1_1Fourier_1_1Square}{Square} Wave. 
 
-
-Definition at line 17 of file Square.\+h.
+Definition at line 19 of file Square.\+h.
 
 
 
@@ -89,6 +92,16 @@ Definition at line 17 of file Square.\+h.
 {}
 \end{DoxyParamCaption}
 )}}\label{classSignal_1_1Fourier_1_1Square_ae9e86a649d8e70c793da8d69d0ac755b}
+
+
+Definition at line 11 of file Square.\+cpp.
+
+
+\begin{DoxyCode}
+11                            :\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a9679c0c9255c134291ce2d4773ff7040}{FourierGenerator}(),\hyperlink{classSignal_1_1Fourier_1_1Square_a1de35055cfcab4d4bae2d72273c34f3f}{\_a}(4.0/\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}{\_h}(
+      \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}{\_maxHarms}(\hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}(0),\hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor}(0)\{
+12 \}
+\end{DoxyCode}
 \hypertarget{classSignal_1_1Fourier_1_1Square_abe628eb3587a4eca934e8d449ef5ca3c}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Square@{Square}}
 \index{Square@{Square}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
 \subsubsection[{Square}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Fourier\+::\+Square\+::\+Square (
@@ -97,13 +110,34 @@ Definition at line 17 of file Square.\+h.
 \item[{double const \&}]{phase\+\_\+offset}
 \end{DoxyParamCaption}
 )}}\label{classSignal_1_1Fourier_1_1Square_abe628eb3587a4eca934e8d449ef5ca3c}
-\hypertarget{classSignal_1_1Fourier_1_1Square_afc362449de1722698c8579e1f3300035}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!````~Square@{$\sim$\+Square}}
+
+
+Definition at line 13 of file Square.\+cpp.
+
+
+\begin{DoxyCode}
+13                                                                              :
+      \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a9679c0c9255c134291ce2d4773ff7040}{FourierGenerator}(frequency,phase\_offset),\hyperlink{classSignal_1_1Fourier_1_1Square_a1de35055cfcab4d4bae2d72273c34f3f}{\_a}(4.0/\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}{\_h}(
+      \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}{\_maxHarms}(\hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}(0),\hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor}(0)\{
+14     \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}=0;
+15     \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}{\_storage}=0;
+16 \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1Fourier_1_1Square_a2ad01bbdbb3ef7a252c2570f2574334e}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!````~Square@{$\sim$\+Square}}
 \index{````~Square@{$\sim$\+Square}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
-\subsubsection[{$\sim$\+Square}]{\setlength{\rightskip}{0pt plus 5cm}virtual Signal\+::\+Fourier\+::\+Square\+::$\sim$\+Square (
+\subsubsection[{$\sim$\+Square}]{\setlength{\rightskip}{0pt plus 5cm}Signal\+::\+Fourier\+::\+Square\+::$\sim$\+Square (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1Fourier_1_1Square_afc362449de1722698c8579e1f3300035}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1Fourier_1_1Square_a2ad01bbdbb3ef7a252c2570f2574334e}
+
+
+Definition at line 17 of file Square.\+cpp.
+
+
+\begin{DoxyCode}
+17 \{\}
+\end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
@@ -116,17 +150,17 @@ Definition at line 17 of file Square.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}
 
 
-Definition at line 49 of file Fourier\+Generator.\+h.
+Definition at line 53 of file Fourier\+Generator.\+h.
 
 
 \begin{DoxyCode}
-49                                                                    \{
-50             \textcolor{comment}{//double softLim = 0.45;}
-51             \textcolor{comment}{//double hardLim = 0.5;}
-52             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
-53             \_s/=\_frq;
-54             \textcolor{keywordflow}{return} trunc(\_s);
-55         \}
+53                                                                    \{
+54             \textcolor{comment}{//double softLim = 0.45;}
+55             \textcolor{comment}{//double hardLim = 0.5;}
+56             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
+57             \_s/=\_frq;
+58             \textcolor{keywordflow}{return} trunc(\_s);
+59         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!\+\_\+pstep@{\+\_\+pstep}}
 \index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
@@ -182,24 +216,46 @@ Definition at line 68 of file Signal\+Generator.\+h.
 69         \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eaeb3}{\_phasor} = 0;
 70     \}
 \end{DoxyCode}
-\hypertarget{classSignal_1_1Fourier_1_1Square_a99040022c5d7c9f88e52cdeeed3e797a}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Frequency@{Frequency}}
+\hypertarget{classSignal_1_1Fourier_1_1Square_a6d8ab67bf0dc5159772669396b1f6aa4}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Frequency@{Frequency}}
 \index{Frequency@{Frequency}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
-\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}virtual double const\& Signal\+::\+Fourier\+::\+Square\+::\+Frequency (
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Fourier\+::\+Square\+::\+Frequency (
 \begin{DoxyParamCaption}
 \item[{double const \&}]{value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1Fourier_1_1Square_a99040022c5d7c9f88e52cdeeed3e797a}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1Fourier_1_1Square_a6d8ab67bf0dc5159772669396b1f6aa4}
 
 
 Reimplemented from \hyperlink{classSignal_1_1SignalGenerator_af83b532bf3ddc3637c2fd7a1dfd095cb}{Signal\+::\+Signal\+Generator}.
 
-\hypertarget{classSignal_1_1Fourier_1_1Square_a99816b8b028c217530551dc28e4702be}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Frequency@{Frequency}}
+
+
+Definition at line 18 of file Square.\+cpp.
+
+
+\begin{DoxyCode}
+18                                                                \{
+19     \hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz} = value;
+20     \hyperlink{classSignal_1_1SignalGenerator_a7f107461333bce68c5dad412db96a8c2}{\_frequency} = \hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz}/\hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}();
+21     \hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}{\_h} = \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}{\_maxHarms}(\hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz});
+22     \textcolor{keywordflow}{return} \hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
+23 \}
+\end{DoxyCode}
+\hypertarget{classSignal_1_1Fourier_1_1Square_adaad7d319e022fd12cdc9f0996502f04}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Frequency@{Frequency}}
 \index{Frequency@{Frequency}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
-\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}virtual double const\& Signal\+::\+Fourier\+::\+Square\+::\+Frequency (
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Fourier\+::\+Square\+::\+Frequency (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1Fourier_1_1Square_a99816b8b028c217530551dc28e4702be}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSignal_1_1Fourier_1_1Square_adaad7d319e022fd12cdc9f0996502f04}
+
+
+Definition at line 24 of file Square.\+cpp.
+
+
+\begin{DoxyCode}
+24                                             \{
+25     \textcolor{keywordflow}{return} this->\hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz};
+26 \}\end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a96af42ee68f94e9b04d034fd68b73ecd}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Frequency@{Frequency}}
 \index{Frequency@{Frequency}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
 \subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& Signal\+::\+Signal\+Generator\+::\+Frequency (
@@ -230,14 +286,23 @@ Reimplemented from \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444
 
 
 
-Definition at line 35 of file Square.\+h.
+Definition at line 36 of file Square.\+h.
 
 
 \begin{DoxyCode}
-35                                                  \{
-36 \textcolor{preprocessor}{#warning Unimplimented Square Perform}
-37             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-38         \}
+36                                                  \{
+37             \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs} = \hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}();
+38             \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}+= \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
+39             \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs} -= (long)\hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs};
+40             \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor}=0;
+41             \textcolor{keywordflow}{for} (\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}=1; \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}<\hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}{\_h}; \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}+=2) \{
+42                 \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor} += \hyperlink{namespaceSignal_1_1Fourier_a7b4ca1fc91cf3d4454c7a7084c2c2462}{\_harmonicTable}.\hyperlink{classBackend_1_1HarmonicTable_a6b7336f4f6184337350f282d5b0c5467}{Saw}(\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}) * \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}(
+      \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}*\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i});
+43             \}
+44             \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor} *= \hyperlink{classSignal_1_1Fourier_1_1Square_a1de35055cfcab4d4bae2d72273c34f3f}{\_a};
+45             signal = \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor};
+46             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+47         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1Fourier_1_1Square_a7aacafda4427b996b56ad6764ea09177}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
@@ -252,19 +317,19 @@ Reimplemented from \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a38
 
 
 
-Definition at line 39 of file Square.\+h.
+Definition at line 48 of file Square.\+h.
 
 
 \begin{DoxyCode}
-39                                                      \{
-40             signal.Flush();
-41             \textcolor{keywordflow}{while} (!signal.Full()) \{
-42                 \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Perform}(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample})) \{
-43                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}))\{
-44                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-45                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-46             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-47         \}
+48                                                      \{
+49             signal.Flush();
+50             \textcolor{keywordflow}{while} (!signal.Full()) \{
+51                 \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1Fourier_1_1Square_a29e4b9d03b9df4fb6ed0d7a817ecffda}{Perform}(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample})) \{
+52                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}))\{
+53                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+54                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+55             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+56         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
@@ -309,7 +374,7 @@ Definition at line 27 of file Signal\+Generator.\+cpp.
 \subsubsection[{\+\_\+a}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Square\+::\+\_\+a\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a1de35055cfcab4d4bae2d72273c34f3f}
 
 
-Definition at line 28 of file Square.\+h.
+Definition at line 30 of file Square.\+h.
 
 \hypertarget{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!\+\_\+f\+Hertz@{\+\_\+f\+Hertz}}
 \index{\+\_\+f\+Hertz@{\+\_\+f\+Hertz}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
@@ -330,7 +395,7 @@ Definition at line 34 of file Signal\+Generator.\+h.
 \subsubsection[{\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+Fourier\+::\+Square\+::\+\_\+h\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}
 
 
-Definition at line 27 of file Square.\+h.
+Definition at line 29 of file Square.\+h.
 
 \hypertarget{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}}
 \index{\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
@@ -351,25 +416,25 @@ Definition at line 42 of file Signal\+Generator.\+h.
 \subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Fourier\+::\+Fourier\+Generator\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}
 
 
-Definition at line 34 of file Fourier\+Generator.\+h.
+Definition at line 38 of file Fourier\+Generator.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!\+\_\+storage@{\+\_\+storage}}
 \index{\+\_\+storage@{\+\_\+storage}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
 \subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Fourier\+::\+Fourier\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}
 
 
-Definition at line 35 of file Fourier\+Generator.\+h.
+Definition at line 39 of file Fourier\+Generator.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!i@{i}}
 \index{i@{i}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
 \subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Signal\+::\+Fourier\+::\+Square\+::i\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}
 
 
-Definition at line 32 of file Square.\+h.
+Definition at line 33 of file Square.\+h.
 
-\hypertarget{classSignal_1_1Fourier_1_1Square_a78d566d8c876456c115c9160ea0eacd2}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!i\+P\+I@{i\+P\+I}}
-\index{i\+P\+I@{i\+P\+I}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
-\subsubsection[{i\+P\+I}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Square\+::i\+P\+I\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a78d566d8c876456c115c9160ea0eacd2}
+\hypertarget{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!phs@{phs}}
+\index{phs@{phs}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
+\subsubsection[{phs}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Square\+::phs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}
 
 
 Definition at line 31 of file Square.\+h.
@@ -379,17 +444,11 @@ Definition at line 31 of file Square.\+h.
 \subsubsection[{stor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Square\+::stor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}
 
 
-Definition at line 30 of file Square.\+h.
-
-\hypertarget{classSignal_1_1Fourier_1_1Square_a4fd9ac83ead8150ace9aadffb7c9e47f}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!tmp@{tmp}}
-\index{tmp@{tmp}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
-\subsubsection[{tmp}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Square\+::tmp\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Square_a4fd9ac83ead8150ace9aadffb7c9e47f}
-
-
-Definition at line 29 of file Square.\+h.
+Definition at line 32 of file Square.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{Square_8h}{Square.\+h}\end{DoxyCompactItemize}
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{Square_8h}{Square.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{Square_8cpp}{Square.\+cpp}\end{DoxyCompactItemize}

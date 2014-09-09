@@ -42,20 +42,21 @@ double \hyperlink{namespaceBackend_ac20c03da97a92901a66da8e213d19fb1}{Sin} (doub
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceBackend_ac20c03da97a92901a66da8e213d19fb1}
 
 
-Definition at line 32 of file Sin.\+h.
+Definition at line 33 of file Sin.\+h.
 
 
 \begin{DoxyCode}
-32                                         \{
-33 \textcolor{preprocessor}{#if sin\_impl == sin\_native}
-34         \textcolor{keywordflow}{return} sin(\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * phs);
-35 \textcolor{preprocessor}{#elif sin\_impl == sin\_tay}
-36         \textcolor{keywordflow}{return} \hyperlink{namespaceBackend_1_1Backend_1_1Taylor_ad3bf02e59dbfb83f2b1362f84d2095b8}{Taylor::Sine}(phs*\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
-37 \textcolor{preprocessor}{#elif sin\_impl == sin\_lut}
-38         \textcolor{keyword}{static} \hyperlink{classBackend_1_1SineLUT}{Backend::SineLUT<float, 32768>} \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine};
-39         \textcolor{keywordflow}{return} \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}(phs);
-40 \textcolor{preprocessor}{#else}
-41         \textcolor{keywordflow}{return} sin(\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}*phs);
-42 \textcolor{preprocessor}{#endif}
-43     \}
+33                                         \{
+34         \textcolor{comment}{//phs 0-1}
+35 \textcolor{preprocessor}{#if sin\_impl == sin\_native}
+36         \textcolor{keywordflow}{return} sin(\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * phs);
+37 \textcolor{preprocessor}{#elif sin\_impl == sin\_tay}
+38         \textcolor{keywordflow}{return} \hyperlink{namespaceBackend_1_1Backend_1_1Taylor_ad3bf02e59dbfb83f2b1362f84d2095b8}{Taylor::Sine}(phs*\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
+39 \textcolor{preprocessor}{#elif sin\_impl == sin\_lut}
+40         \textcolor{keyword}{static} \hyperlink{classBackend_1_1SineLUT}{Backend::SineLUT<float, 32768>} \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine};
+41         \textcolor{keywordflow}{return} \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}(phs);
+42 \textcolor{preprocessor}{#else}
+43         \textcolor{keywordflow}{return} sin(\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}*phs);
+44 \textcolor{preprocessor}{#endif}
+45     \}
 \end{DoxyCode}

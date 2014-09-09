@@ -44,14 +44,14 @@ namespace Signal {
         
         
         inline bool BLIT::Perform(Sample& signal){
-#warning Needs re write
-            phs =Backend::Taylor::Sine(_pstep()*TWOPI);
-            _denominator = phs;
+#warning Needs testing
+            phs =_pstep();
+            _denominator = sin(phs*TWOPI);
             if (_denominator<=std::numeric_limits<float>::epsilon()) {
                 tmp=1.0;
             }else{
-                tmp = Backend::Taylor::Sine(phs*m_);
-                tmp/= m_* _denominator;
+                tmp = sin(phs*m_*TWOPI);
+                tmp/= m_ * _denominator;
             }
             signal = tmp;
             return true;

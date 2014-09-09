@@ -3,6 +3,11 @@
 }
 
 
+\hyperlink{classSignal_1_1Fourier_1_1Sine}{Sine} Wave Generator.  
+
+
+
+
 {\ttfamily \#include $<$Sine.\+h$>$}
 
 Inheritance diagram for Signal\+:\+:Fourier\+:\+:Sine\+:\begin{figure}[H]
@@ -61,9 +66,9 @@ double \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eae
 
 
 \subsection{Detailed Description}
+\hyperlink{classSignal_1_1Fourier_1_1Sine}{Sine} Wave Generator. 
 
-
-Definition at line 33 of file Sine.\+h.
+Definition at line 19 of file Sine.\+h.
 
 
 
@@ -130,17 +135,17 @@ Definition at line 17 of file Sine.\+cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}
 
 
-Definition at line 49 of file Fourier\+Generator.\+h.
+Definition at line 53 of file Fourier\+Generator.\+h.
 
 
 \begin{DoxyCode}
-49                                                                    \{
-50             \textcolor{comment}{//double softLim = 0.45;}
-51             \textcolor{comment}{//double hardLim = 0.5;}
-52             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
-53             \_s/=\_frq;
-54             \textcolor{keywordflow}{return} trunc(\_s);
-55         \}
+53                                                                    \{
+54             \textcolor{comment}{//double softLim = 0.45;}
+55             \textcolor{comment}{//double hardLim = 0.5;}
+56             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
+57             \_s/=\_frq;
+58             \textcolor{keywordflow}{return} trunc(\_s);
+59         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\index{Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}!\+\_\+pstep@{\+\_\+pstep}}
 \index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}}
@@ -222,7 +227,7 @@ Definition at line 16 of file Signal\+Generator.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classSignal_1_1SignalGenerator_af83b532bf3ddc3637c2fd7a1dfd095cb}
 
 
-Reimplemented in \hyperlink{classSignal_1_1BLIT_1_1BLIT_a59110620478308054d4c932c613e5cc6}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1Fourier_1_1Saw_a398a26142f42cdc5cb33230e9ab05b9d}{Signal\+::\+Fourier\+::\+Saw}, and \hyperlink{classSignal_1_1Fourier_1_1Square_a99040022c5d7c9f88e52cdeeed3e797a}{Signal\+::\+Fourier\+::\+Square}.
+Reimplemented in \hyperlink{classSignal_1_1BLIT_1_1BLIT_a59110620478308054d4c932c613e5cc6}{Signal\+::\+B\+L\+I\+T\+::\+B\+L\+I\+T}, \hyperlink{classSignal_1_1Fourier_1_1Square_a6d8ab67bf0dc5159772669396b1f6aa4}{Signal\+::\+Fourier\+::\+Square}, \hyperlink{classSignal_1_1Fourier_1_1Triangle_abad72b183047cecd48251843fb6da58b}{Signal\+::\+Fourier\+::\+Triangle}, and \hyperlink{classSignal_1_1Fourier_1_1Saw_a398a26142f42cdc5cb33230e9ab05b9d}{Signal\+::\+Fourier\+::\+Saw}.
 
 
 
@@ -249,26 +254,14 @@ Reimplemented from \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444
 
 
 
-Definition at line 42 of file Sine.\+h.
+Definition at line 28 of file Sine.\+h.
 
 
 \begin{DoxyCode}
-42                                                \{
-43             
-44 \textcolor{preprocessor}{#if SINE\_IMPL == SINE\_USE\_LUT}
-45             \textcolor{comment}{//use LUT}
-46             signal = \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}((\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}() + \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset}));
-47 \textcolor{preprocessor}{#elif SINE\_IMPL==SINE\_USE\_TAYLOR}
-48             \textcolor{comment}{//use custom taylor series function}
-49             signal = \hyperlink{namespaceBackend_1_1Taylor_afda165e6dde636dd0f7b32031a71c7df}{Backend::Taylor::Sine}((\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}()+
-      \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset})*\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
-50 \textcolor{preprocessor}{#else}
-51             \textcolor{comment}{//use built int math.h sin();}
-52             signal = sin((\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}()+\hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset})*\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
-53 \textcolor{preprocessor}{#endif}
-54             
-55             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-56         \}
+28                                                \{
+29             signal = \hyperlink{namespaceBackend_ac20c03da97a92901a66da8e213d19fb1}{Backend::Sin}(\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}()+\hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset});
+30             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+31         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1Fourier_1_1Sine_a5d951e5fbfc77354bddab9dfedea008f}{\index{Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}}
@@ -283,19 +276,19 @@ Reimplemented from \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a38
 
 
 
-Definition at line 57 of file Sine.\+h.
+Definition at line 32 of file Sine.\+h.
 
 
 \begin{DoxyCode}
-57                                                    \{
-58             signal.Flush();
-59             \textcolor{keywordflow}{while} (!signal.Full()) \{
-60                 \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa4895d6c53644}{Perform}(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample})) \{
-61                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}))\{
-62                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-63                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-64             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-65         \}
+32                                                    \{
+33             signal.Flush();
+34             \textcolor{keywordflow}{while} (!signal.Full()) \{
+35                 \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1Fourier_1_1Sine_aa35c77904f8d7a0de6fa4895d6c53644}{Perform}(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample})) \{
+36                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}))\{
+37                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+38                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+39             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+40         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}}
@@ -368,14 +361,14 @@ Definition at line 42 of file Signal\+Generator.\+h.
 \subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Fourier\+::\+Fourier\+Generator\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}
 
 
-Definition at line 34 of file Fourier\+Generator.\+h.
+Definition at line 38 of file Fourier\+Generator.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}{\index{Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}!\+\_\+storage@{\+\_\+storage}}
 \index{\+\_\+storage@{\+\_\+storage}!Signal\+::\+Fourier\+::\+Sine@{Signal\+::\+Fourier\+::\+Sine}}
 \subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Fourier\+::\+Fourier\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}
 
 
-Definition at line 35 of file Fourier\+Generator.\+h.
+Definition at line 39 of file Fourier\+Generator.\+h.
 
 
 

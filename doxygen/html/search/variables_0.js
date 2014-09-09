@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_5fa',['_a',['../classSignal_1_1Fourier_1_1Saw.html#af31172dae9d5fcd2fcdb0adb7c41bacf',1,'Signal::Fourier::Saw::_a()'],['../classSignal_1_1Fourier_1_1Square.html#a1de35055cfcab4d4bae2d72273c34f3f',1,'Signal::Fourier::Square::_a()']]],
+  ['_5fa',['_a',['../classSignal_1_1Fourier_1_1Saw.html#af31172dae9d5fcd2fcdb0adb7c41bacf',1,'Signal::Fourier::Saw::_a()'],['../classSignal_1_1Fourier_1_1Square.html#a1de35055cfcab4d4bae2d72273c34f3f',1,'Signal::Fourier::Square::_a()'],['../classSignal_1_1Fourier_1_1Triangle.html#a73f0f6403d3b0b597f9c7686c22555f6',1,'Signal::Fourier::Triangle::_a()']]],
   ['_5farray',['_array',['../classBackend_1_1array.html#ac588c1e30c2c4748bc9a5bb12b9320af',1,'Backend::array']]],
   ['_5fbuffer',['_buffer',['../classSignal_1_1Buffer.html#ae88831d6fdf8fd7591d5dd7f79531d5f',1,'Signal::Buffer::_buffer()'],['../classSignal_1_1Sample.html#ad609d308b1c36b007bd8210d316c070b',1,'Signal::Sample::_buffer()'],['../Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b',1,'_buffer():&#160;Driver.cpp']]],
   ['_5fcount',['_count',['../classBackend_1_1Queue.html#ab49d17e24dc0f8a2e5e44c182c240249',1,'Backend::Queue::_count()'],['../classSignal_1_1RingBuffer.html#ab41dbb1bd8c572099349f92055ed9185',1,'Signal::RingBuffer::_count()']]],
@@ -8,7 +8,7 @@ var searchData=
   ['_5fduty',['_duty',['../classSignal_1_1Analog_1_1Square.html#a1f2fa9d4724764f65c4491ee8b80a6be',1,'Signal::Analog::Square']]],
   ['_5ffhertz',['_fHertz',['../classSignal_1_1SignalGenerator.html#a85a4702347352bab1c71e0a8df8437d6',1,'Signal::SignalGenerator']]],
   ['_5ffrequency',['_frequency',['../classSignal_1_1SignalGenerator.html#a7f107461333bce68c5dad412db96a8c2',1,'Signal::SignalGenerator']]],
-  ['_5fh',['_h',['../classSignal_1_1Fourier_1_1Saw.html#a7e796347f04f0f4370a472587701b82b',1,'Signal::Fourier::Saw::_h()'],['../classSignal_1_1Fourier_1_1Square.html#a289e48f696976033845c704970e4de80',1,'Signal::Fourier::Square::_h()']]],
+  ['_5fh',['_h',['../classSignal_1_1Fourier_1_1Saw.html#a7e796347f04f0f4370a472587701b82b',1,'Signal::Fourier::Saw::_h()'],['../classSignal_1_1Fourier_1_1Square.html#a289e48f696976033845c704970e4de80',1,'Signal::Fourier::Square::_h()'],['../classSignal_1_1Fourier_1_1Triangle.html#a0d987dff01447373147446f729357df0',1,'Signal::Fourier::Triangle::_h()']]],
   ['_5fharmonictable',['_harmonicTable',['../namespaceSignal_1_1Fourier.html#a7b4ca1fc91cf3d4454c7a7084c2c2462',1,'Signal::Fourier']]],
   ['_5fmask',['_MASK',['../classBackend_1_1Queue.html#ab665bcab528d6bad6c4faab1ae0fc1b4',1,'Backend::Queue']]],
   ['_5fnharms',['_nHarms',['../classSignal_1_1BLIT_1_1BLIT.html#a0bfbf4e7515a42fab7df748b8497f648',1,'Signal::BLIT::BLIT']]],
@@ -20,5 +20,6 @@ var searchData=
   ['_5fsize',['_size',['../classSignal_1_1Buffer.html#ab4c8969e972323306ee51538ad70577b',1,'Signal::Buffer::_size()'],['../classBackend_1_1HarmonicTable.html#a94c9f17b8fd4b514d145fbb8b0ed63dd',1,'Backend::HarmonicTable::_size()'],['../classBackend_1_1LUT.html#a94d2ce1a7c644ce2d4f8e905790b9b54',1,'Backend::LUT::_size()'],['../classBackend_1_1array.html#ae51d64e87b42931946111c28b98e8a18',1,'Backend::array::_size()']]],
   ['_5fstorage',['_storage',['../classSignal_1_1Fourier_1_1FourierGenerator.html#ab6e6b79cf56e31c9a1b5766f357f8cfb',1,'Signal::Fourier::FourierGenerator']]],
   ['_5ftable',['_table',['../classBackend_1_1LUT.html#ae70f3f0c9aaa9e0b85517d8e2c61d9a5',1,'Backend::LUT']]],
+  ['_5ftriangle',['_triangle',['../classBackend_1_1HarmonicTable.html#a8e6fa80e2428d690a5716ae2815fd032',1,'Backend::HarmonicTable']]],
   ['_5fwrite',['_write',['../classBackend_1_1Queue.html#ab3d5c4738092cf356b36c56f6ab61554',1,'Backend::Queue::_write()'],['../classSignal_1_1RingBuffer.html#a121cbb3679c61132fad237c671d08bef',1,'Signal::RingBuffer::_write()']]]
 ];

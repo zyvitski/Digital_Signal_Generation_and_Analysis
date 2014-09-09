@@ -31,7 +31,7 @@ namespace Signal {
         };
         
         inline bool Saw::Perform(Sample& signal){
-#warning unimplimented Saw Perform
+#warning unimplimented BLIT Saw Perform
             return true;
         }
         inline bool Saw::Perform(RingBuffer& signal){

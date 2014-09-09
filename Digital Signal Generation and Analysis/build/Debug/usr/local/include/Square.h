@@ -14,6 +14,8 @@
 namespace Signal {
     
     namespace Fourier{
+        /*!\brief Fourier Series Based Square Wave
+         */
         class Square: public FourierGenerator {
         public:
             Square();
@@ -26,14 +28,21 @@ namespace Signal {
         protected:
             unsigned long _h;
             double _a;
-            double tmp;
+            double phs;
             double stor;
-            double iPI;
             unsigned short i;
         };
         
         inline bool Square::Perform(Sample& signal){
-#warning Unimplimented Square Perform
+            phs = _pstep();
+            phs+= _phase_offset;
+            phs -= (long)phs;
+            stor=0;
+            for (i=1; i<_h; i+=2) {
+                stor += _harmonicTable.Saw(i) * sine(phs*i);
+            }
+            stor *= _a;
+            signal = stor;
             return true;
         }
         inline bool Square::Perform(RingBuffer& signal){

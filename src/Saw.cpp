@@ -7,10 +7,10 @@
 //
 
 #include "Saw.h"
-Signal::Fourier::Saw::Saw():FourierGenerator(),_a(5.0/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),phs(0),stor(0){
+Signal::Fourier::Saw::Saw():FourierGenerator(),_a(3.6/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),phs(0),stor(0){
     _a*=iPI;
 }
-Signal::Fourier::Saw::Saw(double const& frequency,double const& phase_offset):FourierGenerator(frequency,phase_offset),_a(5.0/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),phs(0),stor(0){
+Signal::Fourier::Saw::Saw(double const& frequency,double const& phase_offset):FourierGenerator(frequency,phase_offset),_a(3.6/3.0),_h(_maxHarms(_fHertz)),iPI(1.0/PI),phs(0),stor(0){
     _sample=0;
     _storage=0;
     _a*=iPI;

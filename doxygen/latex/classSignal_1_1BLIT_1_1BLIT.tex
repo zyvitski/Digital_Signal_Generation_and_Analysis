@@ -249,15 +249,14 @@ Definition at line 46 of file B\+L\+I\+T.\+h.
 
 \begin{DoxyCode}
 46                                                \{
-47 \textcolor{preprocessor}{#warning Needs re write}
-48             \hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs} =\hyperlink{namespaceBackend_1_1Taylor_afda165e6dde636dd0f7b32031a71c7df}{Backend::Taylor::Sine}(\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}()*
-      \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
-49             \hyperlink{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\_denominator} = \hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs};
+47 \textcolor{preprocessor}{#warning Needs testing}
+48             \hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs} =\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}();
+49             \hyperlink{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\_denominator} = sin(\hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs}*\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
 50             \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\_denominator}<=std::numeric\_limits<float>::epsilon()) \{
 51                 \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp}=1.0;
 52             \}\textcolor{keywordflow}{else}\{
-53                 \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp} = \hyperlink{namespaceBackend_1_1Taylor_afda165e6dde636dd0f7b32031a71c7df}{Backend::Taylor::Sine}(\hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs}*\hyperlink{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}{m\_});
-54                 \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp}/= \hyperlink{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}{m\_}* \hyperlink{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\_denominator};
+53                 \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp} = sin(\hyperlink{classSignal_1_1BLIT_1_1BLIT_afd06bf26696642f7eb400fb984e524f3}{phs}*\hyperlink{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}{m\_}*\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
+54                 \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp}/= \hyperlink{classSignal_1_1BLIT_1_1BLIT_a314aae37a0a53fa3f79a4466b9558fa5}{m\_} * \hyperlink{classSignal_1_1BLIT_1_1BLIT_abef50d7ff7da92f5f0a8482287b47ae5}{\_denominator};
 55             \}
 56             signal = \hyperlink{classSignal_1_1BLIT_1_1BLIT_aa543d207e6dd260762652221c598bae9}{tmp};
 57             \textcolor{keywordflow}{return} \textcolor{keyword}{true};

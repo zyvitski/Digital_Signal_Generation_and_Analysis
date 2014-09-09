@@ -144,21 +144,22 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Sin_8h_source.html#l00032">32</a> of file <a class="el" href="Sin_8h_source.html">Sin.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if sin_impl == sin_native</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> sin(<a class="code" href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a> * phs);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#elif sin_impl == sin_tay</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceBackend_1_1Backend_1_1Taylor.html#ad3bf02e59dbfb83f2b1362f84d2095b8">Taylor::Sine</a>(phs*<a class="code" href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#elif sin_impl == sin_lut</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">static</span> <a class="code" href="classBackend_1_1SineLUT.html">Backend::SineLUT&lt;float, 32768&gt;</a> <a class="code" href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">sine</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">sine</a>(phs);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> sin(<a class="code" href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a>*phs);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Sin_8h_source.html#l00033">33</a> of file <a class="el" href="Sin_8h_source.html">Sin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">//phs 0-1</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if sin_impl == sin_native</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> sin(<a class="code" href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a> * phs);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#elif sin_impl == sin_tay</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceBackend_1_1Backend_1_1Taylor.html#ad3bf02e59dbfb83f2b1362f84d2095b8">Taylor::Sine</a>(phs*<a class="code" href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#elif sin_impl == sin_lut</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">static</span> <a class="code" href="classBackend_1_1SineLUT.html">Backend::SineLUT&lt;float, 32768&gt;</a> <a class="code" href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">sine</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">sine</a>(phs);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> sin(<a class="code" href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a>*phs);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="ttc" id="namespaceBackend_1_1Backend_1_1Taylor_html_ad3bf02e59dbfb83f2b1362f84d2095b8"><div class="ttname"><a href="namespaceBackend_1_1Backend_1_1Taylor.html#ad3bf02e59dbfb83f2b1362f84d2095b8">Backend::Backend::Taylor::Sine</a></div><div class="ttdeci">double Sine(double const &amp;x)</div></div>
-<div class="ttc" id="namespaceSignal_1_1Fourier_html_ab1bf3cdef768a49cf3e927b9daf7da9d"><div class="ttname"><a href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">Signal::Fourier::sine</a></div><div class="ttdeci">static Backend::SineLUT&lt; float, 32768 &gt; sine</div><div class="ttdef"><b>Definition:</b> <a href="FourierGenerator_8h_source.html#l00022">FourierGenerator.h:22</a></div></div>
+<div class="ttc" id="namespaceSignal_1_1Fourier_html_ab1bf3cdef768a49cf3e927b9daf7da9d"><div class="ttname"><a href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">Signal::Fourier::sine</a></div><div class="ttdeci">static Backend::SineLUT&lt; float, 32768 &gt; sine</div><div class="ttdef"><b>Definition:</b> <a href="FourierGenerator_8h_source.html#l00023">FourierGenerator.h:23</a></div></div>
 <div class="ttc" id="Sin_8h_html_a4912c64aec0c943b7985db6cb61ff83a"><div class="ttname"><a href="Sin_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a></div><div class="ttdeci">#define TWOPI</div></div>
 <div class="ttc" id="classBackend_1_1SineLUT_html"><div class="ttname"><a href="classBackend_1_1SineLUT.html">Backend::SineLUT</a></div><div class="ttdef"><b>Definition:</b> <a href="SineLUT_8h_source.html#l00021">SineLUT.h:21</a></div></div>
 </div><!-- fragment -->
@@ -167,7 +168,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 8 2014 17:16:25 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 23:55:42 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trivialgenerator',['TrivialGenerator',['../classSignal_1_1Trivial_1_1TrivialGenerator.html',1,'Signal::Trivial']]]
+  ['triangle',['Triangle',['../classSignal_1_1Fourier_1_1Triangle.html',1,'Signal::Fourier']]]
 ];

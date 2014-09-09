@@ -99,6 +99,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>A Class Extending The <a class="el" href="classSignal_1_1SignalGenerator.html" title="A Base Class extending the SignalProcess API with functionality for signal generation. ">SignalGenerator</a> Class with functionality for generating a wave by summing sinusoids.  
+ <a href="classSignal_1_1Fourier_1_1FourierGenerator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Signal::Fourier::FourierGenerator:</div>
@@ -106,11 +109,12 @@ Inheritance diagram for Signal::Fourier::FourierGenerator:</div>
  <div class="center">
   <img src="classSignal_1_1Fourier_1_1FourierGenerator.png" usemap="#Signal::Fourier::FourierGenerator_map" alt=""/>
   <map id="Signal::Fourier::FourierGenerator_map" name="Signal::Fourier::FourierGenerator_map">
-<area href="classSignal_1_1SignalGenerator.html" title="A Base Class extending the SignalProcess API with functionality for signal generation. " alt="Signal::SignalGenerator" shape="rect" coords="210,56,410,80"/>
-<area href="classSignal_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. " alt="Signal::SignalProcess" shape="rect" coords="210,0,410,24"/>
-<area href="classSignal_1_1Fourier_1_1Saw.html" alt="Signal::Fourier::Saw" shape="rect" coords="0,168,200,192"/>
-<area href="classSignal_1_1Fourier_1_1Sine.html" alt="Signal::Fourier::Sine" shape="rect" coords="210,168,410,192"/>
-<area href="classSignal_1_1Fourier_1_1Square.html" alt="Signal::Fourier::Square" shape="rect" coords="420,168,620,192"/>
+<area href="classSignal_1_1SignalGenerator.html" title="A Base Class extending the SignalProcess API with functionality for signal generation. " alt="Signal::SignalGenerator" shape="rect" coords="315,56,515,80"/>
+<area href="classSignal_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. " alt="Signal::SignalProcess" shape="rect" coords="315,0,515,24"/>
+<area href="classSignal_1_1Fourier_1_1Saw.html" title="Fourier Series Based Saw Wave. " alt="Signal::Fourier::Saw" shape="rect" coords="0,168,200,192"/>
+<area href="classSignal_1_1Fourier_1_1Sine.html" title="Sine Wave Generator. " alt="Signal::Fourier::Sine" shape="rect" coords="210,168,410,192"/>
+<area href="classSignal_1_1Fourier_1_1Square.html" title="Fourier Series Based Square Wave. " alt="Signal::Fourier::Square" shape="rect" coords="420,168,620,192"/>
+<area href="classSignal_1_1Fourier_1_1Triangle.html" title="Fourier Series Based Triangle Wave. " alt="Signal::Fourier::Triangle" shape="rect" coords="630,168,830,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -162,8 +166,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af4aa0728ded00777be26a06d883eaeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00024">24</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
+<div class="textblock"><p>A Class Extending The <a class="el" href="classSignal_1_1SignalGenerator.html" title="A Base Class extending the SignalProcess API with functionality for signal generation. ">SignalGenerator</a> Class with functionality for generating a wave by summing sinusoids. </p>
+
+<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00028">28</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9679c0c9255c134291ce2d4773ff7040"></a>
 <div class="memitem">
@@ -265,14 +270,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00049">49</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">//double softLim = 0.45;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">//double hardLim = 0.5;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">double</span> _s = <a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()* 0.45;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            _s/=_frq;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> trunc(_s);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00053">53</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="comment">//double softLim = 0.45;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">//double hardLim = 0.5;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">double</span> _s = <a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()* 0.45;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            _s/=_frq;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> trunc(_s);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
 <div class="ttc" id="namespaceSignal_html_ae7b1f222afc010e0f33f306f978fcde9"><div class="ttname"><a href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -420,7 +425,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classSignal_1_1BLIT_1_1BLIT.html#a59110620478308054d4c932c613e5cc6">Signal::BLIT::BLIT</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#a398a26142f42cdc5cb33230e9ab05b9d">Signal::Fourier::Saw</a>, and <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a99040022c5d7c9f88e52cdeeed3e797a">Signal::Fourier::Square</a>.</p>
+<p>Reimplemented in <a class="el" href="classSignal_1_1BLIT_1_1BLIT.html#a59110620478308054d4c932c613e5cc6">Signal::BLIT::BLIT</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a6d8ab67bf0dc5159772669396b1f6aa4">Signal::Fourier::Square</a>, <a class="el" href="classSignal_1_1Fourier_1_1Triangle.html#abad72b183047cecd48251843fb6da58b">Signal::Fourier::Triangle</a>, and <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#a398a26142f42cdc5cb33230e9ab05b9d">Signal::Fourier::Saw</a>.</p>
 
 <p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00019">19</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                                 {</div>
@@ -458,13 +463,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classSignal_1_1SignalGenerator.html#a2cd9061c5ae40a392a9476551b4379f3">Signal::SignalGenerator</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#aa35c77904f8d7a0de6fa4895d6c53644">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#adf69eea95516fc9c7d06fae036d2fa9b">Signal::Fourier::Saw</a>, and <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a29e4b9d03b9df4fb6ed0d7a817ecffda">Signal::Fourier::Square</a>.</p>
+<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#aa35c77904f8d7a0de6fa4895d6c53644">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a29e4b9d03b9df4fb6ed0d7a817ecffda">Signal::Fourier::Square</a>, <a class="el" href="classSignal_1_1Fourier_1_1Triangle.html#ac109464ba9c757e754874e76a2a815cb">Signal::Fourier::Triangle</a>, and <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#adf69eea95516fc9c7d06fae036d2fa9b">Signal::Fourier::Saw</a>.</p>
 
-<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00039">39</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                           {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            signal = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00043">43</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                           {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            signal = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -492,13 +497,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classSignal_1_1SignalGenerator.html#a126d52dd9b6b14d33efc624e2c89284e">Signal::SignalGenerator</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#a5d951e5fbfc77354bddab9dfedea008f">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#acef099db2217902d7157e5b93f658363">Signal::Fourier::Saw</a>, and <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a7aacafda4427b996b56ad6764ea09177">Signal::Fourier::Square</a>.</p>
+<p>Reimplemented in <a class="el" href="classSignal_1_1Fourier_1_1Sine.html#a5d951e5fbfc77354bddab9dfedea008f">Signal::Fourier::Sine</a>, <a class="el" href="classSignal_1_1Fourier_1_1Square.html#a7aacafda4427b996b56ad6764ea09177">Signal::Fourier::Square</a>, <a class="el" href="classSignal_1_1Fourier_1_1Triangle.html#a0c6ab725c3c74af5f1bfa8387b1bd3d3">Signal::Fourier::Triangle</a>, and <a class="el" href="classSignal_1_1Fourier_1_1Saw.html#acef099db2217902d7157e5b93f658363">Signal::Fourier::Saw</a>.</p>
 
-<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00043">43</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                               {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            signal.Flush();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00047">47</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                               {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            signal.Flush();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -669,7 +674,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00034">34</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00038">38</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -691,7 +696,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00035">35</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="FourierGenerator_8h_source.html#l00039">39</a> of file <a class="el" href="FourierGenerator_8h_source.html">FourierGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +707,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 8 2014 17:16:25 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 23:55:43 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

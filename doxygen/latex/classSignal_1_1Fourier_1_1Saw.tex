@@ -3,6 +3,11 @@
 }
 
 
+\hyperlink{namespaceSignal_1_1Fourier}{Fourier} Series Based \hyperlink{classSignal_1_1Fourier_1_1Saw}{Saw} Wave.  
+
+
+
+
 {\ttfamily \#include $<$Saw.\+h$>$}
 
 Inheritance diagram for Signal\+:\+:Fourier\+:\+:Saw\+:\begin{figure}[H]
@@ -75,9 +80,9 @@ double \hyperlink{classSignal_1_1SignalGenerator_af4aa0728ded00777be26a06d883eae
 
 
 \subsection{Detailed Description}
+\hyperlink{namespaceSignal_1_1Fourier}{Fourier} Series Based \hyperlink{classSignal_1_1Fourier_1_1Saw}{Saw} Wave. 
 
-
-Definition at line 17 of file Saw.\+h.
+Definition at line 18 of file Saw.\+h.
 
 
 
@@ -95,7 +100,7 @@ Definition at line 10 of file Saw.\+cpp.
 
 
 \begin{DoxyCode}
-10                      :\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a9679c0c9255c134291ce2d4773ff7040}{FourierGenerator}(),\hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a}(5.0/3.0),\hyperlink{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}{\_h}(
+10                      :\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a9679c0c9255c134291ce2d4773ff7040}{FourierGenerator}(),\hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a}(3.6/3.0),\hyperlink{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}{\_h}(
       \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}{\_maxHarms}(\hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{classSignal_1_1Fourier_1_1Saw_a70dccb676ad58a1b6ef4b053081bec3f}{iPI}(1.0/\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs}(0),\hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor}(0)\{
 11     \hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a}*=\hyperlink{classSignal_1_1Fourier_1_1Saw_a70dccb676ad58a1b6ef4b053081bec3f}{iPI};
 12 \}
@@ -115,7 +120,7 @@ Definition at line 13 of file Saw.\+cpp.
 
 \begin{DoxyCode}
 13                                                                        :
-      \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a9679c0c9255c134291ce2d4773ff7040}{FourierGenerator}(frequency,phase\_offset),\hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a}(5.0/3.0),\hyperlink{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}{\_h}(
+      \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a9679c0c9255c134291ce2d4773ff7040}{FourierGenerator}(frequency,phase\_offset),\hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a}(3.6/3.0),\hyperlink{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}{\_h}(
       \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}{\_maxHarms}(\hyperlink{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\_fHertz})),\hyperlink{classSignal_1_1Fourier_1_1Saw_a70dccb676ad58a1b6ef4b053081bec3f}{iPI}(1.0/\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs}(0),\hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor}(0)\{
 14     \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}=0;
 15     \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}{\_storage}=0;
@@ -149,17 +154,17 @@ Definition at line 18 of file Saw.\+cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_a99720416bd9ff96636f4acf956a785d5}
 
 
-Definition at line 49 of file Fourier\+Generator.\+h.
+Definition at line 53 of file Fourier\+Generator.\+h.
 
 
 \begin{DoxyCode}
-49                                                                    \{
-50             \textcolor{comment}{//double softLim = 0.45;}
-51             \textcolor{comment}{//double hardLim = 0.5;}
-52             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
-53             \_s/=\_frq;
-54             \textcolor{keywordflow}{return} trunc(\_s);
-55         \}
+53                                                                    \{
+54             \textcolor{comment}{//double softLim = 0.45;}
+55             \textcolor{comment}{//double hardLim = 0.5;}
+56             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
+57             \_s/=\_frq;
+58             \textcolor{keywordflow}{return} trunc(\_s);
+59         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!\+\_\+pstep@{\+\_\+pstep}}
 \index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
@@ -285,23 +290,23 @@ Reimplemented from \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_a6ec444
 
 
 
-Definition at line 35 of file Saw.\+h.
+Definition at line 36 of file Saw.\+h.
 
 
 \begin{DoxyCode}
-35                                               \{
-36 \textcolor{preprocessor}{#warning Saw Perform adjustment needed to output normalization}
+36                                               \{
 37             \hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs}=\hyperlink{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\_pstep}();
 38             \hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs}+=\hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
-39             signal=0;
-40             \textcolor{keywordflow}{for} (\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}=1; \hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}<\hyperlink{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}{\_h}+1; ++\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}) \{
-41                 \hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor} += \hyperlink{namespaceSignal_1_1Fourier_a7b4ca1fc91cf3d4454c7a7084c2c2462}{\_harmonicTable}.\hyperlink{classBackend_1_1HarmonicTable_a6b7336f4f6184337350f282d5b0c5467}{Saw}(\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i})* \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}(
+39             \hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs} -= (long)\hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs};
+40             signal=0;
+41             \textcolor{keywordflow}{for} (\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}=1; \hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}<\hyperlink{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}{\_h}+1; ++\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}) \{
+42                 \hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor} += \hyperlink{namespaceSignal_1_1Fourier_a7b4ca1fc91cf3d4454c7a7084c2c2462}{\_harmonicTable}.\hyperlink{classBackend_1_1HarmonicTable_a6b7336f4f6184337350f282d5b0c5467}{Saw}(\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i})* \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}(
       \hyperlink{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{phs}*(\hyperlink{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{i}));
-42             \}
-43             \hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor}*= \hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a};
-44             signal=\hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor};
-45             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-46         \}
+43             \}
+44             \hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor}*= \hyperlink{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}{\_a};
+45             signal=\hyperlink{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{stor};
+46             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+47         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1Fourier_1_1Saw_acef099db2217902d7157e5b93f658363}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!Perform@{Perform}}
 \index{Perform@{Perform}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
@@ -316,19 +321,19 @@ Reimplemented from \hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_acc6a38
 
 
 
-Definition at line 47 of file Saw.\+h.
+Definition at line 48 of file Saw.\+h.
 
 
 \begin{DoxyCode}
-47                                                   \{
-48             signal.Flush();
-49             \textcolor{keywordflow}{while} (!signal.Full()) \{
-50                 \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1Fourier_1_1Saw_adf69eea95516fc9c7d06fae036d2fa9b}{Perform}(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample})) \{
-51                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}))\{
-52                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-53                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-54             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-55         \}
+48                                                   \{
+49             signal.Flush();
+50             \textcolor{keywordflow}{while} (!signal.Full()) \{
+51                 \textcolor{keywordflow}{if} (\hyperlink{classSignal_1_1Fourier_1_1Saw_adf69eea95516fc9c7d06fae036d2fa9b}{Perform}(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample})) \{
+52                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}{\_sample}))\{
+53                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+54                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+55             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+56         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_ac2538ec946f001e394d2416fda698d1c}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
@@ -373,7 +378,7 @@ Definition at line 27 of file Signal\+Generator.\+cpp.
 \subsubsection[{\+\_\+a}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Saw\+::\+\_\+a\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Saw_af31172dae9d5fcd2fcdb0adb7c41bacf}
 
 
-Definition at line 28 of file Saw.\+h.
+Definition at line 29 of file Saw.\+h.
 
 \hypertarget{classSignal_1_1SignalGenerator_a85a4702347352bab1c71e0a8df8437d6}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!\+\_\+f\+Hertz@{\+\_\+f\+Hertz}}
 \index{\+\_\+f\+Hertz@{\+\_\+f\+Hertz}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
@@ -394,7 +399,7 @@ Definition at line 34 of file Signal\+Generator.\+h.
 \subsubsection[{\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Signal\+::\+Fourier\+::\+Saw\+::\+\_\+h\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Saw_a7e796347f04f0f4370a472587701b82b}
 
 
-Definition at line 27 of file Saw.\+h.
+Definition at line 28 of file Saw.\+h.
 
 \hypertarget{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}}
 \index{\+\_\+phase\+\_\+offset@{\+\_\+phase\+\_\+offset}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
@@ -415,42 +420,42 @@ Definition at line 42 of file Signal\+Generator.\+h.
 \subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Fourier\+::\+Fourier\+Generator\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_ad720bf2b268dc621ace64c54c0816597}
 
 
-Definition at line 34 of file Fourier\+Generator.\+h.
+Definition at line 38 of file Fourier\+Generator.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!\+\_\+storage@{\+\_\+storage}}
 \index{\+\_\+storage@{\+\_\+storage}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
 \subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} Signal\+::\+Fourier\+::\+Fourier\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classSignal_1_1Fourier_1_1FourierGenerator_ab6e6b79cf56e31c9a1b5766f357f8cfb}
 
 
-Definition at line 35 of file Fourier\+Generator.\+h.
+Definition at line 39 of file Fourier\+Generator.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!i@{i}}
 \index{i@{i}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
 \subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Signal\+::\+Fourier\+::\+Saw\+::i\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Saw_a1e575a999b316e51cb3a4f8af962749c}
 
 
-Definition at line 32 of file Saw.\+h.
+Definition at line 33 of file Saw.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1Saw_a70dccb676ad58a1b6ef4b053081bec3f}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!i\+P\+I@{i\+P\+I}}
 \index{i\+P\+I@{i\+P\+I}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
 \subsubsection[{i\+P\+I}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Saw\+::i\+P\+I\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Saw_a70dccb676ad58a1b6ef4b053081bec3f}
 
 
-Definition at line 31 of file Saw.\+h.
+Definition at line 32 of file Saw.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!phs@{phs}}
 \index{phs@{phs}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
 \subsubsection[{phs}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Saw\+::phs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Saw_a3c26ea58f2340c1d9a296937cec78a86}
 
 
-Definition at line 29 of file Saw.\+h.
+Definition at line 30 of file Saw.\+h.
 
 \hypertarget{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!stor@{stor}}
 \index{stor@{stor}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}
 \subsubsection[{stor}]{\setlength{\rightskip}{0pt plus 5cm}double Signal\+::\+Fourier\+::\+Saw\+::stor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSignal_1_1Fourier_1_1Saw_a31859d02406add22e072936c33f386af}
 
 
-Definition at line 30 of file Saw.\+h.
+Definition at line 31 of file Saw.\+h.
 
 
 
