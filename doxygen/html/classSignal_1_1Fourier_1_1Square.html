@@ -301,10 +301,11 @@ Protected Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                   {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="comment">//double softLim = 0.45;</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">//double hardLim = 0.5;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">double</span> _s = <a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()* 0.45;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            _s/=_frq;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> trunc(_s);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">double</span> _s = <a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()* (20000.0/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>());<span class="comment">//uses harmonic roll of based on max human hearing and sample rate</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            _s/=_frq;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> trunc(_s);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="ttc" id="namespaceSignal_html_ae7b1f222afc010e0f33f306f978fcde9"><div class="ttname"><a href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -527,7 +528,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a3a18caa52584be9a6a1777804d42120e">phs</a>+= <a class="code" href="classSignal_1_1SignalGenerator.html#a6b4444d46747c8517171edbbf4b5588f">_phase_offset</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a3a18caa52584be9a6a1777804d42120e">phs</a> -= (long)<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a3a18caa52584be9a6a1777804d42120e">phs</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a47ec083d36cef49c7d6583c8741b7905">stor</a>=0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>=1; <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>&lt;<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a289e48f696976033845c704970e4de80">_h</a>; <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>+=2) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>=1; <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>&lt;<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a289e48f696976033845c704970e4de80">_h</a>+1; <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>+=2) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a47ec083d36cef49c7d6583c8741b7905">stor</a> += <a class="code" href="namespaceSignal_1_1Fourier.html#a7b4ca1fc91cf3d4454c7a7084c2c2462">_harmonicTable</a>.<a class="code" href="classBackend_1_1HarmonicTable.html#a6b7336f4f6184337350f282d5b0c5467">Saw</a>(<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>) * <a class="code" href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">sine</a>(<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a3a18caa52584be9a6a1777804d42120e">phs</a>*<a class="code" href="classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5">i</a>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a47ec083d36cef49c7d6583c8741b7905">stor</a> *= <a class="code" href="classSignal_1_1Fourier_1_1Square.html#a1de35055cfcab4d4bae2d72273c34f3f">_a</a>;</div>
@@ -896,7 +897,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 8 2014 23:55:43 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 9 2014 11:12:21 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

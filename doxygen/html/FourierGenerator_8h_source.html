@@ -146,13 +146,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classSignal_1_1Fourier_1_1FourierGenerator.html#a99720416bd9ff96636f4acf956a785d5">   53</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classSignal_1_1Fourier_1_1FourierGenerator.html#a99720416bd9ff96636f4acf956a785d5">FourierGenerator::_maxHarms</a>(<span class="keywordtype">double</span> _frq){</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="comment">//double softLim = 0.45;</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">//double hardLim = 0.5;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">double</span> _s = <a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()* 0.45;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            _s/=_frq;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> trunc(_s);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Waveform__FourierGenerator__) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">double</span> _s = <a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>()* (20000.0/<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Sample_Rate</a>());<span class="comment">//uses harmonic roll of based on max human hearing and sample rate</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            _s/=_frq;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> trunc(_s);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Waveform__FourierGenerator__) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="SignalGenerator_8h_html"><div class="ttname"><a href="SignalGenerator_8h.html">SignalGenerator.h</a></div></div>
 <div class="ttc" id="classSignal_1_1Fourier_1_1FourierGenerator_html_a6ec444e7b66d2cb339c001704071646a"><div class="ttname"><a href="classSignal_1_1Fourier_1_1FourierGenerator.html#a6ec444e7b66d2cb339c001704071646a">Signal::Fourier::FourierGenerator::Perform</a></div><div class="ttdeci">virtual bool Perform(Sample &amp;signal)</div><div class="ttdef"><b>Definition:</b> <a href="FourierGenerator_8h_source.html#l00043">FourierGenerator.h:43</a></div></div>
 <div class="ttc" id="namespaceSignal_1_1Fourier_html_ab1bf3cdef768a49cf3e927b9daf7da9d"><div class="ttname"><a href="namespaceSignal_1_1Fourier.html#ab1bf3cdef768a49cf3e927b9daf7da9d">Signal::Fourier::sine</a></div><div class="ttdeci">static Backend::SineLUT&lt; float, 32768 &gt; sine</div><div class="ttdef"><b>Definition:</b> <a href="FourierGenerator_8h_source.html#l00023">FourierGenerator.h:23</a></div></div>
@@ -176,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 8 2014 23:55:42 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 9 2014 11:12:20 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

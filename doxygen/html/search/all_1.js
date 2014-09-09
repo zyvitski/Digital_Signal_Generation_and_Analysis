@@ -8,6 +8,8 @@ var searchData=
   ['analogsaw_2eh',['AnalogSaw.h',['../AnalogSaw_8h.html',1,'']]],
   ['analogsquare_2ecpp',['AnalogSquare.cpp',['../AnalogSquare_8cpp.html',1,'']]],
   ['analogsquare_2eh',['AnalogSquare.h',['../AnalogSquare_8h.html',1,'']]],
-  ['array',['array',['../classBackend_1_1array.html#a66b527d78881f22d8b8508492f255122',1,'Backend::array::array()'],['../classBackend_1_1array.html#aea145bb4183732b07f1ea2c5ef74406e',1,'Backend::array::array(unsigned long size)'],['../classBackend_1_1array.html#ac15cb5df923a27aae58573b2a798a564',1,'Backend::array::array(array&lt; element &gt; const &amp;other)']]],
-  ['array',['array',['../classBackend_1_1array.html',1,'Backend']]]
+  ['analogtriangle_2ecpp',['AnalogTriangle.cpp',['../AnalogTriangle_8cpp.html',1,'']]],
+  ['analogtriangle_2eh',['AnalogTriangle.h',['../AnalogTriangle_8h.html',1,'']]],
+  ['array',['array',['../classBackend_1_1array.html',1,'Backend']]],
+  ['array',['array',['../classBackend_1_1array.html#a66b527d78881f22d8b8508492f255122',1,'Backend::array::array()'],['../classBackend_1_1array.html#aea145bb4183732b07f1ea2c5ef74406e',1,'Backend::array::array(unsigned long size)'],['../classBackend_1_1array.html#ac15cb5df923a27aae58573b2a798a564',1,'Backend::array::array(array&lt; element &gt; const &amp;other)']]]
 ];

@@ -161,10 +161,12 @@ Definition at line 53 of file Fourier\+Generator.\+h.
 53                                                                    \{
 54             \textcolor{comment}{//double softLim = 0.45;}
 55             \textcolor{comment}{//double hardLim = 0.5;}
-56             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
-57             \_s/=\_frq;
-58             \textcolor{keywordflow}{return} trunc(\_s);
-59         \}
+56             
+57             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* (20000.0/\hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}());\textcolor{comment}{//uses harmonic roll
+       of based on max human hearing and sample rate}
+58             \_s/=\_frq;
+59             \textcolor{keywordflow}{return} trunc(\_s);
+60         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\index{Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}!\+\_\+pstep@{\+\_\+pstep}}
 \index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+Fourier\+::\+Saw@{Signal\+::\+Fourier\+::\+Saw}}

@@ -17,5 +17,5 @@ var searchData=
   ['_7esinelut',['~SineLUT',['../classBackend_1_1SineLUT.html#aeb5493bee1755391cea3690c31b1665b',1,'Backend::SineLUT']]],
   ['_7esmallsinelut',['~SmallSineLUT',['../classBackend_1_1SmallSineLUT.html#a75767a2ebad8a8c4d8a4a54b7c61bb0e',1,'Backend::SmallSineLUT::~SmallSineLUT()'],['../classBackend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4.html#a3db4fc45b900c846711e0cbd828dbbf4',1,'Backend::SmallSineLUT&lt; int32_t, size &gt;::~SmallSineLUT()']]],
   ['_7esquare',['~Square',['../classSignal_1_1Analog_1_1Square.html#ac58cdadc490283937d07f07a639a2e6a',1,'Signal::Analog::Square::~Square()'],['../classSignal_1_1Fourier_1_1Square.html#a2ad01bbdbb3ef7a252c2570f2574334e',1,'Signal::Fourier::Square::~Square()']]],
-  ['_7etriangle',['~Triangle',['../classSignal_1_1Fourier_1_1Triangle.html#a8cefa3e6bef6f8bd63a9f78d838b137c',1,'Signal::Fourier::Triangle']]]
+  ['_7etriangle',['~Triangle',['../classSignal_1_1Analog_1_1Triangle.html#a97a9d15bb951cfd8b7acb62834842cb7',1,'Signal::Analog::Triangle::~Triangle()'],['../classSignal_1_1Fourier_1_1Triangle.html#a8cefa3e6bef6f8bd63a9f78d838b137c',1,'Signal::Fourier::Triangle::~Triangle()']]]
 ];

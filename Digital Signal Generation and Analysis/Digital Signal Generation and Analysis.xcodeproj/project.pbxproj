@@ -54,6 +54,9 @@
 		1F591D8B19B7F88100FEEF4C /* Square.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F591D8A19B7F88100FEEF4C /* Square.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F591D8C19B7F89D00FEEF4C /* Square.cpp */; };
 		1F6EEE7119BAE245008215D2 /* Sin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6EEE7019BAE245008215D2 /* Sin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F742C4E19BF5872007FB7B8 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F742C4D19BF5872007FB7B8 /* AnalogTriangle.h */; };
+		1F742C5019BF58AC007FB7B8 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F742C4F19BF58AC007FB7B8 /* AnalogTriangle.cpp */; };
+		1FB7587A19BF501200565E57 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F591D4819B7E03E00FEEF4C /* libportaudio.dylib */; };
 		1FDA1DE419B89CDF00151AA2 /* AnalogGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA1DE319B89CDF00151AA2 /* AnalogGenerator.cpp */; };
 		1FDA1DE619B89CFF00151AA2 /* AnalogGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDA1DE519B89CFF00151AA2 /* AnalogGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1FDA1DE919B8A1F900151AA2 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDA1DE819B8A1F900151AA2 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -151,6 +154,8 @@
 		1F591D8A19B7F88100FEEF4C /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Square.h; path = ../src/include/Square.h; sourceTree = "<group>"; };
 		1F591D8C19B7F89D00FEEF4C /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Square.cpp; path = ../src/Square.cpp; sourceTree = "<group>"; };
 		1F6EEE7019BAE245008215D2 /* Sin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sin.h; path = ../src/include/Sin.h; sourceTree = "<group>"; };
+		1F742C4D19BF5872007FB7B8 /* AnalogTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogTriangle.h; path = ../src/include/AnalogTriangle.h; sourceTree = "<group>"; };
+		1F742C4F19BF58AC007FB7B8 /* AnalogTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogTriangle.cpp; path = ../src/AnalogTriangle.cpp; sourceTree = "<group>"; };
 		1FDA1DE319B89CDF00151AA2 /* AnalogGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogGenerator.cpp; path = ../src/AnalogGenerator.cpp; sourceTree = "<group>"; };
 		1FDA1DE519B89CFF00151AA2 /* AnalogGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogGenerator.h; path = ../src/include/AnalogGenerator.h; sourceTree = "<group>"; };
 		1FDA1DE819B8A1F900151AA2 /* AnalogSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogSaw.h; path = ../src/include/AnalogSaw.h; sourceTree = "<group>"; };
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F591D4B19B7E23C00FEEF4C /* libDSG.dylib in Frameworks */,
+				1FB7587A19BF501200565E57 /* libportaudio.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 				1FDA1DEC19B8A22100151AA2 /* AnalogSaw.cpp */,
 				1FDA1DEE19B8A23F00151AA2 /* AnalogSquare.cpp */,
 				1FEB8BE519BEAC7000C32628 /* Triangle.cpp */,
+				1F742C4F19BF58AC007FB7B8 /* AnalogTriangle.cpp */,
 			);
 			name = SOURCE;
 			sourceTree = "<group>";
@@ -343,6 +350,7 @@
 			children = (
 				1FDA1DE819B8A1F900151AA2 /* AnalogSaw.h */,
 				1FDA1DEA19B8A20D00151AA2 /* AnalogSquare.h */,
+				1F742C4D19BF5872007FB7B8 /* AnalogTriangle.h */,
 			);
 			name = Trivial;
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 				1F6EEE7119BAE245008215D2 /* Sin.h in Headers */,
 				1F591D7319B7E55600FEEF4C /* Saw.h in Headers */,
 				1F591D7619B7E55600FEEF4C /* SignalProcess.h in Headers */,
+				1F742C4E19BF5872007FB7B8 /* AnalogTriangle.h in Headers */,
 				1FEB8BE719BEB1FC00C32628 /* Triangle.h in Headers */,
 				1F591D6A19B7E55600FEEF4C /* Driver.h in Headers */,
 				1F591D6819B7E55600FEEF4C /* Buffer.h in Headers */,
@@ -481,6 +490,7 @@
 				1F591D8D19B7F89D00FEEF4C /* Square.cpp in Sources */,
 				1F591D3F19B7DFF600FEEF4C /* HarmonicTable.cpp in Sources */,
 				1F591D8919B7F7FD00FEEF4C /* polyBLEP.cpp in Sources */,
+				1F742C5019BF58AC007FB7B8 /* AnalogTriangle.cpp in Sources */,
 				1F591D3C19B7DFF600FEEF4C /* Buffer.cpp in Sources */,
 				1F591D4019B7DFF600FEEF4C /* RingBuffer.cpp in Sources */,
 				1F591D8219B7F75000FEEF4C /* minBLEP.cpp in Sources */,
@@ -756,6 +766,10 @@
 					"$(inherited)",
 					/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/include,
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -793,6 +807,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";

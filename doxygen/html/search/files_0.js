@@ -5,5 +5,7 @@ var searchData=
   ['analogsaw_2ecpp',['AnalogSaw.cpp',['../AnalogSaw_8cpp.html',1,'']]],
   ['analogsaw_2eh',['AnalogSaw.h',['../AnalogSaw_8h.html',1,'']]],
   ['analogsquare_2ecpp',['AnalogSquare.cpp',['../AnalogSquare_8cpp.html',1,'']]],
-  ['analogsquare_2eh',['AnalogSquare.h',['../AnalogSquare_8h.html',1,'']]]
+  ['analogsquare_2eh',['AnalogSquare.h',['../AnalogSquare_8h.html',1,'']]],
+  ['analogtriangle_2ecpp',['AnalogTriangle.cpp',['../AnalogTriangle_8cpp.html',1,'']]],
+  ['analogtriangle_2eh',['AnalogTriangle.h',['../AnalogTriangle_8h.html',1,'']]]
 ];

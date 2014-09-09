@@ -8,14 +8,15 @@
 
 #ifndef Waveform_Oscillators_h
 #define Waveform_Oscillators_h
-
+#include "AnalogSaw.h"
+#include "AnalogSquare.h"
 #include "Sine.h"
 #include "Saw.h"
 #include "Square.h"
+#include "Triangle.h"
 #include "BLIT.h"
 #include "BLITSaw.h"
 #include "minBLEP.h"
 #include "polyBLEP.h"
-#include "TrivialSaw.h"
-#include "TrivialSquare.h"
+
 #endif

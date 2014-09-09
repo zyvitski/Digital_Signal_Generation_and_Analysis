@@ -13,7 +13,8 @@
 
 namespace Signal {
     namespace Fourier{
-        
+        /*!\brief Fourier Series Based Saw Wave
+         */
         class Saw: public FourierGenerator {
         public:
             Saw();
@@ -33,9 +34,9 @@ namespace Signal {
         };
         
         inline bool Saw::Perform(Sample& signal){
-#warning Saw Perform adjustment needed to output normalization
             phs=_pstep();
             phs+=_phase_offset;
+            phs -= (long)phs;
             signal=0;
             for (i=1; i<_h+1; ++i) {
                 stor += _harmonicTable.Saw(i)* sine(phs*(i));

@@ -13,7 +13,7 @@ int main(){
     Signal::Set_Sample_Rate(44100);
     
     Signal::RingBuffer _buff(4096);
-    Signal::BLIT::BLIT _saw(80.0,0.0);
+    Signal::Analog::Triangle _saw(20.0,0.0);
     
     _saw.Perform(_buff);
     std::cout<<_buff<<std::endl;

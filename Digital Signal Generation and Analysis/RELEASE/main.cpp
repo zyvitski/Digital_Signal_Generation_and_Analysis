@@ -8,10 +8,13 @@
 
 #include "Signal.h"
 #include "Backend.h"
-#include <iostream>
+
 
 int main(){
-    
-    std::cout<<Backend::Sin(0.75);
+    Signal::Set_Sample_Rate(44100);
+    Signal::Analog::Square _sqr(160.0,0.0);
+    DriverInit(&_sqr);
+    Pa_Sleep(2000);
+    DriverExit();
     return 0;
 }

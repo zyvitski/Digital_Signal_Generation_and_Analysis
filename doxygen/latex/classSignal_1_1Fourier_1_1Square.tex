@@ -157,10 +157,12 @@ Definition at line 53 of file Fourier\+Generator.\+h.
 53                                                                    \{
 54             \textcolor{comment}{//double softLim = 0.45;}
 55             \textcolor{comment}{//double hardLim = 0.5;}
-56             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* 0.45;
-57             \_s/=\_frq;
-58             \textcolor{keywordflow}{return} trunc(\_s);
-59         \}
+56             
+57             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}()* (20000.0/\hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Sample\_Rate}());\textcolor{comment}{//uses harmonic roll
+       of based on max human hearing and sample rate}
+58             \_s/=\_frq;
+59             \textcolor{keywordflow}{return} trunc(\_s);
+60         \}
 \end{DoxyCode}
 \hypertarget{classSignal_1_1SignalGenerator_a43b0eec84ee7df04c947533c0511c2c0}{\index{Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}!\+\_\+pstep@{\+\_\+pstep}}
 \index{\+\_\+pstep@{\+\_\+pstep}!Signal\+::\+Fourier\+::\+Square@{Signal\+::\+Fourier\+::\+Square}}
@@ -295,7 +297,7 @@ Definition at line 36 of file Square.\+h.
 38             \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}+= \hyperlink{classSignal_1_1SignalGenerator_a6b4444d46747c8517171edbbf4b5588f}{\_phase\_offset};
 39             \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs} -= (long)\hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs};
 40             \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor}=0;
-41             \textcolor{keywordflow}{for} (\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}=1; \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}<\hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}{\_h}; \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}+=2) \{
+41             \textcolor{keywordflow}{for} (\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}=1; \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}<\hyperlink{classSignal_1_1Fourier_1_1Square_a289e48f696976033845c704970e4de80}{\_h}+1; \hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}+=2) \{
 42                 \hyperlink{classSignal_1_1Fourier_1_1Square_a47ec083d36cef49c7d6583c8741b7905}{stor} += \hyperlink{namespaceSignal_1_1Fourier_a7b4ca1fc91cf3d4454c7a7084c2c2462}{\_harmonicTable}.\hyperlink{classBackend_1_1HarmonicTable_a6b7336f4f6184337350f282d5b0c5467}{Saw}(\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i}) * \hyperlink{namespaceSignal_1_1Fourier_ab1bf3cdef768a49cf3e927b9daf7da9d}{sine}(
       \hyperlink{classSignal_1_1Fourier_1_1Square_a3a18caa52584be9a6a1777804d42120e}{phs}*\hyperlink{classSignal_1_1Fourier_1_1Square_a942768cca477bd9bfc71f9a3ea1be8e5}{i});
 43             \}

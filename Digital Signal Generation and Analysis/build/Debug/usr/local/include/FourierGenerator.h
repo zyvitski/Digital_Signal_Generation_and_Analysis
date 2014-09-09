@@ -53,7 +53,8 @@ namespace Signal {
         inline unsigned long FourierGenerator::_maxHarms(double _frq){
             //double softLim = 0.45;
             //double hardLim = 0.5;
-            double _s = Sample_Rate()* 0.45;
+            
+            double _s = Sample_Rate()* (20000.0/Sample_Rate());//uses harmonic roll of based on max human hearing and sample rate
             _s/=_frq;
             return trunc(_s);
         }

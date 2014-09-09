@@ -192,46 +192,70 @@ t1394725040
 s6000
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp
-c00000000540AF21700000000000000F3
-t1410003479
-s243
+c00000000540F1C400000000000000145
+t1410276416
+s325
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Digital Signal Generation and Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/RELEASE.LinkFileList
-c000000005407D98F00000000000000ED
-t1409800591
+c00000000540F1F1500000000000000ED
+t1410277141
 s237
 
+N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Digital Signal Generation and Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.ii
+t2
+s0
+
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Digital Signal Generation and Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o
-t1410003541
-s10692
+t1410277141
+s21824
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE
-t1410003541
-s11760
+t1410277967
+s12152
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE.dSYM
-t1410003541
+t1410277697
 s102
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/libDSG.dylib
-c00000000540AF254000000000000F390
-t1410003540
-s62352
+c00000000540F224F0000000000012BB8
+t1410277967
+s76728
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/include/portaudio.h
 c0000000052A55677000000000000B309
 t1386567287
 s45833
 
+N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/lib/libportaudio.dylib
+c0000000052A5567700000000000157D4
+t1386567287
+s88020
+
+N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/AnalogGenerator.h
+c00000000540E2A4300000000000005AF
+t1410214467
+s1455
+
+N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/AnalogSaw.h
+c00000000540E2A4300000000000004BF
+t1410214467
+s1215
+
+N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/AnalogSquare.h
+c00000000540F1C05000000000000052D
+t1410276357
+s1325
+
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLIT.h
-c00000000540AA9E50000000000000B98
-t1409984997
-s2968
+c00000000540E885400000000000007B3
+t1410238548
+s1971
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLITSaw.h
-c000000005407C83100000000000004F7
-t1409796145
-s1271
+c00000000540E6BDE0000000000000557
+t1410231262
+s1367
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Backend.h
 c00000000540AAC4900000000000001CA
@@ -254,14 +278,14 @@ t1409791717
 s689
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/FourierGenerator.h
-c00000000540866A40000000000000AEF
-t1409836708
-s2799
+c00000000540E81C700000000000007AE
+t1410236871
+s1966
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/HarmonicTable.h
-c000000005407B80400000000000002A0
-t1409792004
-s672
+c00000000540E764F00000000000003CF
+t1410233935
+s975
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/LUT.h
 c000000005407B77A0000000000000328
@@ -269,9 +293,9 @@ t1409791866
 s808
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h
-c00000000540871730000000000000197
-t1409839475
-s407
+c00000000540F1F1400000000000001AB
+t1410277140
+s427
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/PI.h
 c0000000053FD0C43000000000000011D
@@ -299,34 +323,34 @@ t1409789511
 s888
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Saw.h
-c00000000540A8F0F0000000000000663
-t1409978127
-s1635
+c00000000540E7CD00000000000000675
+t1410235600
+s1653
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h
-c00000000540865A10000000000000278
-t1409836449
+c00000000540E2A840000000000000278
+t1410214532
 s632
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/SignalGenerator.h
-c000000005407ABB0000000000000054B
-t1409788848
-s1355
+c00000000540E295F0000000000000949
+t1410214239
+s2377
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/SignalProcess.h
-c000000005407CBF600000000000002CB
-t1409797110
-s715
+c00000000540E291600000000000002A6
+t1410214166
+s678
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Sin.h
-c00000000540AF2540000000000000364
-t1410003540
-s868
+c00000000540E7BA2000000000000037B
+t1410235298
+s891
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Sine.h
-c00000000540AA6CB00000000000006EF
-t1409984203
-s1775
+c00000000540E73F10000000000000481
+t1410233329
+s1153
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/SineLUT.h
 c000000005407AE20000000000000104C
@@ -334,29 +358,34 @@ t1409789472
 s4172
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Square.h
-c00000000540872EA0000000000000568
-t1409839850
-s1384
+c00000000540F18EE000000000000067C
+t1410275566
+s1660
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Taylor.h
 c000000005407B7A400000000000003CB
 t1409791908
 s971
 
+N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Triangle.h
+c00000000540F1907000000000000068A
+t1410275591
+s1674
+
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/TrivialGenerator.h
-c00000000540868F800000000000005BC
-t1409837304
-s1468
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/TrivialSaw.h
-c00000000540A8B6200000000000005AE
-t1409977186
-s1454
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/TrivialSquare.h
-c00000000540A8B8C00000000000005DB
-t1409977228
-s1499
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/minBLEP.h
 c00000000540AA7BB0000000000000254
@@ -368,16 +397,19 @@ c00000000540AA7E4000000000000021E
 t1409984484
 s542
 
+CAnalyzeShallow /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/RELEASE/main.cpp
+r0
+
 CBuild AST from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/RELEASE/main.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies7a1723f329bbb941^c53c23f329bbb941^---0#1#1#--18"Check dependencies36"FEACC528-8989-45CC-A60B-A361E134ACFB-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf2b0c4cf59bfb941^2bdac4cf59bfb941^---0#1#1#--18"Check dependencies36"FF38D5F5-EAE8-4F06-BEFD-A4FC4017521A-
 
 CCompileC build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/RELEASE/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s431696340.999955
-e431696341.407946
+s431969941.109728
+e431969941.192954
 r1
 xCompileC
 xbuild/Digital Signal Generation and Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o
@@ -405,70 +437,53 @@ d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generat
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Sin.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/SignalGenerator.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/FourierGenerator.h
-d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/TrivialGenerator.h
+d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/AnalogGenerator.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h
+d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/AnalogSaw.h
+d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/AnalogSquare.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Sine.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Saw.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Square.h
+d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Triangle.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLIT.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLITSaw.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/minBLEP.h
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/polyBLEP.h
-d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/TrivialSaw.h
-d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/TrivialSquare.h
 oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:13:
-o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Saw.h:36:2: warning: Saw Perform adjustment needed to output normalization [-W#warnings]
-o#warning Saw Perform adjustment needed to output normalization
-o ^
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:14:
-o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Square.h:36:2: warning: Unimplimented Square Perform [-W#warnings]
-o#warning Unimplimented Square Perform
-o ^
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:15:
-o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/BLIT.h:57:2: warning: Needs re write [-W#warnings]
-o#warning Needs re write
-o ^
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:16:
-o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/BLITSaw.h:32:2: warning: unimplimented BLITSaw Perform [-W#warnings]
-o#warning unimplimented BLITSaw Perform
-o ^
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:
+oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:
 oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:17:
+o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/BLIT.h:47:2: warning: Needs testing [-W#warnings]
+o#warning Needs testing
+o ^
+oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
+oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:
+oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:19:
 o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/minBLEP.h:21:2: warning: Unimplimented minBLEP [-W#warnings]
 o#warning Unimplimented minBLEP
 o ^
 oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:
-oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:18:
+oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:
+oIn file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:20:
 o/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/polyBLEP.h:22:2: warning: Unimplimented polyBLEP [-W#warnings]
 o#warning Unimplimented polyBLEP
 o ^
-o6 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"Compile /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp193"CompileC build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o RELEASE/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2c1100d529bbb941^056f68d529bbb941^-4879"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:13:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Saw.h:36:2: warning: Saw Perform adjustment needed to output normalization [-W#warnings]#warning Saw Perform adjustment needed to output normalization ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:14:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Square.h:36:2: warning: Unimplimented Square Perform [-W#warnings]#warning Unimplimented Square Perform ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:15:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/BLIT.h:57:2: warning: Needs re write [-W#warnings]#warning Needs re write ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:16:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/BLITSaw.h:32:2: warning: unimplimented BLITSaw Perform [-W#warnings]#warning unimplimented BLITSaw Perform ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:17:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/minBLEP.h:21:2: warning: Unimplimented minBLEP [-W#warnings]#warning Unimplimented minBLEP ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:18:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/polyBLEP.h:22:2: warning: Unimplimented polyBLEP [-W#warnings]#warning Unimplimented polyBLEP ^6 warnings generated.6(36%IDEClangDiagnosticActivityLogMessage2@53"Saw Perform adjustment needed to output normalization-431696341#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^20#9#20#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:13:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^12#9#12#9#239#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@120"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Saw.h0000000000000000^35#1#35#1#930#0#18"#warning Directive--2@28"Unimplimented Square Perform-431696341#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^20#9#20#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:14:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^13#9#13#9#256#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Square.h0000000000000000^35#1#35#1#973#0#18"#warning Directive--2@14"Needs re write-431696341#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^20#9#20#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:15:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^14#9#14#9#276#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@121"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLIT.h0000000000000000^56#1#56#1#1827#0#18"#warning Directive--2@29"Unimplimented BLITSaw Perform-431696341#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^20#9#20#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:16:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^15#9#15#9#294#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@124"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLITSaw.h0000000000000000^31#1#31#1#824#0#18"#warning Directive--2@21"Unimplimented minBLEP-431696341#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^20#9#20#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:17:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^16#9#16#9#315#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@124"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/minBLEP.h0000000000000000^20#1#20#1#472#0#18"#warning Directive--2@22"Unimplimented polyBLEP-431696341#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:21:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^20#9#20#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:18:-431696341#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^17#9#17#9#336#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@125"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/polyBLEP.h0000000000000000^21#1#21#1#484#0#18"#warning Directive--0#0#1#-19%DVTDocumentLocation4@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^4575"CompileC build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o RELEASE/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-generated-files.hmap -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-project-headers.hmap -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/include -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/DerivedSources -F/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.dia -c /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/RELEASE/main.cpp -o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o36"854B6195-498E-4523-B08C-19D7D24B4A19-
-bCE62372B-0BDF-4E21-A87F-AE10A8C40D30
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"Compile /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp193"CompileC build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o RELEASE/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler74271c9556bfb941^6f65319556bfb941^-2397"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:17:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/BLIT.h:47:2: warning: Needs testing [-W#warnings]#warning Needs testing ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:19:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/minBLEP.h:21:2: warning: Unimplimented minBLEP [-W#warnings]#warning Unimplimented minBLEP ^In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:20:/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/polyBLEP.h:22:2: warning: Unimplimented polyBLEP [-W#warnings]#warning Unimplimented polyBLEP ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@13"Needs testing-431969941#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^21#9#21#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:17:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^16#9#16#9#346#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@121"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/BLIT.h0000000000000000^46#1#46#1#1224#0#18"#warning Directive--2@21"Unimplimented minBLEP-431969941#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^21#9#21#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:19:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^18#9#18#9#385#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@124"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/minBLEP.h0000000000000000^20#1#20#1#472#0#18"#warning Directive--2@22"Unimplimented polyBLEP-431969941#18446744073709551615#0#3(2@176"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/RELEASE/main.cpp:9:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^8#9#8#9#122#0#21"Apple LLVM 5.0 Notice--2@184"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Signal.h:22:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@123"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Signal.h0000000000000000^21#9#21#9#607#0#21"Apple LLVM 5.0 Notice--2@189"In file included from /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/../src/include/Oscillators.h:20:-431969941#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/Oscillators.h0000000000000000^19#9#19#9#406#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@125"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/src/include/polyBLEP.h0000000000000000^21#1#21#1#484#0#18"#warning Directive--0#0#1#-19%DVTDocumentLocation4@166"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/RELEASE/main.cpp0000000000000000^4575"CompileC build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o RELEASE/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-generated-files.hmap -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/RELEASE-project-headers.hmap -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/include -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/DerivedSources -F/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.dia -c /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/RELEASE/main.cpp -o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o36"772D3D6A-5F83-430F-85AB-CB82AB51E819-
+b0663A86E-7BFF-49AA-BCA7-84983D924228
 
 CGenerateDSYMFile /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE.dSYM /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE
-s431696341.431785
-e431696341.440129
+s431970767.792733
+e431970767.803231
 r1
 xGenerateDSYMFile
 x/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE.dSYM
 x/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection170"Generate /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE.dSYM65"GenerateDSYMFile build/Release/RELEASE.dSYM build/Release/RELEASE0b966ed529bbb941^d2ac70d529bbb941^---0#0#1#-19%DVTDocumentLocation2@177"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/build/Release/RELEASE.dSYM/0000000000000000^640"GenerateDSYMFile build/Release/RELEASE.dSYM build/Release/RELEASE    cd "/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE -o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE.dSYM36"2D9C6FD5-BEEF-42A9-A30D-4F2255BB47DD-
-bCE62372B-0BDF-4E21-A87F-AE10A8C40D30
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection170"Generate /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE.dSYM65"GenerateDSYMFile build/Release/RELEASE.dSYM build/Release/RELEASEb5fecacf59bfb941^d7a2cdcf59bfb941^---0#0#1#-19%DVTDocumentLocation2@177"file:///Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital%20Signal%20Generation%20and%20Analysis/build/Release/RELEASE.dSYM/0000000000000000^640"GenerateDSYMFile build/Release/RELEASE.dSYM build/Release/RELEASE    cd "/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE -o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE.dSYM36"77C0CA5F-F377-4C4B-9979-8E2847E3ECDA-
+b66C78545-78A3-4152-97A5-26CA04BA0C80
 
 CLd /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE normal x86_64
-s431696341.409287
-e431696341.431132
+s431970767.770312
+e431970767.791959
 r1
 xLd
 x/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE
@@ -477,6 +492,7 @@ xx86_64
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Digital Signal Generation and Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/RELEASE.LinkFileList
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Digital Signal Generation and Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/main.o
 d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/libDSG.dylib
+d/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/lib/libportaudio.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
 d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
@@ -510,6 +526,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"Link /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE38"Ld build/Release/RELEASE normal x86_64edd868d529bbb941^0b606ed529bbb941^---0#0#1#--1536"Ld build/Release/RELEASE normal x86_64    cd "/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release -F/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release -filelist /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/RELEASE.LinkFileList -mmacosx-version-min=10.9 -stdlib=libc++ -lDSG -Xlinker -dependency_info -Xlinker /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/RELEASE_dependency_info.dat -o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE36"B71B8FB9-43EE-4671-8316-A3135D6E91E1-
-bCE62372B-0BDF-4E21-A87F-AE10A8C40D30
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"Link /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis/build/Release/RELEASE38"Ld build/Release/RELEASE normal x86_640340c5cf59bfb941^f0becacf59bfb941^---0#0#1#--1672"Ld build/Release/RELEASE normal x86_64    cd "/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital Signal Generation and Analysis"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release -L/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/portaudio/19.20111121/lib -F/Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release -filelist /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/RELEASE.LinkFileList -mmacosx-version-min=10.9 -stdlib=libc++ -lDSG -lportaudio -Xlinker -dependency_info -Xlinker /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Digital\ Signal\ Generation\ and\ Analysis.build/Release/RELEASE.build/Objects-normal/x86_64/RELEASE_dependency_info.dat -o /Users/alexanderzywicki/Documents/School_Stuff/Fall_2014/Digital_Signal_Generation_and_Analysis/Digital\ Signal\ Generation\ and\ Analysis/build/Release/RELEASE36"A6BE6EB8-B426-4C18-8C45-EE3E607E6B9C-
+b66C78545-78A3-4152-97A5-26CA04BA0C80
 

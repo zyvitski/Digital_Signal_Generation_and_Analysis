@@ -38,7 +38,7 @@ namespace Signal {
             phs+= _phase_offset;
             phs -= (long)phs;
             stor=0;
-            for (i=1; i<_h; i+=2) {
+            for (i=1; i<_h+1; i+=2) {
                 stor += _harmonicTable.Saw(i) * sine(phs*i);
             }
             stor *= _a;
