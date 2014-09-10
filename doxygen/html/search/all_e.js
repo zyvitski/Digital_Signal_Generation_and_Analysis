@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['queue',['Queue',['../classBackend_1_1Queue.html',1,'Backend']]],
-  ['queue',['Queue',['../classBackend_1_1Queue.html#ac32a0171ecb144e4da8585575160c30c',1,'Backend::Queue::Queue()'],['../classBackend_1_1Queue.html#ac136488c632785b750fd9fedb5a0986f',1,'Backend::Queue::Queue(unsigned long size)'],['../classBackend_1_1Queue.html#ae7c5f30894c29d332991a15b89aaedba',1,'Backend::Queue::Queue(Queue&lt; element &gt; const &amp;other)']]],
+  ['queue',['Queue',['../classDSG_1_1Backend_1_1Queue.html',1,'DSG::Backend']]],
+  ['queue',['Queue',['../classDSG_1_1Backend_1_1Queue.html#abf114ae1bb60464f072dcb755c48b87b',1,'DSG::Backend::Queue::Queue()'],['../classDSG_1_1Backend_1_1Queue.html#ac25736be535f1c1de655057899e309cd',1,'DSG::Backend::Queue::Queue(unsigned long size)'],['../classDSG_1_1Backend_1_1Queue.html#a6f6299238080adc2630ad48180b45752',1,'DSG::Backend::Queue::Queue(Queue&lt; element &gt; const &amp;other)']]],
   ['queue_2eh',['Queue.h',['../Queue_8h.html',1,'']]]
 ];

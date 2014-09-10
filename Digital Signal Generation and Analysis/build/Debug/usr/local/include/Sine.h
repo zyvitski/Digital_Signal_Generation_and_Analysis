@@ -12,7 +12,7 @@
 #include "FourierGenerator.h"
 
 
-namespace Signal {
+namespace DSG {
     namespace Fourier{
         /*!\brief Sine Wave Generator
          */
@@ -21,15 +21,15 @@ namespace Signal {
             Sine();
             Sine(double const& frequency,double const& phase_offset);
             virtual ~Sine();
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
         };
         
-        inline bool Sine::Perform(Sample& signal){
-            signal = Backend::Sin(_pstep()+_phase_offset);
+        inline bool Sine::Perform(Signal::Sample& signal){
+            signal = DSG::Backend::Sin(_pstep()+_phase_offset);
             return true;
         }
-        inline bool Sine::Perform(RingBuffer& signal){
+        inline bool Sine::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

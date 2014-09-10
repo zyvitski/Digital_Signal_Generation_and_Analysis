@@ -1,5 +1,5 @@
 //
-//  AnalogSaw.cpp
+//  AnalogAnalogSaw.cpp
 //  Digital Signal Generation and Analysis
 //
 //  Created by Alexander Zywicki on 9/4/14.
@@ -8,12 +8,12 @@
 
 #include "AnalogSaw.h"
 
-Signal::Analog::Saw::Saw():Signal::Analog::AnalogGenerator(){
+DSG::AnalogSaw::AnalogSaw():DSG::AnalogGenerator(){
     
 }
-Signal::Analog::Saw::Saw(double const& frequency,double const& phase_offset):Signal::Analog::AnalogGenerator(frequency,phase_offset){
+DSG::AnalogSaw::AnalogSaw(double const& frequency,double const& phase_offset):DSG::AnalogGenerator(frequency,phase_offset){
     
 }
-Signal::Analog::Saw::~Saw(){
+DSG::AnalogSaw::~AnalogSaw(){
     
 }

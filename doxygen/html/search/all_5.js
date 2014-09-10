@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empty',['Empty',['../classBackend_1_1Queue.html#af9f6bfd2928b6a8e0557042da977b9d5',1,'Backend::Queue::Empty()'],['../classSignal_1_1RingBuffer.html#a73416d725604567d4b496f9821bc0c04',1,'Signal::RingBuffer::Empty()']]]
+  ['empty',['Empty',['../classDSG_1_1Backend_1_1Queue.html#aa2a871168b5d8eb9075d1506752046b0',1,'DSG::Backend::Queue::Empty()'],['../classDSG_1_1RingBuffer.html#ac1346f5842d08b988a5297abe4089b96',1,'DSG::RingBuffer::Empty()']]]
 ];

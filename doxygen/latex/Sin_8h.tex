@@ -2,15 +2,28 @@
 \label{Sin_8h}\index{/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\+Sin.\+h@{/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\+Sin.\+h}}
 }
 {\ttfamily \#include \char`\"{}P\+I.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Taylor.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sine\+L\+U\+T.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1DSG_1_1Backend_1_1LUT}{D\+S\+G\+::\+Backend\+::\+D\+S\+G\+::\+Backend\+::\+L\+U\+T$<$ element, size $>$}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1DSG_1_1Backend_1_1SineLUT}{D\+S\+G\+::\+Backend\+::\+D\+S\+G\+::\+Backend\+::\+Sine\+L\+U\+T$<$ element, size $>$}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1DSG_1_1Backend_1_1SmallSineLUT}{D\+S\+G\+::\+Backend\+::\+D\+S\+G\+::\+Backend\+::\+Small\+Sine\+L\+U\+T$<$ element, size $>$}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1DSG_1_1Backend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4}{D\+S\+G\+::\+Backend\+::\+D\+S\+G\+::\+Backend\+::\+Small\+Sine\+L\+U\+T$<$ int32\+\_\+t, size $>$}
+\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespaceBackend}{Backend}
+ \hyperlink{namespaceDSG}{D\+S\+G}
 \item 
- \hyperlink{namespaceBackend_1_1Backend}{Backend\+::\+Backend}
+ \hyperlink{namespaceDSG_1_1Backend}{D\+S\+G\+::\+Backend}
 \item 
- \hyperlink{namespaceBackend_1_1Backend_1_1Taylor}{Backend\+::\+Backend\+::\+Taylor}
+ \hyperlink{namespaceDSG_1_1Backend_1_1DSG}{D\+S\+G\+::\+Backend\+::\+D\+S\+G}
+\item 
+ \hyperlink{namespaceDSG_1_1Backend_1_1DSG_1_1Backend}{D\+S\+G\+::\+Backend\+::\+D\+S\+G\+::\+Backend}
 \end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
@@ -21,25 +34,19 @@
 \item 
 \#define \hyperlink{Sin_8h_a3ddf7516b9f522ae46dcbf58ef57049f}{sin\+\_\+lut}~2
 \item 
-\#define \hyperlink{Sin_8h_ac89223b0c230bebd8e956824d59dcf84}{sin\+\_\+impl}~\hyperlink{Sin_8h_a493e403eaff3323165444430b8f5af63}{sin\+\_\+tay}
+\#define \hyperlink{Sin_8h_ac89223b0c230bebd8e956824d59dcf84}{sin\+\_\+impl}~\hyperlink{Sin_8h_a3ddf7516b9f522ae46dcbf58ef57049f}{sin\+\_\+lut}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{namespaceBackend_1_1Backend_1_1Taylor_ad3bf02e59dbfb83f2b1362f84d2095b8}{Backend\+::\+Backend\+::\+Taylor\+::\+Sine} (double const \&x)
-\item 
-int \hyperlink{namespaceBackend_1_1Backend_1_1Taylor_a69fa1882d5aa61e158854a2cb890ff6e}{Backend\+::\+Backend\+::\+Taylor\+::factorial} (int const \&i)
-\item 
-double \hyperlink{namespaceBackend_1_1Backend_1_1Taylor_a3fc73c497bf40b89f117fedd24311f36}{Backend\+::\+Backend\+::\+Taylor\+::term} (double const \&x, double const \&n)
-\item 
-double \hyperlink{namespaceBackend_ac20c03da97a92901a66da8e213d19fb1}{Backend\+::\+Sin} (double const \&phs)
+double \hyperlink{namespaceDSG_1_1Backend_abc92c970184d9c3e4fa6741f80c58836}{D\+S\+G\+::\+Backend\+::\+Sin} (double const \&phs)
 \end{DoxyCompactItemize}
 
 
 \subsection{Macro Definition Documentation}
 \hypertarget{Sin_8h_ac89223b0c230bebd8e956824d59dcf84}{\index{Sin.\+h@{Sin.\+h}!sin\+\_\+impl@{sin\+\_\+impl}}
 \index{sin\+\_\+impl@{sin\+\_\+impl}!Sin.\+h@{Sin.\+h}}
-\subsubsection[{sin\+\_\+impl}]{\setlength{\rightskip}{0pt plus 5cm}\#define sin\+\_\+impl~{\bf sin\+\_\+tay}}}\label{Sin_8h_ac89223b0c230bebd8e956824d59dcf84}
+\subsubsection[{sin\+\_\+impl}]{\setlength{\rightskip}{0pt plus 5cm}\#define sin\+\_\+impl~{\bf sin\+\_\+lut}}}\label{Sin_8h_ac89223b0c230bebd8e956824d59dcf84}
 
 
 Definition at line 19 of file Sin.\+h.

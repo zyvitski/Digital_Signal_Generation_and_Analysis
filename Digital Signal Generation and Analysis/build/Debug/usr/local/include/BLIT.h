@@ -14,7 +14,7 @@
 #include "PI.h"
 #include <limits>
 
-namespace Signal {
+namespace DSG {
     namespace BLIT{
         
         /*!\brief
@@ -26,12 +26,12 @@ namespace Signal {
             BLIT(double const& frequency,double const& phase_offset);
             virtual ~BLIT();
             virtual double const& Frequency(double const& value);//get and set frequency in hz
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
         protected:
             virtual void updateHarms();
             
-            Sample _sample;
+            Signal::Sample _sample;
             unsigned long _nHarms;
             unsigned long  m_;
             
@@ -43,7 +43,7 @@ namespace Signal {
         
         
         
-        inline bool BLIT::Perform(Sample& signal){
+        inline bool BLIT::Perform(Signal::Sample& signal){
 #warning Needs testing
             phs =_pstep();
             _denominator = sin(phs*TWOPI);
@@ -56,7 +56,7 @@ namespace Signal {
             signal = tmp;
             return true;
         }
-        inline bool BLIT::Perform(RingBuffer& signal){
+        inline bool BLIT::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

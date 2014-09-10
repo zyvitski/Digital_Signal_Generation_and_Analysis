@@ -117,8 +117,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aa2fbdaf8db29dee4b723a45b890cd92a"><td class="memItemLeft" align="right" valign="top">PaStream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Driver_8cpp.html#aa2fbdaf8db29dee4b723a45b890cd92a">stream</a></td></tr>
 <tr class="separator:aa2fbdaf8db29dee4b723a45b890cd92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab051067683acb866c43856a4d7f88a2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSignal_1_1RingBuffer.html">Signal::RingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b">_buffer</a> (<a class="el" href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>)</td></tr>
-<tr class="separator:ab051067683acb866c43856a4d7f88a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6097b29bd1410000dcdd4f146e5c15d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDSG_1_1RingBuffer.html">DSG::RingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Driver_8cpp.html#a6097b29bd1410000dcdd4f146e5c15d1">_buffer</a> (<a class="el" href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>)</td></tr>
+<tr class="separator:a6097b29bd1410000dcdd4f146e5c15d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a6b20d41d6252e9871430c242cb1a56e7"></a>
@@ -188,34 +188,34 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                             {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">float</span>* _in = (<span class="keywordtype">float</span>*)input;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span>* _out = (<span class="keywordtype">float</span>*)output;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classSignal_1_1Sample.html">Signal::Sample</a> _sample;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classDSG_1_1Sample.html">DSG:: Sample</a> _sample;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> count=0;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classSignal_1_1SignalProcess.html">Signal::SignalProcess</a>* _osc = (<a class="code" href="classSignal_1_1SignalProcess.html">Signal::SignalProcess</a>*)userData;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classDSG_1_1SignalProcess.html">DSG::SignalProcess</a>* _osc = (<a class="code" href="classDSG_1_1SignalProcess.html">DSG::SignalProcess</a>*)userData;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (_in!=<span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b">_buffer</a>.<a class="code" href="classSignal_1_1RingBuffer.html#ac8124016cfc0c833a3565c87d5f6f1e5">Full</a>()) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;_sample.<a class="code" href="classSignal_1_1Sample.html#a3c8f635193c0b7b69612cb189766dfa3">Size</a>(); ++i) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="Driver_8cpp.html#a6097b29bd1410000dcdd4f146e5c15d1">_buffer</a>.<a class="code" href="classDSG_1_1RingBuffer.html#a53ddb04ffcbb5470a8d2b0a3c65b70cb">Full</a>()) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;_sample.<a class="code" href="classDSG_1_1Sample.html#abcbdcc67584e4018b24eac650724eb18">Size</a>(); ++i) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                _sample[i]=_in[count++];</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b">_buffer</a>.<a class="code" href="classSignal_1_1RingBuffer.html#aa291195b777aa50aa7a61ab1f4954bce">Write</a>(_sample);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="Driver_8cpp.html#a6097b29bd1410000dcdd4f146e5c15d1">_buffer</a>.<a class="code" href="classDSG_1_1RingBuffer.html#af484c16dbffaf555860a84652ac46284">Write</a>(_sample);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    _osc-&gt;<a class="code" href="classSignal_1_1SignalProcess.html#a7986df989ac8afca3674ae8eace3cfdb">Perform</a>(<a class="code" href="Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b">_buffer</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    _osc-&gt;<a class="code" href="classDSG_1_1SignalProcess.html#afdb8220100418893950c1161dd24db67">Perform</a>(<a class="code" href="Driver_8cpp.html#a6097b29bd1410000dcdd4f146e5c15d1">_buffer</a>);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (_out!=<span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;frameCount; ++i) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b">_buffer</a>.<a class="code" href="classSignal_1_1RingBuffer.html#a9a5c8429c0e422e3d4763adb78b0a87c">Read</a>(_sample);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="Driver_8cpp.html#a6097b29bd1410000dcdd4f146e5c15d1">_buffer</a>.<a class="code" href="classDSG_1_1RingBuffer.html#ae46649acd09c2e83834f3e31157b29b6">Read</a>(_sample);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            *_out++=_sample[0];</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            *_out++=_sample[1];</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}<div class="ttc" id="Driver_8cpp_html_ab051067683acb866c43856a4d7f88a2b"><div class="ttname"><a href="Driver_8cpp.html#ab051067683acb866c43856a4d7f88a2b">_buffer</a></div><div class="ttdeci">Signal::RingBuffer _buffer(BUFFER_SIZE)</div></div>
-<div class="ttc" id="classSignal_1_1SignalProcess_html_a7986df989ac8afca3674ae8eace3cfdb"><div class="ttname"><a href="classSignal_1_1SignalProcess.html#a7986df989ac8afca3674ae8eace3cfdb">Signal::SignalProcess::Perform</a></div><div class="ttdeci">virtual bool Perform(Sample &amp;signal)=0</div></div>
-<div class="ttc" id="classSignal_1_1SignalProcess_html"><div class="ttname"><a href="classSignal_1_1SignalProcess.html">Signal::SignalProcess</a></div><div class="ttdoc">An Abstract Base Class defining the basics API needed for audio generation. </div><div class="ttdef"><b>Definition:</b> <a href="SignalProcess_8h_source.html#l00021">SignalProcess.h:21</a></div></div>
-<div class="ttc" id="classSignal_1_1Sample_html"><div class="ttname"><a href="classSignal_1_1Sample.html">Signal::Sample</a></div><div class="ttdef"><b>Definition:</b> <a href="Sample_8h_source.html#l00026">Sample.h:26</a></div></div>
-<div class="ttc" id="classSignal_1_1Sample_html_a3c8f635193c0b7b69612cb189766dfa3"><div class="ttname"><a href="classSignal_1_1Sample.html#a3c8f635193c0b7b69612cb189766dfa3">Signal::Sample::Size</a></div><div class="ttdeci">size_t Size() const </div><div class="ttdef"><b>Definition:</b> <a href="Sample_8cpp_source.html#l00034">Sample.cpp:34</a></div></div>
-<div class="ttc" id="classSignal_1_1RingBuffer_html_a9a5c8429c0e422e3d4763adb78b0a87c"><div class="ttname"><a href="classSignal_1_1RingBuffer.html#a9a5c8429c0e422e3d4763adb78b0a87c">Signal::RingBuffer::Read</a></div><div class="ttdeci">bool Read(Signal::Sample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="RingBuffer_8h_source.html#l00068">RingBuffer.h:68</a></div></div>
-<div class="ttc" id="classSignal_1_1RingBuffer_html_ac8124016cfc0c833a3565c87d5f6f1e5"><div class="ttname"><a href="classSignal_1_1RingBuffer.html#ac8124016cfc0c833a3565c87d5f6f1e5">Signal::RingBuffer::Full</a></div><div class="ttdeci">bool Full() const </div><div class="ttdef"><b>Definition:</b> <a href="RingBuffer_8h_source.html#l00048">RingBuffer.h:48</a></div></div>
-<div class="ttc" id="classSignal_1_1RingBuffer_html_aa291195b777aa50aa7a61ab1f4954bce"><div class="ttname"><a href="classSignal_1_1RingBuffer.html#aa291195b777aa50aa7a61ab1f4954bce">Signal::RingBuffer::Write</a></div><div class="ttdeci">bool Write(const Signal::Sample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="RingBuffer_8h_source.html#l00059">RingBuffer.h:59</a></div></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}<div class="ttc" id="classDSG_1_1Sample_html"><div class="ttname"><a href="classDSG_1_1Sample.html">DSG::Sample</a></div><div class="ttdef"><b>Definition:</b> <a href="Sample_8h_source.html#l00025">Sample.h:25</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalProcess_html"><div class="ttname"><a href="classDSG_1_1SignalProcess.html">DSG::SignalProcess</a></div><div class="ttdoc">An Abstract Base Class defining the basics API needed for audio generation. </div><div class="ttdef"><b>Definition:</b> <a href="SignalProcess_8h_source.html#l00021">SignalProcess.h:21</a></div></div>
+<div class="ttc" id="Driver_8cpp_html_a6097b29bd1410000dcdd4f146e5c15d1"><div class="ttname"><a href="Driver_8cpp.html#a6097b29bd1410000dcdd4f146e5c15d1">_buffer</a></div><div class="ttdeci">DSG::RingBuffer _buffer(BUFFER_SIZE)</div></div>
+<div class="ttc" id="classDSG_1_1RingBuffer_html_af484c16dbffaf555860a84652ac46284"><div class="ttname"><a href="classDSG_1_1RingBuffer.html#af484c16dbffaf555860a84652ac46284">DSG::RingBuffer::Write</a></div><div class="ttdeci">bool Write(const DSG::Sample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="RingBuffer_8h_source.html#l00064">RingBuffer.h:64</a></div></div>
+<div class="ttc" id="classDSG_1_1RingBuffer_html_a53ddb04ffcbb5470a8d2b0a3c65b70cb"><div class="ttname"><a href="classDSG_1_1RingBuffer.html#a53ddb04ffcbb5470a8d2b0a3c65b70cb">DSG::RingBuffer::Full</a></div><div class="ttdeci">bool Full() const </div><div class="ttdef"><b>Definition:</b> <a href="RingBuffer_8h_source.html#l00053">RingBuffer.h:53</a></div></div>
+<div class="ttc" id="classDSG_1_1RingBuffer_html_ae46649acd09c2e83834f3e31157b29b6"><div class="ttname"><a href="classDSG_1_1RingBuffer.html#ae46649acd09c2e83834f3e31157b29b6">DSG::RingBuffer::Read</a></div><div class="ttdeci">bool Read(DSG::Sample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="RingBuffer_8h_source.html#l00073">RingBuffer.h:73</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalProcess_html_afdb8220100418893950c1161dd24db67"><div class="ttname"><a href="classDSG_1_1SignalProcess.html#afdb8220100418893950c1161dd24db67">DSG::SignalProcess::Perform</a></div><div class="ttdeci">virtual bool Perform(Sample::Sample &amp;signal)=0</div></div>
+<div class="ttc" id="classDSG_1_1Sample_html_abcbdcc67584e4018b24eac650724eb18"><div class="ttname"><a href="classDSG_1_1Sample.html#abcbdcc67584e4018b24eac650724eb18">DSG::Sample::Size</a></div><div class="ttdeci">size_t Size() const </div><div class="ttdef"><b>Definition:</b> <a href="Sample_8cpp_source.html#l00034">Sample.cpp:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,7 +285,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    err = Pa_OpenDefaultStream(&amp;<a class="code" href="Driver_8cpp.html#aa2fbdaf8db29dee4b723a45b890cd92a">stream</a>, 0, 2, paFloat32,<a class="code" href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a>(), <a class="code" href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>, <a class="code" href="Driver_8cpp.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a>, data);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    err = Pa_OpenDefaultStream(&amp;<a class="code" href="Driver_8cpp.html#aa2fbdaf8db29dee4b723a45b890cd92a">stream</a>, 0, 2, paFloat32,<a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG:: Sample_Rate</a>(), <a class="code" href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>, <a class="code" href="Driver_8cpp.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a>, data);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (err!=paNoError) {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        printf(  <span class="stringliteral">&quot;PortAudio error: %s\n&quot;</span>, Pa_GetErrorText( err ) );</div>
@@ -303,18 +303,18 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="ttc" id="Driver_8cpp_html_aa2fbdaf8db29dee4b723a45b890cd92a"><div class="ttname"><a href="Driver_8cpp.html#aa2fbdaf8db29dee4b723a45b890cd92a">stream</a></div><div class="ttdeci">PaStream * stream</div><div class="ttdef"><b>Definition:</b> <a href="Driver_8cpp_source.html#l00011">Driver.cpp:11</a></div></div>
 <div class="ttc" id="Driver_8cpp_html_a110986770da2cd49dcf3789f8cc09c28"><div class="ttname"><a href="Driver_8cpp.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a></div><div class="ttdeci">int Callback(const void *input, void *output, unsigned long frameCount, const PaStreamCallbackTimeInfo *timeInfo, PaStreamCallbackFlags statusFlags, void *userData)</div><div class="ttdef"><b>Definition:</b> <a href="Driver_8cpp_source.html#l00068">Driver.cpp:68</a></div></div>
+<div class="ttc" id="namespaceDSG_html_a0c5c3a251b3688398da18138c5efe4bf"><div class="ttname"><a href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
 <div class="ttc" id="Driver_8cpp_html_a6b20d41d6252e9871430c242cb1a56e7"><div class="ttname"><a href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a></div><div class="ttdeci">#define BUFFER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="Driver_8cpp_source.html#l00013">Driver.cpp:13</a></div></div>
-<div class="ttc" id="namespaceSignal_html_ae7b1f222afc010e0f33f306f978fcde9"><div class="ttname"><a href="namespaceSignal.html#ae7b1f222afc010e0f33f306f978fcde9">Signal::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ab051067683acb866c43856a4d7f88a2b"></a>
+<a class="anchor" id="a6097b29bd1410000dcdd4f146e5c15d1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSignal_1_1RingBuffer.html">Signal::RingBuffer</a> _buffer(<a class="el" href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>)</td>
+          <td class="memname">DSG:: RingBuffer _buffer(<a class="el" href="Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,7 +338,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 9 2014 11:12:20 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 9 2014 19:02:02 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

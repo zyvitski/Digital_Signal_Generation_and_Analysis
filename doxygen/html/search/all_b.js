@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next',['next',['../classBackend_1_1Queue.html#a91b2f12926d36b547343a91790fe76bb',1,'Backend::Queue::next()'],['../classSignal_1_1RingBuffer.html#a14a5990d51a45d131ee8aebd90bb87b9',1,'Signal::RingBuffer::next()']]]
+  ['next',['next',['../classDSG_1_1Backend_1_1Queue.html#a2ca3705f53a9fa79663590e8bf939045',1,'DSG::Backend::Queue::next()'],['../classDSG_1_1RingBuffer.html#a6d7a76a4c9b38ccde46344662e08c9e5',1,'DSG::RingBuffer::next()']]]
 ];

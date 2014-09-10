@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer_5fsize',['BUFFER_SIZE',['../Driver_8cpp.html#a6b20d41d6252e9871430c242cb1a56e7',1,'Driver.cpp']]]
+  ['channel_5fcount',['CHANNEL_COUNT',['../Sample_8h.html#a29e42927003b0aa647ee45965f4ccb07',1,'Sample.h']]]
 ];

@@ -31,12 +31,12 @@ Definition at line 14 of file main.\+cpp.
 17     \textcolor{keywordtype}{double} stp = \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}/1000.0;
 18     \textcolor{keywordtype}{double} phs=0;
 19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<1000; ++i) \{
-20         std::cout<<\hyperlink{namespaceBackend_1_1Backend_1_1Taylor_ad3bf02e59dbfb83f2b1362f84d2095b8}{Taylor::Sine}(phs)<<std::endl;
+20         std::cout<<\hyperlink{namespaceDSG_1_1Backend_1_1Taylor_ad36e85fc2ea4a8b773371dd7b92fdb92}{Taylor::Sine}(phs)<<std::endl;
 21         phs+=stp;
 22     \}
 23     
 24     \textcolor{keywordflow}{return} 0;
-25     \hyperlink{namespaceSignal_a2f163a7bbf1b0fc76ceba8b0916a7890}{Set\_Sample\_Rate}(44100);
+25     Set\_Sample\_Rate(44100);
 26     
 27     Saw \_s(30,0.0);
 28     

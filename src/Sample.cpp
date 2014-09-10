@@ -8,111 +8,111 @@
 
 #include "Sample.h"
 
-Signal::Sample::Sample(){
+DSG:: Sample::Sample(){
     _buffer[0]=0;
     _buffer[1]=0;
 }
-Signal::Sample::Sample(float value){
+DSG:: Sample::Sample(float value){
     *this = value;
 }
-Signal::Sample::Sample(float c0,float c1){
+DSG:: Sample::Sample(float c0,float c1){
     _buffer[0]=c0;
     _buffer[1]=c1;
 }
-Signal::Sample::Sample(Signal::Sample const& samp){
+DSG:: Sample::Sample(DSG:: Sample const& samp){
     *this = samp;
 }
-Signal::Sample& Signal::Sample::operator=(Signal::Sample const& samp){
+DSG:: Sample& DSG:: Sample::operator=(DSG:: Sample const& samp){
     _buffer[0]=samp._buffer[0];
     _buffer[1]=samp._buffer[1];
     return *this;
 }
-Signal::Sample::~Sample(){
+DSG:: Sample::~Sample(){
     _buffer[0]=0;
     _buffer[1]=0;
 }
-size_t Signal::Sample::Size()const{
+size_t DSG:: Sample::Size()const{
     return CHANNEL_COUNT;
 }
 
 
-Signal::Sample& Signal::Sample::operator=(float const& value){
+DSG:: Sample& DSG:: Sample::operator=(float const& value){
     _buffer[0]=value;
     _buffer[1]=value;
     return *this;
 }
 //math
 
-Signal::Sample operator +(Signal::Sample const& s1,Signal::Sample const& s2){
-    return  Signal::Sample(s1[0]+s2[0],s1[1]+s2[1]);
+DSG:: Sample operator +(DSG:: Sample const& s1,DSG:: Sample const& s2){
+    return  DSG:: Sample(s1[0]+s2[0],s1[1]+s2[1]);
 }
-Signal::Sample operator +(Signal::Sample const& samp,float val){
-    return  Signal::Sample(samp[0]+val,samp[1]+val);
+DSG:: Sample operator +(DSG:: Sample const& samp,float val){
+    return  DSG:: Sample(samp[0]+val,samp[1]+val);
 }
-Signal::Sample operator +(float val,   Signal::Sample const& samp){
-    return  Signal::Sample(samp[0]+val,samp[1]+val);
-}
-
-Signal::Sample operator -(Signal::Sample const& s1,Signal::Sample const& s2){
-    return  Signal::Sample(s1[0]-s2[0],s1[1]-s2[1]);
-}
-Signal::Sample operator -(Signal::Sample const& samp,float val){
-    return  Signal::Sample(samp[0]-val,samp[1]-val);
-}
-Signal::Sample operator -(float val,   Signal::Sample const& samp){
-    return  Signal::Sample(samp[0]-val,samp[1]-val);
-}
-Signal::Sample operator *(Signal::Sample const& s1,Signal::Sample const& s2){
-    return  Signal::Sample(s1[0]*s2[0],s1[1]*s2[1]);
-}
-Signal::Sample operator *(Signal::Sample const& samp,float val){
-    return  Signal::Sample(samp[0]*val,samp[1]*val);
-}
-Signal::Sample operator *(float val,   Signal::Sample const& samp){
-    return  Signal::Sample(samp[0]*val,samp[1]*val);
-}
-Signal::Sample operator /( Signal::Sample const& s1, Signal::Sample const& s2){
-    return  Signal::Sample(s1[0]/s2[0],s1[1]/s2[1]);
-}
-Signal::Sample operator /(Signal::Sample const& samp,float val){
-    return  Signal::Sample(samp[0]/val,samp[1]/val);
-}
-Signal::Sample operator /(float val,   Signal::Sample const& samp){
-    return  Signal::Sample(val/samp[0],val/samp[1]);
+DSG:: Sample operator +(float val,   DSG:: Sample const& samp){
+    return  DSG:: Sample(samp[0]+val,samp[1]+val);
 }
 
-Signal::Sample& Signal::Sample::operator++(){
+DSG:: Sample operator -(DSG:: Sample const& s1,DSG:: Sample const& s2){
+    return  DSG:: Sample(s1[0]-s2[0],s1[1]-s2[1]);
+}
+DSG:: Sample operator -(DSG:: Sample const& samp,float val){
+    return  DSG:: Sample(samp[0]-val,samp[1]-val);
+}
+DSG:: Sample operator -(float val,   DSG:: Sample const& samp){
+    return  DSG:: Sample(samp[0]-val,samp[1]-val);
+}
+DSG:: Sample operator *(DSG:: Sample const& s1,DSG:: Sample const& s2){
+    return  DSG:: Sample(s1[0]*s2[0],s1[1]*s2[1]);
+}
+DSG:: Sample operator *(DSG:: Sample const& samp,float val){
+    return  DSG:: Sample(samp[0]*val,samp[1]*val);
+}
+DSG:: Sample operator *(float val,   DSG:: Sample const& samp){
+    return  DSG:: Sample(samp[0]*val,samp[1]*val);
+}
+DSG:: Sample operator /( DSG:: Sample const& s1, DSG:: Sample const& s2){
+    return  DSG:: Sample(s1[0]/s2[0],s1[1]/s2[1]);
+}
+DSG:: Sample operator /(DSG:: Sample const& samp,float val){
+    return  DSG:: Sample(samp[0]/val,samp[1]/val);
+}
+DSG:: Sample operator /(float val,   DSG:: Sample const& samp){
+    return  DSG:: Sample(val/samp[0],val/samp[1]);
+}
+
+DSG:: Sample& DSG:: Sample::operator++(){
     ++(*this)[0];
     ++(*this)[1];
     return *this;
 }
-Signal::Sample Signal::Sample::operator++(int){
+DSG:: Sample DSG:: Sample::operator++(int){
     Sample s = *this;
     ++(*this);
     return s;
 }
-Signal::Sample& Signal::Sample::operator--(){
+DSG:: Sample& DSG:: Sample::operator--(){
     --(*this)[0];
     --(*this)[1];
     return *this;
 }
-Signal::Sample Signal::Sample::operator--(int){
+DSG:: Sample DSG:: Sample::operator--(int){
     Sample s = *this;
     --(*this);
     return s;
 }
-bool Signal::Sample::operator==(Signal::Sample& samp){
+bool DSG:: Sample::operator==(DSG:: Sample& samp){
     if (_buffer[0]==samp[0] && _buffer[1]==samp[1]) {
         return true;
     }else return false;
 }
-bool Signal::Sample::operator !=(Signal::Sample& samp){
+bool DSG:: Sample::operator !=(DSG:: Sample& samp){
     if (!(*this==samp)) {
         return true;
     }else return false;
 }
 #ifdef DEBUG
-std::ostream& Signal::operator<<(std::ostream& os,Signal::Sample& samp){
+std::ostream& DSG:: operator<<(std::ostream& os,DSG:: Sample& samp){
     for (size_t i=0; i<CHANNEL_COUNT; ++i) {
         os<<samp[i]<<" ";
     }

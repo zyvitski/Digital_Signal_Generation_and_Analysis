@@ -10,7 +10,7 @@
 #define Digital_Signal_Generation_and_Analysis_Saw_h
 
 #include "AnalogGenerator.h"
-namespace Signal {
+namespace DSG {
     namespace Analog{
         class Saw:public AnalogGenerator{
         public:
@@ -18,11 +18,11 @@ namespace Signal {
             Saw(double const& frequency,double const& phase_offset);
             virtual ~Saw();
             
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
             
         };
-        inline bool Saw::Perform(Sample& signal){
+        inline bool Saw::Perform(Signal::Sample& signal){
             double value = _pstep();
             value+=_phase_offset;
             value-=(long)value;
@@ -31,7 +31,7 @@ namespace Signal {
             signal = value;
             return true;
         }
-        inline bool Saw::Perform(RingBuffer& signal){
+        inline bool Saw::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

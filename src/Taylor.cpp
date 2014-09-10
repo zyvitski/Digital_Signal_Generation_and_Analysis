@@ -16,7 +16,7 @@ based on audible performance the LUT method for a sine wave is faster compared t
     Consider replacing pow function.(done)
     investigate if using pre computed 1.0/n factorials would work better than hoping that the compiler will handle it.
  */
-double Backend::Taylor::Sine(double const& x){
+double DSG::Backend::Taylor::Sine(double const& x){
     double phs = fabs(x);//range checking
     phs = fmod(phs,TWOPI);//range checking
     double val=phs;//term 1

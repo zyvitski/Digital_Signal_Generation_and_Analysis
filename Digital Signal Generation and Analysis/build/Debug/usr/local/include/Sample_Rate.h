@@ -10,30 +10,31 @@
 #define __Oscillators__Sample_Rate__
 
 
-namespace Signal {
+namespace DSG {
     
-    
-    
-    class SampleRate {
-    public:
-        static void Set(double const& value);
-        static double const& Sample_Rate();
-        static double const& Sample_Rate_Inverse();
-    protected:
-        static double sample_rate;
-        static double sample_rate_inverse;
-    };
-    
-    
-    
-    inline double const& Sample_Rate(){
-        return SampleRate::Sample_Rate();
-    }
-    inline double const Sample_Rate_Inverse(){
-        return SampleRate::Sample_Rate_Inverse();
-    }
-    inline void Set_Sample_Rate(double const& rate){
-        SampleRate::Set(rate);
+    namespace Signal{
+        
+        class SampleRate {
+        public:
+            static void Set(double const& value);
+            static double const& Sample_Rate();
+            static double const& Sample_Rate_Inverse();
+        protected:
+            static double sample_rate;
+            static double sample_rate_inverse;
+        };
+        
+        
+        
+        inline double const& Sample_Rate(){
+            return SampleRate::Sample_Rate();
+        }
+        inline double const Sample_Rate_Inverse(){
+            return SampleRate::Sample_Rate_Inverse();
+        }
+        inline void Set_Sample_Rate(double const& rate){
+            SampleRate::Set(rate);
+        }
     }
 }
 

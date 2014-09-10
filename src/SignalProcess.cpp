@@ -8,5 +8,5 @@
 
 #include "SignalProcess.h"
 
-Signal::SignalProcess::SignalProcess(){}
-Signal::SignalProcess::~SignalProcess(){}
+DSG::SignalProcess::SignalProcess(){}
+DSG::SignalProcess::~SignalProcess(){}

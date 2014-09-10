@@ -11,8 +11,7 @@
 
 
 #include "SignalProcess.h"
-
-namespace Signal {
+namespace DSG{
     
     /*!\brief A Base Class extending the SignalProcess API with functionality for signal generation
      */
@@ -23,16 +22,16 @@ namespace Signal {
         SignalGenerator(double const& frequency,double const& phase_offset);
         virtual ~SignalGenerator();
         
-        virtual inline bool Perform(Sample& signal);
-        virtual inline bool Perform(RingBuffer& signal);
+        virtual inline bool Perform(Signal::Sample& signal);
+        virtual inline bool Perform(Signal::RingBuffer& signal);
         
         virtual double const& Frequency()const;//get frequency in Hz
         virtual double const& Frequency(double const& value);//get and set frequency in hz
         virtual double const& PhaseOffset()const;
         virtual double const& PhaseOffset(double const& value);
     protected:
-        double _frequency;//in percent sample rate 0.0 - 1.0
-        double _fHertz;//in hertz
+        double _rate;//in percent sample rate 0.0 - 1.0
+        double _frequency;//in hertz
         double _phase_offset;//Phase Offset 0-1 cycles
         //------------------------------------------------------------------------------------//
         /*
@@ -44,21 +43,21 @@ namespace Signal {
         inline double _pstep_rad();//ramp wave from 0.0 -2pi based on frequency and phase offset
         inline void _psync();//sets phasor back to 0.0 for use doing hard sync
         //------------------------------------------------------------------------------------//
-
+        
     };
     
     
-    inline bool SignalGenerator::Perform(Sample& signal){
+    inline bool SignalGenerator::Perform(Signal::Sample& signal){
         signal = 0;
         return false;
     }
-    inline bool SignalGenerator::Perform(RingBuffer& signal){
+    inline bool SignalGenerator::Perform(Signal::RingBuffer& signal){
         signal.Flush();
         return false;
     }
     inline double SignalGenerator::_pstep(){
         double value = _phasor;
-        _phasor+=_frequency;
+        _phasor+=_rate;
         _phasor = _phasor-(unsigned long)_phasor;//cheaper %1
         return value;
     }
@@ -68,7 +67,7 @@ namespace Signal {
     inline void SignalGenerator::_psync(){
         _phasor = 0;
     }
-
+    
 }
 
 

@@ -11,8 +11,8 @@
 
 #include "SignalGenerator.h"
 
-namespace Signal {
-    namespace Analog{
+namespace DSG {
+   
         /*
          Analog generator is a base class used for the generation of "Analog" non bandlimited waveforms. Analog meaning composed of line segments generated in a pure mathmatical manor as if it were pure analog voltage.
          */
@@ -22,17 +22,17 @@ namespace Signal {
             AnalogGenerator(double const& frequency,double const& phase_offset);
             virtual ~AnalogGenerator();
             
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform( Sample& signal);
+            virtual inline bool Perform( RingBuffer& signal);
         protected:
-            Sample _sample;
+             Sample _sample;
         };
         
-        inline bool AnalogGenerator::Perform(Sample& signal){
+        inline bool AnalogGenerator::Perform( Sample& signal){
             signal = 0;
             return false;
         }
-        inline bool AnalogGenerator::Perform(RingBuffer& signal){
+        inline bool AnalogGenerator::Perform( RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {
@@ -41,7 +41,7 @@ namespace Signal {
                 }else return false;
             }return true;
         }
-    }
+    
 }
 
 

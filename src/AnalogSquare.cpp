@@ -8,12 +8,12 @@
 
 #include "AnalogSquare.h"
 
-Signal::Analog::Square::Square():Signal::Analog::AnalogGenerator(),_duty(0.5){
+DSG::AnalogSquare::AnalogSquare():DSG::AnalogGenerator(),_duty(0.5){
     
 }
-Signal::Analog::Square::Square(double const& frequency,double const& phase_offset):Signal::Analog::AnalogGenerator(frequency,phase_offset),_duty(0.5){
+DSG::AnalogSquare::AnalogSquare(double const& frequency,double const& phase_offset):DSG::AnalogGenerator(frequency,phase_offset),_duty(0.5){
     
 }
-Signal::Analog::Square::~Square(){
+DSG::AnalogSquare::~AnalogSquare(){
     
 }

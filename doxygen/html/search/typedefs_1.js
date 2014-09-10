@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reference',['reference',['../classBackend_1_1array.html#aa98075b8d7a4e63ea919ee9d1d4df4a9',1,'Backend::array']]]
+  ['reference',['reference',['../classDSG_1_1Backend_1_1array.html#a8af2a20d445daee75e9e6b122498e0a6',1,'DSG::Backend::array']]]
 ];

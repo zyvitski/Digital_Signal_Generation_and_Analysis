@@ -8,20 +8,20 @@
 
 #include "BLITSaw.h"
 
-Signal::BLIT::Saw::Saw():BLIT::BLIT(){
+DSG::BLITSaw::BLITSaw():BLIT::BLIT(){
     
 }
-Signal::BLIT::Saw::Saw(double const& frequency,double const& phase_offset):BLIT::BLIT(frequency,phase_offset){
+DSG::BLITSaw::BLITSaw(double const& frequency,double const& phase_offset):BLIT::BLIT(frequency,phase_offset){
     
 }
-Signal::BLIT::Saw::~Saw(){
+DSG::BLITSaw::~BLITSaw(){
     
 }
-double const& Signal::BLIT::Saw::Frequency(double const& value){
-    _frequency=value;
+double const& DSG::BLITSaw::Frequency(double const& value){
+    _rate=value;
     updateHarms();
-    return _frequency;
+    return _rate;
 }
-void Signal::BLIT::Saw::updateHarms(){
+void DSG::BLITSaw::updateHarms(){
     
 }

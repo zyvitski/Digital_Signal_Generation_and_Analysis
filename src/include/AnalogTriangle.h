@@ -6,25 +6,25 @@
 //
 //
 
-#ifndef Digital_Signal_Generation_and_Analysis_AnalogTriangle_h
-#define Digital_Signal_Generation_and_Analysis_AnalogTriangle_h
+#ifndef Digital_Signal_Generation_and_Analysis_AnalogAnalogTriangle_h
+#define Digital_Signal_Generation_and_Analysis_AnalogAnalogTriangle_h
 
 #include "AnalogGenerator.h"
-namespace Signal {
-    namespace Analog{
-        class Triangle:public AnalogGenerator{
+namespace DSG {
+    
+        class AnalogTriangle:public AnalogGenerator{
         public:
-            Triangle();
-            Triangle(double const& frequency,double const& phase_offset);
-            virtual ~Triangle();
+            AnalogTriangle();
+            AnalogTriangle(double const& frequency,double const& phase_offset);
+            virtual ~AnalogTriangle();
             
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform( Sample& signal);
+            virtual inline bool Perform( RingBuffer& signal);
             
         };
-        inline bool Triangle::Perform(Sample& signal){
+        inline bool AnalogTriangle::Perform( Sample& signal){
             double value = _pstep();
-            value+=_phase_offset;
+
             value+=0.25;
             value-=(long)value;
             value-=0.5;
@@ -35,7 +35,7 @@ namespace Signal {
             signal = value;
             return true;
         }
-        inline bool Triangle::Perform(RingBuffer& signal){
+        inline bool AnalogTriangle::Perform( RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {
@@ -45,7 +45,7 @@ namespace Signal {
             }return true;
         }
         
-    }
+    
 }
 
 

@@ -1,0 +1,62 @@
+\hypertarget{namespaceDSG_1_1Backend}{\section{D\+S\+G\+:\+:Backend Namespace Reference}
+\label{namespaceDSG_1_1Backend}\index{D\+S\+G\+::\+Backend@{D\+S\+G\+::\+Backend}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceDSG_1_1Backend_1_1DSG}{D\+S\+G}
+\item 
+ \hyperlink{namespaceDSG_1_1Backend_1_1Taylor}{Taylor}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1array}{array}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1HarmonicTable}{Harmonic\+Table}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1LUT}{L\+U\+T}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1Queue}{Queue}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1SineLUT}{Sine\+L\+U\+T}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1SmallSineLUT}{Small\+Sine\+L\+U\+T}
+\item 
+class \hyperlink{classDSG_1_1Backend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4}{Small\+Sine\+L\+U\+T$<$ int32\+\_\+t, size $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{namespaceDSG_1_1Backend_abc92c970184d9c3e4fa6741f80c58836}{Sin} (double const \&phs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceDSG_1_1Backend_abc92c970184d9c3e4fa6741f80c58836}{\index{D\+S\+G\+::\+Backend@{D\+S\+G\+::\+Backend}!Sin@{Sin}}
+\index{Sin@{Sin}!D\+S\+G\+::\+Backend@{D\+S\+G\+::\+Backend}}
+\subsubsection[{Sin}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Backend\+::\+Sin (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{phs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceDSG_1_1Backend_abc92c970184d9c3e4fa6741f80c58836}
+
+
+Definition at line 33 of file Sin.\+h.
+
+
+\begin{DoxyCode}
+33                                         \{
+34         \textcolor{comment}{//phs 0-1}
+35 \textcolor{preprocessor}{#if sin\_impl == sin\_native}
+36         \textcolor{keywordflow}{return} sin(\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * phs);
+37 \textcolor{preprocessor}{#elif sin\_impl == sin\_tay}
+38         \textcolor{keywordflow}{return} \hyperlink{namespaceDSG_1_1Backend_1_1Taylor_ad36e85fc2ea4a8b773371dd7b92fdb92}{Taylor::Sine}(phs*\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});
+39 \textcolor{preprocessor}{#elif sin\_impl == sin\_lut}
+40         \textcolor{keyword}{static} \hyperlink{classDSG_1_1Backend_1_1SineLUT}{DSG::Backend::SineLUT<float, 32768>} sine;
+41         \textcolor{keywordflow}{return} sine(phs);
+42 \textcolor{preprocessor}{#else}
+43         \textcolor{keywordflow}{return} sin(\hyperlink{Sin_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}*phs);
+44 \textcolor{preprocessor}{#endif}
+45     \}
+\end{DoxyCode}

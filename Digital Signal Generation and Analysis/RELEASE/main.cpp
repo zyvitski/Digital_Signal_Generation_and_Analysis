@@ -10,11 +10,13 @@
 #include "Backend.h"
 
 
+
 int main(){
-    Signal::Set_Sample_Rate(44100);
-    Signal::Analog::Square _sqr(160.0,0.0);
+    DSG::Sample_Rate(44100);
+    DSG::FourierSaw _sqr(9.0,0.0);
+    
     DriverInit(&_sqr);
-    Pa_Sleep(2000);
+    Pa_Sleep(20000);
     DriverExit();
     return 0;
 }

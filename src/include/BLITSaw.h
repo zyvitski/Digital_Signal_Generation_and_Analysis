@@ -1,40 +1,40 @@
 //
-//  Saw.h
+//  BLITSaw.h
 //  Waveform
 //
 //  Created by Alexander Zywicki on 9/3/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
 
-#ifndef __Waveform__Saw__
-#define __Waveform__Saw__
+#ifndef __Waveform__BLITSaw__
+#define __Waveform__BLITSaw__
 
 #include "BLIT.h"
 
-namespace Signal {
-    namespace BLIT{
+namespace DSG {
+    
         /*!\brief
          *See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of concept
          */
         
-        class Saw:public BLIT::BLIT {
-            Saw();
-            Saw(double const& frequency,double const& phase_offset);
-            virtual ~Saw();
+        class BLITSaw:public BLIT::BLIT {
+            BLITSaw();
+            BLITSaw(double const& frequency,double const& phase_offset);
+            virtual ~BLITSaw();
             virtual double const& Frequency(double const& value);//get and set frequency in hz
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform( Sample& signal);
+            virtual inline bool Perform( RingBuffer& signal);
         protected:
             virtual void updateHarms();
             
             
         };
         
-        inline bool Saw::Perform(Sample& signal){
-#warning unimplimented BLIT Saw Perform
+        inline bool BLITSaw::Perform( Sample& signal){
+#warning unimplimented BLIT BLITSaw Perform
             return true;
         }
-        inline bool Saw::Perform(RingBuffer& signal){
+        inline bool BLITSaw::Perform( RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {
@@ -43,6 +43,6 @@ namespace Signal {
                 }else return false;
             }return true;
         }
-    }
+    
 }
-#endif /* defined(__Waveform__Saw__) */
+#endif /* defined(__Waveform__BLITSaw__) */

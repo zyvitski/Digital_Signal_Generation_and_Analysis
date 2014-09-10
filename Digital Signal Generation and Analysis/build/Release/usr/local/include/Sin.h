@@ -10,13 +10,13 @@
 #define Digital_Signal_Generation_and_Analysis_Sin_h
 
 #include "PI.h"
-
+namespace DSG{
 namespace Backend {
 #define sin_native 0
 #define sin_tay 1
 #define sin_lut 2
     
-#define sin_impl sin_tay
+#define sin_impl sin_lut
     //0-1 phase
     
 #if sin_impl == sin_native
@@ -37,12 +37,13 @@ namespace Backend {
 #elif sin_impl == sin_tay
         return Taylor::Sine(phs*TWOPI);
 #elif sin_impl == sin_lut
-        static Backend::SineLUT<float, 32768> sine;
+        static DSG::Backend::SineLUT<float, 32768> sine;
         return sine(phs);
 #else
         return sin(TWOPI*phs);
 #endif
     }
+}
 }
 
 #endif

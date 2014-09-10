@@ -14,7 +14,7 @@
 #endif
 #include <stddef.h>
 #include "Sample.h"
-namespace Signal{
+namespace DSG{
     class Buffer {
     public:
         Buffer();
@@ -22,10 +22,10 @@ namespace Signal{
         Buffer(Buffer const& other);
         Buffer& operator=(Buffer const& other);
         virtual ~Buffer();
-        Signal::Sample& operator[](size_t const& index);
+        Sample& operator[](size_t const& index);
         inline size_t const& Size()const;
     protected:
-        Signal::Sample* _buffer;
+        Sample* _buffer;
         size_t _size;
     };
     inline size_t const& Buffer::Size()const{

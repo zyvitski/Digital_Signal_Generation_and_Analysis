@@ -11,7 +11,7 @@
 
 #include "FourierGenerator.h"
 
-namespace Signal {
+namespace DSG {
     
     namespace Fourier{
         /*!\brief Fourier Series Based Square Wave
@@ -21,8 +21,8 @@ namespace Signal {
             Square();
             Square(double const& frequency,double const& phase_offset);
             virtual ~Square();
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
             virtual double const& Frequency(double const& value);
             virtual double const& Frequency();
         protected:
@@ -33,19 +33,19 @@ namespace Signal {
             unsigned short i;
         };
         
-        inline bool Square::Perform(Sample& signal){
+        inline bool Square::Perform(Signal::Sample& signal){
             phs = _pstep();
             phs+= _phase_offset;
             phs -= (long)phs;
             stor=0;
             for (i=1; i<_h+1; i+=2) {
-                stor += _harmonicTable.Saw(i) * sine(phs*i);
+                stor += _harmonicTable.Saw(i) * DSG::Backend::Sin(phs*i);
             }
             stor *= _a;
             signal = stor;
             return true;
         }
-        inline bool Square::Perform(RingBuffer& signal){
+        inline bool Square::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

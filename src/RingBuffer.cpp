@@ -11,20 +11,20 @@
 
 
 
-Signal::RingBuffer::RingBuffer():Buffer(0),_read(0),_write(0),_count(0),MASK(0){}
+DSG:: RingBuffer::RingBuffer():Buffer(0),_read(0),_write(0),_count(0),MASK(0){}
 
-Signal::RingBuffer::RingBuffer(const size_t size):Buffer(make_pow_2(size)),_read(0),_write(0),_count(0){
+DSG:: RingBuffer::RingBuffer(const size_t size):Buffer(make_pow_2(size)),_read(0),_write(0),_count(0){
     MASK = this->_size-1;
 }
 
-Signal::RingBuffer::RingBuffer(RingBuffer& buffer):Buffer(buffer){
+DSG:: RingBuffer::RingBuffer(RingBuffer& buffer):Buffer(buffer){
     _write.store(buffer._write.load(std::memory_order_acquire));
     _read.store(buffer._read.load(std::memory_order_acquire));
     _count = buffer._count;
     MASK = buffer._size-1;
 }
 
-Signal::RingBuffer& Signal::RingBuffer::operator=(RingBuffer& buffer){
+DSG:: RingBuffer& DSG:: RingBuffer::operator=(RingBuffer& buffer){
     Buffer::operator=(buffer);
     _write.store(buffer._write.load(std::memory_order_acquire));
     _read.store(buffer._read.load(std::memory_order_acquire));
@@ -32,14 +32,14 @@ Signal::RingBuffer& Signal::RingBuffer::operator=(RingBuffer& buffer){
     MASK = buffer._size-1;
     return *this;
 }
-Signal::RingBuffer::~RingBuffer(){Flush();}
+DSG:: RingBuffer::~RingBuffer(){Flush();}
 
 
 
 
 
 #ifdef DEBUG
-std::ostream& Signal::operator<<(std::ostream& os,Signal::RingBuffer const& buffer){
+std::ostream& DSG:: operator<<(std::ostream& os,DSG:: RingBuffer const& buffer){
     if (!buffer.Empty()) {
         size_t index= buffer._read;
         size_t count=buffer.Count();

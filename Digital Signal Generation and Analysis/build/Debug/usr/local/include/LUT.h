@@ -13,28 +13,30 @@
 #include <assert.h>
 #endif
 
-namespace Backend{
-    template <typename element,unsigned long size>
-    class LUT {
-    public:
-        LUT():_size(size){}
-        virtual ~LUT(){}
-        element const& operator[](unsigned long const& index){
+namespace DSG{
+    namespace Backend{
+        template <typename element,unsigned long size>
+        class LUT {
+        public:
+            LUT():_size(size){}
+            virtual ~LUT(){}
+            element const& operator[](unsigned long const& index){
 #ifdef DEBUG
-            assert(index<_size);
+                assert(index<_size);
 #endif
-            return _table[index];
-        }
-        virtual inline element  operator()(double const& x){
-            return 0;
-        }
-        unsigned long const& Size()const{
-            return _size;
-        }
-    protected:
-        element _table[size];
-        const unsigned long _size;
-    };
+                return _table[index];
+            }
+            virtual inline element  operator()(double const& x){
+                return 0;
+            }
+            unsigned long const& Size()const{
+                return _size;
+            }
+        protected:
+            element _table[size];
+            const unsigned long _size;
+        };
+    }
 }
 
 #endif

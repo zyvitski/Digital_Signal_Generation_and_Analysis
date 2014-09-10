@@ -14,8 +14,8 @@
 #include "PI.h"
 #include <limits>
 
-namespace Signal {
-    namespace BLIT{
+namespace DSG {
+    
         
         /*!\brief
          *See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of concept
@@ -26,12 +26,12 @@ namespace Signal {
             BLIT(double const& frequency,double const& phase_offset);
             virtual ~BLIT();
             virtual double const& Frequency(double const& value);//get and set frequency in hz
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform( Sample& signal);
+            virtual inline bool Perform( RingBuffer& signal);
         protected:
             virtual void updateHarms();
             
-            Sample _sample;
+             Sample _sample;
             unsigned long _nHarms;
             unsigned long  m_;
             
@@ -43,7 +43,7 @@ namespace Signal {
         
         
         
-        inline bool BLIT::Perform(Sample& signal){
+        inline bool BLIT::Perform( Sample& signal){
 #warning Needs testing
             phs =_pstep();
             _denominator = sin(phs*TWOPI);
@@ -56,7 +56,7 @@ namespace Signal {
             signal = tmp;
             return true;
         }
-        inline bool BLIT::Perform(RingBuffer& signal){
+        inline bool BLIT::Perform( RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {
@@ -67,7 +67,7 @@ namespace Signal {
         }
         
     
-    }
+    
 }
 
 #endif /* defined(__Waveform__BLIT__) */

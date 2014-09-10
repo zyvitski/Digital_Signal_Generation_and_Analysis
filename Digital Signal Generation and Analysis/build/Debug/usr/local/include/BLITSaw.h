@@ -11,7 +11,7 @@
 
 #include "BLIT.h"
 
-namespace Signal {
+namespace DSG {
     namespace BLIT{
         /*!\brief
          *See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of concept
@@ -22,19 +22,19 @@ namespace Signal {
             Saw(double const& frequency,double const& phase_offset);
             virtual ~Saw();
             virtual double const& Frequency(double const& value);//get and set frequency in hz
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
         protected:
             virtual void updateHarms();
             
             
         };
         
-        inline bool Saw::Perform(Sample& signal){
+        inline bool Saw::Perform(Signal::Sample& signal){
 #warning unimplimented BLIT Saw Perform
             return true;
         }
-        inline bool Saw::Perform(RingBuffer& signal){
+        inline bool Saw::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

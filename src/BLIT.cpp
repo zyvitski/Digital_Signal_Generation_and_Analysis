@@ -8,24 +8,24 @@
 
 #include "BLIT.h"
 
-Signal::BLIT::BLIT::BLIT():SignalGenerator(),phs(0){
+DSG::BLIT::BLIT():SignalGenerator(),phs(0){
     updateHarms();
 }
-Signal::BLIT::BLIT::BLIT(double const& frequency,double const& phase_offset):SignalGenerator(frequency,phase_offset){
-    _nHarms = (Sample_Rate()*0.5)/_fHertz;
+DSG::BLIT::BLIT(double const& frequency,double const& phase_offset):SignalGenerator(frequency,phase_offset){
+    _nHarms = ( Sample_Rate()*0.5)/_frequency;
     updateHarms();
 }
-Signal::BLIT::BLIT::~BLIT(){}
+DSG::BLIT::~BLIT(){}
 
-double const& Signal::BLIT::BLIT::Frequency(double const& value){
+double const& DSG::BLIT::Frequency(double const& value){
     this->SignalGenerator::Frequency(value);
-    _nHarms = (Sample_Rate()*0.5)/_fHertz;
+    _nHarms = ( Sample_Rate()*0.5)/_frequency;
     updateHarms();
-    return this->_fHertz;
+    return this->_frequency;
 }
-void Signal::BLIT::BLIT::updateHarms(){
+void DSG::BLIT::updateHarms(){
     if (_nHarms<=0) {
-        size_t max = (size_t)floor(0.5 * (Sample_Rate()/ _fHertz));
+        size_t max = (size_t)floor(0.5 * ( Sample_Rate()/ _frequency));
         m_ = 2* max +1;
     }
     else{

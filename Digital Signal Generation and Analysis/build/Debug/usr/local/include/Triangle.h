@@ -11,7 +11,7 @@
 
 #include "FourierGenerator.h"
 
-namespace Signal {
+namespace DSG {
     
     namespace Fourier{
         /*!\brief Fourier Series Based Triangle Wave
@@ -21,8 +21,8 @@ namespace Signal {
             Triangle();
             Triangle(double const& frequency,double const& phase_offset);
             virtual ~Triangle();
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
             virtual double const& Frequency(double const& value);
             virtual double const& Frequency();
         protected:
@@ -33,19 +33,19 @@ namespace Signal {
             unsigned short i;
         };
         
-        inline bool Triangle::Perform(Sample& signal){
+        inline bool Triangle::Perform(Signal::Sample& signal){
             phs = _pstep();
             phs+=_phase_offset;
             phs -= (long)phs;
             stor=0;
             for (i=1; i<_h+1; i+=2) {
-                stor+=_harmonicTable.Triangle(i)*sine(phs*i);
+                stor+=_harmonicTable.Triangle(i)*DSG::Backend::Sin(phs*i);
             }
             stor*=_a;
             signal=stor;
             return true;
         }
-        inline bool Triangle::Perform(RingBuffer& signal){
+        inline bool Triangle::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

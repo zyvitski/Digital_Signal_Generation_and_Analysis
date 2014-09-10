@@ -1,0 +1,358 @@
+\hypertarget{classDSG_1_1AnalogSquare}{\section{D\+S\+G\+:\+:Analog\+Square Class Reference}
+\label{classDSG_1_1AnalogSquare}\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+}
+
+
+{\ttfamily \#include $<$Analog\+Square.\+h$>$}
+
+Inheritance diagram for D\+S\+G\+:\+:Analog\+Square\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classDSG_1_1AnalogSquare}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDSG_1_1AnalogSquare_a7b374bcd40345aec6a63e1789c2de732}{Analog\+Square} ()
+\item 
+\hyperlink{classDSG_1_1AnalogSquare_a80192f3cb9a8e6a31121de58b8c4b1ea}{Analog\+Square} (double const \&frequency, double const \&phase\+\_\+offset)
+\item 
+virtual \hyperlink{classDSG_1_1AnalogSquare_acece15975ff370006ecd985de3ad0ada}{$\sim$\+Analog\+Square} ()
+\item 
+virtual bool \hyperlink{classDSG_1_1AnalogSquare_a93a4b464545a32f72491d3df490fd3f7}{Perform} (\hyperlink{classDSG_1_1Sample}{Sample} \&signal)
+\item 
+virtual bool \hyperlink{classDSG_1_1AnalogSquare_a1d9c8a380775a7e4f6e0aa8fb1b05af6}{Perform} (\hyperlink{classDSG_1_1RingBuffer}{Ring\+Buffer} \&signal)
+\item 
+virtual bool \hyperlink{classDSG_1_1SignalProcess_afdb8220100418893950c1161dd24db67}{Perform} (\hyperlink{classDSG_1_1Sample_aaf2e30d73911eccea99b53eeee15b612}{Sample\+::\+Sample} \&signal)=0
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}{Frequency} () const 
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_ae3ce8d45bafabbd86a0f535b15c3cd46}{Frequency} (double const \&value)
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}{Phase\+Offset} () const 
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}{Phase\+Offset} (double const \&value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\+\_\+pstep} ()
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}{\+\_\+pstep\+\_\+rad} ()
+\item 
+void \hyperlink{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}{\+\_\+psync} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classDSG_1_1AnalogSquare_a2bf2a892c6609816019771301f32b787}{\+\_\+duty}
+\item 
+\hyperlink{classDSG_1_1Sample}{Sample} \hyperlink{classDSG_1_1AnalogGenerator_ac88ad591cac37f636c2f7b460480bef9}{\+\_\+sample}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\+\_\+rate}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\+\_\+frequency}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\+\_\+phasor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Analog\+Square.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDSG_1_1AnalogSquare_a7b374bcd40345aec6a63e1789c2de732}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Analog\+Square@{Analog\+Square}}
+\index{Analog\+Square@{Analog\+Square}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Analog\+Square}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Analog\+Square\+::\+Analog\+Square (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDSG_1_1AnalogSquare_a7b374bcd40345aec6a63e1789c2de732}
+
+
+Definition at line 11 of file Analog\+Square.\+cpp.
+
+
+\begin{DoxyCode}
+11                              :\hyperlink{classDSG_1_1AnalogGenerator}{DSG::AnalogGenerator}(),\hyperlink{classDSG_1_1AnalogSquare_a2bf2a892c6609816019771301f32b787}{\_duty}(0.5)\{
+12     
+13 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1AnalogSquare_a80192f3cb9a8e6a31121de58b8c4b1ea}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Analog\+Square@{Analog\+Square}}
+\index{Analog\+Square@{Analog\+Square}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Analog\+Square}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Analog\+Square\+::\+Analog\+Square (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{frequency, }
+\item[{double const \&}]{phase\+\_\+offset}
+\end{DoxyParamCaption}
+)}}\label{classDSG_1_1AnalogSquare_a80192f3cb9a8e6a31121de58b8c4b1ea}
+
+
+Definition at line 14 of file Analog\+Square.\+cpp.
+
+
+\begin{DoxyCode}
+14                                                                                :
+      \hyperlink{classDSG_1_1AnalogGenerator}{DSG::AnalogGenerator}(frequency,phase\_offset),\hyperlink{classDSG_1_1AnalogSquare_a2bf2a892c6609816019771301f32b787}{\_duty}(0.5)\{
+15     
+16 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1AnalogSquare_acece15975ff370006ecd985de3ad0ada}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!````~Analog\+Square@{$\sim$\+Analog\+Square}}
+\index{````~Analog\+Square@{$\sim$\+Analog\+Square}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{$\sim$\+Analog\+Square}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Analog\+Square\+::$\sim$\+Analog\+Square (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDSG_1_1AnalogSquare_acece15975ff370006ecd985de3ad0ada}
+
+
+Definition at line 17 of file Analog\+Square.\+cpp.
+
+
+\begin{DoxyCode}
+17                               \{
+18     
+19 \}\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+pstep@{\+\_\+pstep}}
+\index{\+\_\+pstep@{\+\_\+pstep}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+pstep}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+pstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}
+
+
+Definition at line 64 of file Signal\+Generator.\+h.
+
+
+\begin{DoxyCode}
+64                                          \{
+65         value = \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor};
+66         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}+=\hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate};
+67         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}>1?\hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-=1:0;\textcolor{comment}{//cheaper cheaper %1}
+68         \textcolor{comment}{//\_phasor -= (unsigned long)\_phasor;//cheaper %1}
+69         \textcolor{keywordflow}{return} value;
+70     \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}}
+\index{\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+pstep\+\_\+rad}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+pstep\+\_\+rad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}
+
+
+Definition at line 71 of file Signal\+Generator.\+h.
+
+
+\begin{DoxyCode}
+71                                              \{
+72         \textcolor{keywordflow}{return} \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\_pstep}();
+73     \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+psync@{\+\_\+psync}}
+\index{\+\_\+psync@{\+\_\+psync}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+psync}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Signal\+Generator\+::\+\_\+psync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}
+
+
+Definition at line 74 of file Signal\+Generator.\+h.
+
+
+\begin{DoxyCode}
+74                                        \{
+75         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor} = \_phase\_offset;
+76     \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\+S\+G\+::\+Signal\+Generator\+::\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}
+
+
+Definition at line 16 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+16                                                 \{
+17     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+18 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_ae3ce8d45bafabbd86a0f535b15c3cd46}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\+S\+G\+::\+Signal\+Generator\+::\+Frequency (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ae3ce8d45bafabbd86a0f535b15c3cd46}
+
+
+Reimplemented in \hyperlink{classDSG_1_1BLIT_a67b698a54f37c361945cae3e137af76f}{D\+S\+G\+::\+B\+L\+I\+T}, \hyperlink{classDSG_1_1FourierSaw_a929602365c9b29f30f523fa07a29966e}{D\+S\+G\+::\+Fourier\+Saw}, \hyperlink{classDSG_1_1FourierSquare_a80f94eabad633e105cfa673fdee332d6}{D\+S\+G\+::\+Fourier\+Square}, and \hyperlink{classDSG_1_1FourierTriangle_aebb275eee9fb923636a8db5e4aa90b39}{D\+S\+G\+::\+Fourier\+Triangle}.
+
+
+
+Definition at line 19 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+19                                                               \{
+20     \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency} = value;
+21     \hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate} = \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency}/ \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}();
+22     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+23 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1AnalogSquare_a93a4b464545a32f72491d3df490fd3f7}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Analog\+Square\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDSG_1_1AnalogSquare_a93a4b464545a32f72491d3df490fd3f7}
+
+
+Reimplemented from \hyperlink{classDSG_1_1AnalogGenerator_ac50033964304239b514b7ee9d064bc75}{D\+S\+G\+::\+Analog\+Generator}.
+
+
+
+Definition at line 28 of file Analog\+Square.\+h.
+
+
+\begin{DoxyCode}
+28                                                         \{
+29             \textcolor{keywordtype}{double} value = \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\_pstep}();
+30             value-=0.5;
+31             value*=2.0;
+32             signal = value>=\hyperlink{classDSG_1_1AnalogSquare_a2bf2a892c6609816019771301f32b787}{\_duty} ? -1.0: 1.0;
+33             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+34         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1AnalogSquare_a1d9c8a380775a7e4f6e0aa8fb1b05af6}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Analog\+Square\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDSG_1_1AnalogSquare_a1d9c8a380775a7e4f6e0aa8fb1b05af6}
+
+
+Reimplemented from \hyperlink{classDSG_1_1AnalogGenerator_a1b4f1d4af926fcc3e9571db7960c8706}{D\+S\+G\+::\+Analog\+Generator}.
+
+
+
+Definition at line 35 of file Analog\+Square.\+h.
+
+
+\begin{DoxyCode}
+35                                                             \{
+36             signal.Flush();
+37             \textcolor{keywordflow}{while} (!signal.Full()) \{
+38                 \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1AnalogSquare_a93a4b464545a32f72491d3df490fd3f7}{Perform}(\hyperlink{classDSG_1_1AnalogGenerator_ac88ad591cac37f636c2f7b460480bef9}{\_sample})) \{
+39                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classDSG_1_1AnalogGenerator_ac88ad591cac37f636c2f7b460480bef9}{\_sample}))\{
+40                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+41                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+42             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+43         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalProcess_afdb8220100418893950c1161dd24db67}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool D\+S\+G\+::\+Signal\+Process\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Sample\+::\+Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalProcess_afdb8220100418893950c1161dd24db67}
+\hypertarget{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Phase\+Offset@{Phase\+Offset}}
+\index{Phase\+Offset@{Phase\+Offset}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Phase\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\+S\+G\+::\+Signal\+Generator\+::\+Phase\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}
+
+
+Definition at line 24 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+24                                                   \{
+25     \textcolor{keywordflow}{return} \_phase\_offset;
+26 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!Phase\+Offset@{Phase\+Offset}}
+\index{Phase\+Offset@{Phase\+Offset}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{Phase\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\+S\+G\+::\+Signal\+Generator\+::\+Phase\+Offset (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}
+
+
+Definition at line 27 of file Signal\+Generator.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                                 \{
+28     \_phase\_offset-=value;
+29     \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-=\_phase\_offset;
+30     \_phase\_offset=value;
+31     \textcolor{keywordflow}{return} \_phase\_offset;
+32 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDSG_1_1AnalogSquare_a2bf2a892c6609816019771301f32b787}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+duty@{\+\_\+duty}}
+\index{\+\_\+duty@{\+\_\+duty}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+duty}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Analog\+Square\+::\+\_\+duty\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1AnalogSquare_a2bf2a892c6609816019771301f32b787}
+
+
+Definition at line 24 of file Analog\+Square.\+h.
+
+\hypertarget{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+frequency@{\+\_\+frequency}}
+\index{\+\_\+frequency@{\+\_\+frequency}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}
+
+
+Definition at line 34 of file Signal\+Generator.\+h.
+
+\hypertarget{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+phasor@{\+\_\+phasor}}
+\index{\+\_\+phasor@{\+\_\+phasor}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}
+
+
+Definition at line 46 of file Signal\+Generator.\+h.
+
+\hypertarget{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+rate@{\+\_\+rate}}
+\index{\+\_\+rate@{\+\_\+rate}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+rate}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+rate\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}
+
+
+Definition at line 33 of file Signal\+Generator.\+h.
+
+\hypertarget{classDSG_1_1AnalogGenerator_ac88ad591cac37f636c2f7b460480bef9}{\index{D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}!\+\_\+sample@{\+\_\+sample}}
+\index{\+\_\+sample@{\+\_\+sample}!D\+S\+G\+::\+Analog\+Square@{D\+S\+G\+::\+Analog\+Square}}
+\subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} D\+S\+G\+::\+Analog\+Generator\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1AnalogGenerator_ac88ad591cac37f636c2f7b460480bef9}
+
+
+Definition at line 28 of file Analog\+Generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{AnalogSquare_8h}{Analog\+Square.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{AnalogSquare_8cpp}{Analog\+Square.\+cpp}\end{DoxyCompactItemize}

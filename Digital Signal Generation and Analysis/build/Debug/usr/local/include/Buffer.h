@@ -14,7 +14,7 @@
 #endif
 #include <stddef.h>
 #include "Sample.h"
-namespace Signal{
+namespace DSG{
     class Buffer {
     public:
         Buffer();

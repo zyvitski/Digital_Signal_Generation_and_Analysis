@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['analoggenerator',['AnalogGenerator',['../classSignal_1_1Analog_1_1AnalogGenerator.html',1,'Signal::Analog']]],
-  ['array',['array',['../classBackend_1_1array.html',1,'Backend']]]
+  ['analoggenerator',['AnalogGenerator',['../classDSG_1_1AnalogGenerator.html',1,'DSG']]],
+  ['analogsaw',['AnalogSaw',['../classDSG_1_1AnalogSaw.html',1,'DSG']]],
+  ['analogsquare',['AnalogSquare',['../classDSG_1_1AnalogSquare.html',1,'DSG']]],
+  ['analogtriangle',['AnalogTriangle',['../classDSG_1_1AnalogTriangle.html',1,'DSG']]],
+  ['array',['array',['../classDSG_1_1Backend_1_1array.html',1,'DSG::Backend']]]
 ];

@@ -1,0 +1,466 @@
+\hypertarget{classDSG_1_1Fourier_1_1Triangle}{\section{D\-S\-G\-:\-:Fourier\-:\-:Triangle Class Reference}
+\label{classDSG_1_1Fourier_1_1Triangle}\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+}
+
+
+\hyperlink{namespaceDSG_1_1Fourier}{Fourier} Series Based \hyperlink{classDSG_1_1Fourier_1_1Triangle}{Triangle} Wave.  
+
+
+
+
+{\ttfamily \#include $<$Triangle.\-h$>$}
+
+Inheritance diagram for D\-S\-G\-:\-:Fourier\-:\-:Triangle\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classDSG_1_1Fourier_1_1Triangle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDSG_1_1Fourier_1_1Triangle_ad9854b85c81048a7a9685b82efb2730d}{Triangle} ()
+\item 
+\hyperlink{classDSG_1_1Fourier_1_1Triangle_a11b507ce203fc40e3928b9fb0e415c6e}{Triangle} (double const \&frequency, double const \&phase\-\_\-offset)
+\item 
+virtual \hyperlink{classDSG_1_1Fourier_1_1Triangle_a3dc2d4b7ca07c0e730671cf5832f6cc4}{$\sim$\-Triangle} ()
+\item 
+virtual bool \hyperlink{classDSG_1_1Fourier_1_1Triangle_adbc9f5f2a7193a3920c66af2988cd905}{Perform} (\hyperlink{classDSG_1_1Signal_1_1Sample}{Signal\-::\-Sample} \&signal)
+\item 
+virtual bool \hyperlink{classDSG_1_1Fourier_1_1Triangle_a50d9d6ed5ce686740af59a7f85c40f4a}{Perform} (\hyperlink{classDSG_1_1Signal_1_1RingBuffer}{Signal\-::\-Ring\-Buffer} \&signal)
+\item 
+virtual double const \& \hyperlink{classDSG_1_1Fourier_1_1Triangle_a239adb0a4604a495bb3935b8a52e2c4b}{Frequency} (double const \&value)
+\item 
+virtual double const \& \hyperlink{classDSG_1_1Fourier_1_1Triangle_a03829961eba7c7ce8f052121a4bcf69d}{Frequency} ()
+\item 
+virtual bool \hyperlink{classDSG_1_1SignalProcess_ae8a803d175eca1ec5f34a52035a082b4}{Perform} (\hyperlink{classDSG_1_1Signal_1_1Sample_a21db6fade3ee3554ed3887cb2b74daff}{Signal\-::\-Sample\-::\-Sample} \&signal)=0
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}{Frequency} () const 
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}{Phase\-Offset} () const 
+\item 
+virtual double const \& \hyperlink{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}{Phase\-Offset} (double const \&value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a38d0cc3f7f26e89379626627c17ae33a}{\-\_\-max\-Harms} (double \-\_\-frq)
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\-\_\-pstep} ()
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}{\-\_\-pstep\-\_\-rad} ()
+\item 
+void \hyperlink{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}{\-\_\-psync} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}{\-\_\-h}
+\item 
+double \hyperlink{classDSG_1_1Fourier_1_1Triangle_a6ab2afb0d0d51d395e49bfe470196a1e}{\-\_\-a}
+\item 
+double \hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs}
+\item 
+double \hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor}
+\item 
+unsigned short \hyperlink{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{i}
+\item 
+\hyperlink{classDSG_1_1Signal_1_1Sample}{Signal\-::\-Sample} \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_aaf63683d2173cd41ff1d65b4c454e87a}{\-\_\-sample}
+\item 
+\hyperlink{classDSG_1_1Signal_1_1Sample}{Signal\-::\-Sample} \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a43799227375e2d8b1354682e3a4fc935}{\-\_\-storage}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\-\_\-rate}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\-\_\-frequency}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}{\-\_\-phase\-\_\-offset}
+\item 
+double \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\-\_\-phasor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespaceDSG_1_1Fourier}{Fourier} Series Based \hyperlink{classDSG_1_1Fourier_1_1Triangle}{Triangle} Wave. 
+
+Definition at line 19 of file Triangle.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_ad9854b85c81048a7a9685b82efb2730d}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Triangle}]{\setlength{\rightskip}{0pt plus 5cm}D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-Triangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDSG_1_1Fourier_1_1Triangle_ad9854b85c81048a7a9685b82efb2730d}
+
+
+Definition at line 13 of file Triangle.\-cpp.
+
+
+\begin{DoxyCode}
+13                             :\hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a42dcd55b71953c2eb21d6319f4a050a1}{FourierGenerator}(),\hyperlink{classDSG_1_1Fourier_1_1Triangle_a6ab2afb0d0d51d395e49bfe470196a1e}{\_a}(8.0/(\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*
+      \hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI})),\hyperlink{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}{\_h}(\hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a38d0cc3f7f26e89379626627c17ae33a}{\_maxHarms}(\hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency})),\hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs}(0),\hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor}(0)\{
+14 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a11b507ce203fc40e3928b9fb0e415c6e}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Triangle}]{\setlength{\rightskip}{0pt plus 5cm}D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-Triangle (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{frequency, }
+\item[{double const \&}]{phase\-\_\-offset}
+\end{DoxyParamCaption}
+)}}\label{classDSG_1_1Fourier_1_1Triangle_a11b507ce203fc40e3928b9fb0e415c6e}
+
+
+Definition at line 15 of file Triangle.\-cpp.
+
+
+\begin{DoxyCode}
+15                                                                               :
+      \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a42dcd55b71953c2eb21d6319f4a050a1}{FourierGenerator}(frequency,phase\_offset),\hyperlink{classDSG_1_1Fourier_1_1Triangle_a6ab2afb0d0d51d395e49bfe470196a1e}{\_a}(8.0/(\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{PI_8h_a598a3330b3c21701223ee0ca14316eca}{PI})),
+      \hyperlink{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}{\_h}(\hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a38d0cc3f7f26e89379626627c17ae33a}{\_maxHarms}(\hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency})),\hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs}(0),\hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor}(0)\{
+16     \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_aaf63683d2173cd41ff1d65b4c454e87a}{\_sample}=0;
+17     \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a43799227375e2d8b1354682e3a4fc935}{\_storage}=0;
+18 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a3dc2d4b7ca07c0e730671cf5832f6cc4}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!$\sim$\-Triangle@{$\sim$\-Triangle}}
+\index{$\sim$\-Triangle@{$\sim$\-Triangle}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{$\sim$\-Triangle}]{\setlength{\rightskip}{0pt plus 5cm}D\-S\-G\-::\-Fourier\-::\-Triangle\-::$\sim$\-Triangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDSG_1_1Fourier_1_1Triangle_a3dc2d4b7ca07c0e730671cf5832f6cc4}
+
+
+Definition at line 19 of file Triangle.\-cpp.
+
+
+\begin{DoxyCode}
+19 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDSG_1_1Fourier_1_1FourierGenerator_a38d0cc3f7f26e89379626627c17ae33a}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-max\-Harms@{\-\_\-max\-Harms}}
+\index{\-\_\-max\-Harms@{\-\_\-max\-Harms}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-max\-Harms}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long D\-S\-G\-::\-Fourier\-::\-Fourier\-Generator\-::\-\_\-max\-Harms (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-frq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1Fourier_1_1FourierGenerator_a38d0cc3f7f26e89379626627c17ae33a}
+
+
+Definition at line 52 of file Fourier\-Generator.\-h.
+
+
+\begin{DoxyCode}
+52                                                                    \{
+53             \textcolor{comment}{//double softLim = 0.45;}
+54             \textcolor{comment}{//double hardLim = 0.5;}
+55             
+56             \textcolor{keywordtype}{double} \_s = \hyperlink{namespaceDSG_1_1Signal_a87b4600622b1c53595ff95581fba2c4c}{Signal::Sample\_Rate}()* (20000.0/
+      \hyperlink{namespaceDSG_1_1Signal_a87b4600622b1c53595ff95581fba2c4c}{Signal::Sample\_Rate}());\textcolor{comment}{//uses harmonic roll of based on max human hearing and sample
+       rate}
+57             \_s/=\_frq;
+58             \textcolor{keywordflow}{return} trunc(\_s);
+59         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-pstep@{\-\_\-pstep}}
+\index{\-\_\-pstep@{\-\_\-pstep}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-pstep}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Signal\-Generator\-::\-\_\-pstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}
+
+
+Definition at line 58 of file Signal\-Generator.\-h.
+
+
+\begin{DoxyCode}
+58                                          \{
+59         \textcolor{keywordtype}{double} value = \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor};
+60         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}+=\hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate};
+61         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor} = \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-(\textcolor{keywordtype}{unsigned} long)\hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor};\textcolor{comment}{//cheaper %1}
+62         \textcolor{keywordflow}{return} value;
+63     \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-pstep\-\_\-rad@{\-\_\-pstep\-\_\-rad}}
+\index{\-\_\-pstep\-\_\-rad@{\-\_\-pstep\-\_\-rad}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-pstep\-\_\-rad}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Signal\-Generator\-::\-\_\-pstep\-\_\-rad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}
+
+
+Definition at line 64 of file Signal\-Generator.\-h.
+
+
+\begin{DoxyCode}
+64                                              \{
+65         \textcolor{keywordflow}{return} \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\_pstep}();
+66     \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-psync@{\-\_\-psync}}
+\index{\-\_\-psync@{\-\_\-psync}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-psync}]{\setlength{\rightskip}{0pt plus 5cm}void D\-S\-G\-::\-Signal\-Generator\-::\-\_\-psync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}
+
+
+Definition at line 67 of file Signal\-Generator.\-h.
+
+
+\begin{DoxyCode}
+67                                        \{
+68         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor} = 0;
+69     \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a239adb0a4604a495bb3935b8a52e2c4b}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-Frequency (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDSG_1_1Fourier_1_1Triangle_a239adb0a4604a495bb3935b8a52e2c4b}
+
+
+Reimplemented from \hyperlink{classDSG_1_1SignalGenerator_ae3ce8d45bafabbd86a0f535b15c3cd46}{D\-S\-G\-::\-Signal\-Generator}.
+
+
+
+Definition at line 20 of file Triangle.\-cpp.
+
+
+\begin{DoxyCode}
+20                                                               \{
+21     \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency} = value;
+22     \hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate} = \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency}/\hyperlink{namespaceDSG_1_1Signal_a87b4600622b1c53595ff95581fba2c4c}{Signal::Sample\_Rate}();
+23     \hyperlink{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}{\_h} = \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a38d0cc3f7f26e89379626627c17ae33a}{\_maxHarms}(\hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency});
+24     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+25 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a03829961eba7c7ce8f052121a4bcf69d}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDSG_1_1Fourier_1_1Triangle_a03829961eba7c7ce8f052121a4bcf69d}
+
+
+Definition at line 26 of file Triangle.\-cpp.
+
+
+\begin{DoxyCode}
+26                                            \{
+27     \textcolor{keywordflow}{return} this->\hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+28 \}\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\-S\-G\-::\-Signal\-Generator\-::\-Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}
+
+
+Definition at line 16 of file Signal\-Generator.\-cpp.
+
+
+\begin{DoxyCode}
+16                                                 \{
+17     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+18 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_adbc9f5f2a7193a3920c66af2988cd905}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Perform@{Perform}}
+\index{Perform@{Perform}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\-::\-Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDSG_1_1Fourier_1_1Triangle_adbc9f5f2a7193a3920c66af2988cd905}
+
+
+Reimplemented from \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_a23b7bfee098b103c3c62f277229e2bb9}{D\-S\-G\-::\-Fourier\-::\-Fourier\-Generator}.
+
+
+
+Definition at line 36 of file Triangle.\-h.
+
+
+\begin{DoxyCode}
+36                                                          \{
+37             \hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs} = \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\_pstep}();
+38             \hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs}+=\hyperlink{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}{\_phase\_offset};
+39             \hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs} -= (long)\hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs};
+40             \hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor}=0;
+41             \textcolor{keywordflow}{for} (\hyperlink{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{i}=1; \hyperlink{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{i}<\hyperlink{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}{\_h}+1; \hyperlink{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{i}+=2) \{
+42                 \hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor}+=\hyperlink{namespaceDSG_1_1Fourier_a0c5e55783a8396bf8c2f8846988716db}{\_harmonicTable}.\hyperlink{classDSG_1_1Backend_1_1HarmonicTable_a665e08fd1bd65ded1f5493cb7de5e330}{Triangle}(\hyperlink{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{i})*
+      \hyperlink{namespaceDSG_1_1Backend_abc92c970184d9c3e4fa6741f80c58836}{DSG::Backend::Sin}(\hyperlink{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{phs}*\hyperlink{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{i});
+43             \}
+44             \hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor}*=\hyperlink{classDSG_1_1Fourier_1_1Triangle_a6ab2afb0d0d51d395e49bfe470196a1e}{\_a};
+45             signal=\hyperlink{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{stor};
+46             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+47         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a50d9d6ed5ce686740af59a7f85c40f4a}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Perform@{Perform}}
+\index{Perform@{Perform}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\-::\-Ring\-Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDSG_1_1Fourier_1_1Triangle_a50d9d6ed5ce686740af59a7f85c40f4a}
+
+
+Reimplemented from \hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_abb57d65b6e7a8bf07c8e11a5fc84914f}{D\-S\-G\-::\-Fourier\-::\-Fourier\-Generator}.
+
+
+
+Definition at line 48 of file Triangle.\-h.
+
+
+\begin{DoxyCode}
+48                                                              \{
+49             signal.Flush();
+50             \textcolor{keywordflow}{while} (!signal.Full()) \{
+51                 \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Fourier_1_1Triangle_adbc9f5f2a7193a3920c66af2988cd905}{Perform}(\hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_aaf63683d2173cd41ff1d65b4c454e87a}{\_sample})) \{
+52                     \textcolor{keywordflow}{if}(signal.Write(\hyperlink{classDSG_1_1Fourier_1_1FourierGenerator_aaf63683d2173cd41ff1d65b4c454e87a}{\_sample}))\{
+53                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+54                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+55             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+56         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalProcess_ae8a803d175eca1ec5f34a52035a082b4}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Perform@{Perform}}
+\index{Perform@{Perform}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool D\-S\-G\-::\-Signal\-Process\-::\-Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf Signal\-::\-Sample\-::\-Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalProcess_ae8a803d175eca1ec5f34a52035a082b4}
+\hypertarget{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Phase\-Offset@{Phase\-Offset}}
+\index{Phase\-Offset@{Phase\-Offset}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Phase\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\-S\-G\-::\-Signal\-Generator\-::\-Phase\-Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}
+
+
+Definition at line 24 of file Signal\-Generator.\-cpp.
+
+
+\begin{DoxyCode}
+24                                                   \{
+25     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}{\_phase\_offset};
+26 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!Phase\-Offset@{Phase\-Offset}}
+\index{Phase\-Offset@{Phase\-Offset}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{Phase\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\-S\-G\-::\-Signal\-Generator\-::\-Phase\-Offset (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}
+
+
+Definition at line 27 of file Signal\-Generator.\-cpp.
+
+
+\begin{DoxyCode}
+27                                                                 \{
+28     \hyperlink{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}{\_phase\_offset} = value;
+29     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}{\_phase\_offset};
+30 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a6ab2afb0d0d51d395e49bfe470196a1e}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-a@{\-\_\-a}}
+\index{\-\_\-a@{\-\_\-a}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-a}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-\_\-a\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1Fourier_1_1Triangle_a6ab2afb0d0d51d395e49bfe470196a1e}
+
+
+Definition at line 30 of file Triangle.\-h.
+
+\hypertarget{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-frequency@{\-\_\-frequency}}
+\index{\-\_\-frequency@{\-\_\-frequency}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-frequency}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Signal\-Generator\-::\-\_\-frequency\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}
+
+
+Definition at line 34 of file Signal\-Generator.\-h.
+
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-h@{\-\_\-h}}
+\index{\-\_\-h@{\-\_\-h}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-h}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long D\-S\-G\-::\-Fourier\-::\-Triangle\-::\-\_\-h\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1Fourier_1_1Triangle_a86f099481a438238a44fe3f8a8215e4f}
+
+
+Definition at line 29 of file Triangle.\-h.
+
+\hypertarget{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-phase\-\_\-offset@{\-\_\-phase\-\_\-offset}}
+\index{\-\_\-phase\-\_\-offset@{\-\_\-phase\-\_\-offset}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-phase\-\_\-offset}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Signal\-Generator\-::\-\_\-phase\-\_\-offset\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a9abf9d00c798e0fdca6314f17547758a}
+
+
+Definition at line 35 of file Signal\-Generator.\-h.
+
+\hypertarget{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-phasor@{\-\_\-phasor}}
+\index{\-\_\-phasor@{\-\_\-phasor}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-phasor}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Signal\-Generator\-::\-\_\-phasor\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}
+
+
+Definition at line 41 of file Signal\-Generator.\-h.
+
+\hypertarget{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-rate@{\-\_\-rate}}
+\index{\-\_\-rate@{\-\_\-rate}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Signal\-Generator\-::\-\_\-rate\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}
+
+
+Definition at line 33 of file Signal\-Generator.\-h.
+
+\hypertarget{classDSG_1_1Fourier_1_1FourierGenerator_aaf63683d2173cd41ff1d65b4c454e87a}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-sample@{\-\_\-sample}}
+\index{\-\_\-sample@{\-\_\-sample}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\-::\-Sample} D\-S\-G\-::\-Fourier\-::\-Fourier\-Generator\-::\-\_\-sample\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1Fourier_1_1FourierGenerator_aaf63683d2173cd41ff1d65b4c454e87a}
+
+
+Definition at line 37 of file Fourier\-Generator.\-h.
+
+\hypertarget{classDSG_1_1Fourier_1_1FourierGenerator_a43799227375e2d8b1354682e3a4fc935}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!\-\_\-storage@{\-\_\-storage}}
+\index{\-\_\-storage@{\-\_\-storage}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{\-\_\-storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signal\-::\-Sample} D\-S\-G\-::\-Fourier\-::\-Fourier\-Generator\-::\-\_\-storage\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1Fourier_1_1FourierGenerator_a43799227375e2d8b1354682e3a4fc935}
+
+
+Definition at line 38 of file Fourier\-Generator.\-h.
+
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!i@{i}}
+\index{i@{i}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short D\-S\-G\-::\-Fourier\-::\-Triangle\-::i\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1Fourier_1_1Triangle_af81a809f2d901e42a398f13f090a5472}
+
+
+Definition at line 33 of file Triangle.\-h.
+
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!phs@{phs}}
+\index{phs@{phs}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{phs}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Fourier\-::\-Triangle\-::phs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1Fourier_1_1Triangle_aa2f376ac6bb99284a5ff97a5e9adaec9}
+
+
+Definition at line 31 of file Triangle.\-h.
+
+\hypertarget{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}{\index{D\-S\-G\-::\-Fourier\-::\-Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}!stor@{stor}}
+\index{stor@{stor}!DSG::Fourier::Triangle@{D\-S\-G\-::\-Fourier\-::\-Triangle}}
+\subsubsection[{stor}]{\setlength{\rightskip}{0pt plus 5cm}double D\-S\-G\-::\-Fourier\-::\-Triangle\-::stor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1Fourier_1_1Triangle_ae841650a157ead082b83c3cf1154a2f0}
+
+
+Definition at line 32 of file Triangle.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/alexanderzywicki/\-Documents/\-School\-\_\-\-Stuff/\-Fall\-\_\-2014/\-Digital\-\_\-\-Signal\-\_\-\-Generation\-\_\-and\-\_\-\-Analysis/src/include/\hyperlink{Triangle_8h}{Triangle.\-h}\item 
+/\-Users/alexanderzywicki/\-Documents/\-School\-\_\-\-Stuff/\-Fall\-\_\-2014/\-Digital\-\_\-\-Signal\-\_\-\-Generation\-\_\-and\-\_\-\-Analysis/src/\hyperlink{Triangle_8cpp}{Triangle.\-cpp}\end{DoxyCompactItemize}

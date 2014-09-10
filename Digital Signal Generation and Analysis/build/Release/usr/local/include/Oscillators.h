@@ -8,12 +8,16 @@
 
 #ifndef Waveform_Oscillators_h
 #define Waveform_Oscillators_h
+#include "Sine.h"
+#include "FourierSaw.h"
+#include "FourierTriangle.h"
+#include "FourierSquare.h"
+
 #include "AnalogSaw.h"
 #include "AnalogSquare.h"
-#include "Sine.h"
-#include "Saw.h"
-#include "Square.h"
-#include "Triangle.h"
+#include "AnalogTriangle.h"
+
+
 #include "BLIT.h"
 #include "BLITSaw.h"
 #include "minBLEP.h"

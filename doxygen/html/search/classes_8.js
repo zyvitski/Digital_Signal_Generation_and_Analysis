@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ringbuffer',['RingBuffer',['../classSignal_1_1RingBuffer.html',1,'Signal']]]
+  ['ringbuffer',['RingBuffer',['../classDSG_1_1RingBuffer.html',1,'DSG']]]
 ];

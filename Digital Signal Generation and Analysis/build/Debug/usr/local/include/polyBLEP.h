@@ -11,7 +11,7 @@
 
 #include "SignalGenerator.h"
 
-namespace Signal {
+namespace DSG {
     namespace BLEP{
         
         /*!\brief

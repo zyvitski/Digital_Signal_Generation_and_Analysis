@@ -11,8 +11,8 @@
 
 #include "SignalGenerator.h"
 
-namespace Signal {
-    namespace BLEP{
+namespace DSG {
+    
         
         /*!\brief
          *See file ~/Research/polyBLEP.rtf for links to deatils about algorithm
@@ -21,7 +21,7 @@ namespace Signal {
         public:
 #warning Unimplimented polyBLEP
         };
-    }
+    
 }
 
 #endif

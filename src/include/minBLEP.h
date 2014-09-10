@@ -11,8 +11,8 @@
 
 #include "SignalGenerator.h"
 
-namespace Signal {
-    namespace BLEP{
+namespace DSG {
+    
         /*!\brief
          *See file ~/Research/icmc01-hardsync.pdf for details of algorithm
          */
@@ -20,7 +20,7 @@ namespace Signal {
         public:
 #warning Unimplimented minBLEP
         };
-    }
+    
 }
 
 #endif /* defined(__Digital_Signal_Generation_and_Analysis__minBLEP__) */

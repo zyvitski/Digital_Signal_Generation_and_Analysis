@@ -1,27 +1,29 @@
 //
-//  Saw.h
+//  FourierSaw.h
 //  Waveform
 //
 //  Created by Alexander Zywicki on 8/21/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
 
-#ifndef __Waveform__Saw__
-#define __Waveform__Saw__
+#ifndef __Waveform__FourierSaw__
+#define __Waveform__FourierSaw__
 
 #include "FourierGenerator.h"
+#include "Sin.h"
 
-namespace Signal {
+namespace DSG {
     namespace Fourier{
+        
         /*!\brief Fourier Series Based Saw Wave
          */
-        class Saw: public FourierGenerator {
+        class FourierSaw: public FourierGenerator {
         public:
-            Saw();
-            Saw(double const& frequency,double const& phase_offset);
-            virtual ~Saw();
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            FourierSaw();
+            FourierSaw(double const& frequency,double const& phase_offset);
+            virtual ~FourierSaw();
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
             virtual double const& Frequency(double const& value);
             virtual double const& Frequency();
         protected:
@@ -29,23 +31,25 @@ namespace Signal {
             double _a;
             double phs;
             double stor;
+            double _tmp;
             double iPI;
             unsigned short i;
         };
         
-        inline bool Saw::Perform(Sample& signal){
-            phs=_pstep();
-            phs+=_phase_offset;
-            phs -= (long)phs;
-            signal=0;
-            for (i=1; i<_h+1; ++i) {
-                stor += _harmonicTable.Saw(i)* sine(phs*(i));
+        inline bool FourierSaw::Perform(Signal::Sample& signal){
+     
+            stor=0;
+            for (i=1; i<_h; ++i) {
+                _tmp=DSG::Backend::Sin(_phasor*i);
+                _tmp*=_harmonicTable.Saw(i);
+                stor += _tmp ;
             }
+            _pstep();
             stor*= _a;
             signal=stor;
             return true;
         }
-        inline bool Saw::Perform(RingBuffer& signal){
+        inline bool FourierSaw::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {
@@ -57,4 +61,4 @@ namespace Signal {
     }
 }
 
-#endif /* defined(__Waveform__Saw__) */
+#endif /* defined(__Waveform__FourierSaw__) */

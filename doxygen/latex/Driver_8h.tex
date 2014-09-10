@@ -39,22 +39,21 @@ Definition at line 68 of file Driver.\+cpp.
 73                              \{
 74     \textcolor{keywordtype}{float}* \_in = (\textcolor{keywordtype}{float}*)input;
 75     \textcolor{keywordtype}{float}* \_out = (\textcolor{keywordtype}{float}*)output;
-76     \hyperlink{classSignal_1_1Sample}{Signal::Sample} \_sample;
+76     \hyperlink{classDSG_1_1Sample}{DSG:: Sample} \_sample;
 77     \textcolor{keywordtype}{int} count=0;
-78     \hyperlink{classSignal_1_1SignalProcess}{Signal::SignalProcess}* \_osc = (\hyperlink{classSignal_1_1SignalProcess}{Signal::SignalProcess}*)
-      userData;
+78     \hyperlink{classDSG_1_1SignalProcess}{DSG::SignalProcess}* \_osc = (\hyperlink{classDSG_1_1SignalProcess}{DSG::SignalProcess}*)userData;
 79     \textcolor{keywordflow}{if} (\_in!=\textcolor{keyword}{nullptr}) \{
-80         \textcolor{keywordflow}{while} (!\hyperlink{Driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{classSignal_1_1RingBuffer_ac8124016cfc0c833a3565c87d5f6f1e5}{Full}()) \{
-81             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\_sample.\hyperlink{classSignal_1_1Sample_a3c8f635193c0b7b69612cb189766dfa3}{Size}(); ++i) \{
+80         \textcolor{keywordflow}{while} (!\hyperlink{Driver_8cpp_a6097b29bd1410000dcdd4f146e5c15d1}{\_buffer}.\hyperlink{classDSG_1_1RingBuffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+81             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\_sample.\hyperlink{classDSG_1_1Sample_abcbdcc67584e4018b24eac650724eb18}{Size}(); ++i) \{
 82                 \_sample[i]=\_in[count++];
 83             \}
-84             \hyperlink{Driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{classSignal_1_1RingBuffer_aa291195b777aa50aa7a61ab1f4954bce}{Write}(\_sample);
+84             \hyperlink{Driver_8cpp_a6097b29bd1410000dcdd4f146e5c15d1}{\_buffer}.\hyperlink{classDSG_1_1RingBuffer_af484c16dbffaf555860a84652ac46284}{Write}(\_sample);
 85         \}
 86     \}
-87     \_osc->\hyperlink{classSignal_1_1SignalProcess_a7986df989ac8afca3674ae8eace3cfdb}{Perform}(\hyperlink{Driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer});
+87     \_osc->\hyperlink{classDSG_1_1SignalProcess_afdb8220100418893950c1161dd24db67}{Perform}(\hyperlink{Driver_8cpp_a6097b29bd1410000dcdd4f146e5c15d1}{\_buffer});
 88     \textcolor{keywordflow}{if} (\_out!=\textcolor{keyword}{nullptr}) \{
 89         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<frameCount; ++i) \{
-90             \hyperlink{Driver_8cpp_ab051067683acb866c43856a4d7f88a2b}{\_buffer}.\hyperlink{classSignal_1_1RingBuffer_a9a5c8429c0e422e3d4763adb78b0a87c}{Read}(\_sample);
+90             \hyperlink{Driver_8cpp_a6097b29bd1410000dcdd4f146e5c15d1}{\_buffer}.\hyperlink{classDSG_1_1RingBuffer_ae46649acd09c2e83834f3e31157b29b6}{Read}(\_sample);
 91             *\_out++=\_sample[0];
 92             *\_out++=\_sample[1];
 93         \}
@@ -121,8 +120,8 @@ Definition at line 18 of file Driver.\+cpp.
 25 \textcolor{preprocessor}{#endif}
 26         \textcolor{keywordflow}{return} 1;
 27     \}
-28     err = Pa\_OpenDefaultStream(&\hyperlink{Driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}, 0, 2, paFloat32,
-      \hyperlink{namespaceSignal_ae7b1f222afc010e0f33f306f978fcde9}{Signal::Sample\_Rate}(), \hyperlink{Driver_8cpp_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\_SIZE}, \hyperlink{Driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback}, data);
+28     err = Pa\_OpenDefaultStream(&\hyperlink{Driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}, 0, 2, paFloat32,\hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{DSG:: Sample\_Rate}(), 
+      \hyperlink{Driver_8cpp_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\_SIZE}, \hyperlink{Driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback}, data);
 29     \textcolor{keywordflow}{if} (err!=paNoError) \{
 30 \textcolor{preprocessor}{#ifdef DEBUG}
 31         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );

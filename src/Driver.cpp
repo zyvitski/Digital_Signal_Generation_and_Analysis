@@ -12,7 +12,7 @@ PaStream* stream;
 
 #define BUFFER_SIZE 4096
 
-Signal::RingBuffer _buffer(BUFFER_SIZE);
+DSG:: RingBuffer _buffer(BUFFER_SIZE);
 
 
 int DriverInit(void * data){
@@ -25,7 +25,7 @@ int DriverInit(void * data){
 #endif
         return 1;
     }
-    err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32,Signal::Sample_Rate(), BUFFER_SIZE, Callback, data);
+    err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32,DSG:: Sample_Rate(), BUFFER_SIZE, Callback, data);
     if (err!=paNoError) {
 #ifdef DEBUG
         printf(  "PortAudio error: %s\n", Pa_GetErrorText( err ) );
@@ -73,9 +73,9 @@ int Callback( const void *input,
              void *userData) {
     float* _in = (float*)input;
     float* _out = (float*)output;
-    Signal::Sample _sample;
+    DSG:: Sample _sample;
     int count=0;
-    Signal::SignalProcess* _osc = (Signal::SignalProcess*)userData;
+    DSG::SignalProcess* _osc = (DSG::SignalProcess*)userData;
     if (_in!=nullptr) {
         while (!_buffer.Full()) {
             for (int i=0; i<_sample.Size(); ++i) {

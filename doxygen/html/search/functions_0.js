@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['_5fmaxharms',['_maxHarms',['../classSignal_1_1Fourier_1_1FourierGenerator.html#a99720416bd9ff96636f4acf956a785d5',1,'Signal::Fourier::FourierGenerator']]],
-  ['_5fpstep',['_pstep',['../classSignal_1_1SignalGenerator.html#a43b0eec84ee7df04c947533c0511c2c0',1,'Signal::SignalGenerator']]],
-  ['_5fpstep_5frad',['_pstep_rad',['../classSignal_1_1SignalGenerator.html#abf2f4ab977c6e84bf85022eab8135304',1,'Signal::SignalGenerator']]],
-  ['_5fpsync',['_psync',['../classSignal_1_1SignalGenerator.html#a563f57d4dfd8728a6a572f15c1e2532b',1,'Signal::SignalGenerator']]]
+  ['_5fmaxharms',['_maxHarms',['../classDSG_1_1FourierGenerator.html#a6b6e3bbad8ff7443d9ed71f4cdf76739',1,'DSG::FourierGenerator']]],
+  ['_5fpstep',['_pstep',['../classDSG_1_1SignalGenerator.html#ac0d781b8673b3a283bf7c133290ede50',1,'DSG::SignalGenerator']]],
+  ['_5fpstep_5frad',['_pstep_rad',['../classDSG_1_1SignalGenerator.html#ae660eb4caa88b8d278f8d24d0908a487',1,'DSG::SignalGenerator']]],
+  ['_5fpsync',['_psync',['../classDSG_1_1SignalGenerator.html#a05baccb38d1e52860d4fcf7cb8430efc',1,'DSG::SignalGenerator']]]
 ];

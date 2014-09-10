@@ -10,7 +10,7 @@
 #define Digital_Signal_Generation_and_Analysis_Square_h
 
 #include "AnalogGenerator.h"
-namespace Signal {
+namespace DSG {
     namespace Analog{
         class Square:public AnalogGenerator{
         public:
@@ -18,14 +18,14 @@ namespace Signal {
             Square(double const& frequency,double const& phase_offset);
             virtual ~Square();
             
-            virtual inline bool Perform(Sample& signal);
-            virtual inline bool Perform(RingBuffer& signal);
+            virtual inline bool Perform(Signal::Sample& signal);
+            virtual inline bool Perform(Signal::RingBuffer& signal);
         protected:
             double _duty;//0-1.0
             
             
         };
-        inline bool Square::Perform(Sample& signal){
+        inline bool Square::Perform(Signal::Sample& signal){
             double value = _pstep();
             value+=_phase_offset;
             value-=(long)value;
@@ -34,7 +34,7 @@ namespace Signal {
             signal = value>=_duty ? -1.0: 1.0;
             return true;
         }
-        inline bool Square::Perform(RingBuffer& signal){
+        inline bool Square::Perform(Signal::RingBuffer& signal){
             signal.Flush();
             while (!signal.Full()) {
                 if (Perform(_sample)) {

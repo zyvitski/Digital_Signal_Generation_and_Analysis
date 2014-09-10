@@ -14,8 +14,8 @@
  */
 
 #include "Backend.h"
-
-namespace Signal {
+namespace DSG{
+    
     /*! \brief An Abstract Base Class defining the basics API needed for audio generation
      */
     class SignalProcess {
@@ -23,9 +23,10 @@ namespace Signal {
     public:
         SignalProcess();
         virtual ~SignalProcess();
-        virtual inline bool Perform(Sample& signal)=0;
-        virtual inline bool Perform(RingBuffer& signal)=0;
+        virtual inline bool Perform( Sample::Sample& signal)=0;
+        virtual inline bool Perform( RingBuffer& signal)=0;
     };
+    
 }
 
 

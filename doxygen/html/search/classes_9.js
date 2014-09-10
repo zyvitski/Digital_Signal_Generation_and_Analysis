@@ -1,16 +1,14 @@
 var searchData=
 [
-  ['sample',['Sample',['../classSignal_1_1Sample.html',1,'Signal']]],
-  ['samplerate',['SampleRate',['../classSignal_1_1SampleRate.html',1,'Signal']]],
-  ['saw',['Saw',['../classSignal_1_1Analog_1_1Saw.html',1,'Signal::Analog']]],
-  ['saw',['Saw',['../classSignal_1_1BLIT_1_1Saw.html',1,'Signal::BLIT']]],
-  ['saw',['Saw',['../classSignal_1_1Fourier_1_1Saw.html',1,'Signal::Fourier']]],
-  ['signalgenerator',['SignalGenerator',['../classSignal_1_1SignalGenerator.html',1,'Signal']]],
-  ['signalprocess',['SignalProcess',['../classSignal_1_1SignalProcess.html',1,'Signal']]],
-  ['sine',['Sine',['../classSignal_1_1Fourier_1_1Sine.html',1,'Signal::Fourier']]],
-  ['sinelut',['SineLUT',['../classBackend_1_1SineLUT.html',1,'Backend']]],
-  ['smallsinelut',['SmallSineLUT',['../classBackend_1_1SmallSineLUT.html',1,'Backend']]],
-  ['smallsinelut_3c_20int32_5ft_2c_20size_20_3e',['SmallSineLUT&lt; int32_t, size &gt;',['../classBackend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4.html',1,'Backend']]],
-  ['square',['Square',['../classSignal_1_1Fourier_1_1Square.html',1,'Signal::Fourier']]],
-  ['square',['Square',['../classSignal_1_1Analog_1_1Square.html',1,'Signal::Analog']]]
+  ['sample',['Sample',['../classDSG_1_1Sample.html',1,'DSG']]],
+  ['samplerate',['SampleRate',['../classDSG_1_1SampleRate.html',1,'DSG']]],
+  ['signalgenerator',['SignalGenerator',['../classDSG_1_1SignalGenerator.html',1,'DSG']]],
+  ['signalprocess',['SignalProcess',['../classDSG_1_1SignalProcess.html',1,'DSG']]],
+  ['sine',['Sine',['../classDSG_1_1Sine.html',1,'DSG']]],
+  ['sinelut',['SineLUT',['../classDSG_1_1Backend_1_1SineLUT.html',1,'DSG::Backend']]],
+  ['sinelut',['SineLUT',['../classDSG_1_1Backend_1_1DSG_1_1Backend_1_1SineLUT.html',1,'DSG::Backend::DSG::Backend']]],
+  ['smallsinelut',['SmallSineLUT',['../classDSG_1_1Backend_1_1DSG_1_1Backend_1_1SmallSineLUT.html',1,'DSG::Backend::DSG::Backend']]],
+  ['smallsinelut',['SmallSineLUT',['../classDSG_1_1Backend_1_1SmallSineLUT.html',1,'DSG::Backend']]],
+  ['smallsinelut_3c_20int32_5ft_2c_20size_20_3e',['SmallSineLUT&lt; int32_t, size &gt;',['../classDSG_1_1Backend_1_1DSG_1_1Backend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4.html',1,'DSG::Backend::DSG::Backend']]],
+  ['smallsinelut_3c_20int32_5ft_2c_20size_20_3e',['SmallSineLUT&lt; int32_t, size &gt;',['../classDSG_1_1Backend_1_1SmallSineLUT_3_01int32__t_00_01size_01_4.html',1,'DSG::Backend']]]
 ];

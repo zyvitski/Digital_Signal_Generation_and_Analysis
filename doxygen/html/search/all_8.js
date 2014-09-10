@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['i',['i',['../classSignal_1_1Fourier_1_1Saw.html#a1e575a999b316e51cb3a4f8af962749c',1,'Signal::Fourier::Saw::i()'],['../classSignal_1_1Fourier_1_1Square.html#a942768cca477bd9bfc71f9a3ea1be8e5',1,'Signal::Fourier::Square::i()'],['../classSignal_1_1Fourier_1_1Triangle.html#a08b51bfe6697483ed00af4d41e1e66f2',1,'Signal::Fourier::Triangle::i()']]],
-  ['ipi',['iPI',['../classSignal_1_1Fourier_1_1Saw.html#a70dccb676ad58a1b6ef4b053081bec3f',1,'Signal::Fourier::Saw']]]
+  ['i',['i',['../classDSG_1_1FourierSaw.html#ad4fecfc1b1500bc514fb2d9e794ef411',1,'DSG::FourierSaw::i()'],['../classDSG_1_1FourierSquare.html#a4d191ba0c4aad4946cc60f90b7c48d88',1,'DSG::FourierSquare::i()'],['../classDSG_1_1FourierTriangle.html#a5e5749c6efba1470dfd136b50176d249',1,'DSG::FourierTriangle::i()']]],
+  ['ipi',['iPI',['../classDSG_1_1FourierSaw.html#a07bf8dae076cf479503f4cd3dd413dc6',1,'DSG::FourierSaw']]]
 ];
