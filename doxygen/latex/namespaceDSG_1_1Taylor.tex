@@ -1,0 +1,65 @@
+\hypertarget{namespaceDSG_1_1Taylor}{\section{D\+S\+G\+:\+:Taylor Namespace Reference}
+\label{namespaceDSG_1_1Taylor}\index{D\+S\+G\+::\+Taylor@{D\+S\+G\+::\+Taylor}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{namespaceDSG_1_1Taylor_a87896b3313b900a40aae03e9181e4a1d}{Sine} (double const \&x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceDSG_1_1Taylor_a87896b3313b900a40aae03e9181e4a1d}{\index{D\+S\+G\+::\+Taylor@{D\+S\+G\+::\+Taylor}!Sine@{Sine}}
+\index{Sine@{Sine}!D\+S\+G\+::\+Taylor@{D\+S\+G\+::\+Taylor}}
+\subsubsection[{Sine}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Taylor\+::\+Sine (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{namespaceDSG_1_1Taylor_a87896b3313b900a40aae03e9181e4a1d}
+
+
+Definition at line 11 of file Taylor.\+cpp.
+
+
+\begin{DoxyCode}
+11                                      \{
+12     \textcolor{keywordtype}{double} phs = x<0 ?1.0-(-1*x):x;
+13     \textcolor{keywordflow}{while} (phs>\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}) \{
+14         phs-=\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI};
+15     \}
+16     \textcolor{keywordtype}{double} val=phs;\textcolor{comment}{//term 1}
+17     \textcolor{comment}{//instead of using a pow() function we are calculatig the running power by using the multiply
+       acculmulate function.}
+18     \textcolor{comment}{//it may look ugly but it should be faster}
+19     phs*=x;
+20     phs*=x;
+21     val-=(phs * 0.1666666666666666666666666666666666666666666666666666);
+22     phs*=x;
+23     phs*=x;
+24     val+=(phs * 0.0083333333333333333333333333333333333333333333333333);
+25     phs*=x;
+26     phs*=x;
+27     val-=(phs * 0.0001984126984126984126984126984126984126984126984126);
+28     phs*=x;
+29     phs*=x;
+30     val+=(phs * 0.0000027557319223985890652557319223985890652557319223);
+31     phs*=x;
+32     phs*=x;
+33     val-=(phs * 0.0000000250521083854417187750521083854417187750521083);
+34     phs*=x;
+35     phs*=x;
+36     val+=(phs * 0.0000000001605904383682161459939237717015494793272571);
+37     phs*=x;
+38     phs*=x;
+39     val-=(phs * 0.0000000000007647163731819816475901131985788070444155);
+40     phs*=x;
+41     phs*=x;
+42     val+=(phs * 0.0000000000000028114572543455207631989455830103200162);
+43     phs*=x;
+44     phs*=x;
+45     val-=(phs * 0.0000000000000000082206352466243297169559812368722807);
+46     phs*=x;
+47     phs*=x;
+48     val+=(phs * 0.0000000000000000000195729410633912612308475743735054);
+49     \textcolor{keywordflow}{return} val;
+50 \}\end{DoxyCode}

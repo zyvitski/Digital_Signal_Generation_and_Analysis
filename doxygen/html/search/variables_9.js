@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['type',['../struct_pa_host_api_info.html#a5424bfcdf9f73b17cddc89e827a45d3f',1,'PaHostApiInfo']]]
+  ['write',['write',['../classDSG_1_1RingBuffer.html#a703434b6afb87f1f9a05750278a822e3',1,'DSG::RingBuffer']]]
 ];

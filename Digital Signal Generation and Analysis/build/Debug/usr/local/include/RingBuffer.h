@@ -16,17 +16,17 @@
 #include <atomic>
 #include <math.h>
 #include "Buffer.h"
-
 namespace DSG {
-    namespace Signal{
-        
-        
+    /*!\brief RingBuffer of Audio Samples of the Sample Class type
+     */
         class RingBuffer:public Buffer {
         protected:
             std::atomic<size_t> _write;
             std::atomic<size_t> _read;
             size_t _count;
             size_t MASK;
+            size_t write;
+            size_t read;
             inline size_t next(size_t current);
             inline size_t make_pow_2(size_t number);
         public:
@@ -35,8 +35,8 @@ namespace DSG {
             RingBuffer(RingBuffer& buffer);
             RingBuffer& operator=(RingBuffer& buffer);
             virtual ~RingBuffer();
-            inline bool Write(const DSG::Signal::Sample& elem);
-            inline bool Read(DSG::Signal::Sample& elem);
+            inline bool Write(const DSG:: Sample& elem);
+            inline bool Read(DSG:: Sample& elem);
             inline size_t const& Count()const;
             inline bool Full()const;
             inline bool Empty()const;
@@ -58,7 +58,7 @@ namespace DSG {
         }
         inline bool RingBuffer::Write(const Sample& elem){
             if (!Full()) {
-                size_t write = _write.load(std::memory_order_acquire);
+                write = _write.load(std::memory_order_acquire);
                 _write.store(next(write),std::memory_order_release);
                 this->_buffer[write] = elem;
                 ++_count;
@@ -67,7 +67,7 @@ namespace DSG {
         }
         inline bool RingBuffer::Read(Sample& elem){
             if (!Empty()) {
-                size_t read = _read.load(std::memory_order_acquire);
+                read = _read.load(std::memory_order_acquire);
                 _read.store(next(read),std::memory_order_release);
                 elem = this->_buffer[read];
                 --_count;
@@ -77,12 +77,10 @@ namespace DSG {
         inline size_t const& RingBuffer::Count()const{
             return _count;
         }
-        
         //note: RingBuffer implementation will force a power of 2 size to allow use of bitwise increment.
         inline size_t RingBuffer::next(size_t current){return (current+1) & MASK;}
         inline size_t RingBuffer::make_pow_2(size_t number){
             return pow(2, ceil(log(number)/log(2)));
         }
-    }
 }
 #endif

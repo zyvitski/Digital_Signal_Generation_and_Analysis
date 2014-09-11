@@ -66,14 +66,16 @@ double \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}
 \subsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classDSG_1_1Backend_1_1HarmonicTable}{D\+S\+G\+::\+Backend\+::\+Harmonic\+Table} \hyperlink{classDSG_1_1FourierGenerator_aedac2cf90997418836d064c90540249d}{\+\_\+harmonic\+Table}
+static \hyperlink{classDSG_1_1HarmonicTable}{D\+S\+G\+::\+Harmonic\+Table} \hyperlink{classDSG_1_1FourierGenerator_a7288408f8e44d5edb5eecc62480243d7}{\+\_\+harmonic\+Table}
+\item 
+static \hyperlink{classDSG_1_1SineLUT}{D\+S\+G\+::\+Sine\+L\+U\+T}$<$ float, 32768 $>$ \hyperlink{classDSG_1_1FourierGenerator_a1ae5fb243ce05e638bdf0dec8bde7426}{\+\_\+sine\+Lut}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A Class Extending The \hyperlink{classDSG_1_1SignalGenerator}{Signal\+Generator} Class with functionality for generating a wave by summing sinusoids. 
 
-Definition at line 27 of file Fourier\+Generator.\+h.
+Definition at line 22 of file Fourier\+Generator.\+h.
 
 
 
@@ -124,8 +126,7 @@ Definition at line 16 of file Fourier\+Generator.\+cpp.
 
 
 \begin{DoxyCode}
-16 \{\}
-\end{DoxyCode}
+16 \{\}\end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
@@ -138,19 +139,19 @@ Definition at line 16 of file Fourier\+Generator.\+cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classDSG_1_1FourierGenerator_a6b6e3bbad8ff7443d9ed71f4cdf76739}
 
 
-Definition at line 53 of file Fourier\+Generator.\+h.
+Definition at line 45 of file Fourier\+Generator.\+h.
 
 
 \begin{DoxyCode}
-53                                                                    \{
-54             \textcolor{comment}{//double softLim = 0.45;}
-55             \textcolor{comment}{//double hardLim = 0.5;}
-56             
-57             \textcolor{keywordtype}{double} \_s =  \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}()* (20000.0/ \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}());\textcolor{comment}{//uses harmonic roll
+45                                                                    \{
+46             \textcolor{comment}{//double softLim = 0.45;}
+47             \textcolor{comment}{//double hardLim = 0.5;}
+48             
+49             \textcolor{keywordtype}{double} \_s =  \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}()* (20000.0/ \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}());\textcolor{comment}{//uses harmonic roll
        of based on max human hearing and sample rate}
-58             \_s/=\_frq;
-59             \textcolor{keywordflow}{return} trunc(\_s);
-60         \}
+50             \_s/=\_frq;
+51             \textcolor{keywordflow}{return} trunc(\_s);
+52         \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+pstep@{\+\_\+pstep}}
 \index{\+\_\+pstep@{\+\_\+pstep}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -161,17 +162,17 @@ Definition at line 53 of file Fourier\+Generator.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}
 
 
-Definition at line 64 of file Signal\+Generator.\+h.
+Definition at line 52 of file Signal\+Generator.\+h.
 
 
 \begin{DoxyCode}
-64                                          \{
-65         value = \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor};
-66         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}+=\hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate};
-67         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}>1?\hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-=1:0;\textcolor{comment}{//cheaper cheaper %1}
-68         \textcolor{comment}{//\_phasor -= (unsigned long)\_phasor;//cheaper %1}
-69         \textcolor{keywordflow}{return} value;
-70     \}
+52                                          \{
+53         value = \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor};
+54         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}+=\hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate};
+55         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}>1?\hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-=1:0;\textcolor{comment}{//cheaper cheaper %1}
+56         \textcolor{comment}{//\_phasor -= (unsigned long)\_phasor;//cheaper %1}
+57         \textcolor{keywordflow}{return} value;
+58     \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}}
 \index{\+\_\+pstep\+\_\+rad@{\+\_\+pstep\+\_\+rad}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -182,13 +183,13 @@ Definition at line 64 of file Signal\+Generator.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ae660eb4caa88b8d278f8d24d0908a487}
 
 
-Definition at line 71 of file Signal\+Generator.\+h.
+Definition at line 59 of file Signal\+Generator.\+h.
 
 
 \begin{DoxyCode}
-71                                              \{
-72         \textcolor{keywordflow}{return} \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\_pstep}();
-73     \}
+59                                              \{
+60         \textcolor{keywordflow}{return} \hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI} * \hyperlink{classDSG_1_1SignalGenerator_ac0d781b8673b3a283bf7c133290ede50}{\_pstep}();
+61     \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+psync@{\+\_\+psync}}
 \index{\+\_\+psync@{\+\_\+psync}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -199,13 +200,13 @@ Definition at line 71 of file Signal\+Generator.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a05baccb38d1e52860d4fcf7cb8430efc}
 
 
-Definition at line 74 of file Signal\+Generator.\+h.
+Definition at line 62 of file Signal\+Generator.\+h.
 
 
 \begin{DoxyCode}
-74                                        \{
-75         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor} = \_phase\_offset;
-76     \}
+62                                        \{
+63         \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor} = \_phase\_offset;
+64     \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!Frequency@{Frequency}}
 \index{Frequency@{Frequency}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -216,13 +217,13 @@ Definition at line 74 of file Signal\+Generator.\+h.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_aedac746c5a70818d120858542ecb7c45}
 
 
-Definition at line 16 of file Signal\+Generator.\+cpp.
+Definition at line 14 of file Signal\+Generator.\+cpp.
 
 
 \begin{DoxyCode}
-16                                                 \{
-17     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
-18 \}
+14                                                 \{
+15     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+16 \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_ae3ce8d45bafabbd86a0f535b15c3cd46}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!Frequency@{Frequency}}
 \index{Frequency@{Frequency}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -233,19 +234,19 @@ Definition at line 16 of file Signal\+Generator.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ae3ce8d45bafabbd86a0f535b15c3cd46}
 
 
-Reimplemented in \hyperlink{classDSG_1_1BLIT_a67b698a54f37c361945cae3e137af76f}{D\+S\+G\+::\+B\+L\+I\+T}, \hyperlink{classDSG_1_1FourierSaw_a929602365c9b29f30f523fa07a29966e}{D\+S\+G\+::\+Fourier\+Saw}, \hyperlink{classDSG_1_1FourierSquare_a80f94eabad633e105cfa673fdee332d6}{D\+S\+G\+::\+Fourier\+Square}, and \hyperlink{classDSG_1_1FourierTriangle_aebb275eee9fb923636a8db5e4aa90b39}{D\+S\+G\+::\+Fourier\+Triangle}.
+Reimplemented in \hyperlink{classDSG_1_1BLIT_a67b698a54f37c361945cae3e137af76f}{D\+S\+G\+::\+B\+L\+I\+T}, \hyperlink{classDSG_1_1FourierTriangle_aebb275eee9fb923636a8db5e4aa90b39}{D\+S\+G\+::\+Fourier\+Triangle}, \hyperlink{classDSG_1_1FourierSaw_a929602365c9b29f30f523fa07a29966e}{D\+S\+G\+::\+Fourier\+Saw}, and \hyperlink{classDSG_1_1FourierSquare_a80f94eabad633e105cfa673fdee332d6}{D\+S\+G\+::\+Fourier\+Square}.
 
 
 
-Definition at line 19 of file Signal\+Generator.\+cpp.
+Definition at line 17 of file Signal\+Generator.\+cpp.
 
 
 \begin{DoxyCode}
-19                                                               \{
-20     \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency} = value;
-21     \hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate} = \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency}/ \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}();
-22     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
-23 \}
+17                                                               \{
+18     \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency} = value;
+19     \hyperlink{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\_rate} = \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency}/ \hyperlink{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}{Sample\_Rate}();
+20     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}{\_frequency};
+21 \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalProcess_afdb8220100418893950c1161dd24db67}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!Perform@{Perform}}
 \index{Perform@{Perform}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -267,18 +268,18 @@ Reimplemented from \hyperlink{classDSG_1_1SignalGenerator_a95d485b68d874938ac936
 
 
 
-Reimplemented in \hyperlink{classDSG_1_1FourierSaw_a3cc372cd7dd694f8b9cb70e504dd04a1}{D\+S\+G\+::\+Fourier\+Saw}, \hyperlink{classDSG_1_1FourierSquare_a3e9cfc95b3592eaf04fbcd61a3c68387}{D\+S\+G\+::\+Fourier\+Square}, \hyperlink{classDSG_1_1FourierTriangle_ae927efb96f8d40f620dd02bdaaeef4d5}{D\+S\+G\+::\+Fourier\+Triangle}, and \hyperlink{classDSG_1_1Sine_a04d925dc8c9a4b320f21697ce853a407}{D\+S\+G\+::\+Sine}.
+Reimplemented in \hyperlink{classDSG_1_1FourierTriangle_ae927efb96f8d40f620dd02bdaaeef4d5}{D\+S\+G\+::\+Fourier\+Triangle}, \hyperlink{classDSG_1_1Sine_a04d925dc8c9a4b320f21697ce853a407}{D\+S\+G\+::\+Sine}, \hyperlink{classDSG_1_1FourierSaw_a3cc372cd7dd694f8b9cb70e504dd04a1}{D\+S\+G\+::\+Fourier\+Saw}, and \hyperlink{classDSG_1_1FourierSquare_a3e9cfc95b3592eaf04fbcd61a3c68387}{D\+S\+G\+::\+Fourier\+Square}.
 
 
 
-Definition at line 43 of file Fourier\+Generator.\+h.
+Definition at line 37 of file Fourier\+Generator.\+h.
 
 
 \begin{DoxyCode}
-43                                                             \{
-44             signal = 0;
-45             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-46         \}
+37                                                             \{
+38             signal = 0;
+39             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+40         \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1FourierGenerator_a8b2aca91155dbb524aaf13867f273188}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!Perform@{Perform}}
 \index{Perform@{Perform}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -293,18 +294,18 @@ Reimplemented from \hyperlink{classDSG_1_1SignalGenerator_abaa9aecd00b792d46166b
 
 
 
-Reimplemented in \hyperlink{classDSG_1_1FourierSaw_a76b78874feebbc89d00656fec4bfd57a}{D\+S\+G\+::\+Fourier\+Saw}, \hyperlink{classDSG_1_1FourierSquare_ad9999119d9efc453329ed4b3eaf5f226}{D\+S\+G\+::\+Fourier\+Square}, \hyperlink{classDSG_1_1FourierTriangle_a017e2b59123ff3afa9a5c0e833e5f482}{D\+S\+G\+::\+Fourier\+Triangle}, and \hyperlink{classDSG_1_1Sine_a6408fedf61f1f2a4026261d181997afc}{D\+S\+G\+::\+Sine}.
+Reimplemented in \hyperlink{classDSG_1_1FourierTriangle_a017e2b59123ff3afa9a5c0e833e5f482}{D\+S\+G\+::\+Fourier\+Triangle}, \hyperlink{classDSG_1_1Sine_a6408fedf61f1f2a4026261d181997afc}{D\+S\+G\+::\+Sine}, \hyperlink{classDSG_1_1FourierSaw_a76b78874feebbc89d00656fec4bfd57a}{D\+S\+G\+::\+Fourier\+Saw}, and \hyperlink{classDSG_1_1FourierSquare_ad9999119d9efc453329ed4b3eaf5f226}{D\+S\+G\+::\+Fourier\+Square}.
 
 
 
-Definition at line 47 of file Fourier\+Generator.\+h.
+Definition at line 41 of file Fourier\+Generator.\+h.
 
 
 \begin{DoxyCode}
-47                                                                 \{
-48             signal.Flush();
-49             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-50         \}
+41                                                                 \{
+42             signal.Flush();
+43             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+44         \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -315,13 +316,13 @@ Definition at line 47 of file Fourier\+Generator.\+h.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a1ce521847edd0b837fd840998f906b4b}
 
 
-Definition at line 24 of file Signal\+Generator.\+cpp.
+Definition at line 22 of file Signal\+Generator.\+cpp.
 
 
 \begin{DoxyCode}
-24                                                   \{
-25     \textcolor{keywordflow}{return} \_phase\_offset;
-26 \}
+22                                                   \{
+23     \textcolor{keywordflow}{return} \_phase\_offset;
+24 \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!Phase\+Offset@{Phase\+Offset}}
 \index{Phase\+Offset@{Phase\+Offset}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
@@ -332,17 +333,16 @@ Definition at line 24 of file Signal\+Generator.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a08b71b1f30ba65e629642c570291dc0e}
 
 
-Definition at line 27 of file Signal\+Generator.\+cpp.
+Definition at line 25 of file Signal\+Generator.\+cpp.
 
 
 \begin{DoxyCode}
-27                                                                 \{
-28     \_phase\_offset-=value;
-29     \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-=\_phase\_offset;
-30     \_phase\_offset=value;
-31     \textcolor{keywordflow}{return} \_phase\_offset;
-32 \}
-\end{DoxyCode}
+25                                                                 \{
+26     \_phase\_offset-=value;
+27     \hyperlink{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\_phasor}-=\_phase\_offset;
+28     \_phase\_offset=value;
+29     \textcolor{keywordflow}{return} \_phase\_offset;
+30 \}\end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
@@ -351,42 +351,49 @@ Definition at line 27 of file Signal\+Generator.\+cpp.
 \subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_a67e296e3506dcdf09402c667cddff9ac}
 
 
-Definition at line 34 of file Signal\+Generator.\+h.
+Definition at line 28 of file Signal\+Generator.\+h.
 
-\hypertarget{classDSG_1_1FourierGenerator_aedac2cf90997418836d064c90540249d}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+harmonic\+Table@{\+\_\+harmonic\+Table}}
+\hypertarget{classDSG_1_1FourierGenerator_a7288408f8e44d5edb5eecc62480243d7}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+harmonic\+Table@{\+\_\+harmonic\+Table}}
 \index{\+\_\+harmonic\+Table@{\+\_\+harmonic\+Table}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
-\subsubsection[{\+\_\+harmonic\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+Backend\+::\+Harmonic\+Table} D\+S\+G\+::\+Fourier\+Generator\+::\+\_\+harmonic\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classDSG_1_1FourierGenerator_aedac2cf90997418836d064c90540249d}
+\subsubsection[{\+\_\+harmonic\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+Harmonic\+Table} D\+S\+G\+::\+Fourier\+Generator\+::\+\_\+harmonic\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classDSG_1_1FourierGenerator_a7288408f8e44d5edb5eecc62480243d7}
 
 
-Definition at line 39 of file Fourier\+Generator.\+h.
+Definition at line 34 of file Fourier\+Generator.\+h.
 
 \hypertarget{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+phasor@{\+\_\+phasor}}
 \index{\+\_\+phasor@{\+\_\+phasor}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
 \subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_ac2271b582bf699275f077ecb642a8cd9}
 
 
-Definition at line 46 of file Signal\+Generator.\+h.
+Definition at line 38 of file Signal\+Generator.\+h.
 
 \hypertarget{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+rate@{\+\_\+rate}}
 \index{\+\_\+rate@{\+\_\+rate}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
 \subsubsection[{\+\_\+rate}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Signal\+Generator\+::\+\_\+rate\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1SignalGenerator_aa10f6c85d9adee901139ea7fb346f39d}
 
 
-Definition at line 33 of file Signal\+Generator.\+h.
+Definition at line 27 of file Signal\+Generator.\+h.
 
 \hypertarget{classDSG_1_1FourierGenerator_ab96bed1cd59c42e82a689036e5c62bef}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+sample@{\+\_\+sample}}
 \index{\+\_\+sample@{\+\_\+sample}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
 \subsubsection[{\+\_\+sample}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} D\+S\+G\+::\+Fourier\+Generator\+::\+\_\+sample\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1FourierGenerator_ab96bed1cd59c42e82a689036e5c62bef}
 
 
-Definition at line 37 of file Fourier\+Generator.\+h.
+Definition at line 32 of file Fourier\+Generator.\+h.
+
+\hypertarget{classDSG_1_1FourierGenerator_a1ae5fb243ce05e638bdf0dec8bde7426}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+sine\+Lut@{\+\_\+sine\+Lut}}
+\index{\+\_\+sine\+Lut@{\+\_\+sine\+Lut}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
+\subsubsection[{\+\_\+sine\+Lut}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+Sine\+L\+U\+T}$<$ float, 32768 $>$ D\+S\+G\+::\+Fourier\+Generator\+::\+\_\+sine\+Lut\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classDSG_1_1FourierGenerator_a1ae5fb243ce05e638bdf0dec8bde7426}
+
+
+Definition at line 35 of file Fourier\+Generator.\+h.
 
 \hypertarget{classDSG_1_1FourierGenerator_a6b7f2439b26914cc9df6b6975a2cedac}{\index{D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}!\+\_\+storage@{\+\_\+storage}}
 \index{\+\_\+storage@{\+\_\+storage}!D\+S\+G\+::\+Fourier\+Generator@{D\+S\+G\+::\+Fourier\+Generator}}
 \subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sample} D\+S\+G\+::\+Fourier\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1FourierGenerator_a6b7f2439b26914cc9df6b6975a2cedac}
 
 
-Definition at line 38 of file Fourier\+Generator.\+h.
+Definition at line 33 of file Fourier\+Generator.\+h.
 
 
 

@@ -13,7 +13,7 @@
 #include "Sample.h"
 #include "Buffer.h"
 #include "RingBuffer.h"
-#include "Queue.h"
+
 
 #include "Driver.h"
 
@@ -23,7 +23,6 @@
 
 #include "PI.h"
 #include "Taylor.h"
-#include "Sin.h"
+
 
 #endif
-

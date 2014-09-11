@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,19 +109,23 @@ Inheritance diagram for DSG::SignalGenerator:</div>
  <div class="center">
   <img src="classDSG_1_1SignalGenerator.png" usemap="#DSG::SignalGenerator_map" alt=""/>
   <map id="DSG::SignalGenerator_map" name="DSG::SignalGenerator_map">
-<area href="classDSG_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. " alt="DSG::SignalProcess" shape="rect" coords="688,0,831,24"/>
-<area href="classDSG_1_1AnalogGenerator.html" alt="DSG::AnalogGenerator" shape="rect" coords="153,112,296,136"/>
+<area href="classDSG_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. " alt="DSG::SignalProcess" shape="rect" coords="612,0,755,24"/>
+<area href="classDSG_1_1AnalogGenerator.html" alt="DSG::AnalogGenerator" shape="rect" coords="0,112,143,136"/>
 <area href="classDSG_1_1BLIT.html" title="See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of conce..." alt="DSG::BLIT" shape="rect" coords="306,112,449,136"/>
-<area href="classDSG_1_1FourierGenerator.html" title="A Class Extending The SignalGenerator Class with functionality for generating a wave by summing sinus..." alt="DSG::FourierGenerator" shape="rect" coords="688,112,831,136"/>
-<area href="classDSG_1_1minBLEP.html" title="See file ~/Research/icmc01-hardsync.pdf for details of algorithm. " alt="DSG::minBLEP" shape="rect" coords="841,112,984,136"/>
-<area href="classDSG_1_1polyBLEP.html" title="See file ~/Research/polyBLEP.rtf for links to deatils about algorithm. " alt="DSG::polyBLEP" shape="rect" coords="994,112,1137,136"/>
-<area href="classDSG_1_1AnalogSaw.html" alt="DSG::AnalogSaw" shape="rect" coords="0,168,143,192"/>
-<area href="classDSG_1_1AnalogSquare.html" alt="DSG::AnalogSquare" shape="rect" coords="153,168,296,192"/>
-<area href="classDSG_1_1AnalogTriangle.html" alt="DSG::AnalogTriangle" shape="rect" coords="306,168,449,192"/>
-<area href="classDSG_1_1FourierSaw.html" title="Fourier Series Based Saw Wave. " alt="DSG::FourierSaw" shape="rect" coords="459,168,602,192"/>
-<area href="classDSG_1_1FourierSquare.html" title="Fourier Series Based FourierSquare Wave. " alt="DSG::FourierSquare" shape="rect" coords="612,168,755,192"/>
-<area href="classDSG_1_1FourierTriangle.html" title="Fourier Series Based FourierTriangle Wave. " alt="DSG::FourierTriangle" shape="rect" coords="765,168,908,192"/>
-<area href="classDSG_1_1Sine.html" title="Sine Wave Generator. " alt="DSG::Sine" shape="rect" coords="918,168,1061,192"/>
+<area href="classDSG_1_1DPW.html" title="See File ~/Research/S-89.3580-2010-Pekonen.pdf for detials on DPW algorithm. " alt="DSG::DPW" shape="rect" coords="459,112,602,136"/>
+<area href="classDSG_1_1DSF.html" title="See ~/Research/stanm5.pdf for algorithm details. " alt="DSG::DSF" shape="rect" coords="612,112,755,136"/>
+<area href="classDSG_1_1FourierGenerator.html" title="A Class Extending The SignalGenerator Class with functionality for generating a wave by summing sinus..." alt="DSG::FourierGenerator" shape="rect" coords="765,112,908,136"/>
+<area href="classDSG_1_1minBLEP.html" title="See file ~/Research/icmc01-hardsync.pdf for details of algorithm. " alt="DSG::minBLEP" shape="rect" coords="918,112,1061,136"/>
+<area href="classDSG_1_1polyBLEP.html" title="See file ~/Research/polyBLEP.rtf for links to deatils about algorithm. " alt="DSG::polyBLEP" shape="rect" coords="1071,112,1214,136"/>
+<area href="classDSG_1_1AnalogSaw.html" alt="DSG::AnalogSaw" shape="rect" coords="153,168,296,192"/>
+<area href="classDSG_1_1AnalogSquare.html" alt="DSG::AnalogSquare" shape="rect" coords="153,224,296,248"/>
+<area href="classDSG_1_1AnalogTriangle.html" alt="DSG::AnalogTriangle" shape="rect" coords="153,280,296,304"/>
+<area href="classDSG_1_1BLITSaw.html" title="See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of conce..." alt="DSG::BLITSaw" shape="rect" coords="459,168,602,192"/>
+<area href="classDSG_1_1BLITSquare.html" title="See file ~/Research/alias-free-digital-synthesis-of-classic-analog-waveforms.pdf for details of conce..." alt="DSG::BLITSquare" shape="rect" coords="459,224,602,248"/>
+<area href="classDSG_1_1FourierSaw.html" title="Fourier Series Based Saw Wave. " alt="DSG::FourierSaw" shape="rect" coords="918,168,1061,192"/>
+<area href="classDSG_1_1FourierSquare.html" title="Fourier Series Based FourierSquare Wave. " alt="DSG::FourierSquare" shape="rect" coords="918,224,1061,248"/>
+<area href="classDSG_1_1FourierTriangle.html" title="Fourier Series Based FourierTriangle Wave. " alt="DSG::FourierTriangle" shape="rect" coords="918,280,1061,304"/>
+<area href="classDSG_1_1Sine.html" title="Sine Wave Generator. " alt="DSG::Sine" shape="rect" coords="918,336,1061,360"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -169,7 +173,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Base Class extending the <a class="el" href="classDSG_1_1SignalProcess.html" title="An Abstract Base Class defining the basics API needed for audio generation. ">SignalProcess</a> API with functionality for signal generation. </p>
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00019">19</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00015">15</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a13ebda67fcdc880ef41aff501cc23fc3"></a>
 <div class="memitem">
@@ -184,13 +188,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00010">10</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                   :<a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a>(0),_phase_offset(0),<a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>(0),<a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>(0){</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00046">SignalGenerator.h:46</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00009">9</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                                   :<a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a>(0),_phase_offset(0),<a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>(0),<a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>(0){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00028">SignalGenerator.h:28</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00038">SignalGenerator.h:38</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00027">SignalGenerator.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,12 +222,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00013">13</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;:<a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a>(frequency/ <a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>()),<a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>(frequency),_phase_offset(phase_offset),<a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>(0){}</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
-<div class="ttc" id="namespaceDSG_html_a0c5c3a251b3688398da18138c5efe4bf"><div class="ttname"><a href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00046">SignalGenerator.h:46</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00012">12</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;:<a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a>(frequency/ <a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>()),<a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>(frequency),_phase_offset(phase_offset),<a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>(0){}</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00028">SignalGenerator.h:28</a></div></div>
+<div class="ttc" id="namespaceDSG_html_a0c5c3a251b3688398da18138c5efe4bf"><div class="ttname"><a href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00023">Sample_Rate.h:23</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00038">SignalGenerator.h:38</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00027">SignalGenerator.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,8 +252,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00014">14</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00013">13</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,16 +279,16 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00064">64</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                         {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        value = <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>+=<a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>&gt;1?<a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>-=1:0;<span class="comment">//cheaper cheaper %1</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//_phasor -= (unsigned long)_phasor;//cheaper %1</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00046">SignalGenerator.h:46</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00052">52</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                         {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        value = <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>+=<a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>&gt;1?<a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>-=1:0;<span class="comment">//cheaper cheaper %1</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//_phasor -= (unsigned long)_phasor;//cheaper %1</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00038">SignalGenerator.h:38</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00027">SignalGenerator.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -309,12 +313,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00071">71</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                             {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PI_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a> * <a class="code" href="classDSG_1_1SignalGenerator.html#ac0d781b8673b3a283bf7c133290ede50">_pstep</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="ttc" id="PI_8h_html_a4912c64aec0c943b7985db6cb61ff83a"><div class="ttname"><a href="PI_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a></div><div class="ttdeci">#define TWOPI</div><div class="ttdef"><b>Definition:</b> <a href="Sin_8h_source.html#l00014">Sin.h:14</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac0d781b8673b3a283bf7c133290ede50"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac0d781b8673b3a283bf7c133290ede50">DSG::SignalGenerator::_pstep</a></div><div class="ttdeci">double _pstep()</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00064">SignalGenerator.h:64</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00059">59</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                             {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PI_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a> * <a class="code" href="classDSG_1_1SignalGenerator.html#ac0d781b8673b3a283bf7c133290ede50">_pstep</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="ttc" id="PI_8h_html_a4912c64aec0c943b7985db6cb61ff83a"><div class="ttname"><a href="PI_8h.html#a4912c64aec0c943b7985db6cb61ff83a">TWOPI</a></div><div class="ttdeci">#define TWOPI</div><div class="ttdef"><b>Definition:</b> <a href="PI_8h_source.html#l00012">PI.h:12</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac0d781b8673b3a283bf7c133290ede50"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac0d781b8673b3a283bf7c133290ede50">DSG::SignalGenerator::_pstep</a></div><div class="ttdeci">double _pstep()</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00052">SignalGenerator.h:52</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,11 +343,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00074">74</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                       {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a> = _phase_offset;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00046">SignalGenerator.h:46</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00062">62</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                       {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a> = _phase_offset;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00038">SignalGenerator.h:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -368,11 +372,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00016">16</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00014">14</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00028">SignalGenerator.h:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -398,49 +402,17 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classDSG_1_1BLIT.html#a67b698a54f37c361945cae3e137af76f">DSG::BLIT</a>, <a class="el" href="classDSG_1_1FourierSaw.html#a929602365c9b29f30f523fa07a29966e">DSG::FourierSaw</a>, <a class="el" href="classDSG_1_1FourierSquare.html#a80f94eabad633e105cfa673fdee332d6">DSG::FourierSquare</a>, and <a class="el" href="classDSG_1_1FourierTriangle.html#aebb275eee9fb923636a8db5e4aa90b39">DSG::FourierTriangle</a>.</p>
+<p>Reimplemented in <a class="el" href="classDSG_1_1BLIT.html#a67b698a54f37c361945cae3e137af76f">DSG::BLIT</a>, <a class="el" href="classDSG_1_1FourierTriangle.html#aebb275eee9fb923636a8db5e4aa90b39">DSG::FourierTriangle</a>, <a class="el" href="classDSG_1_1FourierSaw.html#a929602365c9b29f30f523fa07a29966e">DSG::FourierSaw</a>, and <a class="el" href="classDSG_1_1FourierSquare.html#a80f94eabad633e105cfa673fdee332d6">DSG::FourierSquare</a>.</p>
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00019">19</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                              {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a> = value;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a> = <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>/ <a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00034">SignalGenerator.h:34</a></div></div>
-<div class="ttc" id="namespaceDSG_html_a0c5c3a251b3688398da18138c5efe4bf"><div class="ttname"><a href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00029">Sample_Rate.h:29</a></div></div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00033">SignalGenerator.h:33</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a95d485b68d874938ac93644b121607b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DSG::SignalGenerator::Perform </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDSG_1_1Sample.html">Sample</a> &amp;&#160;</td>
-          <td class="paramname"><em>signal</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classDSG_1_1FourierGenerator.html#a7f5e34e65c1fe757318fb5b063dabde9">DSG::FourierGenerator</a>, <a class="el" href="classDSG_1_1BLIT.html#a0f769ac63ee884a6d3899b38d6c2944c">DSG::BLIT</a>, <a class="el" href="classDSG_1_1AnalogGenerator.html#ac50033964304239b514b7ee9d064bc75">DSG::AnalogGenerator</a>, <a class="el" href="classDSG_1_1FourierSaw.html#a3cc372cd7dd694f8b9cb70e504dd04a1">DSG::FourierSaw</a>, <a class="el" href="classDSG_1_1FourierSquare.html#a3e9cfc95b3592eaf04fbcd61a3c68387">DSG::FourierSquare</a>, <a class="el" href="classDSG_1_1FourierTriangle.html#ae927efb96f8d40f620dd02bdaaeef4d5">DSG::FourierTriangle</a>, <a class="el" href="classDSG_1_1Sine.html#a04d925dc8c9a4b320f21697ce853a407">DSG::Sine</a>, <a class="el" href="classDSG_1_1AnalogSaw.html#ae52d07d0d03f6f1fb92c012cc52ae3eb">DSG::AnalogSaw</a>, <a class="el" href="classDSG_1_1AnalogSquare.html#a93a4b464545a32f72491d3df490fd3f7">DSG::AnalogSquare</a>, and <a class="el" href="classDSG_1_1AnalogTriangle.html#ac3edb87c395763d6894672b471850b05">DSG::AnalogTriangle</a>.</p>
-
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00056">56</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                       {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        signal = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00017">17</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                              {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a> = value;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">_rate</a> = <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>/ <a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">_frequency</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_a67e296e3506dcdf09402c667cddff9ac"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#a67e296e3506dcdf09402c667cddff9ac">DSG::SignalGenerator::_frequency</a></div><div class="ttdeci">double _frequency</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00028">SignalGenerator.h:28</a></div></div>
+<div class="ttc" id="namespaceDSG_html_a0c5c3a251b3688398da18138c5efe4bf"><div class="ttname"><a href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00023">Sample_Rate.h:23</a></div></div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_aa10f6c85d9adee901139ea7fb346f39d"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aa10f6c85d9adee901139ea7fb346f39d">DSG::SignalGenerator::_rate</a></div><div class="ttdeci">double _rate</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00027">SignalGenerator.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -468,6 +440,38 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a95d485b68d874938ac93644b121607b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSG::SignalGenerator::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDSG_1_1Sample.html">Sample</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classDSG_1_1FourierGenerator.html#a7f5e34e65c1fe757318fb5b063dabde9">DSG::FourierGenerator</a>, <a class="el" href="classDSG_1_1BLIT.html#a0f769ac63ee884a6d3899b38d6c2944c">DSG::BLIT</a>, <a class="el" href="classDSG_1_1AnalogGenerator.html#ac50033964304239b514b7ee9d064bc75">DSG::AnalogGenerator</a>, <a class="el" href="classDSG_1_1FourierTriangle.html#ae927efb96f8d40f620dd02bdaaeef4d5">DSG::FourierTriangle</a>, <a class="el" href="classDSG_1_1Sine.html#a04d925dc8c9a4b320f21697ce853a407">DSG::Sine</a>, <a class="el" href="classDSG_1_1FourierSaw.html#a3cc372cd7dd694f8b9cb70e504dd04a1">DSG::FourierSaw</a>, <a class="el" href="classDSG_1_1AnalogSaw.html#ae52d07d0d03f6f1fb92c012cc52ae3eb">DSG::AnalogSaw</a>, <a class="el" href="classDSG_1_1AnalogSquare.html#a93a4b464545a32f72491d3df490fd3f7">DSG::AnalogSquare</a>, <a class="el" href="classDSG_1_1AnalogTriangle.html#ac3edb87c395763d6894672b471850b05">DSG::AnalogTriangle</a>, and <a class="el" href="classDSG_1_1FourierSquare.html#a3e9cfc95b3592eaf04fbcd61a3c68387">DSG::FourierSquare</a>.</p>
+
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00044">44</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                       {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        signal = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="abaa9aecd00b792d46166b91524b42db6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -492,13 +496,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classDSG_1_1SignalProcess.html#a9df44fe60cca01c3c697283408cecf4d">DSG::SignalProcess</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classDSG_1_1FourierGenerator.html#a8b2aca91155dbb524aaf13867f273188">DSG::FourierGenerator</a>, <a class="el" href="classDSG_1_1BLIT.html#ae464457074d366c46f42b53b59d82ecb">DSG::BLIT</a>, <a class="el" href="classDSG_1_1AnalogGenerator.html#a1b4f1d4af926fcc3e9571db7960c8706">DSG::AnalogGenerator</a>, <a class="el" href="classDSG_1_1FourierSaw.html#a76b78874feebbc89d00656fec4bfd57a">DSG::FourierSaw</a>, <a class="el" href="classDSG_1_1FourierSquare.html#ad9999119d9efc453329ed4b3eaf5f226">DSG::FourierSquare</a>, <a class="el" href="classDSG_1_1FourierTriangle.html#a017e2b59123ff3afa9a5c0e833e5f482">DSG::FourierTriangle</a>, <a class="el" href="classDSG_1_1Sine.html#a6408fedf61f1f2a4026261d181997afc">DSG::Sine</a>, <a class="el" href="classDSG_1_1AnalogSaw.html#a14dbd5c7faf6559b9ea79f8eb1ad6af5">DSG::AnalogSaw</a>, <a class="el" href="classDSG_1_1AnalogSquare.html#a1d9c8a380775a7e4f6e0aa8fb1b05af6">DSG::AnalogSquare</a>, and <a class="el" href="classDSG_1_1AnalogTriangle.html#a9456183af28d98ccf3daa85b8ad12b52">DSG::AnalogTriangle</a>.</p>
+<p>Reimplemented in <a class="el" href="classDSG_1_1FourierGenerator.html#a8b2aca91155dbb524aaf13867f273188">DSG::FourierGenerator</a>, <a class="el" href="classDSG_1_1BLIT.html#ae464457074d366c46f42b53b59d82ecb">DSG::BLIT</a>, <a class="el" href="classDSG_1_1AnalogGenerator.html#a1b4f1d4af926fcc3e9571db7960c8706">DSG::AnalogGenerator</a>, <a class="el" href="classDSG_1_1FourierTriangle.html#a017e2b59123ff3afa9a5c0e833e5f482">DSG::FourierTriangle</a>, <a class="el" href="classDSG_1_1Sine.html#a6408fedf61f1f2a4026261d181997afc">DSG::Sine</a>, <a class="el" href="classDSG_1_1FourierSaw.html#a76b78874feebbc89d00656fec4bfd57a">DSG::FourierSaw</a>, <a class="el" href="classDSG_1_1AnalogSaw.html#a14dbd5c7faf6559b9ea79f8eb1ad6af5">DSG::AnalogSaw</a>, <a class="el" href="classDSG_1_1AnalogSquare.html#a1d9c8a380775a7e4f6e0aa8fb1b05af6">DSG::AnalogSquare</a>, <a class="el" href="classDSG_1_1AnalogTriangle.html#a9456183af28d98ccf3daa85b8ad12b52">DSG::AnalogTriangle</a>, and <a class="el" href="classDSG_1_1FourierSquare.html#ad9999119d9efc453329ed4b3eaf5f226">DSG::FourierSquare</a>.</p>
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00060">60</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                           {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        signal.Flush();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00048">48</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                           {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        signal.Flush();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -523,10 +527,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00024">24</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                  {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> _phase_offset;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00022">22</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                  {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> _phase_offset;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -552,14 +556,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00027">27</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    _phase_offset-=value;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>-=_phase_offset;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    _phase_offset=value;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> _phase_offset;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00046">SignalGenerator.h:46</a></div></div>
+<p>Definition at line <a class="el" href="SignalGenerator_8cpp_source.html#l00025">25</a> of file <a class="el" href="SignalGenerator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                                {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    _phase_offset-=value;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">_phasor</a>-=_phase_offset;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    _phase_offset=value;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> _phase_offset;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}<div class="ttc" id="classDSG_1_1SignalGenerator_html_ac2271b582bf699275f077ecb642a8cd9"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#ac2271b582bf699275f077ecb642a8cd9">DSG::SignalGenerator::_phasor</a></div><div class="ttdeci">double _phasor</div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8h_source.html#l00038">SignalGenerator.h:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -582,7 +585,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00034">34</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00028">28</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +607,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00046">46</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00038">38</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +629,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00033">33</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="SignalGenerator_8h_source.html#l00027">27</a> of file <a class="el" href="SignalGenerator_8h_source.html">SignalGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +640,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 9 2014 19:02:02 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 10 2014 20:47:34 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

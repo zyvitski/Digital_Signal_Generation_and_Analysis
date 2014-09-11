@@ -1,0 +1,189 @@
+\hypertarget{classDSG_1_1HarmonicTable}{\section{D\+S\+G\+:\+:Harmonic\+Table Class Reference}
+\label{classDSG_1_1HarmonicTable}\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+}
+
+
+{\ttfamily \#include $<$Harmonic\+Table.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDSG_1_1HarmonicTable_afd434db81626c705285d00de4bd5bc4d}{Harmonic\+Table} ()
+\item 
+\hyperlink{classDSG_1_1HarmonicTable_a1e8371466c72f447313f79e062852b48}{$\sim$\+Harmonic\+Table} ()
+\item 
+double const \& \hyperlink{classDSG_1_1HarmonicTable_a979840fc73c8c4b6a7c24eaa3ba6387b}{Saw} (unsigned short const \&index)
+\item 
+double const \& \hyperlink{classDSG_1_1HarmonicTable_a48331251bdd66ce43485591d8997df72}{Triangle} (unsigned short const \&index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDSG_1_1HarmonicTable_a72a74b6c4e294c29aad28f7039a9c11a}{fill\+Saw} ()
+\item 
+void \hyperlink{classDSG_1_1HarmonicTable_ad7bd325b30f752137abf754dbcb563c9}{fill\+Tri} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classDSG_1_1HarmonicTable_a2bbcf6810c1613f8261244fe59233f22}{\+\_\+saw} \mbox{[}8192\mbox{]}
+\item 
+double \hyperlink{classDSG_1_1HarmonicTable_af364cbeebefb7b3228557cbe406663cc}{\+\_\+triangle} \mbox{[}8192\mbox{]}
+\item 
+const short \hyperlink{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}{\+\_\+size} =8192
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Harmonic\+Table.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDSG_1_1HarmonicTable_afd434db81626c705285d00de4bd5bc4d}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!Harmonic\+Table@{Harmonic\+Table}}
+\index{Harmonic\+Table@{Harmonic\+Table}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{Harmonic\+Table}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Harmonic\+Table\+::\+Harmonic\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDSG_1_1HarmonicTable_afd434db81626c705285d00de4bd5bc4d}
+
+
+Definition at line 10 of file Harmonic\+Table.\+cpp.
+
+
+\begin{DoxyCode}
+10                                \{
+11     \hyperlink{classDSG_1_1HarmonicTable_a72a74b6c4e294c29aad28f7039a9c11a}{fillSaw}();
+12     \hyperlink{classDSG_1_1HarmonicTable_ad7bd325b30f752137abf754dbcb563c9}{fillTri}();
+13 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1HarmonicTable_a1e8371466c72f447313f79e062852b48}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!````~Harmonic\+Table@{$\sim$\+Harmonic\+Table}}
+\index{````~Harmonic\+Table@{$\sim$\+Harmonic\+Table}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{$\sim$\+Harmonic\+Table}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Harmonic\+Table\+::$\sim$\+Harmonic\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDSG_1_1HarmonicTable_a1e8371466c72f447313f79e062852b48}
+
+
+Definition at line 14 of file Harmonic\+Table.\+cpp.
+
+
+\begin{DoxyCode}
+14 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDSG_1_1HarmonicTable_a72a74b6c4e294c29aad28f7039a9c11a}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!fill\+Saw@{fill\+Saw}}
+\index{fill\+Saw@{fill\+Saw}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{fill\+Saw}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Harmonic\+Table\+::fill\+Saw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classDSG_1_1HarmonicTable_a72a74b6c4e294c29aad28f7039a9c11a}
+
+
+Definition at line 15 of file Harmonic\+Table.\+cpp.
+
+
+\begin{DoxyCode}
+15                                      \{
+16     \hyperlink{classDSG_1_1HarmonicTable_a2bbcf6810c1613f8261244fe59233f22}{\_saw}[0]=0.0;
+17     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=1; i<\hyperlink{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}{\_size}; ++i) \{
+18         \hyperlink{classDSG_1_1HarmonicTable_a2bbcf6810c1613f8261244fe59233f22}{\_saw}[i] = 1.0/i;
+19     \}
+20 \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1HarmonicTable_ad7bd325b30f752137abf754dbcb563c9}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!fill\+Tri@{fill\+Tri}}
+\index{fill\+Tri@{fill\+Tri}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{fill\+Tri}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Harmonic\+Table\+::fill\+Tri (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classDSG_1_1HarmonicTable_ad7bd325b30f752137abf754dbcb563c9}
+
+
+Definition at line 21 of file Harmonic\+Table.\+cpp.
+
+
+\begin{DoxyCode}
+21                                      \{
+22     \hyperlink{classDSG_1_1HarmonicTable_af364cbeebefb7b3228557cbe406663cc}{\_triangle}[0]=0.0;
+23     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=1; i<\hyperlink{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}{\_size}; i+=2) \{
+24         \hyperlink{classDSG_1_1HarmonicTable_af364cbeebefb7b3228557cbe406663cc}{\_triangle}[i] =pow(-1.0, (i-1.0)*0.5)/(i*i);
+25     \}
+26 \}\end{DoxyCode}
+\hypertarget{classDSG_1_1HarmonicTable_a979840fc73c8c4b6a7c24eaa3ba6387b}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!Saw@{Saw}}
+\index{Saw@{Saw}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{Saw}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\+S\+G\+::\+Harmonic\+Table\+::\+Saw (
+\begin{DoxyParamCaption}
+\item[{unsigned short const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDSG_1_1HarmonicTable_a979840fc73c8c4b6a7c24eaa3ba6387b}
+
+
+Definition at line 32 of file Harmonic\+Table.\+h.
+
+
+\begin{DoxyCode}
+32                                                                           \{
+33 \textcolor{preprocessor}{#ifdef DEBUG}
+34             assert(index<\hyperlink{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}{\_size});
+35 \textcolor{preprocessor}{#endif}
+36             \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1HarmonicTable_a2bbcf6810c1613f8261244fe59233f22}{\_saw}[index];
+37         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1HarmonicTable_a48331251bdd66ce43485591d8997df72}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{Triangle}]{\setlength{\rightskip}{0pt plus 5cm}double const \& D\+S\+G\+::\+Harmonic\+Table\+::\+Triangle (
+\begin{DoxyParamCaption}
+\item[{unsigned short const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDSG_1_1HarmonicTable_a48331251bdd66ce43485591d8997df72}
+
+
+Definition at line 38 of file Harmonic\+Table.\+h.
+
+
+\begin{DoxyCode}
+38                                                                                \{
+39 \textcolor{preprocessor}{#ifdef DEBUG}
+40             assert(index<\hyperlink{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}{\_size});
+41 \textcolor{preprocessor}{#endif}
+42             \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1HarmonicTable_af364cbeebefb7b3228557cbe406663cc}{\_triangle}[index];
+43         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDSG_1_1HarmonicTable_a2bbcf6810c1613f8261244fe59233f22}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!\+\_\+saw@{\+\_\+saw}}
+\index{\+\_\+saw@{\+\_\+saw}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{\+\_\+saw}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Harmonic\+Table\+::\+\_\+saw\mbox{[}8192\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1HarmonicTable_a2bbcf6810c1613f8261244fe59233f22}
+
+
+Definition at line 26 of file Harmonic\+Table.\+h.
+
+\hypertarget{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}const short D\+S\+G\+::\+Harmonic\+Table\+::\+\_\+size =8192\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1HarmonicTable_a7c4a3c7183bfa5f644d4e15679e41706}
+
+
+Definition at line 28 of file Harmonic\+Table.\+h.
+
+\hypertarget{classDSG_1_1HarmonicTable_af364cbeebefb7b3228557cbe406663cc}{\index{D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}!\+\_\+triangle@{\+\_\+triangle}}
+\index{\+\_\+triangle@{\+\_\+triangle}!D\+S\+G\+::\+Harmonic\+Table@{D\+S\+G\+::\+Harmonic\+Table}}
+\subsubsection[{\+\_\+triangle}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Harmonic\+Table\+::\+\_\+triangle\mbox{[}8192\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1HarmonicTable_af364cbeebefb7b3228557cbe406663cc}
+
+
+Definition at line 27 of file Harmonic\+Table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{HarmonicTable_8h}{Harmonic\+Table.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/\hyperlink{HarmonicTable_8cpp}{Harmonic\+Table.\+cpp}\end{DoxyCompactItemize}

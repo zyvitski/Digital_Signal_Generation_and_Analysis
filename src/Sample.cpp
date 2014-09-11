@@ -5,9 +5,7 @@
 //  Created by Alexander Zywicki on 8/10/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #include "Sample.h"
-
 DSG:: Sample::Sample(){
     _buffer[0]=0;
     _buffer[1]=0;
@@ -34,15 +32,12 @@ DSG:: Sample::~Sample(){
 size_t DSG:: Sample::Size()const{
     return CHANNEL_COUNT;
 }
-
-
 DSG:: Sample& DSG:: Sample::operator=(float const& value){
     _buffer[0]=value;
     _buffer[1]=value;
     return *this;
 }
 //math
-
 DSG:: Sample operator +(DSG:: Sample const& s1,DSG:: Sample const& s2){
     return  DSG:: Sample(s1[0]+s2[0],s1[1]+s2[1]);
 }
@@ -80,7 +75,6 @@ DSG:: Sample operator /(DSG:: Sample const& samp,float val){
 DSG:: Sample operator /(float val,   DSG:: Sample const& samp){
     return  DSG:: Sample(val/samp[0],val/samp[1]);
 }
-
 DSG:: Sample& DSG:: Sample::operator++(){
     ++(*this)[0];
     ++(*this)[1];

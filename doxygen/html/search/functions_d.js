@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['queue',['Queue',['../classDSG_1_1Backend_1_1Queue.html#abf114ae1bb60464f072dcb755c48b87b',1,'DSG::Backend::Queue::Queue()'],['../classDSG_1_1Backend_1_1Queue.html#ac25736be535f1c1de655057899e309cd',1,'DSG::Backend::Queue::Queue(unsigned long size)'],['../classDSG_1_1Backend_1_1Queue.html#a6f6299238080adc2630ad48180b45752',1,'DSG::Backend::Queue::Queue(Queue&lt; element &gt; const &amp;other)']]]
+  ['read',['Read',['../classDSG_1_1RingBuffer.html#ae46649acd09c2e83834f3e31157b29b6',1,'DSG::RingBuffer']]],
+  ['ringbuffer',['RingBuffer',['../classDSG_1_1RingBuffer.html#a3136c9debb3c422adb1d5835e11b2b99',1,'DSG::RingBuffer::RingBuffer()'],['../classDSG_1_1RingBuffer.html#ae9859fd3ad18961de494d8b50fe4763e',1,'DSG::RingBuffer::RingBuffer(const size_t size)'],['../classDSG_1_1RingBuffer.html#ab09f32dacee49df3281c6701b7a4d737',1,'DSG::RingBuffer::RingBuffer(RingBuffer &amp;buffer)']]]
 ];

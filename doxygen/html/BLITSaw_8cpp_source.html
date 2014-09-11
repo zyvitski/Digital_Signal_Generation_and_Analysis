@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,29 +101,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="BLITSaw_8h.html">BLITSaw.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;DSG::BLITSaw::BLITSaw():BLIT::BLIT(){</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;DSG::BLITSaw::BLITSaw(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; frequency,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; phase_offset):BLIT::BLIT(frequency,phase_offset){</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;DSG::BLITSaw::~BLITSaw(){</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;DSG::BLITSaw::BLITSaw():BLIT::BLIT(){}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;DSG::BLITSaw::BLITSaw(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; frequency,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; phase_offset):BLIT::BLIT(frequency,phase_offset){}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DSG::BLITSaw::~BLITSaw(){}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; <a class="code" href="classDSG_1_1SignalGenerator.html#aedac746c5a70818d120858542ecb7c45">DSG::BLITSaw::Frequency</a>(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; value){</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    _frequency = value;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    _rate = _frequency/ <a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    C2_ = 1.0 / (<a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>()/_frequency);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; DSG::BLITSaw::Frequency(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; value){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _rate=value;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    updateHarms();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> _rate;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classDSG_1_1BLITSaw.html#ae0f3f38ca9ae61f9a377f7ca141995b3">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classDSG_1_1BLITSaw.html#ae0f3f38ca9ae61f9a377f7ca141995b3">DSG::BLITSaw::updateHarms</a>(){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="ttc" id="classDSG_1_1BLITSaw_html_ae0f3f38ca9ae61f9a377f7ca141995b3"><div class="ttname"><a href="classDSG_1_1BLITSaw.html#ae0f3f38ca9ae61f9a377f7ca141995b3">DSG::BLITSaw::updateHarms</a></div><div class="ttdeci">virtual void updateHarms()</div><div class="ttdef"><b>Definition:</b> <a href="BLITSaw_8cpp_source.html#l00025">BLITSaw.cpp:25</a></div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    updateHarms();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    state_ = -0.5 * a_; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> _rate;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classDSG_1_1BLITSaw.html#ae0f3f38ca9ae61f9a377f7ca141995b3">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classDSG_1_1BLITSaw.html#ae0f3f38ca9ae61f9a377f7ca141995b3">DSG::BLITSaw::updateHarms</a>(){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (_nHarms&lt;=0) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">size_t</span> max = (size_t)floor(0.5 * ( <a class="code" href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">Sample_Rate</a>()/ _frequency));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        m_ = 2* max +1;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        m_ = 2* _nHarms +1;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    a_ = m_/p_;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="ttc" id="classDSG_1_1SignalGenerator_html_aedac746c5a70818d120858542ecb7c45"><div class="ttname"><a href="classDSG_1_1SignalGenerator.html#aedac746c5a70818d120858542ecb7c45">DSG::SignalGenerator::Frequency</a></div><div class="ttdeci">virtual double const &amp; Frequency() const </div><div class="ttdef"><b>Definition:</b> <a href="SignalGenerator_8cpp_source.html#l00014">SignalGenerator.cpp:14</a></div></div>
+<div class="ttc" id="namespaceDSG_html_a0c5c3a251b3688398da18138c5efe4bf"><div class="ttname"><a href="namespaceDSG.html#a0c5c3a251b3688398da18138c5efe4bf">DSG::Sample_Rate</a></div><div class="ttdeci">double const &amp; Sample_Rate()</div><div class="ttdef"><b>Definition:</b> <a href="Sample__Rate_8h_source.html#l00023">Sample_Rate.h:23</a></div></div>
+<div class="ttc" id="classDSG_1_1BLITSaw_html_ae0f3f38ca9ae61f9a377f7ca141995b3"><div class="ttname"><a href="classDSG_1_1BLITSaw.html#ae0f3f38ca9ae61f9a377f7ca141995b3">DSG::BLITSaw::updateHarms</a></div><div class="ttdeci">virtual void updateHarms()</div><div class="ttdef"><b>Definition:</b> <a href="BLITSaw_8cpp_source.html#l00023">BLITSaw.cpp:23</a></div></div>
 <div class="ttc" id="BLITSaw_8h_html"><div class="ttname"><a href="BLITSaw_8h.html">BLITSaw.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 9 2014 19:02:02 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 10 2014 20:47:33 for Digital Signal Generation and Analysis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

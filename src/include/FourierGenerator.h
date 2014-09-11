@@ -14,14 +14,9 @@
 #include "HarmonicTable.h"
 
 namespace DSG {
-    
-  
         /*
          Fourier Generator is designed with built in phasor code for use in genorating classic analog style waveforms using fourier synthesis i.e. additive combination of sine waves based on a fourier series
          */
-        
-    
-        
         /*!\brief A Class Extending The SignalGenerator Class with functionality for generating a wave by summing sinusoids
          */
         class FourierGenerator: public SignalGenerator {
@@ -36,10 +31,9 @@ namespace DSG {
             inline unsigned long _maxHarms(double _frq);
              Sample _sample;
              Sample _storage;
-            static DSG::Backend::HarmonicTable _harmonicTable;
-            
+            static DSG::HarmonicTable _harmonicTable;
+            static DSG::SineLUT<float, 32768> _sineLut;
         };
-        
         inline bool FourierGenerator::Perform( Sample& signal){
             signal = 0;
             return false;
@@ -48,8 +42,6 @@ namespace DSG {
             signal.Flush();
             return false;
         }
-        
-                
         inline unsigned long FourierGenerator::_maxHarms(double _frq){
             //double softLim = 0.45;
             //double hardLim = 0.5;
@@ -58,6 +50,5 @@ namespace DSG {
             _s/=_frq;
             return trunc(_s);
         }
-    
 }
 #endif /* defined(__Waveform__FourierGenerator__) */

@@ -37,7 +37,7 @@ namespace DSG {
              Sample _sample;
              Sample _storage;
             static DSG::Backend::HarmonicTable _harmonicTable;
-            
+            static DSG::Backend::SineLUT<float, 32768> _sineLut;
         };
         
         inline bool FourierGenerator::Perform( Sample& signal){

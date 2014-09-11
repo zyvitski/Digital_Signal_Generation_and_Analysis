@@ -5,11 +5,7 @@
 //  Created by Alexander Zywicki on 9/8/14.
 //
 //
-
-
-
 #include "FourierTriangle.h"
-
 DSG::FourierTriangle::FourierTriangle():FourierGenerator(),_a(8.0/(PI*PI)),_h(_maxHarms(_frequency)+1),phs(0),stor(0){
 }
 DSG::FourierTriangle::FourierTriangle(double const& frequency,double const& phase_offset):FourierGenerator(frequency,phase_offset),_a(8.0/(PI*PI)),_h(_maxHarms(_frequency)+1),phs(0),stor(0){

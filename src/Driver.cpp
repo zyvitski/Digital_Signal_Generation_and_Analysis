@@ -5,16 +5,10 @@
 //  Created by Alexander Zywicki on 8/25/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
-
 #include "Driver.h"
 PaStream* stream;
-
 #define BUFFER_SIZE 4096
-
 DSG:: RingBuffer _buffer(BUFFER_SIZE);
-
-
 int DriverInit(void * data){
     PaError err=0;
     

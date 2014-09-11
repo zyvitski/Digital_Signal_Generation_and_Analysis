@@ -1,0 +1,178 @@
+\hypertarget{classDSG_1_1SineLUT}{\section{D\+S\+G\+:\+:Sine\+L\+U\+T$<$ element, size $>$ Class Template Reference}
+\label{classDSG_1_1SineLUT}\index{D\+S\+G\+::\+Sine\+L\+U\+T$<$ element, size $>$@{D\+S\+G\+::\+Sine\+L\+U\+T$<$ element, size $>$}}
+}
+
+
+{\ttfamily \#include $<$Sine\+L\+U\+T.\+h$>$}
+
+Inheritance diagram for D\+S\+G\+:\+:Sine\+L\+U\+T$<$ element, size $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDSG_1_1SineLUT}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDSG_1_1SineLUT_aaaaedbf1b278e69d232a9d9ad3100128}{Sine\+L\+U\+T} ()
+\item 
+virtual \hyperlink{classDSG_1_1SineLUT_a0acc0dcf9b64d28d14bda69c62739026}{$\sim$\+Sine\+L\+U\+T} ()
+\item 
+virtual element const \& \hyperlink{classDSG_1_1SineLUT_a1373f5663138855be2ea01999b6d6ac8}{operator()} (double const \&x)
+\item 
+element const \& \hyperlink{classDSG_1_1LUT_a5f3bc252bd650fae13046e7959b94f81}{operator\mbox{[}$\,$\mbox{]}} (unsigned long const \&index)
+\item 
+unsigned long const \& \hyperlink{classDSG_1_1LUT_a2d1a2112f9e960c7b70882a19d670ff9}{Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}{phs}
+\item 
+element \hyperlink{classDSG_1_1LUT_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\+\_\+table} \mbox{[}size\mbox{]}
+\item 
+const unsigned long \hyperlink{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename element, unsigned long size$>$class D\+S\+G\+::\+Sine\+L\+U\+T$<$ element, size $>$}
+
+
+
+Definition at line 19 of file Sine\+L\+U\+T.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDSG_1_1SineLUT_aaaaedbf1b278e69d232a9d9ad3100128}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!Sine\+L\+U\+T@{Sine\+L\+U\+T}}
+\index{Sine\+L\+U\+T@{Sine\+L\+U\+T}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{Sine\+L\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ {\bf D\+S\+G\+::\+Sine\+L\+U\+T}$<$ element, size $>$\+::{\bf Sine\+L\+U\+T} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDSG_1_1SineLUT_aaaaedbf1b278e69d232a9d9ad3100128}
+
+
+Definition at line 21 of file Sine\+L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+21                  :LUT<element,size>()\{
+22             \textcolor{keywordtype}{double} step = (\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}/this->\hyperlink{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\_size});
+23             \textcolor{keywordtype}{double} \hyperlink{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}{phs}=0;
+24             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<this->\hyperlink{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\_size}; ++i) \{
+25                 this->\hyperlink{classDSG_1_1LUT_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[i] = sin(phs);
+26                 phs+=step;
+27             \}
+28         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1SineLUT_a0acc0dcf9b64d28d14bda69c62739026}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!````~Sine\+L\+U\+T@{$\sim$\+Sine\+L\+U\+T}}
+\index{````~Sine\+L\+U\+T@{$\sim$\+Sine\+L\+U\+T}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{$\sim$\+Sine\+L\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ virtual {\bf D\+S\+G\+::\+Sine\+L\+U\+T}$<$ element, size $>$\+::$\sim${\bf Sine\+L\+U\+T} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDSG_1_1SineLUT_a0acc0dcf9b64d28d14bda69c62739026}
+
+
+Definition at line 29 of file Sine\+L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+29 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDSG_1_1SineLUT_a1373f5663138855be2ea01999b6d6ac8}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!operator()@{operator()}}
+\index{operator()@{operator()}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ virtual element const\& {\bf D\+S\+G\+::\+Sine\+L\+U\+T}$<$ element, size $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDSG_1_1SineLUT_a1373f5663138855be2ea01999b6d6ac8}
+
+
+Reimplemented from \hyperlink{classDSG_1_1LUT_a131c3cf974754270699fdcda74f2e694}{D\+S\+G\+::\+L\+U\+T$<$ element, size $>$}.
+
+
+
+Definition at line 30 of file Sine\+L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+30                                                                  \{
+31             \hyperlink{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}{phs}=x;
+32             \textcolor{comment}{//need range checking on x to ensure 0-1 range}
+33             \hyperlink{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}{phs}<0 ? \hyperlink{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}{phs} = 1-(phs*-1):0;
+34             phs-=((int)phs);
+35             \textcolor{keywordflow}{return} this->\hyperlink{classDSG_1_1LUT_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[(unsigned)(phs* (this->\hyperlink{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\_size}-1))];
+36         \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1LUT_a5f3bc252bd650fae13046e7959b94f81}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ element const\& {\bf D\+S\+G\+::\+L\+U\+T}$<$ element, size $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long const \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{classDSG_1_1LUT_a5f3bc252bd650fae13046e7959b94f81}
+
+
+Definition at line 22 of file L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+22                                                                  \{
+23 \textcolor{preprocessor}{#ifdef DEBUG}
+24                 assert(index<\hyperlink{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\_size});
+25 \textcolor{preprocessor}{#endif}
+26                 \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1LUT_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[index];
+27             \}
+\end{DoxyCode}
+\hypertarget{classDSG_1_1LUT_a2d1a2112f9e960c7b70882a19d670ff9}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!Size@{Size}}
+\index{Size@{Size}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ unsigned long const\& {\bf D\+S\+G\+::\+L\+U\+T}$<$ element, size $>$\+::Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}}\label{classDSG_1_1LUT_a2d1a2112f9e960c7b70882a19d670ff9}
+
+
+Definition at line 31 of file L\+U\+T.\+h.
+
+
+\begin{DoxyCode}
+31                                             \{
+32                 \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\_size};
+33             \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!\+\_\+size@{\+\_\+size}}
+\index{\+\_\+size@{\+\_\+size}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ const unsigned long {\bf D\+S\+G\+::\+L\+U\+T}$<$ element, size $>$\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1LUT_a87c352b5eaea2188955213c0f4ae9799}
+
+
+Definition at line 36 of file L\+U\+T.\+h.
+
+\hypertarget{classDSG_1_1LUT_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!\+\_\+table@{\+\_\+table}}
+\index{\+\_\+table@{\+\_\+table}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ element {\bf D\+S\+G\+::\+L\+U\+T}$<$ element, size $>$\+::\+\_\+table\mbox{[}size\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classDSG_1_1LUT_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}
+
+
+Definition at line 35 of file L\+U\+T.\+h.
+
+\hypertarget{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}{\index{D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}!phs@{phs}}
+\index{phs@{phs}!D\+S\+G\+::\+Sine\+L\+U\+T@{D\+S\+G\+::\+Sine\+L\+U\+T}}
+\subsubsection[{phs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename element, unsigned long size$>$ double {\bf D\+S\+G\+::\+Sine\+L\+U\+T}$<$ element, size $>$\+::phs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDSG_1_1SineLUT_ae780e53f58e2c7dc0568ee96f2d5598b}
+
+
+Definition at line 38 of file Sine\+L\+U\+T.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+School\+\_\+\+Stuff/\+Fall\+\_\+2014/\+Digital\+\_\+\+Signal\+\_\+\+Generation\+\_\+and\+\_\+\+Analysis/src/include/\hyperlink{SineLUT_8h}{Sine\+L\+U\+T.\+h}\end{DoxyCompactItemize}

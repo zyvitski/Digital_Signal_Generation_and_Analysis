@@ -10,7 +10,7 @@
 #define __Waveform__FourierSaw__
 
 #include "FourierGenerator.h"
-#include "Sin.h"
+
 
 namespace DSG {
  
@@ -28,19 +28,20 @@ namespace DSG {
             virtual double const& Frequency();
         protected:
             unsigned long _h;
-            double _a;
-            double phs;
-            double stor;
-            double _tmp;
-            double iPI;
+            float _a;
+            float phs;
+            float stor;
+            float _tmp;
+            float iPI;
+            float _param;
             unsigned short i;
         };
         
         inline bool FourierSaw::Perform( Sample& signal){
-     
             stor=0;
             for (i=1; i<_h; ++i) {
-                _tmp=DSG::Backend::Sin(_phasor*i);
+                _param = _phasor*i;
+                _tmp=_sineLut(_param);
                 _tmp*=_harmonicTable.Saw(i);
                 stor += _tmp ;
             }

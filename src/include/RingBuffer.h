@@ -16,24 +16,19 @@
 #include <atomic>
 #include <math.h>
 #include "Buffer.h"
-
 namespace DSG {
-    
-        
-        
+    /*!\brief RingBuffer of Audio Samples of the Sample Class type
+     */
         class RingBuffer:public Buffer {
         protected:
             std::atomic<size_t> _write;
             std::atomic<size_t> _read;
             size_t _count;
             size_t MASK;
-            
             size_t write;
             size_t read;
-            
             inline size_t next(size_t current);
             inline size_t make_pow_2(size_t number);
-            
         public:
             RingBuffer();
             RingBuffer(const size_t size);
@@ -82,12 +77,10 @@ namespace DSG {
         inline size_t const& RingBuffer::Count()const{
             return _count;
         }
-        
         //note: RingBuffer implementation will force a power of 2 size to allow use of bitwise increment.
         inline size_t RingBuffer::next(size_t current){return (current+1) & MASK;}
         inline size_t RingBuffer::make_pow_2(size_t number){
             return pow(2, ceil(log(number)/log(2)));
         }
-    
 }
 #endif

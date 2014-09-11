@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['polyblep',['polyBLEP',['../classDSG_1_1polyBLEP.html',1,'DSG']]]
+  ['minblep',['minBLEP',['../classDSG_1_1minBLEP.html',1,'DSG']]]
 ];

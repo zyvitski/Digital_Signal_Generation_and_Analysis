@@ -9,15 +9,19 @@
 #include "Signal.h"
 #include "Backend.h"
 
+
 int main(){
-    DSG:: Set_Sample_Rate(44100);
-    DSG:: RingBuffer _buff(4096);
-    DSG::FourierSaw _saw(20.0,0.0);
-    DSG::
+    DSG::Sample_Rate(44100);
     
+    long cycles = 100000000000;
     
-    _saw.Perform(_buff);
-    std::cout<<_buff<<std::endl;
+    double step = TWOPI/(float)cycles;
+    double phs=0;
+    
+    for (int i=0; i<cycles; ++i) {
+        DSG::Taylor::Sine(phs);
+        phs+=step;
+    }
    
     return 0;
 }

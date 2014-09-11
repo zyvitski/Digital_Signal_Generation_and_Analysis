@@ -3,6 +3,11 @@
 }
 
 
+Tools for storing and maintaining a global audio sample rate.  
+
+
+
+
 {\ttfamily \#include $<$Sample\+\_\+\+Rate.\+h$>$}
 
 \subsection*{Static Public Member Functions}
@@ -24,9 +29,9 @@ static double \hyperlink{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41
 
 
 \subsection{Detailed Description}
+Tools for storing and maintaining a global audio sample rate. 
 
-
-Definition at line 17 of file Sample\+\_\+\+Rate.\+h.
+Definition at line 14 of file Sample\+\_\+\+Rate.\+h.
 
 
 
@@ -40,13 +45,13 @@ Definition at line 17 of file Sample\+\_\+\+Rate.\+h.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classDSG_1_1SampleRate_ae64b5675efed1e2b8627fbe407b8cb91}
 
 
-Definition at line 18 of file Sample\+\_\+\+Rate.\+cpp.
+Definition at line 15 of file Sample\+\_\+\+Rate.\+cpp.
 
 
 \begin{DoxyCode}
-18                                          \{
-19     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SampleRate_a09608252c62dcf0f0437f64f93324e57}{sample\_rate};
-20 \}
+15                                          \{
+16     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SampleRate_a09608252c62dcf0f0437f64f93324e57}{sample\_rate};
+17 \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1SampleRate_ab7f5b3d837151019b5bc0642b3337bd8}{\index{D\+S\+G\+::\+Sample\+Rate@{D\+S\+G\+::\+Sample\+Rate}!Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}}
 \index{Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}!D\+S\+G\+::\+Sample\+Rate@{D\+S\+G\+::\+Sample\+Rate}}
@@ -57,14 +62,13 @@ Definition at line 18 of file Sample\+\_\+\+Rate.\+cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classDSG_1_1SampleRate_ab7f5b3d837151019b5bc0642b3337bd8}
 
 
-Definition at line 21 of file Sample\+\_\+\+Rate.\+cpp.
+Definition at line 18 of file Sample\+\_\+\+Rate.\+cpp.
 
 
 \begin{DoxyCode}
-21                                                  \{
-22     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41f}{sample\_rate\_inverse};
-23 \}
-\end{DoxyCode}
+18                                                  \{
+19     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41f}{sample\_rate\_inverse};
+20 \}\end{DoxyCode}
 \hypertarget{classDSG_1_1SampleRate_a20fbf652a8b305df17940d64ca3593a8}{\index{D\+S\+G\+::\+Sample\+Rate@{D\+S\+G\+::\+Sample\+Rate}!Set@{Set}}
 \index{Set@{Set}!D\+S\+G\+::\+Sample\+Rate@{D\+S\+G\+::\+Sample\+Rate}}
 \subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Sample\+Rate\+::\+Set (
@@ -74,14 +78,14 @@ Definition at line 21 of file Sample\+\_\+\+Rate.\+cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classDSG_1_1SampleRate_a20fbf652a8b305df17940d64ca3593a8}
 
 
-Definition at line 14 of file Sample\+\_\+\+Rate.\+cpp.
+Definition at line 11 of file Sample\+\_\+\+Rate.\+cpp.
 
 
 \begin{DoxyCode}
-14                                            \{
-15     \hyperlink{classDSG_1_1SampleRate_a09608252c62dcf0f0437f64f93324e57}{sample\_rate} = value;
-16     \hyperlink{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41f}{sample\_rate\_inverse} = 1.0f/value;
-17 \}
+11                                            \{
+12     \hyperlink{classDSG_1_1SampleRate_a09608252c62dcf0f0437f64f93324e57}{sample\_rate} = value;
+13     \hyperlink{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41f}{sample\_rate\_inverse} = 1.0f/value;
+14 \}
 \end{DoxyCode}
 
 
@@ -91,14 +95,14 @@ Definition at line 14 of file Sample\+\_\+\+Rate.\+cpp.
 \subsubsection[{sample\+\_\+rate}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Sample\+Rate\+::sample\+\_\+rate\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classDSG_1_1SampleRate_a09608252c62dcf0f0437f64f93324e57}
 
 
-Definition at line 23 of file Sample\+\_\+\+Rate.\+h.
+Definition at line 20 of file Sample\+\_\+\+Rate.\+h.
 
 \hypertarget{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41f}{\index{D\+S\+G\+::\+Sample\+Rate@{D\+S\+G\+::\+Sample\+Rate}!sample\+\_\+rate\+\_\+inverse@{sample\+\_\+rate\+\_\+inverse}}
 \index{sample\+\_\+rate\+\_\+inverse@{sample\+\_\+rate\+\_\+inverse}!D\+S\+G\+::\+Sample\+Rate@{D\+S\+G\+::\+Sample\+Rate}}
 \subsubsection[{sample\+\_\+rate\+\_\+inverse}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Sample\+Rate\+::sample\+\_\+rate\+\_\+inverse\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classDSG_1_1SampleRate_a17f5dfa529560272a0c9c917e3e2a41f}
 
 
-Definition at line 24 of file Sample\+\_\+\+Rate.\+h.
+Definition at line 21 of file Sample\+\_\+\+Rate.\+h.
 
 
 

@@ -7,68 +7,44 @@
 //
 
 #include "Taylor.h"
-
-
 //sin(X) = x - x^3/3! + x^5/5! - x^7/7! + x^9/9!...+x^21/21!
-/*
-based on audible performance the LUT method for a sine wave is faster compared to this method.
- TO DO:
-    Consider replacing pow function.(done)
-    investigate if using pre computed 1.0/n factorials would work better than hoping that the compiler will handle it.
- */
-double DSG::Backend::Taylor::Sine(double const& x){
-    double phs = fabs(x);//range checking
-    phs = fmod(phs,TWOPI);//range checking
+double DSG::Taylor::Sine(double const& x){
+    double phs = x<0 ?1.0-(-1*x):x;
+    while (phs>TWOPI) {
+        phs-=TWOPI;
+    }
     double val=phs;//term 1
-    
     //instead of using a pow() function we are calculatig the running power by using the multiply acculmulate function.
     //it may look ugly but it should be faster
     phs*=x;
     phs*=x;
-    val-=(phs * (1.0/6.0));
+    val-=(phs * 0.1666666666666666666666666666666666666666666666666666);
     phs*=x;
     phs*=x;
-    val+=(phs *(1.0/120.0));
+    val+=(phs * 0.0083333333333333333333333333333333333333333333333333);
     phs*=x;
     phs*=x;
-    val-=(phs *(1.0/5040.0));
+    val-=(phs * 0.0001984126984126984126984126984126984126984126984126);
     phs*=x;
     phs*=x;
-    val+=(phs *(1.0/362880.0));
+    val+=(phs * 0.0000027557319223985890652557319223985890652557319223);
     phs*=x;
     phs*=x;
-    val-=(phs*(1.0/39916800.0));
+    val-=(phs * 0.0000000250521083854417187750521083854417187750521083);
     phs*=x;
     phs*=x;
-    val+=(phs*(1.0/6227020800.0));
+    val+=(phs * 0.0000000001605904383682161459939237717015494793272571);
     phs*=x;
     phs*=x;
-    val-=(phs*(1.0/1307674368000.0));
+    val-=(phs * 0.0000000000007647163731819816475901131985788070444155);
     phs*=x;
     phs*=x;
-    val+=(phs*(1.0/355687428096000.0));
+    val+=(phs * 0.0000000000000028114572543455207631989455830103200162);
     phs*=x;
     phs*=x;
-    val-=(phs*(1.0/121645100408832000.0));
+    val-=(phs * 0.0000000000000000082206352466243297169559812368722807);
     phs*=x;
     phs*=x;
-    val+=(phs*(1.0/51090942171709440000.0));
-    //the hope is that the compiler is smart enough to evaluate 1.0/... at compile time be cause it will always be the same
-    
+    val+=(phs * 0.0000000000000000000195729410633912612308475743735054);
     return val;
 }
-/*
-double Taylor::Sine(double const& x,double const& n){
-    double val=x;
-    double phs = fabs(x);
-    char sign = -1;
-    phs = fmod(phs,TWOPI);
-    int trm = 3;
-    for (int i=1; i<n; ++i) {
-        val+= sign* term(phs, trm);
-        sign*=-1;
-        trm+=2;
-    }
-    return val;  
-}*/
-

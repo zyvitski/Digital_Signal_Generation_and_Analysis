@@ -15,7 +15,7 @@
 #include <assert.h>
 #endif
 namespace DSG{
-    namespace Backend{
+    
         class HarmonicTable {
         public:
             HarmonicTable();
@@ -29,7 +29,6 @@ namespace DSG{
             inline void fillSaw();
             inline void fillTri();
         };
-        
         inline double const& HarmonicTable::Saw(unsigned short const& index){
 #ifdef DEBUG
             assert(index<_size);
@@ -42,6 +41,6 @@ namespace DSG{
 #endif
             return _triangle[index];
         }
-    }
+    
 }
 #endif

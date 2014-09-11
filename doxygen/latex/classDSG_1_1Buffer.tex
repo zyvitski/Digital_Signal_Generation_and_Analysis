@@ -54,11 +54,11 @@ Definition at line 18 of file Buffer.\+h.
 )}}\label{classDSG_1_1Buffer_aa764dd8c389dcff51de08cb81fafeb86}
 
 
-Definition at line 13 of file Buffer.\+cpp.
+Definition at line 10 of file Buffer.\+cpp.
 
 
 \begin{DoxyCode}
-13 :\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}(0),\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}(\textcolor{keyword}{nullptr})\{\}
+10 :\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}(0),\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}(\textcolor{keyword}{nullptr})\{\}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1Buffer_a0e6502fd61833043744f9df94e8d5111}{\index{D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}!Buffer@{Buffer}}
 \index{Buffer@{Buffer}!D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}}
@@ -69,11 +69,11 @@ Definition at line 13 of file Buffer.\+cpp.
 )}}\label{classDSG_1_1Buffer_a0e6502fd61833043744f9df94e8d5111}
 
 
-Definition at line 14 of file Buffer.\+cpp.
+Definition at line 11 of file Buffer.\+cpp.
 
 
 \begin{DoxyCode}
-14 :\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}(size),\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}(\textcolor{keyword}{new}  Sample[size])\{\}
+11 :\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}(size),\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}(\textcolor{keyword}{new}  Sample[size])\{\}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1Buffer_a468a65d70553dfb773e4592b4b077683}{\index{D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}!Buffer@{Buffer}}
 \index{Buffer@{Buffer}!D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}}
@@ -84,15 +84,15 @@ Definition at line 14 of file Buffer.\+cpp.
 )}}\label{classDSG_1_1Buffer_a468a65d70553dfb773e4592b4b077683}
 
 
-Definition at line 15 of file Buffer.\+cpp.
+Definition at line 12 of file Buffer.\+cpp.
 
 
 \begin{DoxyCode}
-15                                      \{
-16     \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer} = \textcolor{keyword}{new}  Sample[\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}];
-17     \hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size} = other.\_size;
-18     *\textcolor{keyword}{this} = other;
-19 \}
+12                                      \{
+13     \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer} = \textcolor{keyword}{new}  Sample[\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}];
+14     \hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size} = other.\_size;
+15     *\textcolor{keyword}{this} = other;
+16 \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1Buffer_a619fc41bf263a419da1a19254e194101}{\index{D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}!````~Buffer@{$\sim$\+Buffer}}
 \index{````~Buffer@{$\sim$\+Buffer}!D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}}
@@ -103,15 +103,15 @@ Definition at line 15 of file Buffer.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDSG_1_1Buffer_a619fc41bf263a419da1a19254e194101}
 
 
-Definition at line 33 of file Buffer.\+cpp.
+Definition at line 30 of file Buffer.\+cpp.
 
 
 \begin{DoxyCode}
-33                   \{
-34     \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}!=\textcolor{keyword}{nullptr}) \{
-35         \textcolor{keyword}{delete} [] \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer};
-36     \}
-37 \}
+30                   \{
+31     \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}!=\textcolor{keyword}{nullptr}) \{
+32         \textcolor{keyword}{delete} [] \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer};
+33     \}
+34 \}
 \end{DoxyCode}
 
 
@@ -125,23 +125,23 @@ Definition at line 33 of file Buffer.\+cpp.
 )}}\label{classDSG_1_1Buffer_a977d572a7d402ff6bf991d7c5c0cc6a7}
 
 
-Definition at line 20 of file Buffer.\+cpp.
+Definition at line 17 of file Buffer.\+cpp.
 
 
 \begin{DoxyCode}
-20                                                   \{
-21     \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}!=other.\_size) \{
-22         \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}!=\textcolor{keyword}{nullptr}) \{
-23             \textcolor{keyword}{delete} [] \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer};
-24         \}
-25         \hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size} = other.\_size;
-26         \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer} = \textcolor{keyword}{new}  Sample[\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}];
+17                                                   \{
+18     \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}!=other.\_size) \{
+19         \textcolor{keywordflow}{if} (\hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}!=\textcolor{keyword}{nullptr}) \{
+20             \textcolor{keyword}{delete} [] \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer};
+21         \}
+22         \hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size} = other.\_size;
+23         \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer} = \textcolor{keyword}{new}  Sample[\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}];
+24     \}
+25     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}; ++i) \{
+26         \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}[i] = other.\hyperlink{classDSG_1_1Sample_ab3b67b009491583e03d8e97d579e67c2}{\_buffer}[i];
 27     \}
-28     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}; ++i) \{
-29         \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}[i] = other.\hyperlink{classDSG_1_1Sample_ab3b67b009491583e03d8e97d579e67c2}{\_buffer}[i];
-30     \}
-31     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
-32 \}
+28     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+29 \}
 \end{DoxyCode}
 \hypertarget{classDSG_1_1Buffer_a5dafe5522f3d20756f83e08499e8eaeb}{\index{D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}}
@@ -152,17 +152,16 @@ Definition at line 20 of file Buffer.\+cpp.
 )}}\label{classDSG_1_1Buffer_a5dafe5522f3d20756f83e08499e8eaeb}
 
 
-Definition at line 38 of file Buffer.\+cpp.
+Definition at line 35 of file Buffer.\+cpp.
 
 
 \begin{DoxyCode}
-38                                                     \{
-39 \textcolor{preprocessor}{#ifdef DEBUG}
-40     assert(index<\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size});
-41 \textcolor{preprocessor}{#endif}
-42     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}[index];
-43 \}
-\end{DoxyCode}
+35                                                     \{
+36 \textcolor{preprocessor}{#ifdef DEBUG}
+37     assert(index<\hyperlink{classDSG_1_1Buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size});
+38 \textcolor{preprocessor}{#endif}
+39     \textcolor{keywordflow}{return} \hyperlink{classDSG_1_1Buffer_a6506d4763401650acb463cb5d4913e31}{\_buffer}[index];
+40 \}\end{DoxyCode}
 \hypertarget{classDSG_1_1Buffer_a4acea659d9cd0be652ec55d21e5b0262}{\index{D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}!Size@{Size}}
 \index{Size@{Size}!D\+S\+G\+::\+Buffer@{D\+S\+G\+::\+Buffer}}
 \subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t const \& D\+S\+G\+::\+Buffer\+::\+Size (

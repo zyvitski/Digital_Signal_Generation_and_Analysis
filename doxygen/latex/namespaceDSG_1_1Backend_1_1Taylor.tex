@@ -18,51 +18,48 @@ double \hyperlink{namespaceDSG_1_1Backend_1_1Taylor_ad36e85fc2ea4a8b773371dd7b92
 )}}\label{namespaceDSG_1_1Backend_1_1Taylor_ad36e85fc2ea4a8b773371dd7b92fdb92}
 
 
-Definition at line 19 of file Taylor.\+cpp.
+Definition at line 11 of file Taylor.\+cpp.
 
 
 \begin{DoxyCode}
-19                                             \{
-20     \textcolor{keywordtype}{double} phs = fabs(x);\textcolor{comment}{//range checking}
-21     phs = fmod(phs,\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI});\textcolor{comment}{//range checking}
-22     \textcolor{keywordtype}{double} val=phs;\textcolor{comment}{//term 1}
-23     
-24     \textcolor{comment}{//instead of using a pow() function we are calculatig the running power by using the multiply
+11                                             \{
+12     \textcolor{keywordtype}{double} phs = x<0 ?1.0-(-1*x):x;
+13     \textcolor{keywordflow}{while} (phs>\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI}) \{
+14         phs-=\hyperlink{PI_8h_a4912c64aec0c943b7985db6cb61ff83a}{TWOPI};
+15     \}
+16     \textcolor{keywordtype}{double} val=phs;\textcolor{comment}{//term 1}
+17     \textcolor{comment}{//instead of using a pow() function we are calculatig the running power by using the multiply
        acculmulate function.}
-25     \textcolor{comment}{//it may look ugly but it should be faster}
+18     \textcolor{comment}{//it may look ugly but it should be faster}
+19     phs*=x;
+20     phs*=x;
+21     val-=(phs * 0.1666666666666666666666666666666666666666666666666666);
+22     phs*=x;
+23     phs*=x;
+24     val+=(phs * 0.0083333333333333333333333333333333333333333333333333);
+25     phs*=x;
 26     phs*=x;
-27     phs*=x;
-28     val-=(phs * (1.0/6.0));
+27     val-=(phs * 0.0001984126984126984126984126984126984126984126984126);
+28     phs*=x;
 29     phs*=x;
-30     phs*=x;
-31     val+=(phs *(1.0/120.0));
+30     val+=(phs * 0.0000027557319223985890652557319223985890652557319223);
+31     phs*=x;
 32     phs*=x;
-33     phs*=x;
-34     val-=(phs *(1.0/5040.0));
+33     val-=(phs * 0.0000000250521083854417187750521083854417187750521083);
+34     phs*=x;
 35     phs*=x;
-36     phs*=x;
-37     val+=(phs *(1.0/362880.0));
+36     val+=(phs * 0.0000000001605904383682161459939237717015494793272571);
+37     phs*=x;
 38     phs*=x;
-39     phs*=x;
-40     val-=(phs*(1.0/39916800.0));
+39     val-=(phs * 0.0000000000007647163731819816475901131985788070444155);
+40     phs*=x;
 41     phs*=x;
-42     phs*=x;
-43     val+=(phs*(1.0/6227020800.0));
+42     val+=(phs * 0.0000000000000028114572543455207631989455830103200162);
+43     phs*=x;
 44     phs*=x;
-45     phs*=x;
-46     val-=(phs*(1.0/1307674368000.0));
+45     val-=(phs * 0.0000000000000000082206352466243297169559812368722807);
+46     phs*=x;
 47     phs*=x;
-48     phs*=x;
-49     val+=(phs*(1.0/355687428096000.0));
-50     phs*=x;
-51     phs*=x;
-52     val-=(phs*(1.0/121645100408832000.0));
-53     phs*=x;
-54     phs*=x;
-55     val+=(phs*(1.0/51090942171709440000.0));
-56     \textcolor{comment}{//the hope is that the compiler is smart enough to evaluate 1.0/... at compile time be cause it will
-       always be the same}
-57     
-58     \textcolor{keywordflow}{return} val;
-59 \}
-\end{DoxyCode}
+48     val+=(phs * 0.0000000000000000000195729410633912612308475743735054);
+49     \textcolor{keywordflow}{return} val;
+50 \}\end{DoxyCode}

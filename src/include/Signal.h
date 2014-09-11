@@ -13,13 +13,9 @@
  *   The DSG project is as study related to the generation of digital audio waveforms and the analysis of waveform generation techniques on the grounds of sound quality and effiencey.
  *\author Alex Zywicki
  */
-
 #include "SignalProcess.h"
 #include "SignalGenerator.h"
 #include "FourierGenerator.h"
 #include "AnalogGenerator.h"
-
 #include "Oscillators.h"
-
-
 #endif

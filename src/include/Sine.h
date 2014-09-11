@@ -11,9 +11,7 @@
 
 #include "FourierGenerator.h"
 
-
 namespace DSG {
-   
         /*!\brief Sine Wave Generator
          */
         class Sine: public FourierGenerator {
@@ -24,9 +22,8 @@ namespace DSG {
             virtual inline bool Perform( Sample& signal);
             virtual inline bool Perform( RingBuffer& signal);
         };
-        
         inline bool Sine::Perform( Sample& signal){
-            signal = DSG::Backend::Sin(_pstep());
+            signal = _sineLut(_pstep());
             return true;
         }
         inline bool Sine::Perform( RingBuffer& signal){
@@ -38,6 +35,5 @@ namespace DSG {
                 }else return false;
             }return true;
         }
-    
 }
 #endif /* defined(__Waveform__Sine__) */

@@ -13,10 +13,10 @@
 
 int main(){
     DSG::Sample_Rate(44100);
-    DSG::FourierSaw _sqr(9.0,0.0);
+    DSG::FourierSquare _sqr(220.0,0.0);
     
     DriverInit(&_sqr);
-    Pa_Sleep(20000);
+    Pa_Sleep(5000);
     DriverExit();
     return 0;
 }

@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 66.225166
+%%BoundingBox: 0 0 500 115.894040
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 7.550000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 4.314286 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 4 def
+/rows 7 def
 /cols 8 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -177,12 +177,16 @@ boxfont setfont
 (DSG::SignalProcess) cw
 (DSG::AnalogGenerator) cw
 (DSG::BLIT) cw
+(DSG::DPW) cw
+(DSG::DSF) cw
 (DSG::FourierGenerator) cw
 (DSG::minBLEP) cw
 (DSG::polyBLEP) cw
 (DSG::AnalogSaw) cw
 (DSG::AnalogSquare) cw
 (DSG::AnalogTriangle) cw
+(DSG::BLITSaw) cw
+(DSG::BLITSquare) cw
 (DSG::FourierSaw) cw
 (DSG::FourierSquare) cw
 (DSG::FourierTriangle) cw
@@ -198,60 +202,76 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (DSG::SignalGenerator) 4.500000 2.000000 box
- (DSG::SignalProcess) 4.500000 3.000000 box
- (DSG::AnalogGenerator) 1.000000 1.000000 box
- (DSG::BLIT) 2.000000 1.000000 box
- (DSG::FourierGenerator) 4.500000 1.000000 box
- (DSG::minBLEP) 5.500000 1.000000 box
- (DSG::polyBLEP) 6.500000 1.000000 box
- (DSG::AnalogSaw) 0.000000 0.000000 box
- (DSG::AnalogSquare) 1.000000 0.000000 box
- (DSG::AnalogTriangle) 2.000000 0.000000 box
- (DSG::FourierSaw) 3.000000 0.000000 box
- (DSG::FourierSquare) 4.000000 0.000000 box
- (DSG::FourierTriangle) 5.000000 0.000000 box
+ (DSG::SignalGenerator) 4.000000 5.000000 box
+ (DSG::SignalProcess) 4.000000 6.000000 box
+ (DSG::AnalogGenerator) 0.000000 4.000000 box
+ (DSG::BLIT) 2.000000 4.000000 box
+ (DSG::DPW) 3.000000 4.000000 box
+ (DSG::DSF) 4.000000 4.000000 box
+ (DSG::FourierGenerator) 5.000000 4.000000 box
+ (DSG::minBLEP) 6.000000 4.000000 box
+ (DSG::polyBLEP) 7.000000 4.000000 box
+ (DSG::AnalogSaw) 1.000000 3.000000 box
+ (DSG::AnalogSquare) 1.000000 2.000000 box
+ (DSG::AnalogTriangle) 1.000000 1.000000 box
+ (DSG::BLITSaw) 3.000000 3.000000 box
+ (DSG::BLITSquare) 3.000000 2.000000 box
+ (DSG::FourierSaw) 6.000000 3.000000 box
+ (DSG::FourierSquare) 6.000000 2.000000 box
+ (DSG::FourierTriangle) 6.000000 1.000000 box
  (DSG::Sine) 6.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-0 4.500000 2.000000 out
+0 4.000000 5.000000 out
 solid
-1 4.500000 3.000000 in
+1 4.000000 6.000000 in
 solid
-1 4.500000 1.250000 out
+1 4.000000 4.250000 out
 solid
-1.000000 6.500000 2.000000 conn
+0.000000 7.000000 5.000000 conn
 solid
-0 1.000000 1.750000 in
+0 0.000000 4.750000 in
 solid
-1 1.000000 0.250000 out
+1 0.000000 3.250000 out
 solid
-0.000000 2.000000 1.000000 conn
+0 2.000000 4.750000 in
 solid
-0 2.000000 1.750000 in
+1 2.000000 3.250000 out
 solid
-0 4.500000 1.750000 in
+0 3.000000 4.750000 in
 solid
-1 4.500000 0.250000 out
+0 4.000000 4.750000 in
 solid
-3.000000 6.000000 1.000000 conn
+0 5.000000 4.750000 in
 solid
-0 5.500000 1.750000 in
+1 5.000000 3.250000 out
 solid
-0 6.500000 1.750000 in
+0 6.000000 4.750000 in
 solid
-0 0.000000 0.750000 in
+0 7.000000 4.750000 in
 solid
-0 1.000000 0.750000 in
+0 0.000000 3.500000 hedge
 solid
-0 2.000000 0.750000 in
+0 0.000000 2.500000 hedge
 solid
-0 3.000000 0.750000 in
+0 0.000000 1.500000 hedge
 solid
-0 4.000000 0.750000 in
+0.000000 4.000000 1.500000 vedge
 solid
-0 5.000000 0.750000 in
+0 2.000000 3.500000 hedge
 solid
-0 6.000000 0.750000 in
+0 2.000000 2.500000 hedge
+solid
+2.000000 4.000000 2.500000 vedge
+solid
+0 5.000000 3.500000 hedge
+solid
+0 5.000000 2.500000 hedge
+solid
+0 5.000000 1.500000 hedge
+solid
+0 5.000000 0.500000 hedge
+solid
+5.000000 4.000000 0.500000 vedge

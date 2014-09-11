@@ -7,9 +7,6 @@
 //
 
 #include "Buffer.h"
-
-
-
 DSG::Buffer::Buffer():_size(0),_buffer(nullptr){}
 DSG::Buffer::Buffer(size_t size):_size(size),_buffer(new  Sample[size]){}
 DSG::Buffer::Buffer(Buffer const& other) {
@@ -41,4 +38,3 @@ DSG:: Sample& DSG::Buffer::operator[](size_t const& index){
 #endif
     return _buffer[index];
 }
-

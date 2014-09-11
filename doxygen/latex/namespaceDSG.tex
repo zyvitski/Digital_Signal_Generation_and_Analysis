@@ -4,7 +4,7 @@
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespaceDSG_1_1Backend}{Backend}
+ \hyperlink{namespaceDSG_1_1Taylor}{Taylor}
 \end{DoxyCompactItemize}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
@@ -21,8 +21,14 @@ class \hyperlink{classDSG_1_1BLIT}{B\+L\+I\+T}
 \begin{DoxyCompactList}\small\item\em See file $\sim$/\+Research/alias-\/free-\/digital-\/synthesis-\/of-\/classic-\/analog-\/waveforms.pdf for details of concept. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1BLITSaw}{B\+L\+I\+T\+Saw}
 \begin{DoxyCompactList}\small\item\em See file $\sim$/\+Research/alias-\/free-\/digital-\/synthesis-\/of-\/classic-\/analog-\/waveforms.pdf for details of concept. \end{DoxyCompactList}\item 
+class \hyperlink{classDSG_1_1BLITSquare}{B\+L\+I\+T\+Square}
+\begin{DoxyCompactList}\small\item\em See file $\sim$/\+Research/alias-\/free-\/digital-\/synthesis-\/of-\/classic-\/analog-\/waveforms.pdf for details of concept. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1Buffer}{Buffer}
 \item 
+class \hyperlink{classDSG_1_1DPW}{D\+P\+W}
+\begin{DoxyCompactList}\small\item\em See File $\sim$/\+Research/\+S-\/89.3580-\/2010-\/\+Pekonen.\+pdf for detials on \hyperlink{classDSG_1_1DPW}{D\+P\+W} algorithm. \end{DoxyCompactList}\item 
+class \hyperlink{classDSG_1_1DSF}{D\+S\+F}
+\begin{DoxyCompactList}\small\item\em See $\sim$/\+Research/stanm5.pdf for algorithm details. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1FourierGenerator}{Fourier\+Generator}
 \begin{DoxyCompactList}\small\item\em A Class Extending The \hyperlink{classDSG_1_1SignalGenerator}{Signal\+Generator} Class with functionality for generating a wave by summing sinusoids. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1FourierSaw}{Fourier\+Saw}
@@ -31,22 +37,32 @@ class \hyperlink{classDSG_1_1FourierSquare}{Fourier\+Square}
 \begin{DoxyCompactList}\small\item\em Fourier Series Based \hyperlink{classDSG_1_1FourierSquare}{Fourier\+Square} Wave. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1FourierTriangle}{Fourier\+Triangle}
 \begin{DoxyCompactList}\small\item\em Fourier Series Based \hyperlink{classDSG_1_1FourierTriangle}{Fourier\+Triangle} Wave. \end{DoxyCompactList}\item 
+class \hyperlink{classDSG_1_1HarmonicTable}{Harmonic\+Table}
+\item 
+class \hyperlink{classDSG_1_1LUT}{L\+U\+T}
+\item 
 class \hyperlink{classDSG_1_1minBLEP}{min\+B\+L\+E\+P}
 \begin{DoxyCompactList}\small\item\em See file $\sim$/\+Research/icmc01-\/hardsync.pdf for details of algorithm. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1polyBLEP}{poly\+B\+L\+E\+P}
 \begin{DoxyCompactList}\small\item\em See file $\sim$/\+Research/poly\+B\+L\+E\+P.rtf for links to deatils about algorithm. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1RingBuffer}{Ring\+Buffer}
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classDSG_1_1RingBuffer}{Ring\+Buffer} of Audio Samples of the \hyperlink{classDSG_1_1Sample}{Sample} Class type. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1Sample}{Sample}
-\item 
+\begin{DoxyCompactList}\small\item\em Stereo Audio \hyperlink{classDSG_1_1Sample}{Sample} Class. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1SampleRate}{Sample\+Rate}
-\item 
+\begin{DoxyCompactList}\small\item\em Tools for storing and maintaining a global audio sample rate. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1SignalGenerator}{Signal\+Generator}
 \begin{DoxyCompactList}\small\item\em A Base Class extending the \hyperlink{classDSG_1_1SignalProcess}{Signal\+Process} A\+P\+I with functionality for signal generation. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1SignalProcess}{Signal\+Process}
 \begin{DoxyCompactList}\small\item\em An Abstract Base Class defining the basics A\+P\+I needed for audio generation. \end{DoxyCompactList}\item 
 class \hyperlink{classDSG_1_1Sine}{Sine}
-\begin{DoxyCompactList}\small\item\em \hyperlink{classDSG_1_1Sine}{Sine} Wave Generator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classDSG_1_1Sine}{Sine} Wave Generator. \end{DoxyCompactList}\item 
+class \hyperlink{classDSG_1_1SineLUT}{Sine\+L\+U\+T}
+\item 
+class \hyperlink{classDSG_1_1SmallSineLUT}{Small\+Sine\+L\+U\+T}
+\item 
+class \hyperlink{classDSG_1_1SmallSineLUT_3_01int32__t_00_01size_01_4}{Small\+Sine\+L\+U\+T$<$ int32\+\_\+t, size $>$}
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -68,13 +84,13 @@ void \hyperlink{namespaceDSG_a4bd55630ea1490c8f3dedeb867fb3c0a}{Sample\+\_\+\+Ra
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceDSG_a0c5c3a251b3688398da18138c5efe4bf}
 
 
-Definition at line 29 of file Sample\+\_\+\+Rate.\+h.
+Definition at line 23 of file Sample\+\_\+\+Rate.\+h.
 
 
 \begin{DoxyCode}
-29                                           \{
-30             \textcolor{keywordflow}{return} \hyperlink{namespaceDSG_a4bd55630ea1490c8f3dedeb867fb3c0a}{SampleRate::Sample\_Rate}();
-31         \}
+23                                       \{
+24         \textcolor{keywordflow}{return} \hyperlink{namespaceDSG_a4bd55630ea1490c8f3dedeb867fb3c0a}{SampleRate::Sample\_Rate}();
+25     \}
 \end{DoxyCode}
 \hypertarget{namespaceDSG_a4bd55630ea1490c8f3dedeb867fb3c0a}{\index{D\+S\+G@{D\+S\+G}!Sample\+\_\+\+Rate@{Sample\+\_\+\+Rate}}
 \index{Sample\+\_\+\+Rate@{Sample\+\_\+\+Rate}!D\+S\+G@{D\+S\+G}}
@@ -85,13 +101,13 @@ Definition at line 29 of file Sample\+\_\+\+Rate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceDSG_a4bd55630ea1490c8f3dedeb867fb3c0a}
 
 
-Definition at line 35 of file Sample\+\_\+\+Rate.\+h.
+Definition at line 29 of file Sample\+\_\+\+Rate.\+h.
 
 
 \begin{DoxyCode}
-35                                                    \{
-36             SampleRate::Set(rate);
-37         \}
+29                                                \{
+30         SampleRate::Set(rate);
+31     \}
 \end{DoxyCode}
 \hypertarget{namespaceDSG_af4b9f74af014c275bea769b577a9786a}{\index{D\+S\+G@{D\+S\+G}!Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}}
 \index{Sample\+\_\+\+Rate\+\_\+\+Inverse@{Sample\+\_\+\+Rate\+\_\+\+Inverse}!D\+S\+G@{D\+S\+G}}
@@ -102,11 +118,11 @@ Definition at line 35 of file Sample\+\_\+\+Rate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceDSG_af4b9f74af014c275bea769b577a9786a}
 
 
-Definition at line 32 of file Sample\+\_\+\+Rate.\+h.
+Definition at line 26 of file Sample\+\_\+\+Rate.\+h.
 
 
 \begin{DoxyCode}
-32                                                  \{
-33             \textcolor{keywordflow}{return} \hyperlink{namespaceDSG_af4b9f74af014c275bea769b577a9786a}{SampleRate::Sample\_Rate\_Inverse}();
-34         \}
+26                                              \{
+27         \textcolor{keywordflow}{return} \hyperlink{namespaceDSG_af4b9f74af014c275bea769b577a9786a}{SampleRate::Sample\_Rate\_Inverse}();
+28     \}
 \end{DoxyCode}

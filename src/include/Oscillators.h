@@ -17,9 +17,10 @@
 #include "AnalogSquare.h"
 #include "AnalogTriangle.h"
 
-
+#include "DSF.h"
 #include "BLIT.h"
 #include "BLITSaw.h"
+#include "BLITSquare.h"
 #include "minBLEP.h"
 #include "polyBLEP.h"
 

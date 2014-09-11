@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['a_5f',['a_',['../classDSG_1_1BLITSaw.html#a71b040fae6e1d67b56c580db9f4e5c3a',1,'DSG::BLITSaw']]],
   ['analoggenerator',['AnalogGenerator',['../classDSG_1_1AnalogGenerator.html',1,'DSG']]],
   ['analoggenerator',['AnalogGenerator',['../classDSG_1_1AnalogGenerator.html#a361c75a897c8984cd283bae8bdfd152e',1,'DSG::AnalogGenerator::AnalogGenerator()'],['../classDSG_1_1AnalogGenerator.html#a13c3745554321cd94bc3121160641f4e',1,'DSG::AnalogGenerator::AnalogGenerator(double const &amp;frequency, double const &amp;phase_offset)']]],
   ['analoggenerator_2ecpp',['AnalogGenerator.cpp',['../AnalogGenerator_8cpp.html',1,'']]],
@@ -15,7 +16,5 @@ var searchData=
   ['analogtriangle',['AnalogTriangle',['../classDSG_1_1AnalogTriangle.html',1,'DSG']]],
   ['analogtriangle',['AnalogTriangle',['../classDSG_1_1AnalogTriangle.html#a42f8f20b211eb758b5b9acd4384308e2',1,'DSG::AnalogTriangle::AnalogTriangle()'],['../classDSG_1_1AnalogTriangle.html#aa677150201428cd206391367672454e7',1,'DSG::AnalogTriangle::AnalogTriangle(double const &amp;frequency, double const &amp;phase_offset)']]],
   ['analogtriangle_2ecpp',['AnalogTriangle.cpp',['../AnalogTriangle_8cpp.html',1,'']]],
-  ['analogtriangle_2eh',['AnalogTriangle.h',['../AnalogTriangle_8h.html',1,'']]],
-  ['array',['array',['../classDSG_1_1Backend_1_1array.html',1,'DSG::Backend']]],
-  ['array',['array',['../classDSG_1_1Backend_1_1array.html#aa6b9a819e5a82e634956bc7ae3f4f4b2',1,'DSG::Backend::array::array()'],['../classDSG_1_1Backend_1_1array.html#aedacabe25ffa6dd6a08cd023a113eb8f',1,'DSG::Backend::array::array(unsigned long size)'],['../classDSG_1_1Backend_1_1array.html#a07a41d17ec383a4b677b77213873bb6b',1,'DSG::Backend::array::array(array&lt; element &gt; const &amp;other)']]]
+  ['analogtriangle_2eh',['AnalogTriangle.h',['../AnalogTriangle_8h.html',1,'']]]
 ];

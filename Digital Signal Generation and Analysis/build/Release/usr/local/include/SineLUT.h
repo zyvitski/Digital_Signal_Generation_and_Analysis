@@ -10,6 +10,7 @@
 #define Waveform_SineLUT_h
 
 #include <stdint.h>
+#include <math.h>
 #include "LUT.h"
 #include "PI.h"
 namespace DSG{
@@ -29,14 +30,12 @@ namespace DSG{
                 }
             }
             virtual ~SineLUT(){}
-            virtual inline element operator()(double const& x){
+            virtual inline element const& operator()(double const& x){
                 phs=x;
                 //need range checking on x to ensure 0-1 range
-                phs= phs<0 ? phs*-1:phs;
-                phs=phs-((int)phs);
+                phs<0 ? phs*=-1:0;
+                phs-=((int)phs);
                 return this->_table[(unsigned)(phs* (this->_size-1))];
-                
-                return 0;
             }
         protected:
             double phs;

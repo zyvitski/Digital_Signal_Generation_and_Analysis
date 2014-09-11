@@ -26,8 +26,8 @@ namespace DSG{
 #endif
                 return _table[index];
             }
-            virtual inline element  operator()(double const& x){
-                return 0;
+            virtual inline element const&  operator()(double const& x){
+                return _table[0];
             }
             unsigned long const& Size()const{
                 return _size;

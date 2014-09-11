@@ -13,7 +13,6 @@
 #include <assert.h>
 #endif
 
-
 #include <atomic>
 #include <math.h>
 #ifdef DEBUG
@@ -21,8 +20,6 @@
 #endif
 namespace DSG{
     namespace Backend {
-        
-        
         template <class element>
         class array {
         public:
@@ -68,8 +65,6 @@ namespace DSG{
             element* _array;
             unsigned long _size;
         };
-        
-        
         template <class element>
         class Queue:public array<element> {
         public:
@@ -117,7 +112,6 @@ namespace DSG{
             }
             bool Full()const{
                 return _count==this->_size;
-                
             }
             bool Empty()const{
                 return _count==0;
@@ -127,7 +121,6 @@ namespace DSG{
                 _read.store(0,std::memory_order_relaxed);
                 _count=0;
             }
-            
 #ifdef DEBUG
             friend std::ostream& operator<<(std::ostream& os, Queue<element> const& queue){
                 return os;
@@ -147,6 +140,4 @@ namespace DSG{
         };
     }
 }
-
-
 #endif

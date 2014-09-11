@@ -26,7 +26,7 @@ namespace DSG {
         };
         
         inline bool Sine::Perform( Sample& signal){
-            signal = DSG::Backend::Sin(_pstep());
+            signal = _sineLut(_pstep());
             return true;
         }
         inline bool Sine::Perform( RingBuffer& signal){

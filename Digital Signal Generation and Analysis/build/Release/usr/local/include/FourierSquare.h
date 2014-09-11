@@ -38,7 +38,7 @@ namespace DSG {
 
             stor=0;
             for (i=1; i<_h; i+=2) {
-                stor += _harmonicTable.Saw(i) * DSG::Backend::Sin(phs*i);
+                stor += _harmonicTable.Saw(i) * _sineLut(phs*i);
             }
             stor *= _a;
             signal = stor;
